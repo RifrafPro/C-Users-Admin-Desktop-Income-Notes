@@ -14,15 +14,17 @@ and memory becomes automatic. Everything is safe in Google Drive meanwhile.
 > **read/write (push)**.
 
 ## PART B — Restore + push (~2 min)
-The whole vault (incl. `.claude/`) is in Drive "Income Notes Vault" as the file
-**`vault-bundle.tar.gz`** plus individual `.md` files. Paste to a fresh session:
+The whole vault (incl. `.claude/`) is in Drive "Income Notes Vault" as a full
+snapshot tarball. **Use the NEWEST `vault-bundle-*.tar.gz`** (latest as of this
+writing: **`vault-bundle-2026-08-06-2200.tar.gz`** — the complete, current repo).
+Paste to a fresh session:
 
 > My GitHub repo **RifrafPro/C-Users-Admin-Desktop-Income-Notes** now has write
-> access. Restore my vault from my Google Drive folder **"Income Notes Vault"**
-> (extract `vault-bundle.tar.gz` at the repo root, then overlay any newer `.md`
-> files from that folder), commit, and **push to the default branch (main)** so
-> future sessions auto-load `CLAUDE.md` and the `vault-load` hook. Confirm the
-> push and give me the commit link.
+> access. Restore my vault from my Google Drive folder **"Income Notes Vault"**:
+> extract the NEWEST `vault-bundle-*.tar.gz` at the repo root, commit, and **push
+> to the default branch (main)** so future sessions auto-load `CLAUDE.md` and the
+> `vault-load` hook. Then clean up the duplicate `.md` files + the empty second
+> "Income Notes Vault" folder in Drive. Confirm the push and give me the commit link.
 
 ## PART C — Verify
 `CLAUDE.md` visible on the **main** branch at
