@@ -46,6 +46,17 @@ Legend: 🔌 = native claude.ai connector (one-click, I can use its tools direct
 - 🧠 Parse leads, comps, the land-math, buyer matching, draft every message/offer/contract,
   track all deadlines. 🔌 Send **email** (buyer blasts to builders) via Gmail on your OK.
 
+## E-SIGN — chosen + connect steps  (STATUS: awaiting Rich to connect at claude.ai)
+Recommended: **DocuSign** (title cos + builders trust it) — or SignNow/PandaDoc for cost.
+Claude CANNOT self-connect a connector (it's an OAuth login only Rich can do). Steps:
+1. claude.ai → profile/settings → **Connectors** (a.k.a. "Directory"/"Add connectors").
+2. Search **DocuSign** → **Connect** → log into DocuSign → approve access.
+3. Make sure it's **enabled for this chat** (connector toggle in the chat's tools).
+4. Tell Claude "DocuSign is connected" → Claude verifies its tools load, then wires it
+   into the contract step (send Assignment of Contract + track signed status).
+Once connected, the disposition/contract flow can: create from template → send for
+signature → watch status → notify Rich when signed.
+
 ## Recommended minimal stack to a first automated deal
 1. **E-sign (now):** connect DocuSign or SignNow → contracts send + track automatically.
 2. **Voice+SMS+CRM (one platform):** REsimpli (you already looked at it) → Zapier bridge,

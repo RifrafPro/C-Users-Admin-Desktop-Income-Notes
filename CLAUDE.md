@@ -30,10 +30,21 @@ So keep it current.
 - `vault/projects/wholesaling.md` — FRESH GROUND (CURRENT FOCUS)
 - `vault/projects/fresh-ground-scripts.md` — the 10-script playbook
 - `vault/projects/lead-gen-ispeedtolead.md` — lead flow + 3 markets
+- `vault/buyers.md` — builder buyer database (disposition side)
+- `vault/automation-stack.md` — tools to fill the voice/e-sign/SMS/CRM holes
+- `vault/deals/` — one Deal Record per property (`_TEMPLATE.md` is the shape)
 - `vault/projects/income-notes*.md` — note investing + glossary
 - `vault/projects/income-notes-business-workflow.md` — note pipeline
 - `vault/sessions/` — dated logs = "where we left off"
 - `vault/workflow-map.md` — the vault/memory system
+
+## The FRESH GROUND deal agency (in `.claude/agents/`)
+Six agents run the pipeline. Invoke **deal-orchestrator** with a lead/address to run a
+whole deal; it chains: lead-intake → underwriter → buyer-matcher → seller-negotiator →
+disposition (→ contract). **Hard rule:** agents research/compute/DRAFT autonomously, but
+NEVER send a contract/offer/blast or place a call/text to a real person without Rich's
+explicit "send it" (legal signature + TCPA/A2P). See `vault/automation-stack.md` for the
+external tools (e-sign, voice, SMS) that turn drafts into sends.
 
 ## The memory system
 - **Session start:** the `.claude/hooks/vault-load.sh` SessionStart hook prints

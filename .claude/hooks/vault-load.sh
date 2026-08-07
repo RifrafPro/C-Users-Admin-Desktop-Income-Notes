@@ -44,5 +44,27 @@ if [ -d "$ROOT/vault/projects" ]; then
   done
 fi
 
+# 4) Show the deal-agency agents (the operating system).
+if [ -d "$ROOT/.claude/agents" ]; then
+  echo ""
+  echo "--- FRESH GROUND deal agents (invoke deal-orchestrator to run a deal) ---"
+  ls -1 "$ROOT/.claude/agents"/*.md 2>/dev/null | while read -r f; do
+    echo "  - $(basename "$f" .md)"
+  done
+fi
+
+# 5) Show open deals in the pipeline.
+if [ -d "$ROOT/vault/deals" ]; then
+  DEALS="$(ls -1 "$ROOT/vault/deals"/*.md 2>/dev/null | grep -v '_TEMPLATE' | wc -l | tr -d ' ')"
+  echo ""
+  echo "--- Deals in pipeline: ${DEALS:-0} (see vault/deals/) ---"
+fi
+
+# 6) Automation stack pointer.
+if [ -f "$ROOT/vault/automation-stack.md" ]; then
+  echo ""
+  echo "--- Automation: see vault/automation-stack.md (e-sign/voice/SMS/CRM tools + status) ---"
+fi
+
 echo "=== end orientation ==="
 exit 0
