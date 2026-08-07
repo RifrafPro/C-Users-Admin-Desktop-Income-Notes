@@ -7,15 +7,24 @@ Chase/Potomac (MD), Vienna/Oakton/Great Falls (VA), NW DC.
 ## iSpeedToLead — account + delivery
 - Active account: signed into app.ispeedtolead.com on **2026-08-01** (signup link
   saved 2026-07-16, tagged "Ispeedtolead wholesaling").
+- ⚠️ **Account is under the `anthorahproperties` email, NOT richfabiani@gmail.com**
+  (Rich, 2026-08-07). Confirm the exact address (likely anthorahproperties@gmail.com).
 - Leads arrive **in the app** (motivated-seller leads) — "speed to lead" = first
   responder wins → respond FAST.
 
 ## Capture method: **A — Gmail-forward auto-ingest** (chosen 2026-08-06)
-- Gmail label: **`iSpeedToLead`** (created for lead capture).
-- Setup Rich must do on the iSpeedToLead side: set new-lead **notifications/forwarding
-  to email** → richfabiani@gmail.com (or forward the lead SMS/notification to Gmail).
-- Gmail filter (Rich creates once): From/Subject contains iSpeedToLead → apply label
-  `iSpeedToLead`, skip inbox optional.
+- Gmail label: **`iSpeedToLead`** already created in **richfabiani@gmail.com** — the
+  inbox Claude's Gmail tools are connected to.
+- ⚠️ **The wrinkle:** leads notify the **anthorahproperties** inbox, but Claude reads
+  **richfabiani@gmail.com**. So the forward must cross accounts:
+  1. In iSpeedToLead (anthorahproperties account) → turn on new-lead email
+     notifications/forwarding.
+  2. In the **anthorahproperties** Gmail → add a forward of those lead emails to
+     **richfabiani@gmail.com** (Gmail Settings → Forwarding, or a filter → Forward to).
+  3. In **richfabiani@gmail.com** → filter: From/Subject contains iSpeedToLead (or the
+     anthorahproperties forwarder) → apply label `iSpeedToLead`.
+  - Alternative if cross-forwarding is a hassle: connect the anthorahproperties Gmail
+    to Claude directly instead (then I read its inbox and skip the forward).
 - Each session, Claude searches `label:iSpeedToLead` for new leads → logs Deal Records
   → underwrites → routes to script.
 
@@ -34,5 +43,8 @@ lead_type (absentee/probate/distressed/vacant) · play (teardown-lot/flip) · lo
 or ARV · asking · MAO/max-offer · script_used · stage · next_action
 
 ## OPEN for Rich
+- Confirm the exact **anthorahproperties** email address.
+- Decide: cross-forward anthorahproperties→richfabiani, OR connect anthorahproperties
+  Gmail to Claude directly.
 - Confirm iSpeedToLead can email/forward leads (needed for auto-ingest).
 - Any leads already in the app to log now?
