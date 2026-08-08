@@ -12,20 +12,33 @@ Source teardown lots (off-market + distressed) → put under contract → assign
 contract to a builder (or double-close if builder buys direct only). Also house
 flips (screened separately). Primary money = assignment fees on teardown lots.
 
-## Core profit thesis — VALUE IS IN THE LAND, PRICED BY THE BUYER (Rich, 2026-08-08)
-The house doesn't set the value — the **highest-value buyer** does, and for teardown lots
-that buyer is a **builder paying for LAND** (location, lot size, what they can build), not
-for the structure. So:
-- A **distressed / ugly / dated house on a prime lot is the opportunity, not a defect** —
-  the builder demolishes it anyway, so condition is irrelevant to them. Ugly = cheaper buy
-  + motivated seller, while the **land value to the builder stays intact**.
-- **The profit = the spread** between the distressed-house price you acquire at and the
-  land value the right builder will pay. Underwrite the LAND, never the house.
-- **Match every property to the buyer who values it highest.** Different buyers have
-  different value models; the land-value builder pays top dollar where a retail buyer won't.
-- Underwriting rule: value the lot at its best-and-highest use (new luxury build), back into
-  the builder's land budget, then buy well under it. Never let a rough house scare the number
-  down — let it pull the *acquisition* price down while the *exit* (land value) holds.
+## Core profit thesis — VALUE IS PRICED BY THE HIGHEST-VALUE BUYER (Rich, 2026-08-08)
+The house doesn't set the value — the **highest-value buyer** does. **Sometimes that value is
+the LAND, sometimes it's the HOUSE. Recognizing which is the core skill** (a tool from Rich
+is coming to make this determination reliably; until then, treat it as judgment, not certainty).
+
+**Two plays, decided per property:**
+- **LAND play (teardown):** the value is the lot to a **builder** (location, size, what they
+  can build); the structure is worthless — demolished anyway. A distressed/ugly/dated house on
+  a prime lot is the OPPORTUNITY, not a defect: ugly = cheaper buy + more motivated seller,
+  while the **land value to the builder stays intact**. Underwrite the LAND (land residual).
+- **HOUSE play (flip/retail):** the value is the **structure** — good bones, recoverable via
+  renovation to ARV. Here condition and repairs DO matter. Underwrite the HOUSE (ARV − repairs).
+
+**How to tell them apart (interim judgment until the tool):** run BOTH exits and take the
+higher, more achievable one — (a) teardown: land value to a builder for a new build; (b) flip:
+ARV after renovation − repairs. Signals toward LAND: teardown/rebuild neighborhood, new-build
+comps far above renovated comps, small/old house on big/prime lot, high land-to-improvement
+ratio. Signals toward HOUSE: sound structure, buyers want the renovated home, new-build premium
+doesn't justify rebuild.
+
+**The profit = the spread** between the lowest acquisition price and whichever exit is higher.
+**Match every property to the buyer who values it highest.**
+
+## Acquisition principle
+Get every property for the **lowest price possible, by every legitimate lever** — off-market
+sourcing, seller motivation, creative terms/structure, anchoring, distress signals. Never let
+the deal cost more than the exit supports (MAO is the ceiling).
 
 ## Target market: DC Metro — 3 core areas ✅ CONFIRMED 2026-08-06 (Rich)
 **McLean · Arlington · Falls Church (VA)** — primary (exactly Zimmermann's
