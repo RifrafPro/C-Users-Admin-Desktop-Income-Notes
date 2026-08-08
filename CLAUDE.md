@@ -33,6 +33,7 @@ So keep it current.
 - `vault/buyers.md` — builder buyer database (disposition side)
 - `vault/automation-stack.md` — tools to fill the voice/e-sign/SMS/CRM holes
 - `vault/deals/` — one Deal Record per property (`_TEMPLATE.md` is the shape)
+- `vault/contracts/` — PSA + Assignment of Contract templates (read its `README.md` first)
 - `vault/projects/income-notes*.md` — note investing + glossary
 - `vault/projects/income-notes-business-workflow.md` — note pipeline
 - `vault/sessions/` — dated logs = "where we left off"

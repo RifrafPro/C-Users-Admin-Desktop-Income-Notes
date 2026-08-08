@@ -42,6 +42,25 @@ Legend: 🔌 = native claude.ai connector (one-click, I can use its tools direct
 - 🔌 **Zapier** connector = universal glue to REsimpli / dialers / anything without a
   native MCP.
 
+## DISPOSITION — "multiple buyers on one deal" platform (decided 2026-08-08)
+Rich's saved platform (Gmail, emails-to-self) = **InvestorLift** (`get.investorlift.com`).
+Verified: **$6k–$36k+/yr, for volume teams** → premature at 0 deals. Shelf it; take free demo.
+- 🔌 **START:** **REsimpli** (`resimpli.com`) — dispo built in (buyer list/tag/blast + AI
+  voice callout) AND covers voice+SMS+CRM. One signup, ≈$99–299/mo.
+- 🛠️ **REsimpli-alt for pure reach:** **Deal Run** (`dealrun.ai`) — address → ranked cash
+  buyers + email/SMS blast, ≈$99/mo (InvestorLift function, 60× cheaper).
+- Rich is setting up accounts (2026-08-08). When live → import buyers to `vault/buyers.md`,
+  wire disposition step to blast through it.
+
+## CONTRACTS — templates drafted (2026-08-08)  ← Stage 5b DONE
+Live in repo `vault/contracts/` + mirrored to Drive:
+- **PSA** (Seller → FRESH GROUND): assignable "and/or assigns", 10-day feasibility exit,
+  as-is, low EMD, wholesaler disclosure.
+- **Assignment of Contract** (FRESH GROUND → builder): assignment fee, non-refundable deposit,
+  fee paid on settlement statement, direct seller→assignee title.
+- ⚠️ Get a **VA real-estate attorney** to review both once (~$300–500) before first real use.
+  Off-market → custom PSA; agent-listed → NVAR/Virginia REALTORS® forms.
+
 ## What I can do TODAY with zero new tools
 - 🧠 Parse leads, comps, the land-math, buyer matching, draft every message/offer/contract,
   track all deadlines. 🔌 Send **email** (buyer blasts to builders) via Gmail on your OK.
