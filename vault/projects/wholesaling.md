@@ -12,6 +12,21 @@ Source teardown lots (off-market + distressed) → put under contract → assign
 contract to a builder (or double-close if builder buys direct only). Also house
 flips (screened separately). Primary money = assignment fees on teardown lots.
 
+## Core profit thesis — VALUE IS IN THE LAND, PRICED BY THE BUYER (Rich, 2026-08-08)
+The house doesn't set the value — the **highest-value buyer** does, and for teardown lots
+that buyer is a **builder paying for LAND** (location, lot size, what they can build), not
+for the structure. So:
+- A **distressed / ugly / dated house on a prime lot is the opportunity, not a defect** —
+  the builder demolishes it anyway, so condition is irrelevant to them. Ugly = cheaper buy
+  + motivated seller, while the **land value to the builder stays intact**.
+- **The profit = the spread** between the distressed-house price you acquire at and the
+  land value the right builder will pay. Underwrite the LAND, never the house.
+- **Match every property to the buyer who values it highest.** Different buyers have
+  different value models; the land-value builder pays top dollar where a retail buyer won't.
+- Underwriting rule: value the lot at its best-and-highest use (new luxury build), back into
+  the builder's land budget, then buy well under it. Never let a rough house scare the number
+  down — let it pull the *acquisition* price down while the *exit* (land value) holds.
+
 ## Target market: DC Metro — 3 core areas ✅ CONFIRMED 2026-08-06 (Rich)
 **McLean · Arlington · Falls Church (VA)** — primary (exactly Zimmermann's
 territory; the overlap all four builders share).
@@ -45,9 +60,10 @@ treasurer=tax, land records=liens); MLS assistant access (~$24–75/qtr).
 
 ## The 10-script playbook → see `fresh-ground-scripts.md` (full) + PDFs in Drive.
 
-## Instruments
-- Assignment of Contract (Drive copy written for NOTE purchase — needs a
-  PROPERTY-purchase version for teardown lots).
+## Instruments — see `vault/contracts/` (drafted 2026-08-08)
+- **PSA** (Seller → FRESH GROUND) + **Assignment of Contract** (FRESH GROUND → builder),
+  both property/teardown versions. Read `vault/contracts/README.md` first. Attorney review
+  pending before first real use.
 
 ## Lead source → see `lead-gen-ispeedtolead.md` (iSpeedToLead).
 
