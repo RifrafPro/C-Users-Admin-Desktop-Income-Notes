@@ -12,6 +12,28 @@ Source teardown lots (off-market + distressed) → put under contract → assign
 contract to a builder (or double-close if builder buys direct only). Also house
 flips (screened separately). Primary money = assignment fees on teardown lots.
 
+## Operating sequence — BUYER-FIRST (reverse wholesaling) (Rich, 2026-08-10)
+**This is the spine. Buyers first, always.** Reverse the old "find lot → find buyer" order:
+1. **Pick the target area** (McLean · Arlington · Falls Church).
+2. **Reach the builders there FIRST** and capture each **buy-box** (Script 01 / call sheets):
+   target lot size, preferred submarkets, the **land price they underwrite to**, build cost +
+   margin, buy-direct vs assignment, and how many lots/yr they'll take.
+3. Now we know **what will sell, to whom, and at what price — before sourcing a thing.**
+4. **Research/source properties that FIT a confirmed buy-box** (deal-to-fit, not hope-to-match).
+5. **Underwrite to that buyer's numbers** → **tie up the seller (PSA, assignable) = CONTROL.**
+6. **Only THEN disclose** the address / deliver to the already-pre-sold buyer.
+
+**Why it wins:** demand is pre-sold (no guessing the exit), underwriting is faster and tighter
+(their real numbers), zero wasted acquisition — and it *naturally enforces the rule below*:
+first contact is about their box, never our addresses.
+
+### 🔒 Rule: CONTROL BEFORE DISCLOSURE (Rich, 2026-08-10)
+**No buyer sees a property address until our profit is protected** — the lot is **under contract
+with an assignable clause** (we hold equitable interest) OR the buyer has signed a
+**non-circumvention agreement**. Off-market leads especially: the address IS the asset — never
+give it away. Buyers get a **blind teaser** (submarket, lot size, price band — no address) until
+protected. **Disposition does NOT fire until a signed PSA (or non-circumvent) exists.**
+
 ## Core profit thesis — VALUE IS PRICED BY THE HIGHEST-VALUE BUYER (Rich, 2026-08-08)
 The house doesn't set the value — the **highest-value buyer** does. **Sometimes that value is
 the LAND, sometimes it's the HOUSE. Recognizing which is the core skill** (a tool from Rich
