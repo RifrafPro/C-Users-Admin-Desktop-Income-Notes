@@ -62,11 +62,11 @@ Get every property for the **lowest price possible, by every legitimate lever** 
 sourcing, seller motivation, creative terms/structure, anchoring, distress signals. Never let
 the deal cost more than the exit supports (MAO is the ceiling).
 
-## Target market: DC Metro — 3 core areas ✅ CONFIRMED 2026-08-06 (Rich)
-**McLean · Arlington · Falls Church (VA)** — primary (exactly Zimmermann's
-territory; the overlap all four builders share).
-Secondary: Bethesda / Chevy Chase / Potomac (MD), Vienna / Oakton / Great Falls
-(VA), NW DC.
+## Target market — STARTING FOCUS, not a lock (updated 2026-08-25, Rich)
+**McLean · Arlington · Falls Church (VA)** — where we start (deepest builder overlap,
+easiest to prove the model), **not an exclusive territory.** Go wherever a deal pencils
+against a confirmed buyer buy-box. Secondary/expansion: Bethesda / Chevy Chase / Potomac
+(MD), Vienna / Oakton / Great Falls (VA), NW DC — and beyond, as buyer relationships grow.
 
 ## Buyers — builder acquisition list (Script 01)
 | Builder | Phone | Email | Territory |
