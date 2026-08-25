@@ -46,9 +46,9 @@ GROUND's prior written consent.
 ## 4. Remedies
 The Parties agree that a breach of Sections 2 or 3 causes harm difficult to quantify.
 If Recipient circumvents FRESH GROUND on a FRESH GROUND Opportunity, Recipient agrees to
-pay FRESH GROUND, as liquidated damages (not a penalty), an amount equal to
-**[[the assignment fee FRESH GROUND would have earned, or a stated flat amount —
-Rich to set]]**. This is in addition to, not in place of, any other legal remedy.
+pay FRESH GROUND, as liquidated damages (not a penalty), a flat amount of
+**Twenty-Five Thousand Dollars ($25,000)** per Opportunity circumvented. This is in
+addition to, not in place of, any other legal remedy.
 
 ## 5. Term
 This Agreement remains in effect for **[[24]] months** from the Effective Date and survives
