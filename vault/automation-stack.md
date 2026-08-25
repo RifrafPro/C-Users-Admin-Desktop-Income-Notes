@@ -65,6 +65,15 @@ Live in repo `vault/contracts/` + mirrored to Drive:
 - 🧠 Parse leads, comps, the land-math, buyer matching, draft every message/offer/contract,
   track all deadlines. 🔌 Send **email** (buyer blasts to builders) via Gmail on your OK.
 
+## E-SIGN — phased decision (2026-08-22, Rich)
+**Phase 1 (now):** connect the CHEAPEST option just to send **non-circumvention agreements**
+to builders (fits buyer-first + Control-Before-Disclosure — builder signs before any address
+is shown). Low stakes, no attorney review needed to start.
+**Phase 2 (when negotiating real deals — PSA/Assignment, attorney-reviewed):** SHOP AROUND for
+the most efficient/cheapest platform at that volume — don't assume Phase 1's pick is the final
+answer. Revisit DocuSign (trust, pricier) vs SignNow/PandaDoc/DocuSeal (cheaper) once real
+seller-contract volume is known.
+
 ## E-SIGN — chosen + connect steps  (STATUS: awaiting Rich to connect at claude.ai)
 Recommended: **DocuSign** (title cos + builders trust it) — or SignNow/PandaDoc for cost.
 Claude CANNOT self-connect a connector (it's an OAuth login only Rich can do). Steps:
