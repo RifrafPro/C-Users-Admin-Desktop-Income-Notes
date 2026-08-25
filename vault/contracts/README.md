@@ -4,13 +4,17 @@ The two legal instruments the deal pipeline runs on. Both are **DRAFTS** — the
 disposition/contract agents fill them from a Deal Record, but **nothing sends or gets
 signed without Rich's explicit "send it."**
 
-## The two documents
+## The three documents
 1. **`_TEMPLATE-purchase-and-sale-agreement.md`** — the front-end contract.
    Seller → **FRESH GROUND, LLC** (as Buyer). Gets the teardown lot **under contract**
    with the **assignable** language + short feasibility period that make wholesaling work.
 2. **`_TEMPLATE-assignment-of-contract.md`** — the back-end contract.
    FRESH GROUND (**Assignor**) → builder (**Assignee**). Transfers the PSA rights for the
    **Assignment Fee** (your spread). This is what actually pays you.
+3. **`_TEMPLATE-non-circumvent-agreement.md`** — the buyer-side protection.
+   FRESH GROUND → **builder**, signed **BEFORE any address is disclosed** (Control-Before-
+   Disclosure rule). Lower stakes than #1/#2 (no money/title involved) but still real —
+   confirm the liquidated-damages amount before first use.
 
 ## How the money flows
 ```

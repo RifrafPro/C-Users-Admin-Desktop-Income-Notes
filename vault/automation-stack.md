@@ -74,6 +74,13 @@ the most efficient/cheapest platform at that volume — don't assume Phase 1's p
 answer. Revisit DocuSign (trust, pricier) vs SignNow/PandaDoc/DocuSeal (cheaper) once real
 seller-contract volume is known.
 
+## E-SIGN — ✅ CONNECTED 2026-08-22: SignNow
+Connected + verified live (list_documents/list_all_templates both returned successfully,
+empty account as expected). Tools available: upload_document, create_template, send_invite,
+create_embedded_invite/editor/sending, get_invite_status, get_signing_link, etc.
+Next: draft + upload the non-circumvention agreement as a reusable SignNow template, then
+send_invite to Tier-1 builders (Paramount, Zimmermann, Sekas, LUKA) before disclosing any address.
+
 ## E-SIGN — chosen + connect steps  (STATUS: awaiting Rich to connect at claude.ai)
 Recommended: **DocuSign** (title cos + builders trust it) — or SignNow/PandaDoc for cost.
 Claude CANNOT self-connect a connector (it's an OAuth login only Rich can do). Steps:
