@@ -13,8 +13,10 @@
 - At the end of any substantive session: log to `vault/sessions/YYYY-MM-DD.md`,
   update the project file, commit, push, **and mirror to Google Drive**.
 - If memory is missing, be upfront that it wasn't saved — don't bluff.
-- The container is ephemeral and HAS rolled back mid-session. Drive is the durable
-  safety net until GitHub write-access is on.
+- The container is ephemeral and HAS rolled back mid-session. **GitHub write access is now
+  ON (fixed 2026-08-25, verified with a real push)** — GitHub + Drive are both durable
+  stores. Keep pushing to `claude/income-notes-project-p3l7gm` (the only branch; no `main`
+  exists) AND mirroring to Drive — belt and suspenders, not either/or.
 
 ## Communication style
 - Direct and concise. Lead with the answer / what was done.

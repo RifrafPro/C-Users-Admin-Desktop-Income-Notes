@@ -1,36 +1,32 @@
-# TONIGHT — Turn on GitHub write access (≈5 min)
+# GitHub write access — ✅ RESOLVED 2026-08-25
 
-**Why:** Claude can *read* the repo but not *write* to it (push returns `403`).
-That's the only reason the vault doesn't auto-persist across sessions. Fix it once
-and memory becomes automatic. Everything is safe in Google Drive meanwhile.
+Rich installed/configured the Claude GitHub App (Configure screen → granted repo access).
+Verified live with a real push — not a guess:
 
-## PART A — Grant write access (~3 min)
-1. Go to **https://github.com/settings/installations**
-2. Find **Claude** (a.k.a. "Claude Code") → **Configure**.
-3. Under **Repository access**: include **`C-Users-Admin-Desktop-Income-Notes`**.
-4. Approve any **"Contents: Read and write"** permission prompt → **Save**.
-> If there's no "Claude" app, the connection was via the Claude Code web app —
-> open the repo/environment settings in claude.ai/code and switch this repo to
-> **read/write (push)**.
+```
+git push -u origin claude/income-notes-project-p3l7gm
+* [new branch]  claude/income-notes-project-p3l7gm -> claude/income-notes-project-p3l7gm
+```
 
-## PART B — Restore + push (~2 min)
-The whole vault (incl. `.claude/`) is in Drive "Income Notes Vault" as a full
-snapshot tarball. **Use the NEWEST `vault-bundle-*.tar.gz`** (latest as of this
-writing: **`vault-bundle-2026-08-06-2200.tar.gz`** — the complete, current repo).
-Paste to a fresh session:
+Local and remote now match exactly (confirmed via `git log` on both + `git status -sb`
+showing clean/up-to-date). **GitHub is now a real second durable store, alongside Drive.**
 
-> My GitHub repo **RifrafPro/C-Users-Admin-Desktop-Income-Notes** now has write
-> access. Restore my vault from my Google Drive folder **"Income Notes Vault"**:
-> extract the NEWEST `vault-bundle-*.tar.gz` at the repo root, commit, and **push
-> to the default branch (main)** so future sessions auto-load `CLAUDE.md` and the
-> `vault-load` hook. Then clean up the duplicate `.md` files + the empty second
-> "Income Notes Vault" folder in Drive. Confirm the push and give me the commit link.
+## Current repo state (facts, not assumptions)
+- Only branch that exists: **`claude/income-notes-project-p3l7gm`** — this repo has **no
+  `main` branch**. The "default_branch: main" shown in repo metadata is just a GitHub setting;
+  no commit has ever been made to it.
+- No pull request opened — there's no base branch to open one against, and this is a personal
+  vault (not a reviewed codebase), so a PR doesn't fit the workflow. We just push straight to
+  the working branch going forward.
 
-## PART C — Verify
-`CLAUDE.md` visible on the **main** branch at
-https://github.com/RifrafPro/C-Users-Admin-Desktop-Income-Notes → memory is now automatic.
+## What this unlocks
+- Real redundancy: GitHub + Drive both hold everything now.
+- Local Claude Code (once its login is sorted) can `git clone` this repo directly.
+- Files pushed here can be given to tools that need a public URL to fetch from (e.g. the
+  SignNow upload that was blocked on 2026-08-22/23) — host the file in this repo, hand SignNow
+  the raw.githubusercontent.com link.
 
-## Backup locations
-- Drive folder: **Income Notes Vault**
-  https://drive.google.com/drive/folders/1g0FkWKFXt6iEQUw5czlNM8FX2jIpR3uL
-- Key files also sent to your computer in chat.
+## Going forward
+- Keep committing + pushing to `claude/income-notes-project-p3l7gm` as normal — no bundle
+  restores or special recovery steps needed anymore.
+- Drive stays as the redundant mirror (still update it — belt and suspenders, not either/or).
