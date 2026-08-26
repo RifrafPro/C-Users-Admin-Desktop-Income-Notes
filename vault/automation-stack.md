@@ -137,5 +137,24 @@ agent's negotiation logic to pull each deal's live MAO from underwriting. See
 RESOLVED"), registering as Rich Fabiani individually. Business Type = Sole Proprietor,
 Industry = Real Estate, Regions = United States.
 
+**Twilio Sole Proprietor vs Standard Brand — verified 2026-08-26 (useful for later, e.g. when
+an LLC exists):**
+- The flow's first real question is effectively "Does this business have an EIN/business
+  registration number?" **Yes → Standard/Low-Volume Standard Brand** (needs a real EIN).
+  **No → Sole Proprietor Brand**, where your **SSN is the correct, expected identifier**
+  (that's literally the definition — someone who files taxes on their own SSN, not an EIN).
+- ⚠️ **Do NOT type an SSN into a field literally labeled "Business Registration Number"** —
+  that field is the Standard Brand's EIN slot. If a required "Business Registration Number"
+  field is showing with no EIN/no-EIN toggle beforehand, that's a signal of being routed into
+  Standard Brand, not Sole Proprietor — back out to the start of Messaging → Regulatory
+  Compliance → Brand Registration and explicitly pick Sole Proprietor / answer "No" to the
+  EIN question first.
+- **Future trigger:** once Rich forms an LLC and has a real EIN, this needs to be REDONE as a
+  Standard Brand (higher throughput, more carrier trust anyway). Twilio has a documented
+  **"Transition from a Sole Proprietor to a Standard Brand"** process for exactly this — real,
+  found via search, not yet read in full. Revisit at that point rather than now — not urgent.
+- **Status 2026-08-26:** paused mid-registration while Rich decides how to proceed on the
+  field above — Twilio number exists, neither path fully completed yet.
+
 ## Sources
 - Bland.ai (real estate voice agents); Vapi (outbound); Retell AI; CloudTalk/Lindy 2026 reviews.
