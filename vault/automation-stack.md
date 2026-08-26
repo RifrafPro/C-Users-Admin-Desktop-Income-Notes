@@ -132,5 +132,10 @@ agent's negotiation logic to pull each deal's live MAO from underwriting. See
 `vault/policies-ai-autonomy.md` for the exact authority the call agent has once this is live
 (full authority to verbally agree at/below MAO; PSA-sending still requires "send it").
 
+**Progress 2026-08-26:** Twilio number purchased. A2P 10DLC registration in progress —
+**Sole Proprietor path** (no LLC/EIN — confirmed same day, see `wholesaling.md` "Entity —
+RESOLVED"), registering as Rich Fabiani individually. Business Type = Sole Proprietor,
+Industry = Real Estate, Regions = United States.
+
 ## Sources
 - Bland.ai (real estate voice agents); Vapi (outbound); Retell AI; CloudTalk/Lindy 2026 reviews.

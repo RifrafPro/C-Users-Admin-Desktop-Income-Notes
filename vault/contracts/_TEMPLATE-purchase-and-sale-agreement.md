@@ -9,7 +9,7 @@
 Date") by and between:
 
 - **SELLER:** [[SELLER FULL LEGAL NAME(S)]], of [[SELLER ADDRESS]] ("Seller"); and
-- **BUYER:** **FRESH GROUND, LLC, a [[STATE]] limited liability company, and/or assigns**
+- **BUYER:** **Rich Fabiani, an individual, d/b/a FRESH GROUND, and/or assigns**
   ("Buyer").
 
 Seller and Buyer are each a "Party" and together the "Parties."
@@ -103,9 +103,9 @@ counterparts are valid and binding. Notices to the addresses below (email suffic
 Signature: ______________________________  Date: __________
 Print: [[SELLER NAME]]   ·   Phone: [[ ]]   ·   Email: [[ ]]
 
-**BUYER — FRESH GROUND, LLC**
+**BUYER — Rich Fabiani d/b/a FRESH GROUND**
 By: ______________________________  Date: __________
-Name/Title: [[Rich Fabiani, Manager]]   ·   Phone: [[ ]]   ·   Email: [[ ]]
+Name: [[Rich Fabiani]]   ·   Phone: [[ ]]   ·   Email: [[ ]]
 
 ---
 >> Attachments as needed: legal description (Exhibit A), lead-paint disclosure if pre-1978

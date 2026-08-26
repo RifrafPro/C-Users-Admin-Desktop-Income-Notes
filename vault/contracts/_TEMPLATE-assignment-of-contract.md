@@ -7,7 +7,7 @@
 
 **THIS ASSIGNMENT OF CONTRACT** ("Assignment") is made as of **[[DATE]]** by and between:
 
-- **ASSIGNOR:** **FRESH GROUND, LLC**, a [[STATE]] limited liability company ("Assignor"); and
+- **ASSIGNOR:** **Rich Fabiani, an individual, d/b/a FRESH GROUND** ("Assignor"); and
 - **ASSIGNEE:** [[BUILDER LEGAL NAME]], a [[STATE/entity type]] ("Assignee").
 
 ## Recitals
@@ -74,9 +74,9 @@ laws of the **[[STATE]]**. Electronic signatures and counterparts are valid and 
 
 ## SIGNATURES
 
-**ASSIGNOR — FRESH GROUND, LLC**
+**ASSIGNOR — Rich Fabiani d/b/a FRESH GROUND**
 By: ______________________________  Date: __________
-Name/Title: [[Rich Fabiani, Manager]]   ·   Phone/Email: [[ ]]
+Name: [[Rich Fabiani]]   ·   Phone/Email: [[ ]]
 
 **ASSIGNEE — [[BUILDER NAME]]**
 By: ______________________________  Date: __________

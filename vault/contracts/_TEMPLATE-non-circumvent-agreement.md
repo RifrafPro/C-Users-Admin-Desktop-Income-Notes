@@ -11,7 +11,7 @@
 This Non-Circumvention & Non-Disclosure Agreement ("Agreement") is entered into by and
 between:
 
-**Discloser:** FRESH GROUND, LLC ("FRESH GROUND"), [[ADDRESS]]
+**Discloser:** Rich Fabiani, an individual, d/b/a FRESH GROUND ("FRESH GROUND"), [[ADDRESS]]
 
 **Recipient:** [[BUILDER LEGAL NAME]] ("Recipient"), [[ADDRESS]]
 
@@ -64,7 +64,7 @@ between the Parties.
 
 ## Signatures
 
-**FRESH GROUND, LLC**
+**Rich Fabiani d/b/a FRESH GROUND**
 Signature: _____________________  Name: [[NAME]]  Date: _______
 
 **[[BUILDER LEGAL NAME]]**

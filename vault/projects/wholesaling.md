@@ -102,6 +102,12 @@ treasurer=tax, land records=liens); MLS assistant access (~$24–75/qtr).
 
 ## Lead source → see `lead-gen-ispeedtolead.md` (iSpeedToLead).
 
+## Entity — RESOLVED 2026-08-26 (Rich)
+**No LLC.** Rich operates as an individual — **"Rich Fabiani, an individual, d/b/a FRESH
+GROUND."** All contracts updated to reflect this (see `vault/contracts/README.md`). No
+liability shield exists between Rich personally and the business until/unless an LLC is
+formed — flagged once, not re-litigated.
+
 ## Still to do / confirm
 - iSpeedToLead lead flow + Gmail-forward capture (in progress).
-- Current active deals / pipeline. Entity/LLC name.
+- Current active deals / pipeline.

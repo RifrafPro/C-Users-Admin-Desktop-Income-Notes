@@ -4,10 +4,17 @@ The two legal instruments the deal pipeline runs on. Both are **DRAFTS** — the
 disposition/contract agents fill them from a Deal Record, but **nothing sends or gets
 signed without Rich's explicit "send it."**
 
+## Entity: no LLC yet (confirmed 2026-08-26, Rich) — operating as an individual
+Rich has **no LLC**. All three documents name **"Rich Fabiani, an individual, d/b/a FRESH
+GROUND"** as the party — not a nonexistent LLC. **This means no liability shield** between
+Rich personally and the business until/unless an LLC is formed — flagged once, not
+re-litigated (same posture as the no-attorney-review decision).
+
 ## The three documents
 1. **`_TEMPLATE-purchase-and-sale-agreement.md`** — the front-end contract.
-   Seller → **FRESH GROUND, LLC** (as Buyer). Gets the teardown lot **under contract**
-   with the **assignable** language + short feasibility period that make wholesaling work.
+   Seller → **Rich Fabiani d/b/a FRESH GROUND** (as Buyer). Gets the teardown lot **under
+   contract** with the **assignable** language + short feasibility period that make
+   wholesaling work.
 2. **`_TEMPLATE-assignment-of-contract.md`** — the back-end contract.
    FRESH GROUND (**Assignor**) → builder (**Assignee**). Transfers the PSA rights for the
    **Assignment Fee** (your spread). This is what actually pays you.
@@ -24,7 +31,7 @@ Seller --PSA--> FRESH GROUND --Assignment ($fee)--> Builder --closes--> Seller g
 ```
 
 ## The 3 clauses that make the PSA assignable & safe for you
-- **Buyer line reads:** `FRESH GROUND, LLC, and/or assigns` ← the whole game.
+- **Buyer line reads:** `Rich Fabiani, an individual, d/b/a FRESH GROUND, and/or assigns` ← the whole game.
 - **Assignment clause:** Buyer may assign without further seller consent.
 - **Feasibility/inspection period:** your no-questions-asked exit + your window to bring
   builders through and lock an assignee before you're on the hook.
