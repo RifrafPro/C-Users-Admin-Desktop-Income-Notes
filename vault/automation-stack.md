@@ -17,6 +17,14 @@ Legend: 🔌 = native claude.ai connector (one-click, I can use its tools direct
   Integration: their API → I wrap it as an MCP tool (mcp-builder) so my agents trigger
   calls + read transcripts, OR bridge via Zapier.
 - ⚠️ Requires: an account + a phone number + A2P registration. Biggest lift of the four.
+- **Scripts drafted 2026-08-26** — ready for when the platform is live:
+  `vault/automation/seller-sms-opt-in.md` (the opt-in text + reply handling) and
+  `vault/automation/seller-call-negotiation-flow.md` (the negotiation call, built on
+  Scripts 04/05/06, bounded by the MAO carve-out in `policies-ai-autonomy.md`).
+- **Twilio setup guidance:** "What will I build?" → **Customer Support** (leads already
+  submitted an inquiry — existing relationship, not cold marketing; matters most at the
+  *later* A2P 10DLC campaign-registration step, use **Customer Care**). "How would you like
+  to build?" → **With code** (no-code builders can't wire to our underwriting/MAO logic).
 
 ## Hole 2 — E-SIGNATURE: send the contract, get it signed  ← EASIEST WIN
 - 🔌 Native connectors (connect once at claude.ai, then contract-prep sends + tracks):
