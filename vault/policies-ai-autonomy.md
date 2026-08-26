@@ -32,12 +32,18 @@ today. Nothing changes about what any agent can currently do — there is no voi
 connected, no phone number, no A2P registration, no opt-in text flow. Until all of that
 exists (see `automation-stack.md`), this carve-out has nothing to attach to.
 
-## Still open (Rich's call, not yet decided)
-- **Voice/SMS platform** — Bland.ai / Vapi / Retell AI / ElevenLabs Agents+Twilio. None
-  connected yet; needed before this carve-out can do anything.
-- **Title company** — existing relationship to use, or should Claude research options?
-- **Attorney review** of PSA / Assignment / NCND — hard gate before ANY real send/call, or
-  build & test the pipeline now and get review lined up before the first real send?
+## Decided (2026-08-26, Rich)
+- **Voice/SMS platform: ElevenLabs Agents + Twilio.** ElevenLabs Agents already enabled as a
+  skill on this account (no new signup); Twilio number + A2P 10DLC registration still needed
+  before any real call/text can go out. See `automation-stack.md` Hole 1 for build status.
+- **Title company: more research needed.** Rich has no existing relationship to default to —
+  Claude is researching real options (see `automation-stack.md` for findings). Nothing gets
+  contacted without Rich's explicit "send it," same as any other real-person outreach.
+- **Attorney review: NOT required at this point.** Rich's explicit call — no hard gate.
+  ⚠️ Honest flag, stated once: PSA / Assignment / NCND remain attorney-*unreviewed* drafts;
+  proceeding without that review is a real legal-exposure tradeoff Rich has knowingly accepted
+  to move faster. Not re-litigating this — it's his call, logged so it's not silently assumed.
 
 ## Log
 - 2026-08-26 — Carve-out #1 (seller negotiation, full authority within MAO) decided.
+- 2026-08-26 — Platform = ElevenLabs+Twilio; attorney review not required; title co. research in progress.

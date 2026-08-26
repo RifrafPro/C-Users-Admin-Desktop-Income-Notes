@@ -98,5 +98,31 @@ signature → watch status → notify Rich when signed.
    or ElevenLabs Agents + Twilio number if you want custom.
 3. **I build** the MCP wrappers (mcp-builder) so my agents drive them directly.
 
+## TITLE COMPANY — research started 2026-08-26 (Rich: "more research needed", nothing contacted)
+Candidates found via web search (snippets only — direct site fetch blocked by network egress,
+NOT independently verified beyond what's below):
+- **Eastern Title** (easterntitle.com/virginia/arlington/investors) — dedicated Arlington
+  investor page; explicitly markets wholesale assignments, double closings, distressed
+  properties/clouded titles, same-day/next-day closings for assignment contracts. Strongest
+  fit on paper.
+- **District Title** (districttitle.com) — has a blog post specifically on VA/MD wholesale
+  transactions; suggests real experience with our exact deal structure.
+- **Federal Title** (Arlington office, 20+ yrs) — general practice, not investor-specific.
+- **Northern VA Title & Escrow** — positive reviews from McLean closings, general practice.
+- ⚠️ VA-specific legal fact surfaced: simultaneous "dry" double-closings (funding the first
+  close with the END BUYER's money) are treated as illegal in Virginia. Our model uses
+  ASSIGNMENT (not double-close) as primary method, which sidesteps this — relevant only if a
+  deal ever forces a double-close instead.
+- Next step (when Rich is ready): call/email 1-2 of these to confirm they work with new
+  wholesalers, ask their process + fees — still requires Rich's explicit "send it" per standing rule.
+
+## VOICE PLATFORM — DECIDED 2026-08-26: ElevenLabs Agents + Twilio
+Already enabled as a skill on this account (no new signup for ElevenLabs). Still needed before
+any real call/text: Twilio phone number provisioned, A2P 10DLC registration (federal SMS
+compliance, required regardless of platform), the SMS opt-in script, and wiring the call
+agent's negotiation logic to pull each deal's live MAO from underwriting. See
+`vault/policies-ai-autonomy.md` for the exact authority the call agent has once this is live
+(full authority to verbally agree at/below MAO; PSA-sending still requires "send it").
+
 ## Sources
 - Bland.ai (real estate voice agents); Vapi (outbound); Retell AI; CloudTalk/Lindy 2026 reviews.
