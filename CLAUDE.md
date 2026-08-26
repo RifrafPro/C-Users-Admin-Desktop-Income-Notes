@@ -32,6 +32,7 @@ So keep it current.
 - `vault/projects/lead-gen-ispeedtolead.md` — lead flow + 3 markets
 - `vault/buyers.md` — builder buyer database (disposition side)
 - `vault/automation-stack.md` — tools to fill the voice/e-sign/SMS/CRM holes
+- `vault/policies-ai-autonomy.md` — exact carve-outs to the "never send without Rich's OK" rule
 - `vault/deals/` — one Deal Record per property (`_TEMPLATE.md` is the shape)
 - `vault/contracts/` — PSA + Assignment of Contract templates (read its `README.md` first)
 - `vault/projects/income-notes*.md` — note investing + glossary
@@ -44,8 +45,12 @@ Six agents run the pipeline. Invoke **deal-orchestrator** with a lead/address to
 whole deal; it chains: lead-intake → underwriter → buyer-matcher → seller-negotiator →
 disposition (→ contract). **Hard rule:** agents research/compute/DRAFT autonomously, but
 NEVER send a contract/offer/blast or place a call/text to a real person without Rich's
-explicit "send it" (legal signature + TCPA/A2P). See `vault/automation-stack.md` for the
-external tools (e-sign, voice, SMS) that turn drafts into sends.
+explicit "send it" (legal signature + TCPA/A2P).
+**One carve-out exists** (seller negotiation calls, once the voice pipeline is actually
+built — full authority to verbally agree at/below MAO, no approval needed for that step;
+PSA-signing still requires "send it") — see `vault/policies-ai-autonomy.md` for the exact
+boundary. See `vault/automation-stack.md` for the external tools (e-sign, voice, SMS) that
+turn drafts into sends.
 
 ## The memory system
 - **Session start:** the `.claude/hooks/vault-load.sh` SessionStart hook prints
