@@ -7,16 +7,17 @@ add builders, log which ones bought, track their box.
 > ✅ = direct email confirmed · 📞 = phone/contact-form only (email to confirm on first call).
 
 ## TIER 1 — core-market teardown buyers (McLean · Arlington · Falls Church)
+> ✔️ = re-verified live via Firecrawl 2026-08-26 (actual page content, not a search snippet)
 | Builder | Phone | Email / Contact | Territory | Fit notes |
 |---|---|---|---|---|
-| **Paramount Construction** ⭐ | 301-370-6463 | ✅ info@paramountconstruction.net | Bethesda, Chevy Chase, Potomac, McLean, Arlington, Falls Church, Vienna, NW DC | START HERE — widest territory; buys teardowns **off-market**, largest Arlington teardown-lot list |
-| **Zimmermann Homes** | 203-313-9697 | ✅ **Rob@ZimmermannHomes.com** (Rob Zimmermann, owner) | McLean, Falls Church, N. Arlington | Exact overlap w/ our 3 core markets; **has in-house Realtor sourcing off-market lots** |
-| **Classic Cottages** | 703-256-1400 | 📞 ccottages.com/contact | Alexandria, Arlington, Falls Church, Great Falls, McLean, Vienna | In-house land acquisition + demolition; full core-market coverage |
-| **Paradigm Homes / Paradigm Building Group** | 703-476-5877 | 📞 paradigmhomes.com | Arlington, Falls Church, McLean | **Explicitly teardown-and-rebuild focused** — strong fit |
-| **Botero Homes** | 202-515-0020 | ✅ **Ihab@boterohomes.com** (Ihab, CEO) | McLean + NoVA (Reston HQ) | Luxury custom since 1998 |
-| **BeaconCrest Homes** | — | 📞 beaconcresthomes.com/contact (email pattern {f}{last}@beaconcresthomes.com) | McLean | McLean luxury new construction |
-| **Whitestone Custom Homes** | — | 📞 whitestonecustomhomes.com | Arlington, McLean, Falls Church | Family-owned; all 3 core markets |
-| **Arlington Designer Homes** | — | 📞 arlingtondesignerhomes.com | Arlington + NoVA | ~70 homes built; **specializes in difficult in-fill lots** |
+| **Paramount Construction** ⭐ | 301-370-6463 | ✅ info@paramountconstruction.net | Bethesda, Chevy Chase, Potomac, McLean, Arlington, Falls Church, Vienna, NW DC | START HERE — widest territory; buys teardowns **off-market**, largest Arlington teardown-lot list · ⚠️ not yet re-verified (Firecrawl rate-limited mid-run) |
+| **Zimmermann Homes** | ⚠️ 203-313-9697 (UNVERIFIED — CT area code, flagged suspicious; contact-us page 404'd on re-check, could not confirm or refute) | ✅ **Rob@ZimmermannHomes.com** (Rob Zimmermann, owner) | McLean, Falls Church, N. Arlington | Exact overlap w/ our 3 core markets; **has in-house Realtor sourcing off-market lots** — **verify phone before calling** |
+| **Classic Cottages** | ✔️ 703-256-1400 (confirmed) | 📞 ccottages.com/contact — no direct email found, form-only | Alexandria, Arlington, Falls Church, Great Falls, McLean, Vienna | In-house land acquisition + demolition; full core-market coverage · HQ: 433 E Monroe Ave, Alexandria VA 22301 |
+| **Paradigm Homes / Paradigm Building Group** | ✔️ 703-476-5877 (confirmed) | ✅ **info@ParadigmHomes.com** (upgraded from form-only) | Arlington, Falls Church, McLean | **Explicitly teardown-and-rebuild focused** — strong fit · HQ: 12050 South Lakes Dr, Reston VA 20191 |
+| **Botero Homes** | ✔️ 202-515-0020 (confirmed) | ✅ **Ihab@boterohomes.com** (Ihab, CEO, confirmed) | McLean + NoVA (Reston HQ) | Luxury custom since 1998 · HQ: 11150 Sunset Hills Rd Ste 309, Reston VA 20190 |
+| **BeaconCrest Homes** | — | 📞 beaconcresthomes.com/contact (email pattern {f}{last}@beaconcresthomes.com) | McLean | McLean luxury new construction · ⚠️ not yet re-verified (Firecrawl rate-limited mid-run) |
+| **Whitestone Custom Homes** | ✔️ **703-244-2802** (NEW — fills prior gap) | 📞 whitestonecustomhomes.com/contact — no direct email found, form-only | Arlington, McLean, Falls Church | Family-owned; all 3 core markets |
+| **Arlington Designer Homes** | — (contact page redirected to homepage; no phone/email surfaced) | 📞 arlingtondesignerhomes.com | Arlington + NoVA | Family-owned 30+ yrs, ~90 homes built (was ~70) · **specializes in difficult in-fill lots** |
 
 ## TIER 2 — secondary markets / to-qualify
 | Builder | Phone | Email / Contact | Territory | Fit notes |
@@ -35,9 +36,13 @@ preferred sub-markets · assignment-fee tolerance · buy-direct vs assignment.
 (up to $350–550 all-in); 5,000–6,000 sqft build ≈ $1.5–2.4M; all-in $2.5–4.5M; **Langley HS
 cluster teardown lots $1.2–1.8M**. Vault default of $300/sqft is the LOW end — lean $325–375.
 
-## Missing / to get
-- First-call emails for the 📞 builders (Sekas, LUKA, Classic Cottages, Paradigm, BeaconCrest,
-  Whitestone, Arlington Designer, Gulick, Sorensen, Monarch) — grab on the intake call.
-- Phones for BeaconCrest, Whitestone, Arlington Designer, Gulick, Sorensen, Monarch.
-- Each builder's build-cost + margin so offers are exact, not default.
+## Missing / to get (updated 2026-08-26 after Firecrawl verify pass)
+- Still no direct email (form-only): Classic Cottages, Whitestone, Sekas, LUKA, BeaconCrest,
+  Arlington Designer, Gulick, Sorensen, Monarch — grab on the intake call.
+- Still no phone: BeaconCrest, Arlington Designer, Gulick, Sorensen, Monarch.
+- **Re-verify Paramount + BeaconCrest** — Firecrawl hit its free-tier rate limit mid-run before
+  reaching these two; not yet re-checked.
+- **Resolve the Zimmermann phone flag** — 203-313-9697 is a CT area code on a NoVA builder;
+  couldn't confirm or refute (contact-us page 404'd). Confirm on first real call.
+- Each builder's build-cost + margin so offers are exact, not default (Script 01 intake).
 - Log which builders actually buy + their confirmed box as deals close.
