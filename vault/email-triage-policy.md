@@ -10,6 +10,14 @@ want the highest-value mail included.
 **Auto-archive ONLY if it's pure junk** — not project-relevant AND not personally important.
 When in doubt, leave it alone and flag it. Never guess on an ambiguous one.
 
+## 🔒 RULE ZERO — check this FIRST, before any other classification (Rich, 2026-08-26)
+**Anything self-sent — From: or To: richfabiani@gmail.com or anthorahproperties@gmail.com,
+sent by Rich to himself/between his own accounts — is ALWAYS project-relevant and must NEVER
+be auto-archived, regardless of what the content looks like.** This is how Rich bookmarks
+tools, ideas, and research for FRESH GROUND (the whole backlog of IG/FB reel links, "7 skills
+part 1," etc. earlier this session are exactly this pattern). A self-sent email that superficially
+resembles marketing content is still protected — the self-send is the signal, not the content.
+
 ## Buckets
 1. **Project-relevant** (FRESH GROUND / Income Notes) — leads, builder/buyer replies, title
    company replies, iSpeedToLead, system emails from tools we use (Twilio, SignNow, GitHub,
