@@ -136,7 +136,17 @@ signature → watch status → notify Rich when signed.
 - Next step (when Rich is ready): call/email 1-2 of these to confirm they work with new
   wholesalers, ask their process + fees — still requires Rich's explicit "send it" per standing rule.
 
-## VOICE PLATFORM — DECIDED 2026-08-26: ElevenLabs Agents + Twilio
+## VOICE PLATFORM — ⚠️ UNDER RECONSIDERATION 2026-08-26 (not re-decided yet)
+Original decision below (ElevenLabs+Twilio) hit two walls same day: the Twilio Compliance
+Profile/Trust Hub flow ("doesn't work" — paused, see below) and cost concerns once Bland.ai's
+pricing came up. Real alternative found: **Retell AI** — no monthly subscription (pay-per-use
+only, ~$65/mo at 500 min, $2/mo per number), AND handles A2P/STIR-SHAKEN compliance for you
+(no Trust Hub navigation needed) — directly solves both problems. **Rich has not yet
+confirmed the switch** — do not treat Retell as decided until he says so explicitly. If
+confirmed: scripts (`seller-sms-opt-in.md`, `seller-call-negotiation-flow.md`) carry over
+unchanged since they're platform-agnostic logic.
+
+## VOICE PLATFORM — original decision 2026-08-26: ElevenLabs Agents + Twilio
 Already enabled as a skill on this account (no new signup for ElevenLabs). Still needed before
 any real call/text: Twilio phone number provisioned, A2P 10DLC registration (federal SMS
 compliance, required regardless of platform), the SMS opt-in script, and wiring the call
