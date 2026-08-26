@@ -37,12 +37,13 @@ resembles marketing content is still protected — the self-send is the signal, 
 4. **Ambiguous / unsure** — doesn't confidently fit 1–3. → **Leave in Inbox, label as
    `Needs-Review`, do nothing else.** Never guess into an action.
 
-## What "auto-archive" actually does
-- Apply the label `Auto-Archived-Junk` (for findability/audit trail)
-- Remove the `INBOX` label (Gmail's version of archiving — message still exists, searchable,
-  just out of the main Inbox view)
-- **Never**: mark as spam, trash, or delete. Junk classification here is about declutter, not
-  punishment — false positives must be cheap to recover from.
+## What junk-handling actually does — UPDATED 2026-08-26 (Rich: "delete the garbage")
+- Apply the label `Auto-Archived-Junk` (for audit trail, in case anything needs tracing back)
+- **Trash it** (Gmail Trash, not permanent delete — recoverable ~30 days if a classification
+  turns out wrong, then auto-purges). This replaces the original "just archive, never trash"
+  default — Rich wants actual junk gone, not just decluttered-but-lingering.
+- Still **never**: mark as spam (spam-marking trains filters and can affect deliverability from
+  senders Rich may still want mail from later) or permanently delete.
 
 ## What triage does NOT do
 - **Never send or reply to a real person automatically** — that stays under the standing rule
