@@ -35,6 +35,9 @@ So keep it current.
 - `vault/policies-ai-autonomy.md` — exact carve-outs to the "never send without Rich's OK" rule
 - `vault/deals/` — one Deal Record per property (`_TEMPLATE.md` is the shape)
 - `vault/contracts/` — PSA + Assignment of Contract templates (read its `README.md` first)
+- `vault/research/` — Rich's self-sent research, sorted by topic (deal tools, lead gen,
+  buyers, scripts, voice AI, ⚠️ caution categories); chronological catalog in
+  `vault/research-email-findings.md`
 - `vault/projects/income-notes*.md` — note investing + glossary
 - `vault/projects/income-notes-business-workflow.md` — note pipeline
 - `vault/sessions/` — dated logs = "where we left off"
