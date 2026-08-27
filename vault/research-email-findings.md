@@ -12,7 +12,7 @@ Legend: 🟢 = act on it · 🟡 = maybe/later · 🔴 = skip (with reason) · �
 
 | Date | Subject | What it is | Verdict |
 |---|---|---|---|
-| 08-24 | **Free api key for property wholesalers** | **Repliers.com** — free MLS data API for wholesalers | 🟢 **BEST FIND — fixes our #1 weakness (comps).** Sign up, get key |
+| 08-24 | **Free api key for property wholesalers** | **Repliers.com** — MLS data API. ⚠️ REALITY CHECK (verified 2026-08-26): "free" tier = SAMPLE data only (no credit card, indefinite); real live-MLS access starts **$199/mo** (no contract, monthly). Still the best comps-fix candidate — one API, normalized MLS data | 🟡 Downgraded from 🟢: free tier can't underwrite real deals. Revisit at first deal or when $199/mo pencils; sign up free now to test the API shape |
 | 08-24 | Clarify Your Brain | Claude-powered life-organization system, free | 🟡 Personal productivity, not FRESH GROUND-critical |
 | 08-26 | The Zero Percent (thezeropercent.net) | "Trust law / zero taxes / debt discharge" education (Du'Vaul Dey book funnel) | 🔴 **CAUTION — sovereign-citizen-style tax/trust theories. High legal risk; not a business tool. Recommend skip** |
 | 08-26 | Distressed property acquisition (dpasummit.com) | Logan Fullmer's DPA Summit — free book funnel ($11.77 ship); buying distressed property at 20-50¢/$ by solving probate/title problems; $50M+ track record | 🟡 Legit-looking educational content, adjacent to our probate/inherited-seller scripts. Free book = cheap intel if interested; the summit/event is an upsell |
