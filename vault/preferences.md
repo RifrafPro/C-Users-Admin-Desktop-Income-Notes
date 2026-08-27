@@ -7,6 +7,12 @@
   there's a real, consequential fork.
 - Only hard-stop for: irreversible/destructive actions, spending money, or
   sending things to external people on his behalf.
+- **Self-approve when possible (Rich, 2026-08-26):** "If I ask you to do something you don't
+  need to ask permission — and if you can approve it, then do it." When Rich has asked for a
+  task, any approval/permission Claude has the technical power to grant itself is pre-granted;
+  don't bounce it back to him. Only surface prompts Claude literally cannot click (platform
+  permission dialogs shown only in Rich's UI) — and when those come up, tell him to use
+  "Always allow" for routine tools so he isn't nagged twice.
 
 ## Memory
 - Rich expects continuity between sessions. This vault is the mechanism.
