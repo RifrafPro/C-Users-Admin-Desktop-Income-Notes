@@ -35,6 +35,29 @@ Legend: 🟢 = act on it · 🟡 = maybe/later · 🔴 = skip (with reason) · �
 | 08-21 | Airbyte multipurpose | airbyte.com — open-source data-integration/ELT platform | 🟡 Real tool, but overkill at our scale; revisit if we ever need data pipelines |
 | 08-21/22 | Free land flipping guide · Find potential re deal w AI · Find sellers COMPAREE · 24 Claude playbooks · AI work force · 17 free claude skills | IG/FB posts (image/carousel — need login to view) | ⏳ Can't view from cloud; revisit via /watch-capable or local session |
 
+## Evaluated (2026-08-14 → 08-19 batch — 50 threads; RE-heavy, best batch yet)
+
+| Date | Subject | What it is | Verdict |
+|---|---|---|---|
+| 08-19 | **Buyer first model on skool** | skool.com/aiautomatedwholesaling — community teaching THE buyer-first AI wholesaling model (our exact strategy) | 🟢 **Check it out — direct playbook overlap; could validate/sharpen our pipeline** |
+| 08-18 | **Reidy.ai** | "Find, Analyze & Finance Any Property in 60 Seconds" — AI deal-analysis app | 🟢 Evaluate — potential research-agent shortcut for underwriting |
+| 08-18 | **Abouttosell.com** | Pre-listing seller-lead prediction (owners about to sell) | 🟢 Evaluate — off-market seller leads is our acquisition side |
+| 08-18 | InvestorSignalAI | investorsignalai.com — "AI Real Estate Deal Advisor" | 🟡 Same category as Reidy; compare if Reidy disappoints |
+| 08-15 | **Builders looking for vacant land** (FB post) | Content on finding builders who need lots | 🟢 Buyer-sourcing intel — exactly our disposition side (post needs login to view) |
+| 08-15 | **Voice ai with phone numbers you can actually call** (IG reel) | Voice-AI platform demo | 🟢 Watch when /watch works — directly feeds the voice-pipeline decision (Retell vs ElevenLabs) |
+| 08-17 | 7th level sales scripts | nepqtraining.com — Jeremy Miner's NEPQ question-based selling | 🟡 Legit sales methodology; useful for seller-call scripts someday |
+| 08-18 | Investor Machine wholesalers guide | investormachine.com — lead-gen service funnel | 🟡 Funnel; their guide may have list-stacking tactics |
+| 08-18 | Flippingmastery AI Flipper | Jerry Norton funnel | 🟡 Known guru funnel |
+| 08-17 | Property pro stack | propertypronetwork.com | 🟡 Funnel |
+| 08-16 | AI Real estate closer | aidreamteam.io | 🟡 AI closer SaaS funnel |
+| 08-16 | Another wholesale strategy | thewholesalelaunchpad.com | 🟡 Funnel |
+| 08-19 | Wholesale Sales Academy masterclass | webinar funnel | 🟡 Funnel |
+| 08-17/18 | Perfect Meeting Cadence / 8-figure RE playbook | ramprei.com (sent 2x) | 🟡 Team-ops playbook; premature solo |
+| 08-17 | Jarvis for 3 platforms $31.99 | heyhenry.ai one-time-fee assistant | 🟡 We already have a better Jarvis (this vault) |
+| 08-16 | Clarity for you AI | seltlox.com | 🟡 Unclear product; skip |
+| 08-15 | Land closers blueprint $9.95 · Land flippers · Free deal calculator | small funnels/IG posts | 🟡 Cheap; land-flip angle parallels our lot focus |
+| 08-14 | Automated crypto trader | IG reel | 🔴 Off-topic for FRESH GROUND |
+
 ## 📹 Video reels — need /watch (queued, blocked: watch-skill scripts missing in container)
 IG/FB reels can't be evaluated from links alone. Queue (newest first):
 - 08-26 "Better scraping tools" — instagram.com/reel/Dcd4ag1PHIx ← was mid-attempt when blocked
@@ -94,9 +117,19 @@ Added from 08-21→08-23 batch (Claude/AI-tooling heavy — several likely overl
 ⚠️ Note: IG/FB frequently require login for video downloads — even with /watch working, some
 reels may be unwatchable from the cloud container. Test on one before promising the batch.
 
+Top reels added from 08-14→08-19 batch (Claude-tooling ones omitted — mostly duplicative):
+- 08-15 "Voice ai with phone numbers you can actually call" — instagram.com/reel/DaseGS6O17s ★
+- 08-15 "Claude real estate agency" — instagram.com/p/DcCwYumFHuJ ★
+- 08-19 "Train your agents in 23min" — facebook.com/reel/1046833931288826
+- 08-19 "Agents that improve" — instagram.com/p/DcNYMnqjqku · "Full automation" — instagram.com/p/DcJLRbGDzu4
+- 08-17 "10 github repos" — instagram.com/p/DcHOn4XDUwn · "Revisit claude and obsidian" — instagram.com/p/DcE8RxknDee
+- 08-15 "Build context aware agents" — instagram.com/p/DbJfVUSAvis · "Self improving agent" — instagram.com/reel/DcC2H65x8MH
+- 08-15 "Free deal calculator" — instagram.com/p/DY7nb4XjJsT
+
 ## Remaining backlog
-~125 older self-sent threads not yet cataloged (passes so far cover 08-21 → 08-26, 75 threads).
-Next pass: `from:richfabiani@gmail.com to:richfabiani@gmail.com before:2026/08/21`.
+~75 older self-sent threads not yet cataloged (passes so far cover 08-14 → 08-26, 125 threads).
+Next pass: `from:richfabiani@gmail.com to:richfabiani@gmail.com before:2026/08/15` (page past
+the 08-14 crypto-trader thread).
 Pattern so far: the substance clusters into (a) Claude/AI tooling reels — mostly duplicative of
 what we've already built, (b) RE-investing funnels, (c) a few real tools (Repliers, Airbyte,
 8020CRM). The reels are the big unknown — need /watch.
