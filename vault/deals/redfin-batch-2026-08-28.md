@@ -106,3 +106,47 @@ land budgets are higher than our model assumed → raises every MAO. Use in buy-
    McLean undisclosed; any Land Insights scores on the batch
 3. [buyer-matcher] Fold $2.5M finished-lot comps into Script 01 call prep (T1)
 4. Blocked on T1 buy-boxes for exact MAOs — this batch is the demo case for why T1 is urgent
+
+---
+
+# DESKTOP RECON (added 2026-08-28, Inbox Job 002 — partial)
+
+Scraped via Redfin/Zillow fallback; **Chrome extension was not connected**, so no Land Insights data and
+**no Fairfax GIS work was done** (GIS parcel viewer is an interactive map app — it needs the live browser).
+The GIS-dependent questions below are explicitly still open.
+
+## 1. Old Chesterbrook Rd, McLean 22101 — $249,888 · 2.04 ac
+- **MLS:** VAFX2336426 · **Listing agent:** Mark McConnell, **eXp Realty LLC, 703-425-3582**
+- **Full address:** still listed only as "Old Chesterbrook Rd" (no house number assigned — it is raw land).
+  The listing gives a GPS reference: **use adjacent address 6584 Old Chesterbrook Dr, McLean VA 22101**.
+  Agent also asks that no one visit before 8am or after sunset, out of respect for neighbours.
+- ⚠️ **Correction to the A-2 entry above: zoning is R-4, not R-1.**
+- ⚠️ **Correction to "stale": this is a BRAND NEW listing — listed Aug 26, 2026, 1 day on market.**
+  The only prior history is a Feb 1997 listing that was delisted Apr 1997. So there is **no price-cut
+  motivation here at all yet** — the cheap price reflects the RPA problem, not a tired seller.
+- **Price history:** Aug 26 2026 Listed $249,888 · Feb 12 1997 Listed · Apr 4 1997 Delisted. No recorded sale.
+- Listing language confirms the risk in the agent's own words: buyer should understand "the process and
+  potential requirements for working with Fairfax County to pursue an **RPA exception**, as well as the
+  presence and implications of **storm-drainage easements**." No representations made on buildability.
+- **STILL OPEN (needs the browser + county records):** parcel ID · owner name · assessed value ·
+  RPA overlay coverage full-vs-partial · **and the PLAT DATE — pre- or post-Nov 18 2003.** That plat date
+  still decides the whole deal and nothing found this session answers it.
+
+## 2. 0 Linway Ter, McLean 22101 (VAFX2298224) — $999,999 · 0.99 ac · R-1
+- **Listing agent:** Michelle Doherty, **RLAH @properties, 703-390-9460**
+- **Full price history:** Coming Soon $1,200,000 (Mar 28 2026) → **Listed $1,200,000 (Mar 31 2026)** →
+  **Contingent (Apr 29 2026)** → **Relisted $1,100,000 (Jun 5 2026)** → **$999,999 (Aug 10 2026)**.
+- **The headline: it went under contract on Apr 29 and the deal died** — it came back on the market Jun 5
+  with a $100K cut, then cut again in August. 114 DOM. That is a seller who has now been told "no" twice.
+- **STILL OPEN:** owner name · tax assessment · any prior expired listings before Mar 2026 (Redfin shows
+  none, but Redfin history is thin pre-2026) — all need county records / the live browser.
+
+## 3. The "undisclosed West McLean" $1,925,000 listing — NOT RESOLVED
+The address is **suppressed at the MLS level** on both Redfin and Zillow, so it cannot be scraped.
+What was recovered: it is **one of three** undisclosed-address parcels in West McLean 22102, all sharing
+the broker line **(703) 564-4000** — almost certainly one seller / one small subdivision:
+- **$1,925,000 · 0.96 ac** — redfin.com/VA/West-McLean/Undisclosed-address-22102/home/195068680
+- $2,000,000 · 1.21 ac — .../home/195068796
+- $1,850,000 · 0.83 ac — .../home/195068795
+
+**To get the address:** call 703-564-4000 and ask, or match by acreage in Fairfax GIS within 22102.
