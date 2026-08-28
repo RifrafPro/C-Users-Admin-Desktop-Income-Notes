@@ -15,3 +15,5 @@
 | Rehab estimator (IG post) | Rehab cost est. | Free | ⏳ login-gated |
 
 Current vault approach: WebSearch comps (LOW confidence) → this category is our #1 upgrade path.
+Interim upgrade ADOPTED (Fullmer, free): county assessment + Redfin/Zillow SOLD comps, average,
+chop for safety, as-is only — see ../guides/distressed-property-secrets-logan-fullmer.md.

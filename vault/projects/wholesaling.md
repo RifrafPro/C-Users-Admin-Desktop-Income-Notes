@@ -102,6 +102,37 @@ treasurer=tax, land records=liens); MLS assistant access (~$24–75/qtr).
 
 ## Lead source → see `lead-gen-ispeedtolead.md` (iSpeedToLead).
 
+## Fullmer adoptions (from *Distressed Property Secrets* — full extraction in
+## `vault/research/guides/distressed-property-secrets-logan-fullmer.md`) — added 2026-08-27
+1. **Lead channel #1 (FREE): county delinquent property tax lists.** Public record from the
+   tax assessor. Filter: **2–3+ years delinquent** (year one = denial; year 2-3 = ready to
+   deal), plus older owners, long tenure, out-of-state, high balance. Cross-reference hits
+   against confirmed builder buy-boxes → these are our motivated teardown-lot sellers.
+   Our counties: Fairfax County VA, Arlington County VA, Falls Church City (+ Montgomery
+   County MD when we expand). ~30 well-filtered leads ≈ 1 deal.
+2. **Option contract FIRST on messy/uncertain deals:** $100 option (10–60 days + short close)
+   = control without commitment while we verify title/owners. Clean deals go straight to PSA.
+   (Options also solve "no money": control the asset for pennies; good deals find money.)
+3. **Pre-offer title recon (20 min, free):** county land records — deed history, liens/
+   judgments/unreleased mortgages, probate clues (deceased owner? no probate filed?),
+   docket search. Ask the seller the questions but VERIFY everything. Red flags: bankruptcy,
+   stacked liens, dead owner w/o probate, active lawsuits, old seller-finance notes.
+4. **Desktop valuation protocol (as-is, pessimistic):** county assessment + Redfin/Zillow
+   SOLD comps only → average → chop for safety. For our LAND play the equivalent is: builder's
+   confirmed land budget (buy-box) is the exit; tax-assessed land value + recent lot sales =
+   the sanity check. "ARV is a dirty word" for the land play — as-is/lot value only.
+5. **Seller-call upgrades** (merged into scripts): low-and-calm cold opener ("…wasn't sure
+   if you still owned it or if I even have the right person"); the magic question **"Why
+   haven't y'all sold it before now?"**; the honest-lowball frame ("I won't be your highest
+   offer — I'm the one who can actually close"); diagnose their title problem TO them;
+   under-promise timelines then over-deliver; seller talks 70%.
+6. **Feuding-heirs protocol:** work each heir in a SILO — separate confidential contract per
+   interest; never force the family into one room. "Don't punish me for your family's deeds."
+7. **Defer payoffs to closing:** back taxes/liens can be paid at disposition from the end
+   buyer's funds — cuts our cash-in on tax-delinquent lots.
+8. **Exit stays OURS:** Fullmer sells on MLS because he has no pre-sold buyer. We DO
+   (buyer-first) — keep assigning to matched builders; MLS is the fallback if no builder bites.
+
 ## Entity — RESOLVED 2026-08-26 (Rich)
 **No LLC.** Rich operates as an individual — **"Rich Fabiani, an individual, d/b/a FRESH
 GROUND."** All contracts updated to reflect this (see `vault/contracts/README.md`). No

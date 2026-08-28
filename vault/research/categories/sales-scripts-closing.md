@@ -5,6 +5,7 @@ UPS Store #1132 on 07-23 — store contacts: upsstore1132@gmail.com / store1132@
 
 | Item | What | Verdict |
 |---|---|---|
+| **Distressed Property Secrets (Fullmer book)** | Full seller-conversation + option-contract playbook — extracted to ../guides/ | 🟢 **ADOPTED into scripts + wholesaling.md** |
 | **Free-Real-Estate-Negotiation-Playbook.pdf** (cdn.carrot.com) | Direct PDF from Carrot | 🟢 fetch + mine for negotiation-flow ideas |
 | **NEPQ / 7th Level** (Jeremy Miner) | Question-based selling methodology (real, well-known) | 🟡 best "legit" item in this category |
 | King Closer (titaniumu.com — FIVE sends!) | Closing course; free-download + $27 versions exist | 🟡 Rich clearly drawn to it — try the FREE download first |

@@ -2,6 +2,7 @@
 
 | Source | What | Verdict |
 |---|---|---|
+| **County delinquent tax lists** (Fullmer method) | FREE public records; filter 2-3+ yrs delinquent + long tenure/out-of-state → ~30 leads/deal | 🟢 **ADOPTED — lead channel #1** (see wholesaling.md Fullmer adoptions) |
 | **Abouttosell.com** | Predicts owners about to sell (pre-listing leads) | 🟢 Evaluate — matches our acquisition side |
 | **iSpeedToLead** | Already in use — see vault/projects/lead-gen-ispeedtolead.md | 🟢 live |
 | speedtoseller.com | SMS text-blasting for sellers | 🟡 ⚠️ TCPA risk — our opt-in flow is the compliant path; never blast |
