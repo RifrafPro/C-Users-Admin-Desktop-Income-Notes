@@ -7,7 +7,7 @@
 | **Reidy.ai** | "Find, analyze & finance any property in 60s" | TBD | 🟢 Evaluate first in analyzer bake-off |
 | **Serava** (serava.com) | Property analyzer | TBD | 🟡 Bake-off candidate #2 |
 | **InvestorSignalAI** | AI deal advisor | TBD | 🟡 Bake-off candidate #3 |
-| **Land Insights** (landinsights.co) | Land comps chrome extension + skip trace | TBD | 🟢 3 sends = recurring interest; compare vs PRYCD |
+| **Land Insights** (landinsights.co) | ✅ **INSTALLED by Rich 2026-08-28** (chrome ext, his browser). Overlays $/acre + $/sqft on Redfin/Zillow/Land.com sold+active, Market Score, land filters. **Lite = FREE**; owner exports $0.10/record; **skip trace $0.02-0.06/owner** (premium adds age+emails) | Free + per-use | 🟢 **ADOPTED — official skip-trace + land-comps tool** (wired into S2/S5) |
 | **propertychecker.com** | Property data lookup | TBD | 🟡 |
 | **Deal Machine** | Driving-for-dollars + skip trace | ~$59+/mo | 🟢 Rich asked "see if this would be a good idea" — evaluate |
 | Flipping Mastery "data cruncher" | Deal calc | Funnel | 🟡 |

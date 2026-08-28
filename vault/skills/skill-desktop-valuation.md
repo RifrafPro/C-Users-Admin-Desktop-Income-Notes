@@ -9,7 +9,9 @@ the delta is the safety margin.
    Developer max lot $ = finished value − build cost (sqft × $/sqft, lean $325-375 McLean)
    − soft/carry (~10%) − builder profit (~15-20%).
 2. Sanity checks: county land assessment · recent SOLD lot/teardown comps (Redfin/Zillow,
-   closed only) · Langley-cluster band $1.2-1.8M where relevant.
+   closed only — **Rich's Land Insights extension overlays $/acre + $/sqft + Market Score
+   directly on these sites**; ask Rich for a screenshot/export when precision matters) ·
+   Langley-cluster band $1.2-1.8M where relevant.
 3. **MAO = builder's max lot price − our fee** (fee ~5% of lot price, $37-80K+).
 4. Subtract title-cure cost + delinquent taxes (S4) from what we offer the SELLER.
 

@@ -10,7 +10,7 @@ Skills live in `vault/skills/` (S1–S9). Every outbound send is gated by Rich's
 | T1 | Capture Paramount + Zimmermann buy-boxes (call sheets ready; Rich makes contact, agent logs) | buyer-matcher | S1 | — | PENDING |
 | T2 | Fill remaining Tier-1 buy-box gaps (Botero, Paradigm, Classic Cottages, BeaconCrest, Whitestone) | buyer-matcher | S1 | T1 | PENDING |
 | T3 | Pull + filter Fairfax/Arlington/Falls Church delinquent tax lists (≥2yr, tenure, absentee) | lead-intake | S2 | — (needs web/Firecrawl session) | PENDING |
-| T4 | Cross-ref tax parcels vs buy-boxes → skip trace → Deal Records | lead-intake | S2 | T1+T3 | PENDING |
+| T4 | Cross-ref tax parcels vs buy-boxes → skip trace (**Land Insights ext — Rich runs export**) → Deal Records | lead-intake | S2 | T1+T3 | PENDING |
 | T5 | Title recon + underwrite the batch → GO/NO-GO + MAO per deal | underwriter | S4+S5 | T4 | PENDING |
 | T6 | Draft offers + structures (option vs PSA, heir silos) for GO deals | seller-negotiator | S6+S7 | T5 | PENDING |
 | T7 | Blind teaser + NCND flow for first controlled deal (SignNow roles sub-task open) | disposition | S8 | T6 | PENDING |
