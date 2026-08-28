@@ -30,6 +30,13 @@
 - **No rabbit holes.** Before proposing a multi-step setup, check it's the shortest
   path to what Rich actually wants — and confirm the prerequisite/plan/cost FIRST
   (e.g., "what plan are you on?" before optimizing a bill). Diagnose before prescribing.
+- **SETUP CONTRACT (added 2026-08-28 after the local-install fiasco).** Before ANY
+  multi-step setup/install, Claude must state in ≤4 lines and get Rich's go-ahead:
+  (1) what it's FOR, (2) **what it will look like when done** (e.g., "a text-only
+  terminal window"), (3) realistic time cost, (4) the shortest alternative that
+  already exists. No green light → no steps. Violations of this ended a whole
+  evening on 08-28 that the business didn't need: the terminal UI was never going
+  to suit Rich, and his Chrome extension already covered most of the goal.
 
 ## Token / usage optimization (Rich on Claude PRO annual — flat $200/yr; goal = stretch limits, NOT lower a bill)
 Rich hits Claude USAGE LIMITS, not a dollar bill (Pro is flat-rate; using it more costs $0 extra).
