@@ -15,6 +15,7 @@ Skills live in `vault/skills/` (S1–S9). Every outbound send is gated by Rich's
 | T6 | Draft offers + structures (option vs PSA, heir silos) for GO deals | seller-negotiator | S6+S7 | T5 | PENDING |
 | T7 | Blind teaser + NCND flow for first controlled deal (SignNow roles sub-task open) | disposition | S8 | T6 | PENDING |
 | T8 | Eastern Title onboarding + escrow checklist (curative-work question) | deal-orchestrator | S9 | — parallel | PENDING |
+| **T11** | **Stale-listing sweep (100+ DOM, all types, multi-market) — desktop Claude gathers, cloud processes. PRIORITY per Rich 08-28: "low-hanging fruit first"** | desktop Claude + lead-intake | S10 | — READY NOW | PENDING |
 
 ## Infrastructure tasks (unblock automation)
 | # | Task | Owner | Status |
