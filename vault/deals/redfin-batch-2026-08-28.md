@@ -77,6 +77,20 @@ land budgets are higher than our model assumed → raises every MAO. Use in buy-
   run the ERC" — our fee for control+connection. Fullmer-style problem-lot economics.
 - **Kill criteria:** Fairfax GIS shows the ENTIRE lot in RPA/floodplain w/ no exception
   precedent nearby → walk.
+- **🔑 GAME-CHANGER (researched 2026-08-28, Fairfax LDS sources):** For lots that existed
+  BEFORE Nov 18, 2003 (ordinance date) whose buildable area was wiped out by RPA mapping,
+  Fairfax has a **"loss of buildable area" provision: up to 5,000 sqft of impervious area
+  + 10,000 sqft of disturbance IN the RPA (both exclusive of driveway/septic)** — a full
+  custom-home footprint. And an **ADMINISTRATIVE WAIVER (no public hearing) exists for new
+  homes on lots platted before Nov 18, 2003.** Process starts with an engineer-prepared
+  Water Quality Impact Assessment (WQIA). Virginia's Bay Act framework effectively requires
+  reasonable use of grandfathered lots (takings doctrine) — so pre-2003 platted lots have a
+  DEFINED PATHWAY, not a coin-flip hearing.
+  → **THE pivotal fact to verify: was this parcel platted before Nov 18, 2003?** (County
+  land records/plat book — desktop Claude GIS task.) If yes: market is pricing this like
+  it's unbuildable while the code provides a route → maximum Fullmer spread. Verify also:
+  no floodplain overlap (separate rules), septic/sewer situation, and confirm current
+  provision text with LDS (703-222-0801) + a local civil engineer before offering.
 
 ## Ask list for DESKTOP CLAUDE (Rich: paste this to it)
 1. Open the Redfin listings for the Old Chesterbrook 2.04ac and 0 Linway Ter — capture:
