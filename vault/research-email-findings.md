@@ -63,7 +63,7 @@ Legend: 🟢 = act on it · 🟡 = maybe/later · 🔴 = skip (with reason) · �
 | Date | Subject | What it is | Verdict |
 |---|---|---|---|
 | 08-12 | **API keys** | github.com/open-free-llm-api/awesome-freellm-apis — curated list of free LLM APIs (real repo) | 🟡 Useful reference if we ever need a free LLM endpoint |
-| 08-08 | **Plug-ins** (Google Doc) | docs.google.com/document/d/1MKXqHzTEXBUavsbLYoXINoixtm6jqKbco2DRCC2kkaA — a doc Rich saved | 🟢 READABLE via Drive connector — open and extract next session |
+| 08-08 | **Plug-ins** (Google Doc) | docs.google.com/document/d/1MKXqHzTEXBUavsbLYoXINoixtm6jqKbco2DRCC2kkaA — a doc Rich saved | 🟢 **DONE 2026-08-27** — it's "The 4 Plugs" MCP guide; saved to vault/research/guides/the-4-plugs-mcp-install.md |
 | 08-14 | Property Source | getpropertysource.com — "buyer platform" | 🟡 Disposition-side platform; evaluate vs InvestorLift/Deal Run picks |
 | 08-10 | REsimpli (+ 08-04, 08-07 sends) | Sent 3x — reinforces the REsimpli CRM decision from 08-08 session | 🟢 Already our pick; Rich clearly keeps seeing it — set it up when ready |
 | 08-11 | Text blasting cheat code | speedtoseller.com — SMS blast platform for seller outreach | 🟡 ⚠️ TCPA/A2P risk — our Twilio/Retell opt-in flow is the compliant path; don't blast |
@@ -190,8 +190,8 @@ Pattern (confirmed across all ~275): (a) wholesaling/land funnels, (b) Claude/AI
 sovereign-citizen-style debt/tax/trust cluster — flagged 🔴 every time.
 
 ## Top-priority follow-ups (the whole catalog boiled down)
-1. **07-25 big attachments (6 emails, 2.5–7MB)** — likely THE skills batch Rich mentioned; open next
-2. **Two readable Google Docs** — "Plug-ins" + "Agents AI" (Drive connector can read them)
+1. ~~07-25 big attachments~~ **SOLVED 2026-08-27** — personal photos (car pics), not skills; see categories/personal.md
+2. ~~Two readable Google Docs~~ **DONE 2026-08-27** — both extracted to vault/research/guides/
 3. **PRYCD** — ask Rich if he subscribed (payment page visited 08-07); land comps data
 4. **Skool "Buyer first model"** community + **luxblueprint** replay — our exact strategy/niche
 5. **Reidy.ai vs Serava vs InvestorSignalAI** — deal-analyzer bake-off (once Firecrawl works)
