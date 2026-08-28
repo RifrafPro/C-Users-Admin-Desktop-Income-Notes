@@ -55,6 +55,14 @@ PSA-signing still requires "send it") — see `vault/policies-ai-autonomy.md` fo
 boundary. See `vault/automation-stack.md` for the external tools (e-sign, voice, SMS) that
 turn drafts into sends.
 
+## 📥 STANDING ORDER — LOCAL/DESKTOP SESSIONS (added 2026-08-28)
+If you are running on Rich's PC (git --version shows ".windows."): at session start run
+`git pull`, then read **`vault/inbox-for-desktop.md`** and execute its OPEN jobs. Save
+results where each job says, mark jobs DONE, and ALWAYS `git add -A && git commit &&
+git push` when work finishes — an unpushed result does not exist. Cloud Claude queues
+the jobs; the vault carries everything between sessions. Rich should never have to
+re-explain context: if you are missing it, you skipped reading this vault.
+
 ## The memory system
 - **Session start:** the `.claude/hooks/vault-load.sh` SessionStart hook prints
   the latest session's "Where we left off" + active projects. Read it.
