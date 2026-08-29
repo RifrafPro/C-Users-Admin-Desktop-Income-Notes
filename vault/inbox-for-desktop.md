@@ -32,6 +32,20 @@ Open Rich's saved posts instagram.com/p/DbuSeZhgSzU and instagram.com/p/DaLPxiyg
 What is iCash X — product, price, relevance to real-estate wholesaling?
 → Append verdict to `vault/research/categories/deal-analysis-tools.md`, push.
 
+## ⬜ OPEN — Job 004: Multi-market motivated-seller sweep (PRIORITY — Rich 08-29)
+Read vault/deals/multi-market-brief-2026-08-29.md first. Then in Rich's browser, sweep
+Redfin/Zillow for THREE markets. Filters per market:
+- **Washington DC (District proper):** houses/rowhouses 90+ DOM OR price-cut ≥5%; keywords
+  as-is, estate, probate, fixer, TLC, cash, investor. Skip condos.
+- **South Florida (Miami-Dade, Broward, Palm Beach):** SINGLE-FAMILY ONLY (skip condos —
+  HOA/assessment landmines); 90+ DOM OR 2+ price cuts; same keywords.
+- **Phoenix metro (Phoenix, Mesa, Glendale, Scottsdale边 edges):** 60+ DOM OR 2+ price cuts;
+  same keywords + vacant land bonus.
+Cap ~15 best per market (most-motivated first: biggest cuts × longest DOM × distress keywords).
+Per hit: address, ask, original price, DOM, cut history, beds/sqft/lot, agent+phone, URL,
+Land Insights data where it shows.
+→ Write vault/deals/multi-market-sweep-2026-08-29.md, push.
+
 ---
 ## ✅ DONE
 (nothing yet)
