@@ -46,6 +46,17 @@ Per hit: address, ask, original price, DOM, cut history, beds/sqft/lot, agent+ph
 Land Insights data where it shows.
 → Write vault/deals/multi-market-sweep-2026-08-29.md, push.
 
+## ⬜ OPEN — Job 005: Olivia + hedge-fund reel cluster (context: vault/research/hedge-fund-buyer-strategy.md)
+Watch/read these 5 saved items in Rich's browser (logged into IG):
+1. instagram.com/reel/DcXZEmcCLQ0 ("Olivia wholesaler")
+2. instagram.com/reel/DcfSDzIiWGs ("Olivia AI wholesaler")
+3. instagram.com/reel/DW5SzppAhlg ("Top 10 cities for hedge fund buyers") — list the 10 cities
+4. instagram.com/p/DbinZdJDpO3 ("Step by step for hedge fund selling") — carousel, capture all steps
+5. instagram.com/reel/DbPhrjSTXfO ("Auctions to hedgefunds")
+Capture: who Olivia is (handle/name/what she sells), her exact strategy steps, whether it
+acknowledges the 2026 institutional pullback, any named funds/portals/tools.
+→ Append findings to vault/research/hedge-fund-buyer-strategy.md, push.
+
 ---
 ## ✅ DONE
 (nothing yet)
