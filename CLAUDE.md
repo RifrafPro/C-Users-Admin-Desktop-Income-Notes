@@ -25,6 +25,7 @@ So keep it current.
   mortgage-note investing ("Income Notes"). Lead-gen via **iSpeedToLead**.
 
 ## Where to look
+- **`vault/road-to-deal-one.md` — THE PLAN. Read first, every session.**
 - `vault/profile.md` — background, businesses, goals
 - `vault/preferences.md` — how Rich likes Claude to work
 - `vault/projects/wholesaling.md` — FRESH GROUND (CURRENT FOCUS)
