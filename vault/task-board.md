@@ -20,7 +20,7 @@ Skills live in `vault/skills/` (S1–S9). Every outbound send is gated by Rich's
 ## Infrastructure tasks (unblock automation)
 | # | Task | Owner | Status |
 |---|---|---|---|
-| T9 | Voice pipeline: Rich decides Retell vs ElevenLabs+Twilio → build → activates Carve-out #1 | Rich decide · Claude build | PENDING |
+| T9 | Voice pipeline: **PLIVO-FIRST plan (08-29)** — Rich: Twilio refund + Plivo sales call/demo (call sheet: vault/call-sheets/plivo-sales-call.md, dealbreaker Qs + ear-test). Pass → Claude builds negotiation agent (MAO ceiling, escalate rules, Rich-first test call). Fail → Retell trial same week. Activates Carve-out #1 | Rich call · Claude build | IN MOTION |
 | T10 | Multi-inbox bridge (anthorahproperties → richfabiani), runbook ready | Rich (~10 min browser) | PENDING |
 
 ## Critical path
