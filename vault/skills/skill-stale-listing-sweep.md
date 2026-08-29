@@ -11,6 +11,11 @@ discount screams. No price ceiling — only buyer fit (Rich's rule).
 2. Redfin/Zillow filters per market: (a) LAND listings any DOM 60+; (b) HOUSES with
    100+ DOM; (c) price-cut flag on; (d) keyword pass: as-is, TLC, estate, fixer,
    investor, teardown, "sold as is", cash.
+2b. **EXPIRED-LUXURY TIER (added 08-29, ex-Tyson Smith method):** in each market's premium
+   zips, flag listings that had long DOM + price cuts and then DISAPPEARED with no sold
+   event (Zillow price-history confirms). Expired = motivated seller, agent contract dead,
+   direct-to-owner outreach, no listing-agent friction. Track one zip repeatedly so
+   "disappeared" stands out. These outrank active stale listings.
 3. For each hit capture: address, ask, DOM, cuts (dates+amounts), lot size, zoning if
    shown, Land Insights overlay data, listing agent+phone, listing URL.
 4. Save to vault/deals/stale-sweep-YYYY-MM-DD.md → git add/commit/push.

@@ -57,6 +57,17 @@ Capture: who Olivia is (handle/name/what she sells), her exact strategy steps, w
 acknowledges the 2026 institutional pullback, any named funds/portals/tools.
 → Append findings to vault/research/hedge-fund-buyer-strategy.md, push.
 
+## ⬜ OPEN — Job 006: Tyson Smith free-content deep extraction (context: research/guides/luxury-wholesaling-tyson-smith-extracted.md)
+In Rich's browser (logged into YouTube/Skool):
+1. youtube.com/watch?v=VzFzHIef1FQ (11/10 Podcast ep39) + youtube.com/watch?v=OEvNVYrn0lQ
+   (free coaching call w/ Matthew Tooker) — watch/skim transcripts (YouTube "show transcript"),
+   capture every concrete tactic: deal sourcing, negotiation lines, EMD/double-close mechanics,
+   buyer-finding, named tools.
+2. Find Tyson's main YouTube channel + skool.com/@tyson-smith-3229 posts — list any other
+   free meaty content worth extracting.
+3. Do NOT sign up for anything, no email opt-ins, no purchases.
+→ Append findings to the guide file, push.
+
 ---
 ## ✅ DONE
 (nothing yet)
