@@ -39,7 +39,7 @@ Redfin/Zillow for THREE markets. Filters per market:
   as-is, estate, probate, fixer, TLC, cash, investor. Skip condos.
 - **South Florida (Miami-Dade, Broward, Palm Beach):** SINGLE-FAMILY ONLY (skip condos —
   HOA/assessment landmines); 90+ DOM OR 2+ price cuts; same keywords.
-- **Phoenix metro (Phoenix, Mesa, Glendale, Scottsdale边 edges):** 60+ DOM OR 2+ price cuts;
+- **Phoenix metro (Phoenix, Mesa, Glendale, Scottsdale edges):** 60+ DOM OR 2+ price cuts;
   same keywords + vacant land bonus.
 Cap ~15 best per market (most-motivated first: biggest cuts × longest DOM × distress keywords).
 Per hit: address, ask, original price, DOM, cut history, beds/sqft/lot, agent+phone, URL,
