@@ -22,7 +22,7 @@ Every outbound send is gated by Rich's "send it".
 | P4 | SignNow: NCND roles + upload PSA/Assignment templates | cloud Claude | parked |
 | P5 [new] | Pipeline #2: PHX/S.FL/DC processing as Job 004 results land | lead-intake | warm |
 | P6 [new] | Hedge-fund lane: Job 005 verdict → maybe fund buy-boxes | buyer-matcher | exploration |
-| P7 [new] | EMD readiness: option-first default; symbolic-EMD negotiation; EMD-funder shortlist; double-close via Eastern Title (gap found via Tyson extraction) | cloud Claude | research |
+| P7 [new] | EMD policy (Rich 08-29: NOT a blocker): off-market = $100 option/EMD default (Fullmer — we set norms); listed deals = negotiate to $1-2.5K or pass; start smaller & grow — first fee funds all future EMDs | policy set | ✅ RESOLVED |
 
 ## Rules reminder
 - Draft-only outbound; "send it" gates every send/call/text (Carve-out #1 pending P1).

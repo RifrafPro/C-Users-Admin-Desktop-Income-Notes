@@ -43,7 +43,7 @@ what we built: honest-lowball posture, big-fee teardowns, buyer-first.
 | **EMD Blueprint** | earnest money on lux contracts runs **$8-20K (~1%)**; OPM/EMD-funding tactics | ⚠️ REAL GAP — see below |
 | JV Portal (upper tiers) | they co-run your deals, POF letters, EMD funding | their real moat; maybe approach for dispo JV later, never for tuition |
 
-## ⚠️ The EMD gap this exposed in Road-to-Deal-One
+## The EMD question — RESOLVED (Rich 08-29): $100 works off-market (Fullmer norm, we set terms); listed deals negotiate down or pass; start smaller & grow. Tyson's $8-20K framing sells his own EMD-funding product. Original notes:
 A luxury PSA expects ~1% earnest money = **$8-20K cash** on a McLean-band lot. Mitigations
 (in order): (1) our OPTION-first structure ($100 option fee — Fullmer) wherever seller
 accepts; (2) negotiate symbolic EMD ($1-2.5K) with honest framing; (3) EMD lenders / JV
