@@ -17,6 +17,12 @@ So keep it current.
    mirror to Drive. Save state here — it's the only memory that survives.
 4. **Reconstruct, don't fabricate.** If the vault doesn't have something, say so.
 5. Rich's timezone/dates: use the current date provided at session start.
+6. **🔒 NEVER install anything without running the install-safety protocol.** Verify provenance via
+   `api.github.com/repos/<owner>/<name>` (check `fork` / `parent`), read the repo's `SECURITY*.md`,
+   inspect scripts before executing, install the minimum, and log it. **A search result is never
+   proof of the official source** — on 2026-09-03 a search for `book-to-skill` returned a
+   wallet-stealing clone as the top hit. Applies to GitHub, npm/pip, browser + VS Code extensions,
+   MCP servers, desktop apps. Full protocol: **`vault/policies-software-install-safety.md`**.
 
 ## Who
 - **Rich Fabiani** — richfabiani@gmail.com
