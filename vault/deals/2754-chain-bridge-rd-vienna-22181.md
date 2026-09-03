@@ -130,3 +130,50 @@ like the last buyer did.
   Second lot ruled out as a separate parcel (0016 = different owner; 0018 doesn't exist) → the
   "two lots" are a subdivision of this one parcel. **Status downgraded from A-1 to conditional.**
   → NEXT: answer Gap #1 (recorded subdivision?), then Gaps #2–3 with the agent.
+
+---
+
+# 🔴 GAP #1 ANSWERED, 2026-09-03 — THE SUBDIVISION IS **NOT RECORDED**
+
+Resolved from Fairfax GIS without waiting on the agent. Five independent indicators:
+
+1. **`PIN LIKE '0481 01 0017%'` returns exactly ONE parcel.** No `0017A`, no `0017B`.
+2. **Fairfax demonstrably DOES issue letter-suffixed PINs on a split** — `0481 01 0012A` and
+   `0481 01 0043A` both exist in this same block. So the absence of a `17A/17B` is meaningful,
+   not a data quirk.
+3. **Lot Numbers annotation layer renders a single "17"** at parcel-label size (14.65pt — the
+   same size as neighbours "15" and "16"), and separately renders "12A" for the split parcel.
+   One label = one lot.
+4. **One GIS polygon**, 47,659 sqft.
+5. **Legal description is "SHOCKEY STATION" with NO lot number**, while neighbour 0481 01 0015
+   is "H R C SHOCKEY **LT 5**" — an explicit recorded lot. Ours is a parent parcel.
+
+**Conclusion: as of the county's 2026-09-02 refresh, 2754 Chain Bridge is ONE legal parcel of
+1.066 ac.** The "two lots" is **zoning potential** (R-2 at 2 DU/AC × 1.066 ac ≈ 2 units), not a
+recorded subdivision. **A buyer is buying one lot and inheriting the subdivision.**
+
+*Caveat: county data refreshed 2026-09-02, so it is current — but a plat recorded in the last
+few days could lag, and a subdivision could be **approved** yet unrecorded. That is now the
+precise question for the agent, not "is it two lots."*
+
+### What this changes
+- 🔴 **The $879,000 "per lot" price is for a lot that does not legally exist yet.**
+- 🔴 Buyer inherits **engineering, plat, county review, and likely bonded improvements** —
+  realistically **6–18 months** in Fairfax plus real cost, all before a builder can close.
+- 🔴 **This is the most likely reason the March 2025 contract died.** It fits perfectly: a buyer
+  goes to contract on "two lots," discovers in diligence they're buying one parcel plus a
+  subdivision project, and walks.
+- 🟡 It may also explain the **1.492 vs 1.066 acre** gap — 1.492 could be a *proposed gross*
+  figure off a subdivision concept plan rather than the actual parcel.
+- **Underwriting:** value as ONE 1.066-ac parcel, then subtract subdivision cost, carry and risk.
+  Against a $801,000 assessment and a $1,758,000 both-lots ask, this is **NO-GO at anything near
+  ask** unless the subdivision is already approved and the seller is carrying it.
+
+### Revised question for Goudarzi (replaces Gap #1)
+> "The county shows one parcel — 0481-01-0017, 1.066 acres, no 17A or 17B — so the two lots
+> aren't recorded. Has a subdivision plan been **approved**? Where is it in the county process,
+> and who's carrying the cost and the timeline — seller or buyer?"
+
+**Answer determines everything:** approved-and-recorded = live deal · approved-not-recorded =
+priceable with a discount and a longer close · nothing filed = we're funding an entitlement
+project on someone else's dirt at retail. **That last case is a walk.**
