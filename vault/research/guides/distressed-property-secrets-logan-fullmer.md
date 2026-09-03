@@ -136,3 +136,55 @@ Cycle time 90–120 days. No debt, no rehab, no ARV.
 6. **Defer-payoffs-to-closing** structuring idea — noted for deals with back taxes.
 7. Title-company ask list updated: Eastern Title question → "do you handle curative/quiet
    title work and delayed closings on messy-title deals?"
+
+---
+
+## 2026-09-03 — PRIMARY SOURCE NOW EXTRACTED INTO A LOADABLE SKILL
+
+Rich supplied the actual book PDF (80 pages / 25 chapters / ~34,000 words). It was run through
+book-to-skill and now exists as a queryable Claude skill:
+
+**`/distressed-property-secrets`** — installed at `C:\Users\Admin\.claude\skills\distressed-property-secrets`
+- `SKILL.md` — core frameworks + chapter index + topic index
+- `chapters/` — 25 per-chapter files (loaded on demand, not all at once)
+- `glossary.md` — includes Fullmer's OWN glossary definitions, verbatim in framing
+- `patterns.md` — 18 techniques with when / how / trade-offs
+- `cheatsheet.md` — the committed numbers, if/then decision rules, red flags, seller-call order
+
+This guide remains the vault-side summary. **The skill is now the authoritative detail** — ask it
+directly rather than re-deriving from memory. Security scan passed; work directory cleaned.
+
+### Numbers this pinned down that the earlier summary lacked
+| | |
+|---|---|
+| Buy band | **10-50 cents** of as-is (30-50 typical; lower as seller readiness rises) |
+| List at | **85-90 cents** of retail, or ~10K under as-is |
+| Option | **10-100 dollars** for 10-60 day option + 5-10 day close = ~90 days control |
+| Tax filter | **2-3 years** delinquent, NOT 1 year |
+| Leads per deal | **~30** on a filtered tax list |
+| Cycle time | **90-120 days**; 2-3 capital turns/year |
+| Legal budget | **20-26K** per deal |
+| Kill price | **30 days** on market with no contract = overpriced, cut it |
+| 100-deal average | buy **48K** / sell **194K** / net **125K** |
+
+### Direct relevance to live FRESH GROUND work
+- **S4 title recon** — Ch 11 is the source: the 20-minute county recon, the four-part checklist
+  (deed history / liens and abstracts / open mortgages / probate clues), and the five red flags.
+  Note that **heirs-on-title with no probate filed** is one of them, and Fullmer says heirship is
+  where 70% of his deals live. Directly upgrades S4.
+- **S5 desktop valuation** — Ch 13 is the source: CAD baseline + SOLD comps only, average then chop.
+  Confirms the method already adopted, and adds the **10-50 cent** offer band and the Delta concept.
+- **S10 sweep** — Ch 8 validates the tax-list channel and supplies the **2-3 year** filter we did not
+  have. Also explains why the on-market house screen underperformed: those sellers are not distressed.
+- **2754 Chain Bridge** — Ch 10 (option contract first, ~90 days control, small EMD) is exactly the
+  structure for a parcel whose subdivision is unrecorded. Ch 14's deferred-debt technique and Ch 11's
+  ask-then-verify both apply.
+
+⚠️ **Scope limits recorded in the skill:** Fullmer operates in **Texas**. Promulgated forms (TREC),
+tax rates, redemption periods and foreclosure procedure are state-specific — **verify VA/MD law**
+before applying. The model targets sub-200K residential and land; our DC-Metro teardown lots are a
+different price band and the arithmetic does not transfer directly. His numbers are self-reported,
+largely forecast on inventory, and unaudited.
+
+📕 **Copyright:** generated from Rich's own copy. Output is synthesised structure, not the book text.
+Per the tool's own policy, **keep this skill private — do not publish or redistribute it.**
