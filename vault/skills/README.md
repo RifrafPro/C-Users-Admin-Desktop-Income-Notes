@@ -31,6 +31,18 @@ STAGE 6  Disposition (S8, disposition)                 → blind teaser → NCND
 STAGE 7  Escrow + close (S9, deal-orchestrator)        → Eastern Title, fee collected
 ```
 
+## External method sources — what we take, and what we do NOT
+- **Fullmer / Distressed Property Secrets** — full book now loadable as the
+  `/distressed-property-secrets` skill. **We use it for techniques only, not as a model.**
+  He closes on sub-200K property and resells retail; we assign 800K-2.5M teardown lots to builders.
+  **Read `research/guides/fullmer-to-fresh-ground-mapping.md` before importing anything from it** --
+  it lists what transfers as-is (title recon, option-first, silo method, red flags), what transfers
+  only as a principle with our own numbers (MAO not 10-50 cents; per-acre not per-sqft), and what
+  must NOT be imported (taking title, MLS retail exit, TREC forms, his price-band economics).
+- **Where his method is actually our edge:** lots with a LEGAL defect (RPA overlay, unrecorded
+  subdivision, heirs on title, lien stack) in an expensive zip. On clean lots, run the normal
+  FRESH GROUND play instead. Do not mix the two.
+
 ## Standing rules (bind EVERY skill)
 - Agents research/compute/DRAFT autonomously. **No send/call/text/blast to a real person
   without Rich's "send it"** (exception: Carve-out #1 once voice pipeline is live —
