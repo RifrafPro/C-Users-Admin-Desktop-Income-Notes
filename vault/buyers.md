@@ -47,3 +47,32 @@ cluster teardown lots $1.2–1.8M**. Vault default of $300/sqft is the LOW end �
   couldn't confirm or refute (contact-us page 404'd). Confirm on first real call.
 - Each builder's build-cost + margin so offers are exact, not default (Script 01 intake).
 - Log which builders actually buy + their confirmed box as deals close.
+
+---
+
+## TIER 4 — OUT-OF-BOX OUTLETS (lots that fail the builder buy-box)
+> Added 2026-09-03. These are **not** primary buyers — they are the floor that stops a dead lead being
+> worth $0. Never route a core-market teardown lot here; the fee is a fraction of a real assignment.
+
+| Outlet | Pays | Territory | Use when |
+|---|---|---|---|
+| **Jerry Norton / Flipping Mastery** (JLN Group) · **(888) 958-3028** | **$8,700 flat per accepted lot** — he buys with his own cash, provides proof-of-funds | Nationwide; confirmed DC-Metro activity (documented buyers in Cheverly MD + Annapolis MD) | A **buildable vacant lot** that fails our box: wrong price band, outside builder territory, or a problem parcel we can't place (e.g. the Old Chesterbrook RPA lot). Approach him as a **seller submitting a lot**, NOT as a program buyer — do not purchase Lot Flipper ($1,000) |
+
+**Reality check before using this:** $8,700 is flat regardless of lot value, while a McLean/Vienna
+teardown assignment should run **$30K–$75K+**. Routing a core-market lot here burns 4–8× the fee.
+Ranking rule: **buyers.md Tiers 1–2 first, always. Tier 4 only after the box search comes back empty.**
+**Unverified** — treat the $8,700 as a claim until we test it with one genuinely out-of-box lot.
+Source: `research/guides/flipping-mastery-jerry-norton-extraction.md`
+
+## Buyer-list upgrade — build from CASH SALES, not websites (adopted 2026-09-03)
+`buyers.md` was assembled from web research on builder sites, which surfaces builders who **market** —
+not necessarily builders who **buy**. Stolen from Norton's Cash Buyer Directory logic, at no cost:
+
+> Pull every **all-cash / no-mortgage** purchase of a lot or teardown parcel in 22101 · 22102 · 22180 ·
+> 22182 · 22066 · 22124 · 22205 · 22207 · 20816 · 20817 over the last 12 months (Propwire or county
+> records). Every LLC on that list is a builder-buyer with **proven, recent** appetite at a **known
+> price point** — which also pre-fills the buy-box fields S1 is trying to capture.
+
+⬜ TODO (S1 / buyer-matcher): run this pass once Propwire is set up (S11), then reconcile against the
+14 builders below — expect to find active buyers we've never heard of, and to confirm which listed
+builders are actually transacting.

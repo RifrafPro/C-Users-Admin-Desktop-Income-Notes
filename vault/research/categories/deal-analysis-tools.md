@@ -51,3 +51,23 @@ rules forbid.**
 **Filed under ⚠️ caution, alongside [courses-funnels.md](courses-funnels.md).** Nothing here changes
 the stack. Standing rule holds: **buy NOTHING new until the free channels saturate.**
 Source: https://whop.com/icashx/software-x/ · IG: instagram.com/p/DbuSeZhgSzU · instagram.com/p/DaLPxiyggbG
+
+---
+
+## Flipping Mastery site sweep — tool verdicts, 2026-09-03
+Full extraction: [../guides/flipping-mastery-jerry-norton-extraction.md](../guides/flipping-mastery-jerry-norton-extraction.md)
+
+| Tool | What it does | Cost | Verdict |
+|---|---|---|---|
+| **Propwire** (propwire.com) | 157M properties · **105 motivated-seller MLS keywords** · 17 lead types (inherited, preforeclosure, vacant, absentee, high-equity) · stacked lists · expired-listing + equity filters · **free comps w/ lot-size filter** · **10 free skip traces/mo (mobile-vs-landline flagged)** · saved-search alerts · free downloads | **FREE** (Basic) | 🟢 **ADOPT — biggest free win found to date.** Closes 3 logged gaps: weak comps, S10's keyword blind spot, and no probate/estate source. Wired up as **S11** (`skills/skill-propwire-mining.md`). Get it at propwire.com direct — no Norton funnel needed |
+| **Cash Buyer Directory** (Norton, free) | 200K cash buyers by zip — buyers who recently paid all cash | Free (email-gated) | 🟢 **Steal the logic, skip the tool.** Pull recent all-cash lot purchases in our zips from Propwire/county records. Every LLC paying cash for a lot in 12mo is a builder-buyer with *proven* appetite — strictly better than the website-research that built `buyers.md`. Folded into S1 |
+| **Lot Flipper program** (Norton) | Submit vacant lots → he buys w/ his cash → **$8,700/lot** finder fee | $1,000 or 3×$429 | ⚠️ **Do NOT buy the program.** But **log Norton as an out-of-box lot buyer** — $8,700 beats $0 on lots that fail our buy-box. See `buyers.md`. Contact as a *seller*, not a student: (888) 958-3028 |
+| **FreeComps** (Norton) | Address → comps → ARV | Free (email-gated) | ⚪ Redundant — Propwire comps, no funnel |
+| **Vacant Lot Finder** (Norton) | Zip → buildable lots | Free (email-gated) | ⚪ Redundant — S10 + Propwire cover it |
+| **Data Cruncher / Flipster / Deal Genie / AskJerry** | Deal calc, CRM, AI coach | Paid funnel | ⚪ All duplicated by Land Insights + our own MAO math |
+| **"Wholesaling Regulations By State"** (report) | State-by-state assignment law, penalties, restrictions | Free (email-gated) | 🟡 **The one gated PDF with real value — VA/MD assignment compliance is an open question for us.** Use a burner email; it starts a marketing sequence |
+| **"Creative Financing Hacks"** (guide) | Seller financing, land contracts, sub-to, lease options | Free (email-gated) | 🟡 Relevant *right now* — **2754 Chain Bridge (A-1 lead) offers partial owner financing** and we'll need to structure it. Burner email only |
+
+**Note on ARV:** Norton's method (comps ≤1mi, ≤6mo, 3–5 comps, avg $/sqft × subject sqft) is what we
+already run via Fullmer — and it's **house-specific. $/sqft-of-house is the wrong unit for land.**
+Stay on $/acre + $/lot via Land Insights, now cross-checked against Propwire.
