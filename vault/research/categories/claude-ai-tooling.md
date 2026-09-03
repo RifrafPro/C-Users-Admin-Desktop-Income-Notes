@@ -14,6 +14,8 @@ Check here before installing anything new — usually we have it.
 ## Notable links
 | Item | What | Verdict |
 |---|---|---|
+| hermes-gbrain-bridge (github, from "Hermies Jarvis" reel) | Converts agent chat logs to markdown for gBrain (separate DB+cloud project) = searchable AI-conversation brain | 🔴 INSPECTED 08-29, skip: the vault already does this; would add Postgres+Railway for a worse duplicate |
+| OmniRoute (github, from "Omniroute" reels, 2 saves) | Gateway routing Claude Code through 350 providers/90 free tiers + token compression | 🔴 INSPECTED 08-29, skip: built for per-token API bills — saves $0 on Max flat-rate; routes business data through dozens of 3rd parties (13 flagged "avoid" by its own docs); downgrades model quality |
 | github.com/open-free-llm-api/awesome-freellm-apis | Free LLM API list (real repo) | 🟡 |
 | "Claude vault" FB post (07-26) | The vault-concept inspiration | ✅ built (this repo) |
 | Jarvis cluster (install-guide YouTube, Zoey OS, Hermies, etc.) | Personal-assistant builds | 🟡 vault = our Jarvis |

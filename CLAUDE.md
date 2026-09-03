@@ -25,6 +25,7 @@ So keep it current.
   mortgage-note investing ("Income Notes"). Lead-gen via **iSpeedToLead**.
 
 ## Where to look
+- **`vault/road-to-deal-one.md` — THE PLAN. Read first, every session.**
 - `vault/profile.md` — background, businesses, goals
 - `vault/preferences.md` — how Rich likes Claude to work
 - `vault/projects/wholesaling.md` — FRESH GROUND (CURRENT FOCUS)
@@ -54,6 +55,14 @@ built — full authority to verbally agree at/below MAO, no approval needed for 
 PSA-signing still requires "send it") — see `vault/policies-ai-autonomy.md` for the exact
 boundary. See `vault/automation-stack.md` for the external tools (e-sign, voice, SMS) that
 turn drafts into sends.
+
+## 📥 STANDING ORDER — LOCAL/DESKTOP SESSIONS (added 2026-08-28)
+If you are running on Rich's PC (git --version shows ".windows."): at session start run
+`git pull`, then read **`vault/inbox-for-desktop.md`** and execute its OPEN jobs. Save
+results where each job says, mark jobs DONE, and ALWAYS `git add -A && git commit &&
+git push` when work finishes — an unpushed result does not exist. Cloud Claude queues
+the jobs; the vault carries everything between sessions. Rich should never have to
+re-explain context: if you are missing it, you skipped reading this vault.
 
 ## The memory system
 - **Session start:** the `.claude/hooks/vault-load.sh` SessionStart hook prints
