@@ -68,6 +68,19 @@ In Rich's browser (logged into YouTube/Skool):
 3. Do NOT sign up for anything, no email opt-ins, no purchases.
 → Append findings to the guide file, push.
 
+## ⬜ OPEN — Job 007: Watch the "Wholesale software" webinar (Rich's attend link, already registered)
+Open in Rich's browser: https://joinnow.live/a/ZCGh8e?id=QGTMAM
+(Rich registered 08-06 — this is his personal attend link; do NOT re-register or opt into
+anything new, no purchases.)
+1. Identify it: host name(s), company, what software/product it sells, price if revealed.
+2. Watch efficiently: these evergreen webinars are ~60-90 min with the pitch in the last
+   third. Skim by jumping the player timeline; capture the MEAT: the actual method/workflow
+   they demo, any concrete wholesaling tactics/tools named, screenshots-worth moments.
+3. Verdict: is the software worth anything vs our stack (vault agents + Land Insights +
+   REsimpli-plan)? 🟢/🟡/🔴 with reasons.
+→ Write findings to vault/research/categories/courses-funnels.md (new entry) and note the
+verdict in research-email-findings.md next to the 08-06 "Wholesale software" row. Push.
+
 ---
 ## ✅ DONE
 (nothing yet)
