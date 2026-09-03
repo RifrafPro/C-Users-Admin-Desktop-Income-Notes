@@ -76,3 +76,23 @@ not necessarily builders who **buy**. Stolen from Norton's Cash Buyer Directory 
 ⬜ TODO (S1 / buyer-matcher): run this pass once Propwire is set up (S11), then reconcile against the
 14 builders below — expect to find active buyers we've never heard of, and to confirm which listed
 builders are actually transacting.
+
+## VIENNA — builders with PROVEN active product (found 2026-09-03 from the 08-28 sweep)
+> Sourced by evidence, not web research: these builders have live Vienna listings we found
+> ourselves. Call sheet: `call-sheets/vienna-builder-buybox-2026-09-03.md`. ⬜ = buy-box not captured.
+
+| Builder | Phone | Live Vienna product (asks, 08-28) | Status |
+|---|---|---|---|
+| **Evergreene Homes** ⭐ | **703-667-7878** | **619 Truman Cir SW** $2,224,900 / 5,530 sqft · **1103 Desale St SW** $1,910,500 / 4,491 sqft | ⬜ TWO active Vienna builds — volume buyer, top priority |
+| **Sekas Homes** ⭐ | **703-242-2300** · Billy Samson **703-963-7676** | Vienna HQ 407 Church St NE · **"Build On Your Lot" program** | ⬜ Build-on-your-lot = they *need* lots. Our exact product |
+| **Icon Design & Construction** | ⬜ none found — reach via **Compass** listing agent | **104 Mashie Ct SE** $2,949,000 / 7,456 sqft | ⬜ Top-of-market Vienna builder |
+| **Dunhill Builders** 🆕 | **703-573-9329** | Vienna + Fairfax custom | ⬜ Added 09-03 |
+| **Reel Homes** 🆕 | ⬜ reel-homes.com | Advertises Vienna; **built 1701 Briar Ridge Rd, McLean ($5,995,000)** | ⬜ Real and upmarket — get the number |
+| **LUKA Design & Build** | 571-717-1017 | Vienna office, 8245 Boone Blvd | ⬜ already listed Tier 2 |
+| **Monarch Custom Homes** | ⬜ monarch.us | Vienna-based | ⬜ phone still missing |
+
+**Vienna market calibration (asks, 08-28 sweep — use for land residual until a builder gives real numbers):**
+New construction **$1.9M–$2.95M**, roughly **$375–425/sqft**, typically 4,500–7,500 sqft.
+⚠️ Note: a listing agent's claim that Vienna homes go "over $3 million" is the **ceiling**, not the norm.
+Vienna land asks: Malcolm Rd **$2.65M/ac** · Madrillon **$1.98M/ac (889 DOM)** · Wesleyan **$1.83M/ac** ·
+2754 Chain Bridge **$1.66M/ac**.
