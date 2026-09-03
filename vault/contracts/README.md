@@ -53,3 +53,36 @@ Seller --PSA--> FRESH GROUND --Assignment ($fee)--> Builder --closes--> Seller g
 ## Placeholders
 Anything in `[[BRACKETS]]` is a fill-in. `>> notes like this <<` are instructions to
 whoever finalizes — delete them before sending.
+
+---
+
+## 🔴 ADDED 2026-09-03 — COMPLIANCE. Read `research/va-md-assignment-law.md` BEFORE the next assignment.
+
+Two new templates, and one finding that affects the whole VA model.
+
+### 4. `_TEMPLATE-memorandum-of-contract.md` — recordable notice + release
+Records public notice that we hold an equitable interest, so a seller cannot quietly sell around us.
+Technique from Fullmer ch10. **Includes a mandatory self-expiration clause and a companion Release**
+— never record one without both, or we risk a slander-of-title claim for leaving a cloud on title.
+**Selective use only:** record when the spread is material AND there is a real risk signal
+(multiple heirs, a seller who has shopped it, a prior dead contract). Not on clean single-owner deals.
+
+### 5. `_TEMPLATE-md-assignment-disclosures.md` — Maryland, statutorily required
+**Md. Real Property § 10-715** (HB 124 / Ch. 508, effective **Oct 1, 2025**) requires **two** written
+disclosures: one **to the seller BEFORE the contract is signed**, one **to the assignee BEFORE
+assigning**. Miss either and the other side may **rescind without penalty any time before closing**,
+with deposit refunded. Applies to residential ≤4 units; vacant-land scope needs confirming.
+
+### 🔴 VIRGINIA — a licensing problem no template can fix
+**Va. Code § 54.1-2100(iii)** (amended 2024, effective **July 1, 2024**) defines a **real estate
+broker** to include anyone who, for compensation, *"sells or offers to sell, buys or offers to buy,
+negotiates, or otherwise deals in real estate contracts, including assignable contracts, **on two or
+more occasions in any 12-month period**."*
+
+**Read plainly: the second assignment in a rolling 12 months makes us a broker under VA law.**
+It is not limited to residential, so **our vacant-lot assignments are inside it**, and the trigger
+includes *offering* and *negotiating* — possibly not just closed deals.
+
+**Working posture until counsel says otherwise: plan the VA exit around TAKING TITLE** (buy, or
+double close, then sell property we own) rather than assigning. That needs acquisition capital or a
+JV partner — see Fullmer ch17/ch21. **Engage a Virginia real estate attorney before assignment #2.**

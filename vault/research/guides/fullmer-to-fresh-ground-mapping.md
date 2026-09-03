@@ -44,13 +44,25 @@ luxury builders. Same *diagnostic craft*, different *capital model and exit*. Ta
 
 ---
 
-## ❌ DOES NOT TRANSFER — do not import
+## 🅿️ PARKED — not applicable to TODAY'S model, retained deliberately for later
+> **Rich's instruction 2026-09-03: discard nothing — it may be useful as we grow.** None of the
+> below is wrong; it is simply outside the current play. Each row records **the trigger that would
+> make it live**, so it can be picked up rather than re-derived.
 
-- **Taking title and reselling retail on the MLS.** Fullmer closes on everything and explicitly says *"I don't really wholesale."* We assign. Completely different capital requirement and risk posture.
-- **His price-band economics** — $48K in / $194K out / $125K net. Ours is a $30–75K assignment fee on a $1M+ parcel. Do not benchmark against his averages.
-- **The retail buyer pool.** His exit is flippers, landlords and homeowners on the MLS. Ours is a **named list of ~14 builders with buy-boxes**. Control-Before-Disclosure still governs (S8) — we do not broadcast.
-- **Texas-specific mechanics.** TREC forms → **NVAR forms**. Bexar tax rates, Texas redemption periods and TX foreclosure procedure → **verify VA and MD law independently**. ⬜ Still an open compliance question.
-- **"Clean it up and list it"** as an exit. We never take possession, so there's nothing to mow.
+| Parked technique | Why it's parked now | ⏳ Becomes live when… |
+|---|---|---|
+| **Taking title and reselling retail on the MLS** | We assign; he closes on everything and says *"I don't really wholesale."* Different capital requirement and risk posture | We have capital to close in our own name — the model Rich has said he wants at maturity. Also the default in any market where no builder buy-box exists |
+| **Sub-$200K price-band economics** ($48K in / $194K out / $125K net) | Our deal is a $30–75K fee on a $1M+ parcel; benchmarking against his averages would mislead | 🔥 **We enter South Florida or Phoenix** (see `deals/multi-market-brief-2026-08-29.md`). In those markets sub-$200K distressed IS the inventory and **his numbers become directly comparable** |
+| **The retail buyer pool** (flippers, landlords, homeowners on MLS) | Ours is ~14 named builders; Control-Before-Disclosure governs (S8) | We hold title, or we work a market with no builder network. Also the fallback when a lot fails every buy-box — MLS beats a dead lead |
+| **"Clean it up and list it"** — mow, trim, haul trash, board windows | We never take possession, so there is nothing to mow | The moment we close on anything. It is the complete rehab spec for a wholesale-grade resale |
+| **Texas mechanics** — TREC forms, Bexar tax rates, TX redemption periods, TX foreclosure procedure | We are VA/MD; NVAR forms govern | Never in VA/MD — **but the *structure* of what to look up per state is the reusable part.** If we expand to TX, this is a ready map. See the VA/MD research below |
+| **Delinquent tax list as the primary channel** | Tax delinquency is rare among $1M+ NoVA landowners | 🔥 **Immediately live in S.FL / PHX / DC proper**, and already the basis of **S2**. Parked only for the McLean/Vienna teardown play |
+| **Warehouse / commercial distressed** (his Deal #2: $1.7M → $3.2M) | Outside FRESH GROUND's stated focus | Rich diversifies beyond residential teardown lots. The method — tax list → direct owner negotiation → clear title → re-tenant → flip — is fully documented in ch18 |
+| **Sub2, notes, lease options, seller-financed structures** | Our posture is option-first per S7 | A seller demands terms over price. **2754 Chain Bridge already offers partial owner financing** — this is closer to live than the others |
+| **JV as a capital source** (bring the deal, partner funds, split) | Rich funds his own EMDs at $100 | We hit a deal too large to fund alone. His four funder criteria (ch17) are the checklist for pitching one |
+
+**Nothing above is deleted.** The full detail lives in the `/distressed-property-secrets` skill —
+ask it directly (`for ch15`, `about MLS exit`) when a trigger fires.
 
 ---
 
