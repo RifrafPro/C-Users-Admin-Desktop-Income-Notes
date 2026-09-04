@@ -15,7 +15,7 @@ Check here before installing anything new — usually we have it.
 | Item | What | Verdict |
 |---|---|---|
 | hermes-gbrain-bridge (github, from "Hermies Jarvis" reel) | Converts agent chat logs to markdown for gBrain (separate DB+cloud project) = searchable AI-conversation brain | 🔴 INSPECTED 08-29, skip: the vault already does this; would add Postgres+Railway for a worse duplicate |
-| OmniRoute (github, from "Omniroute" reels, 2 saves) | Gateway routing Claude Code through 350 providers/90 free tiers + token compression | 🔴 INSPECTED 08-29, skip: built for per-token API bills — saves $0 on Max flat-rate; routes business data through dozens of 3rd parties (13 flagged "avoid" by its own docs); downgrades model quality |
+| OmniRoute (github, from "Omniroute" reels, 2 saves) | Gateway routing Claude Code through 350 providers/90 free tiers + token compression | 🔴 **SKIP — verdict CONFIRMED on re-check 09-03** (Rich re-sent the repo). Original inspection 08-29 stands. See the detailed entry below before inspecting a third time |
 | github.com/open-free-llm-api/awesome-freellm-apis | Free LLM API list (real repo) | 🟡 |
 | "Claude vault" FB post (07-26) | The vault-concept inspiration | ✅ built (this repo) |
 | Jarvis cluster (install-guide YouTube, Zoey OS, Hermies, etc.) | Personal-assistant builds | 🟡 vault = our Jarvis |
@@ -71,3 +71,48 @@ private repo, which fits; just never publish a generated skill of a purchased bo
 - Any owned real-estate books (wholesaling, land development, entitlements) — **entitlement/subdivision
   material would be immediately useful given the 2754 Chain Bridge subdivision problem.**
 - `vault/research/guides/` itself — already-extracted guides could be folded into a single skill.
+
+---
+
+## 🔴 OmniRoute — SKIP. Verdict confirmed twice. Do not inspect a third time without a trigger below.
+
+`github.com/diegosouzapw/OmniRoute` · omniroute.online
+**Inspected 08-29 (cloud Claude) → skip. Re-sent by Rich 09-03 → re-checked → same verdict, sharper reasoning.**
+
+### Safety: CLEAN. This is not a malware question.
+Install-safety protocol run per `policies-software-install-safety.md`:
+**`fork: false`**, no parent — the original repo. **60,904 stars · 8,462 forks · MIT · pushed 2026-09-04
+· not archived · 298 open issues · created 2026-02-13.** Legitimate, popular, actively maintained.
+**The skip is about FIT and DATA EXPOSURE, not trustworthiness of the code.**
+
+### Why we skip — three reasons, all still true
+1. **It solves a bill we don't have.** The entire value proposition is routing to cheaper/free
+   providers to cut **per-token API costs**. Rich is on a **flat-rate plan** — there is no per-token
+   bill to reduce. **Savings: $0.**
+2. 🚩 **Data exposure — the strongest reason, and stronger than first recorded.** Its own
+   `SECURITY.md` is good on *local* handling (AES-256-GCM at rest, PII detection/masking,
+   prompt-injection screening) but states plainly:
+   > *"The policy does not explicitly address trust relationships with third-party providers or
+   > assert what happens to data once transmitted upstream."*
+   > *"No explicit privacy policy or data deletion guarantees for provider-forwarded information."*
+   - **Guardrails run FAIL-OPEN** — "exceptions never block traffic." If the PII masker errors,
+     data forwards **unmasked**.
+   - Its own docs flag **13 providers as "avoid."**
+   - **Why this matters for us specifically:** the vault now holds **named trustees and their
+     mailing address** (Filipour, 2754 Chain Bridge), seller motivations, deal economics, draft
+     contracts, builder buy-boxes and our strategy. Routing that through 350 providers — many free
+     tiers that train on inputs — with **no deletion guarantee** is a live exposure. The software is
+     fine; **the upstream providers are the unknown.**
+3. **Quality downgrade.** Free-tier fallback routes to weaker models. We are optimising for judgment
+   on six-figure decisions, not for cheap tokens.
+
+### ⏳ Two triggers that WOULD flip this to "evaluate"
+1. **We start paying per-token API bills.** Most likely at the **voice pipeline** (Bland / Vapi /
+   Retell — see `automation-stack.md` Hole 1), which bills per minute/call. **Different risk profile:
+   that traffic is seller-call audio, not vault data.** Worth a genuine fresh look at that point.
+2. **We repeatedly hit plan usage limits mid-deal.** Its **quota-aware auto-fallback** is real
+   break-glass value — but as a fallback path, never as the daily router, and never carrying vault data.
+
+### Standing rule
+**Do not route vault data through any third-party gateway.** If OmniRoute is ever adopted under
+trigger #1, scope it to the specific paid workload only and keep the vault out of it entirely.
