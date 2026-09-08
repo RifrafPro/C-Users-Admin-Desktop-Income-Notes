@@ -47,3 +47,49 @@ exists (see `automation-stack.md`), this carve-out has nothing to attach to.
 ## Log
 - 2026-08-26 — Carve-out #1 (seller negotiation, full authority within MAO) decided.
 - 2026-08-26 — Platform = ElevenLabs+Twilio; attorney review not required; title co. research in progress.
+
+---
+
+# 🎯 RICH'S RULINGS — 2026-09-07 (autonomous pipeline design)
+Asked and answered directly. These four decide how the machine gets built.
+
+## 1. Virginia licensing posture: **ASSIGN FREELY, DEAL WITH IT LATER**
+**Rich's decision, made with the statute in front of him.** He was shown Va. Code
+§ 54.1-2100(iii) verbatim (2+ assignments in a rolling 12 months, for compensation, = broker;
+not limited to residential; trigger includes "offers to sell" and "negotiates"), was shown four
+alternatives, and this option was explicitly labelled **the highest-risk** of them.
+
+**This is settled. Do not re-raise it, do not re-argue it, do not add friction to the build.**
+Record only: the decision was informed, dated, and is Rich's to make.
+Full analysis retained at `research/va-md-assignment-law.md` if he ever wants it again.
+
+### ✅ The mitigation that comes free from ruling #2
+**His market split materially reduces VA exposure without changing this decision at all:**
+- **NoVA stays MANUAL and low-volume** — a handful of high-fee deals a year, so VA assignment
+  count stays naturally low.
+- **The high-volume automated pipeline runs in DC / S. Florida / Phoenix** — outside Virginia.
+- **Maryland has no licensing bar at all** — only the § 10-715 disclosures, already drafted.
+
+**Net effect: the volume that would trip § 54.1-2100(iii) largely happens outside Virginia anyway.**
+That is a structural mitigation, not a workaround, and it required no change to his choice.
+
+## 2. First market: **BOTH — NoVA manual, multi-market automated**
+- **NoVA (McLean/Vienna/Great Falls/Arlington/Falls Church):** Rich works these personally.
+  High fee ($30–75K), low volume, 14 named builders, agent-listed + off-market owners.
+- **DC / South Florida / Phoenix:** the autonomous machine. High volume, inbound leads
+  (iSpeedToLead + LeadZolo), smaller fees, best TCPA posture.
+- Two pipelines, two designs. **The $200 lead credits go to the automated side.**
+
+## 3. Voice agent identity: **AI QUALIFIES ONLY — RICH NEGOTIATES**
+- Agent **discloses it is an assistant.** No named human persona, no cloned voice.
+- Agent scope: **answer inbound · qualify · gather facts · schedule · hand off.**
+- **All actual negotiation goes to Rich.** Carve-out #1 (verbal agreement at/below MAO) is
+  therefore **NOT yet active** — this is deliberately a phase-1 setting that can be loosened later
+  once the agent has a track record.
+- Aligns with both source operators: RJ Bates ("no fake departments, show up as yourself") and
+  Fullmer ("they can smell fake a mile away").
+
+## 4. King Closer portal: **CONNECT THE CHROME EXTENSION**
+Rich will pair the Claude Chrome extension so I can read the Titanium Vault in his already
+authenticated browser. **Unblocks three things at once:** the King Closer scripts, Fairfax PLUS
+plat work (Old Chesterbrook plat date, Chain Bridge subdivision), and Land Insights overlays.
