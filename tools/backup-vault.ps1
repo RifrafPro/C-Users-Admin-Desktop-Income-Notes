@@ -1,4 +1,4 @@
-# backup-vault.ps1 — snapshot the whole vault into the local backup folder.
+﻿# backup-vault.ps1 — snapshot the whole vault into the local backup folder.
 # Run from anywhere:  powershell -ExecutionPolicy Bypass -File "C:\Users\Admin\Desktop\Income Notes\tools\backup-vault.ps1"
 # What it makes, per run, inside the backup folder:
 #   vault-YYYY-MM-DD_HHmm\           full readable copy of every file (no .git)

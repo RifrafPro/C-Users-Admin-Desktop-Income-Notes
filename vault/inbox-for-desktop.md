@@ -32,7 +32,7 @@ Open Rich's saved posts instagram.com/p/DbuSeZhgSzU and instagram.com/p/DaLPxiyg
 What is iCash X — product, price, relevance to real-estate wholesaling?
 → Append verdict to `vault/research/categories/deal-analysis-tools.md`, push.
 
-## ⬜ OPEN — Job 008: LOCAL BACKUP — run it FIRST, before every other job (Rich 09-16, PRIORITY 1)
+## ✅ DONE — Job 008: LOCAL BACKUP — run it FIRST, before every other job (Rich 09-16, PRIORITY 1)
 Rich: "back up all of this project in the income notes backup folder on this computer."
 1. `git pull` first (always), then run:
    `powershell -ExecutionPolicy Bypass -File "C:\Users\Admin\Desktop\Income Notes\tools\backup-vault.ps1"`
@@ -45,6 +45,20 @@ Rich: "back up all of this project in the income notes backup folder on this com
    Confirm with `schtasks /Query /TN "Income Notes Vault Backup"`.
 4. Read `vault/resume-protocol.md` (new) — it is now standing policy on both surfaces.
 → Mark DONE here with the snapshot path + whether the nightly task registered, push.
+
+**RESULT (2026-09-16 15:46, desktop):** ✅ Backup running, ✅ nightly task registered.
+- Snapshot: `C:\Users\Admin\Desktop\Income Notes - Backups\vault-2026-09-16_1544` — 108 files
+  + `vault-2026-09-16_1544.bundle` (355 KB). `git bundle verify` = **"complete history"**, 5 refs, HEAD `fb47b28`.
+- Nightly task **"Income Notes Vault Backup"** registered, Daily 21:00, Run As Admin, Status Ready.
+  Test-fired it: `LastTaskResult 0` → produced `vault-2026-09-16_1546` (108 files). Verified end to end, not just registered.
+- **Two spec corrections for cloud Claude:**
+  1. **Script path in this job is wrong.** The repo is NOT at `Desktop\Income Notes\`; it is nested at
+     `Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\`. Real path is
+     `...\Income Notes\C-Users-Admin-Desktop-Income-Notes\tools\backup-vault.ps1`. The registered task uses the real path.
+  2. **`backup-vault.ps1` would not parse.** Saved as UTF-8 with no BOM, so PowerShell 5.1 read it as CP1252;
+     the em dashes became `â€"` and byte `0x94` is a smart quote that PS treats as a string delimiter → parse error at line 17.
+     **Fixed by adding a UTF-8 BOM** (content unchanged). Committed. Keep the BOM, or use ASCII-only in future .ps1 files.
+- Backup folder on this PC is `Income Notes - Backups` (plural). The script's fuzzy-match fallback found it correctly — no rename needed.
 
 ## ⬜ OPEN — Job 004: Multi-market motivated-seller sweep (PRIORITY — Rich 08-29)
 Read vault/deals/multi-market-brief-2026-08-29.md first. Then in Rich's browser, sweep
@@ -97,7 +111,10 @@ verdict in research-email-findings.md next to the 08-06 "Wholesale software" row
 
 ---
 ## ✅ DONE
-- **Job 001 — Stale sweep** (2026-08-28): 7 markets swept, land + price-cut passes.
+- **Job 008 - LOCAL BACKUP: DONE** (2026-09-16). Snapshot `Income Notes - Backups\vault-2026-09-16_1544`
+  (108 files + verified full-history `.bundle`). Nightly task **"Income Notes Vault Backup"** registered
+  at 21:00 and test-fired successfully (result 0). Fixed two blockers: the job's script path was wrong
+  (repo is nested one level deeper) and `backup-vault.ps1` needed a UTF-8 BOM to parse under PowerShell 5.1.- **Job 001 — Stale sweep** (2026-08-28): 7 markets swept, land + price-cut passes.
   → `vault/deals/stale-sweep-2026-08-28.md`. **Top find: 2754 Chain Bridge Rd, Vienna — two 3/4-ac
   flat lots, down 51% from $1,795,000, 301 DOM, seller offering owner financing (703-378-8810).**
   Caveat: ran on a scraping fallback, NOT Rich's browser (extension not connected) → no Land Insights
