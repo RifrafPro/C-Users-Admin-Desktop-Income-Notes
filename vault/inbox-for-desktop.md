@@ -60,6 +60,27 @@ Rich: "back up all of this project in the income notes backup folder on this com
      **Fixed by adding a UTF-8 BOM** (content unchanged). Committed. Keep the BOM, or use ASCII-only in future .ps1 files.
 - Backup folder on this PC is `Income Notes - Backups` (plural). The script's fuzzy-match fallback found it correctly — no rename needed.
 
+## ⬜ OPEN — Job 009: Install the COURIER — automatic cloud↔desktop bridge (Rich 09-16, PRIORITY 1)
+Rich's order: cloud and desktop Claude must communicate with zero manual relaying.
+The vault is the message bus; this job makes the desktop side run WITHOUT anyone typing.
+1. Read `vault/inbox-for-cloud.md` (new) — that is YOUR channel TO cloud. Any question,
+   blocker, result, or thing Rich says at the terminal that cloud should know: write it
+   there as an OPEN msg and push. Cloud's session-start hook surfaces it automatically.
+2. Register two scheduled tasks ("Income Notes Courier AM"/"PM", 08:00 and 18:00 daily)
+   that run Claude Code headless in THIS repo folder (the real nested path you found:
+   `...\Income Notes\C-Users-Admin-Desktop-Income-Notes`). Each run must:
+   `git pull` → execute any ⬜ OPEN jobs here → write results + any messages into
+   `inbox-for-cloud.md` → `git add -A && git commit && git push`.
+   Use `claude -p "<standing-order prompt>"` with the repo's `.claude/settings.json`
+   permission allowlist (just updated — git/edit/backup ops are pre-approved, so headless
+   runs won't stall on prompts). Do NOT use --dangerously-skip-permissions.
+   Test-fire one run end to end and verify a commit lands on origin before marking done.
+3. Note the kill switch in the DONE entry: `schtasks /Delete /TN "Income Notes Courier AM" /F`
+   (and PM) — in case Rich ever wants it off.
+Cost note: 2 short headless runs/day on Rich's plan — negligible; jobs remain draft-only
+per CLAUDE.md (no sends, no purchases, ever, without Rich's "send it").
+→ Mark DONE with the task names + test-run commit hash, push.
+
 ## ⬜ OPEN — Job 004: Multi-market motivated-seller sweep (PRIORITY — Rich 08-29)
 Read vault/deals/multi-market-brief-2026-08-29.md first. Then in Rich's browser, sweep
 Redfin/Zillow for THREE markets. Filters per market:

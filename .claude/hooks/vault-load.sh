@@ -41,6 +41,16 @@ if git -C "$ROOT" rev-parse --git-dir >/dev/null 2>&1; then
   fi
 fi
 
+# 0.5) Message bus: surface OPEN messages from the desktop (return channel).
+if [ -f "$ROOT/vault/inbox-for-cloud.md" ]; then
+  OPEN_MSGS="$(grep -c '^## ⬜ OPEN' "$ROOT/vault/inbox-for-cloud.md" 2>/dev/null || echo 0)"
+  if [ "${OPEN_MSGS:-0}" -gt 0 ]; then
+    echo ""
+    echo "📤 $OPEN_MSGS OPEN message(s) FROM DESKTOP in vault/inbox-for-cloud.md — read and handle them:"
+    grep '^## ⬜ OPEN' "$ROOT/vault/inbox-for-cloud.md" | head -n 10
+  fi
+fi
+
 # 1) Confirm the memory anchor exists.
 if [ -f "$ROOT/CLAUDE.md" ]; then
   echo "CLAUDE.md present (standing rules + project pointers active)."
