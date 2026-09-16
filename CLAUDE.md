@@ -71,8 +71,11 @@ the jobs; the vault carries everything between sessions. Rich should never have 
 re-explain context: if you are missing it, you skipped reading this vault.
 
 ## The memory system
-- **Session start:** the `.claude/hooks/vault-load.sh` SessionStart hook prints
-  the latest session's "Where we left off" + active projects. Read it.
+- **Resume protocol (2026-09-16): `vault/resume-protocol.md` — the anti-progress-loss law.**
+  Pull first, push last, backup layers 1-5. A session that didn't pull is reading the past.
+- **Session start:** the `.claude/hooks/vault-load.sh` SessionStart hook now **fetches and
+  auto-pulls** (fast-forward) before printing the latest session's "Where we left off" +
+  active projects. If it prints 🚨 STALE warnings, run `git pull` before trusting anything.
 - **Session end / after meaningful work:** run **`/vault-save`** — writes the
   session log, updates project files, commits, pushes (VERIFY it landed), then
   mirrors to Google Drive.

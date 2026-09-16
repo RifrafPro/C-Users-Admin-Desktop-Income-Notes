@@ -32,6 +32,20 @@ Open Rich's saved posts instagram.com/p/DbuSeZhgSzU and instagram.com/p/DaLPxiyg
 What is iCash X — product, price, relevance to real-estate wholesaling?
 → Append verdict to `vault/research/categories/deal-analysis-tools.md`, push.
 
+## ⬜ OPEN — Job 008: LOCAL BACKUP — run it FIRST, before every other job (Rich 09-16, PRIORITY 1)
+Rich: "back up all of this project in the income notes backup folder on this computer."
+1. `git pull` first (always), then run:
+   `powershell -ExecutionPolicy Bypass -File "C:\Users\Admin\Desktop\Income Notes\tools\backup-vault.ps1"`
+   It writes a dated full snapshot + a full-history git bundle into
+   **Desktop\Income Notes - Backup** (it finds the folder even if named slightly differently,
+   creates it if missing; keeps the newest 10 snapshots).
+2. Verify: the new `vault-YYYY-MM-DD_HHmm` folder exists, has files, and contains the `.bundle`.
+3. Make it automatic (Rich wants "never lose anything"): register a nightly run —
+   `schtasks /Create /F /SC DAILY /ST 21:00 /TN "Income Notes Vault Backup" /TR "powershell -ExecutionPolicy Bypass -File \"C:\Users\Admin\Desktop\Income Notes\tools\backup-vault.ps1\""`
+   Confirm with `schtasks /Query /TN "Income Notes Vault Backup"`.
+4. Read `vault/resume-protocol.md` (new) — it is now standing policy on both surfaces.
+→ Mark DONE here with the snapshot path + whether the nightly task registered, push.
+
 ## ⬜ OPEN — Job 004: Multi-market motivated-seller sweep (PRIORITY — Rich 08-29)
 Read vault/deals/multi-market-brief-2026-08-29.md first. Then in Rich's browser, sweep
 Redfin/Zillow for THREE markets. Filters per market:
