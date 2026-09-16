@@ -11,6 +11,17 @@ in vault/buyers.md, motivated sellers already surfacing (Linway: -$100K cut, 114
 zero local buyer-first competition. Phoenix/S.FL = pipeline #2 (warm). Hedge funds =
 exploration lane #3 (not a hard rule; Job 005 reels pending).
 
+## Rich's 5-step frame (stated 2026-09-16 — the same machine, in his words)
+| Rich's step | Maps to | Status 09-16 |
+|---|---|---|
+| 1. Market research | sweeps, briefs, RPA rules, recon | ✅ deep — 6 deal files, 3-market briefs |
+| 2. Find buyers + market contracts | buyers.md + PSA/Assignment/NCND | ⚠️ 14 builders named, contracts drafted — but **0 confirmed land prices → D1 calls finish this step** |
+| 3. Seller outreach | letters (D3), Goudarzi call, voice lane | 🔴 **0 conversations — the machine stops here** |
+| 4. Terms + contract acquisition | option-first, $100 EMD, MAO math (D4) | templates ready, never used |
+| 5. Closing | blind teaser → NCND → assign → Eastern Title (D5) | ready, waiting |
+**Read:** steps 1, 4, 5 are built. The gap is the seam between 2 and 3 — one builder call
+(finishes step 2) and one seller conversation (starts step 3). Everything else is polish.
+
 ## THE CRITICAL PATH — in order, each step unblocks the next
 
 ### D1 — Rich: three builder calls (~30 min total) 🔴 THE BOTTLENECK
