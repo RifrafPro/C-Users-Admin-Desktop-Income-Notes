@@ -20,7 +20,7 @@ losing progress.
 | 2 | **Sync-first hook** (cloud) | `.claude/hooks/vault-load.sh` now **fetches + auto-pulls at every session start** and prints 🚨 if it can't — a stale session announces itself before any work | automatic |
 | 3 | **Desktop standing order** | pull at start → work → `git add -A && commit && push` at end (CLAUDE.md, 2026-08-28) | desktop Claude, every session |
 | 4 | **Local backup folder** ("Income Notes - Backup" on Rich's PC) | dated full snapshots + git bundles via `tools/backup-vault.ps1`, newest 10 kept | desktop Claude after each session (Job 008 installs it; optional nightly Task Scheduler run) |
-| 5 | **Drive mirror** ("Income Notes Vault") | key files + periodic `.bundle` (full history in one file) | cloud Claude at `/vault-save` |
+| 5 | **Drive mirror** ("Income Notes Vault") | key files as readable text (Drive connector can't reliably carry the binary `.bundle` — full history lives in layers 1 and 4) | cloud Claude at `/vault-save` |
 
 ## Session choreography (both surfaces)
 **START:** hook/standing-order pulls → read latest `vault/sessions/*.md` "Where we left off"
