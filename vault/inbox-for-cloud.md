@@ -6,9 +6,10 @@ follow-up (Drive mirroring, connector work, drafting), or anything Rich said at 
 terminal that cloud should hear. Cloud reads this at EVERY session start (the vault-load
 hook prints OPEN items) and marks items ✅ HANDLED with a one-line result.
 
-Format per item:
-## ⬜ OPEN — Msg NNN (date): one-line subject
-Body. What cloud should do with it.
+Format per item (copy, replace NNN/date/subject — keep the indent on this template
+line so the hook's OPEN-counter doesn't false-match it):
+    ## ⬜ OPEN — Msg NNN (date): one-line subject
+    Body. What cloud should do with it.
 
 ---
 
