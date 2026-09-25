@@ -4,28 +4,46 @@
 # to the vault, commits and pushes. ASCII only (PS 5.1 encoding rule).
 
 $ErrorActionPreference = "Stop"
+# PS 5.1 defaults to old TLS, which modern APIs refuse - force TLS 1.2
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $Repo = Split-Path -Parent $PSScriptRoot
-$EnvFile = "$env:USERPROFILE\.elevenlabs.env"
 $Log = Join-Path $Repo "vault\voice-agent-deploy-log.txt"
 $Stamp = Get-Date -Format "yyyy-MM-dd HH:mm"
 function Say($m) { Write-Host $m; Add-Content -Path $Log -Value "[$Stamp] $m" }
 
-# 1) Key
+# 1) Key - accept the file even if Notepad silently added .txt
+$EnvFile = "$env:USERPROFILE\.elevenlabs.env"
 if (-not (Test-Path $EnvFile)) {
-    Write-Host "NO KEY FILE. Run:  notepad $env:USERPROFILE\.elevenlabs.env"
+    $Alt = Get-ChildItem "$env:USERPROFILE" -Filter ".elevenlabs.env*" -Force -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($Alt) { $EnvFile = $Alt.FullName; Write-Host "Using key file: $EnvFile" }
+}
+if (-not (Test-Path $EnvFile)) {
+    Write-Host "NO KEY FILE. Run:  notepad `"$env:USERPROFILE\.elevenlabs.env`""
     Write-Host "Put one line in it:  ELEVENLABS_API_KEY=your_key_here   then save and rerun."
     exit 1
 }
-$Key = ((Get-Content $EnvFile | Where-Object { $_ -match "^ELEVENLABS_API_KEY=" }) -split "=",2)[1].Trim()
-if (-not $Key) { Write-Host "Key file exists but no ELEVENLABS_API_KEY= line found."; exit 1 }
+$KeyLine = Get-Content $EnvFile | Where-Object { $_ -match "ELEVENLABS_API_KEY" } | Select-Object -First 1
+$Key = (($KeyLine -split "=",2)[1]).Trim().Trim('"').Trim("'")
+if (-not $Key) { Write-Host "Key file exists but no ELEVENLABS_API_KEY= line found in $EnvFile"; exit 1 }
+if ($Key -notmatch "^(sk_|xi-)") { Write-Host ("WARNING: key does not start with sk_ - you may have copied the key NAME instead of the key VALUE. Trying anyway...") }
 
-# 2) Validate key
+# 2) Validate key - distinguish a bad key from a network problem
 try {
     $Me = Invoke-RestMethod -Uri "https://api.elevenlabs.io/v1/user" -Headers @{ "xi-api-key" = $Key }
     Say ("Key VALID. Account tier: " + $Me.subscription.tier)
 } catch {
-    Say ("Key REJECTED by ElevenLabs: " + $_.Exception.Message)
-    Write-Host "Check the key at elevenlabs.io -> My Account -> API Keys, fix the file, rerun."
+    $Status = $null
+    try { $Status = [int]$_.Exception.Response.StatusCode } catch {}
+    if ($Status -eq 401) {
+        Say "Key REJECTED (HTTP 401) - the key itself is wrong or revoked."
+        Write-Host "Make a FRESH key at elevenlabs.io -> My Account -> API Keys, copy it from the"
+        Write-Host "creation popup (the only time the full key is shown), update the file, rerun."
+    } elseif ($Status) {
+        Say ("ElevenLabs returned HTTP " + $Status + " - key may be scope-restricted. Recreate it with default permissions.")
+    } else {
+        Say ("NETWORK problem, not a key problem: " + $_.Exception.Message)
+        Write-Host "Check the internet connection and rerun - do NOT recreate the key for this."
+    }
     exit 1
 }
 

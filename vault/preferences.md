@@ -53,3 +53,11 @@ Cost is only a risk if forced to upgrade to Max. So run lean to stay comfortably
 - NOTE: going local / self-hosting / API keys does NOT lower a flat Pro bill and does NOT save
   tokens (the model always runs in the cloud). Don't pitch those as cost savings. (API keys are
   pay-per-token = MORE expensive — never route Rich to API-key auth to "save money".)
+
+## ⭐ STANDING RULING (Rich, 2026-09-25): THE AUTOMATION IS THE GOAL
+Rich's exact words: "The automation is the goal. REMEMBER THAT."
+The fully autonomous AI business IS the mission — deals fund it and prove it, but building
+the machine is not procrastination and must never be framed as such. Priority order when
+he asks for automation work: build it, make it deterministic (scripts over conversations),
+finish it end to end. The 09-07 execution gate applies to new RESEARCH/extractions, not to
+building automation Rich explicitly ordered.
