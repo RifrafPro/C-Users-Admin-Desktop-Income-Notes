@@ -96,6 +96,27 @@ Cost note: 2 short headless runs/day on Rich's plan — negligible; jobs remain 
 per CLAUDE.md (no sends, no purchases, ever, without Rich's "send it").
 → Mark DONE with the task names + test-run commit hash, push.
 
+## ⬜ OPEN — Job 011: Voice key + deploy the builder-call agent (Rich 09-25, PRIORITY 1)
+Rich is designing the AI to make the calls. Cloud built the deploy-ready agent config:
+`vault/automation/voice-agent-builder-buybox.md`. Your half (you're on his PC with him):
+1. Ask Rich to paste his ElevenLabs API key at the terminal when you prompt for it
+   (elevenlabs.io → My Account → API Keys → create). Store it in
+   `%USERPROFILE%\.elevenlabs.env` as `ELEVENLABS_API_KEY=...` — **OUTSIDE the repo,
+   NEVER commit it** (key-hygiene standing rule).
+2. Verify the key works: `curl -s -H "xi-api-key: <key>" https://api.elevenlabs.io/v1/user`
+   → should return his account JSON.
+3. Create the agent via the ElevenLabs Agents API using the SYSTEM PROMPT from the config
+   file verbatim (agent name: "FRESH GROUND Builder Buy-Box v1"). Save the returned
+   agent_id into the config file's Status table.
+4. Phone number: check the ElevenLabs dashboard/API for native number provisioning on his
+   plan. If it needs Twilio import instead, STOP and write what you found to
+   `vault/inbox-for-cloud.md` (Rich has a Twilio account w/ refund pending — cloud will
+   decide). Do not buy anything without telling Rich the price first.
+5. If a number attaches: place the EAR TEST call to Rich's cell (he'll give you the number
+   at the terminal — do not store it in the repo). That call is pre-approved by Rich.
+   Real builder dials remain gated on his per-call "send it."
+→ Mark DONE with agent_id + ear-test verdict, push. Blockers → inbox-for-cloud.md.
+
 ## ⬜ OPEN — Job 004: Multi-market motivated-seller sweep (PRIORITY — Rich 08-29)
 Read vault/deals/multi-market-brief-2026-08-29.md first. Then in Rich's browser, sweep
 Redfin/Zillow for THREE markets. Filters per market:
