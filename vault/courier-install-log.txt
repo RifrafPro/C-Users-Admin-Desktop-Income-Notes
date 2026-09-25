@@ -1,0 +1,7 @@
+[2026-09-25 10:21] === install-courier run ===
+[2026-09-25 10:21] Stray outer .git archived to C:\Users\Admin\Desktop\Income Notes - Backup\stray-outer-git-2026-09-25_1021.zip
+[2026-09-25 10:21] Stray outer .git DELETED - wrong-folder trap is gone.
+[2026-09-25 10:21] README-WRONG-FOLDER.txt written.
+[2026-09-25 10:21] Desktop launcher installed: Claude Vault.cmd
+[2026-09-25 10:21] Courier tasks registered (AM 08:00, PM 18:00). Kill switch: schtasks /Delete /TN "Income Notes Courier AM" /F (and PM).
+[2026-09-25 10:21] Jobs 009 and 010 marked done in inbox.

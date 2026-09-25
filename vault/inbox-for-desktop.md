@@ -60,7 +60,7 @@ Rich: "back up all of this project in the income notes backup folder on this com
      **Fixed by adding a UTF-8 BOM** (content unchanged). Committed. Keep the BOM, or use ASCII-only in future .ps1 files.
 - Backup folder on this PC is `Income Notes - Backups` (plural). The script's fuzzy-match fallback found it correctly — no rename needed.
 
-## ⬜ OPEN — Job 010: KILL THE WRONG-FOLDER TRAP (Rich 09-17, DO FIRST — it caused today's failed sync)
+#DONE (install-courier.ps1 2026-09-25 10:21): Job 010: KILL THE WRONG-FOLDER TRAP (Rich 09-17, DO FIRST — it caused today's failed sync)
 The outer `C:\Users\Admin\Desktop\Income Notes` folder is a stray git repo with NO remote.
 Every session that starts there sees "no remote / can't sync" and dies confused. Fix forever:
 1. Safety check the stray repo: `git -C "C:\Users\Admin\Desktop\Income Notes" log --oneline -20`.
@@ -75,7 +75,7 @@ Every session that starts there sees "no remote / can't sync" and dies confused.
    C-Users-Admin-Desktop-Income-Notes. Launch Claude with the Desktop 'Claude Vault' icon."
 → Mark DONE with what the stray repo contained + confirmation the icon works, push.
 
-## ⬜ OPEN — Job 009: Install the COURIER — automatic cloud↔desktop bridge (Rich 09-16, PRIORITY 1)
+#DONE (install-courier.ps1 2026-09-25 10:21): Job 009: Install the COURIER — automatic cloud↔desktop bridge (Rich 09-16, PRIORITY 1)
 Rich's order: cloud and desktop Claude must communicate with zero manual relaying.
 The vault is the message bus; this job makes the desktop side run WITHOUT anyone typing.
 1. Read `vault/inbox-for-cloud.md` (new) — that is YOUR channel TO cloud. Any question,
