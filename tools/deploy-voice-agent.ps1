@@ -27,24 +27,34 @@ $Key = (($KeyLine -split "=",2)[1]).Trim().Trim('"').Trim("'")
 if (-not $Key) { Write-Host "Key file exists but no ELEVENLABS_API_KEY= line found in $EnvFile"; exit 1 }
 if ($Key -notmatch "^(sk_|xi-)") { Write-Host ("WARNING: key does not start with sk_ - you may have copied the key NAME instead of the key VALUE. Trying anyway...") }
 
-# 2) Validate key - distinguish a bad key from a network problem
+# Show exactly what key text is being sent (masked) so paste errors are visible
+$Masked = if ($Key.Length -gt 12) { $Key.Substring(0,7) + "..." + $Key.Substring($Key.Length-4) } else { "(too short)" }
+Say ("Key being used: " + $Masked + "  length=" + $Key.Length)
+if ($Key -notmatch "^sk_") {
+    Say "PROBLEM FOUND WITHOUT CALLING ANYONE: ElevenLabs keys start with sk_ and this one does not."
+    Say "The file does not contain a real key value. Fix the file and rerun."
+    exit 1
+}
+
+function Get-ErrBody($e) {
+    $b = $e.ErrorDetails.Message
+    if (-not $b) {
+        try {
+            $S = $e.Exception.Response.GetResponseStream()
+            $b = (New-Object System.IO.StreamReader($S)).ReadToEnd()
+        } catch { $b = $e.Exception.Message }
+    }
+    return $b
+}
+
+# 2) Soft validation - a scope-restricted key can fail here yet still create agents,
+#    so a failure NEVER stops the run; it just gets printed verbatim.
 try {
     $Me = Invoke-RestMethod -Uri "https://api.elevenlabs.io/v1/user" -Headers @{ "xi-api-key" = $Key }
-    Say ("Key VALID. Account tier: " + $Me.subscription.tier)
+    Say ("Key VALID for account read. Tier: " + $Me.subscription.tier)
 } catch {
-    $Status = $null
-    try { $Status = [int]$_.Exception.Response.StatusCode } catch {}
-    if ($Status -eq 401) {
-        Say "Key REJECTED (HTTP 401) - the key itself is wrong or revoked."
-        Write-Host "Make a FRESH key at elevenlabs.io -> My Account -> API Keys, copy it from the"
-        Write-Host "creation popup (the only time the full key is shown), update the file, rerun."
-    } elseif ($Status) {
-        Say ("ElevenLabs returned HTTP " + $Status + " - key may be scope-restricted. Recreate it with default permissions.")
-    } else {
-        Say ("NETWORK problem, not a key problem: " + $_.Exception.Message)
-        Write-Host "Check the internet connection and rerun - do NOT recreate the key for this."
-    }
-    exit 1
+    Say ("Account-read check failed. ElevenLabs said EXACTLY: " + (Get-ErrBody $_))
+    Say "Continuing anyway - a permission-restricted key can still create agents."
 }
 
 # 3) The agent (prompt mirrors vault/automation/voice-agent-builder-buybox.md v1)
@@ -71,11 +81,11 @@ try {
     $AgentId = $Resp.agent_id
     Say ("AGENT CREATED. agent_id: " + $AgentId)
 } catch {
-    $Err = $_.ErrorDetails.Message
-    if (-not $Err) { $Err = $_.Exception.Message }
-    Say ("Agent creation FAILED: " + $Err)
-    git -C $Repo add -A; git -C $Repo commit -m "voice agent deploy FAILED - log attached"; git -C $Repo push
-    Write-Host "Failure pushed to the vault - cloud Claude will see it and fix the script."
+    Say ("Agent creation FAILED. ElevenLabs said EXACTLY: " + (Get-ErrBody $_))
+    Say "Read the message above - invalid_api_key means the key text is wrong;"
+    Say "missing_permissions means recreate the key with ALL permissions enabled."
+    git -C $Repo add -A; git -C $Repo commit -m "voice agent deploy FAILED - verbatim ElevenLabs error in log"; git -C $Repo push
+    Write-Host "Failure pushed to the vault - cloud Claude sees the exact error and acts on it."
     exit 1
 }
 
