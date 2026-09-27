@@ -8,3 +8,7 @@
 [2026-09-26 19:27] Agent creation FAILED. ElevenLabs said EXACTLY: {"detail":{"type":"authentication_error","code":"unauthorized","message":"Invalid API key","status":"invalid_api_key","request_id":"9b1833e0de52f1e2d54b55dba1967d45"}}
 [2026-09-26 19:27] Read the message above - invalid_api_key means the key text is wrong;
 [2026-09-26 19:27] missing_permissions means recreate the key with ALL permissions enabled.
+[2026-09-26 19:31] Account-read limited (key may be scope-restricted) - proceeding: {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission user_read to execute this operation.","status":"missing_permissions","request_id":"d600885b999a49b3221c06b5a6eae2cf"}}
+[2026-09-26 19:31] Agent creation FAILED. ElevenLabs said EXACTLY: {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission convai_write to execute this operation.","status":"missing_permissions","request_id":"d40aece191e57f72221c06b5a6eaea75"}}
+[2026-09-26 19:31] Read the message above - invalid_api_key means the key text is wrong;
+[2026-09-26 19:31] missing_permissions means recreate the key with ALL permissions enabled.
