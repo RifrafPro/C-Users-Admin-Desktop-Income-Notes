@@ -4,6 +4,7 @@
 # to the vault, commits and pushes. ASCII only (PS 5.1 encoding rule).
 
 $ErrorActionPreference = "Stop"
+& powershell -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot "install-advisor-rules.ps1")
 # PS 5.1 defaults to old TLS, which modern APIs refuse - force TLS 1.2
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $Repo = Split-Path -Parent $PSScriptRoot

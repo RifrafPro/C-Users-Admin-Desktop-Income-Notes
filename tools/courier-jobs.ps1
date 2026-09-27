@@ -8,6 +8,7 @@ $Stamp = Get-Date -Format "yyyy-MM-dd HH:mm"
 function Say($m) { Add-Content -Path $Log -Value "[$Stamp] $m" }
 
 Say "courier heartbeat - payload v2 running"
+& powershell -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot "install-advisor-rules.ps1") >> $Log 2>&1
 
 # JOB: deploy the voice caller if not yet deployed and the key file exists
 $Cfg = Join-Path $Repo "vault\automation\voice-agent-builder-buybox.md"
