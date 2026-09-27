@@ -12,31 +12,6 @@ $Log = Join-Path $Repo "vault\voice-agent-deploy-log.txt"
 $Stamp = Get-Date -Format "yyyy-MM-dd HH:mm"
 function Say($m) { Write-Host $m; Add-Content -Path $Log -Value "[$Stamp] $m" }
 
-# 1) Key - accept the file even if Notepad silently added .txt
-$EnvFile = "$env:USERPROFILE\.elevenlabs.env"
-if (-not (Test-Path $EnvFile)) {
-    $Alt = Get-ChildItem "$env:USERPROFILE" -Filter ".elevenlabs.env*" -Force -ErrorAction SilentlyContinue | Select-Object -First 1
-    if ($Alt) { $EnvFile = $Alt.FullName; Write-Host "Using key file: $EnvFile" }
-}
-if (-not (Test-Path $EnvFile)) {
-    Write-Host "NO KEY FILE. Run:  notepad `"$env:USERPROFILE\.elevenlabs.env`""
-    Write-Host "Put one line in it:  ELEVENLABS_API_KEY=your_key_here   then save and rerun."
-    exit 1
-}
-$KeyLine = Get-Content $EnvFile | Where-Object { $_ -match "ELEVENLABS_API_KEY" } | Select-Object -First 1
-$Key = (($KeyLine -split "=",2)[1]).Trim().Trim('"').Trim("'")
-if (-not $Key) { Write-Host "Key file exists but no ELEVENLABS_API_KEY= line found in $EnvFile"; exit 1 }
-if ($Key -notmatch "^(sk_|xi-)") { Write-Host ("WARNING: key does not start with sk_ - you may have copied the key NAME instead of the key VALUE. Trying anyway...") }
-
-# Show exactly what key text is being sent (masked) so paste errors are visible
-$Masked = if ($Key.Length -gt 12) { $Key.Substring(0,7) + "..." + $Key.Substring($Key.Length-4) } else { "(too short)" }
-Say ("Key being used: " + $Masked + "  length=" + $Key.Length)
-if ($Key -notmatch "^sk_") {
-    Say "PROBLEM FOUND WITHOUT CALLING ANYONE: ElevenLabs keys start with sk_ and this one does not."
-    Say "The file does not contain a real key value. Fix the file and rerun."
-    exit 1
-}
-
 function Get-ErrBody($e) {
     $b = $e.ErrorDetails.Message
     if (-not $b) {
@@ -48,14 +23,55 @@ function Get-ErrBody($e) {
     return $b
 }
 
-# 2) Soft validation - a scope-restricted key can fail here yet still create agents,
-#    so a failure NEVER stops the run; it just gets printed verbatim.
-try {
-    $Me = Invoke-RestMethod -Uri "https://api.elevenlabs.io/v1/user" -Headers @{ "xi-api-key" = $Key }
-    Say ("Key VALID for account read. Tier: " + $Me.subscription.tier)
-} catch {
-    Say ("Account-read check failed. ElevenLabs said EXACTLY: " + (Get-ErrBody $_))
-    Say "Continuing anyway - a permission-restricted key can still create agents."
+# 1) Key - read the stored one if any; the window itself collects a new one when needed.
+$EnvFile = "$env:USERPROFILE\.elevenlabs.env"
+$Alt = Get-ChildItem "$env:USERPROFILE" -Filter ".elevenlabs.env*" -Force -ErrorAction SilentlyContinue | Select-Object -First 1
+if ($Alt) { $EnvFile = $Alt.FullName }
+$Key = ""
+if (Test-Path $EnvFile) {
+    $KeyLine = Get-Content $EnvFile | Where-Object { $_ -match "ELEVENLABS_API_KEY" } | Select-Object -First 1
+    if ($KeyLine) { $Key = (($KeyLine -split "=",2)[1]).Trim().Trim('"').Trim("'") }
+}
+
+# 2) Validate; if the key is dead, ask for a fresh one RIGHT HERE in this window.
+#    (invalid_api_key -> prompt; any other error, e.g. permissions, passes through.)
+$script:LastErr = ""
+function Test-Key($k) {
+    if (-not $k -or $k -notmatch "^sk_") { $script:LastErr = "no usable key stored"; return $false }
+    try {
+        $Me = Invoke-RestMethod -Uri "https://api.elevenlabs.io/v1/user" -Headers @{ "xi-api-key" = $k }
+        Say ("Key VALID. Tier: " + $Me.subscription.tier)
+        return $true
+    } catch {
+        $script:LastErr = Get-ErrBody $_
+        if ($script:LastErr -match "invalid_api_key") { return $false }
+        Say ("Account-read limited (key may be scope-restricted) - proceeding: " + $script:LastErr)
+        return $true
+    }
+}
+
+$Tries = 0
+while (-not (Test-Key $Key)) {
+    if ($Tries -ge 4) { Say "Four failed key attempts - stopping so we do not lock anything."; exit 1 }
+    Write-Host ""
+    Write-Host "==========================================================="
+    Write-Host " THE STORED KEY IS DEAD ($script:LastErr)"
+    Write-Host " Get a fresh one - 60 seconds:"
+    Write-Host "  1. Browser: elevenlabs.io -> sign in -> profile icon -> API Keys"
+    Write-Host "  2. Click 'Create API Key' -> name it anything -> create"
+    Write-Host "  3. In the popup click COPY (only moment the full key shows)"
+    Write-Host "  4. Come BACK TO THIS WINDOW, RIGHT-CLICK once, press Enter"
+    Write-Host "==========================================================="
+    $NewKey = Read-Host " Paste the new key now"
+    $Key = $NewKey.Trim().Trim('"').Trim("'")
+    if ($Key -match "^sk_") {
+        Set-Content -Path "$env:USERPROFILE\.elevenlabs.env" -Value ("ELEVENLABS_API_KEY=" + $Key)
+        $EnvFile = "$env:USERPROFILE\.elevenlabs.env"
+        Write-Host " Saved. Checking it with ElevenLabs..."
+    } else {
+        Write-Host " That text does not start with sk_ so it is not the key value. Try step 3 again."
+    }
+    $Tries++
 }
 
 # 3) The agent (prompt mirrors vault/automation/voice-agent-builder-buybox.md v1)
