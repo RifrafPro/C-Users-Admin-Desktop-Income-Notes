@@ -75,3 +75,18 @@ range = unblocks S5 MAO for every deal in the pipeline) → note follow-up owner
 - **agent_id:** agent_9201m3gbrsdcftm8f21bygh8cwgf
 - Key stored locally at %USERPROFILE%\.elevenlabs.env (never committed).
 - Next: attach phone number + ear test (cloud has the ball).
+
+## PHONE ATTACH — morning runbook (written 09-26 night, Rich has Twilio account ready)
+Decision: **Twilio (already owned), NOT Plivo** — ElevenLabs' phone integration is
+Twilio-native. Voice calls need NO A2P (that gates SMS only).
+1. twilio.com console → confirm the number is active (or buy one, ~$1.15/mo, VA area code).
+2. Twilio console front page → copy **Account SID** and **Auth Token** (paste ONLY into
+   the ElevenLabs form — never into chat).
+3. elevenlabs.io → **Phone Numbers** tab → Import Twilio number → paste SID + token.
+4. Same tab → **Outbound call** button → EAR TEST: agent calls Rich's cell first.
+5. Voice pick (Agents → agent → Voice): natural conversational voice; identity stays
+   AI-disclosed per the KB — no human-mimic voices cloned from real people.
+6. After ear test passes: Rich says "send it" per builder → Paramount 301-370-6463 →
+   Botero 202-515-0020 → Paradigm 703-476-5877. Transcripts → buyers.md same day.
+⚠️ Still open: rotate the LIVE key exposed in chat 09-26 (delete in dashboard →
+double-click DEPLOY-CALLER → paste replacement into the window).
