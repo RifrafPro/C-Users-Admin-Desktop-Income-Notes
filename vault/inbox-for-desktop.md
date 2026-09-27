@@ -96,6 +96,18 @@ Cost note: 2 short headless runs/day on Rich's plan — negligible; jobs remain 
 per CLAUDE.md (no sends, no purchases, ever, without Rich's "send it").
 → Mark DONE with the task names + test-run commit hash, push.
 
+## ⬜ OPEN — Job 012: Diagnose the broken courier scheduled tasks (cloud, 09-27)
+Evidence: two manual `schtasks /Run` firings of "Income Notes Courier AM" (09-27 ~01:45 UTC)
+produced ZERO effect — not even the `git pull` happened (repo sat at e61413a until Rich's
+manual DEPLOY-CALLER run pulled). The task reports SUCCESS but its action isn't executing.
+1. Run: `schtasks /Query /TN "Income Notes Courier AM" /V /FO LIST` — capture "Task To Run",
+   "Last Result", "Run As User", "Logon Mode".
+2. Likely culprits: quoting of the space-laden path in /TR, wrong working dir, or PATH
+   missing git/claude in the task context. Fix the task registration accordingly
+   (re-register with `cmd /c` + full quoting, or a wrapper without spaces in its path).
+3. Test-fire and verify a "Courier run" commit reaches origin.
+→ Mark DONE with root cause + fix, push. (Same fix applies to the PM task.)
+
 ## ⬜ OPEN — Job 011: Voice key + deploy the builder-call agent (Rich 09-25, PRIORITY 1)
 Rich is designing the AI to make the calls. Cloud built the deploy-ready agent config:
 `vault/automation/voice-agent-builder-buybox.md`. Your half (you're on his PC with him):
