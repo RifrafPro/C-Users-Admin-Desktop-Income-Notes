@@ -91,19 +91,45 @@ $Body = @{
     }
 } | ConvertTo-Json -Depth 8
 
-# 4) Create it
-try {
-    $Resp = Invoke-RestMethod -Method Post -Uri "https://api.elevenlabs.io/v1/convai/agents/create" `
-        -Headers @{ "xi-api-key" = $Key; "Content-Type" = "application/json" } -Body $Body
-    $AgentId = $Resp.agent_id
-    Say ("AGENT CREATED. agent_id: " + $AgentId)
-} catch {
-    Say ("Agent creation FAILED. ElevenLabs said EXACTLY: " + (Get-ErrBody $_))
-    Say "Read the message above - invalid_api_key means the key text is wrong;"
-    Say "missing_permissions means recreate the key with ALL permissions enabled."
-    git -C $Repo add -A; git -C $Repo commit -m "voice agent deploy FAILED - verbatim ElevenLabs error in log"; git -C $Repo push
-    Write-Host "Failure pushed to the vault - cloud Claude sees the exact error and acts on it."
-    exit 1
+# 4) Create it - if the key lacks permissions or died, collect a better one right here
+$AgentId = $null
+$CTries = 0
+while (-not $AgentId) {
+    try {
+        $Resp = Invoke-RestMethod -Method Post -Uri "https://api.elevenlabs.io/v1/convai/agents/create" `
+            -Headers @{ "xi-api-key" = $Key; "Content-Type" = "application/json" } -Body $Body
+        $AgentId = $Resp.agent_id
+        Say ("AGENT CREATED. agent_id: " + $AgentId)
+    } catch {
+        $Err = Get-ErrBody $_
+        Say ("Agent creation FAILED. ElevenLabs said EXACTLY: " + $Err)
+        if (($Err -match "missing_permissions|invalid_api_key") -and ($CTries -lt 3)) {
+            Write-Host ""
+            Write-Host "==========================================================="
+            Write-Host " THIS KEY IS REAL BUT WAS CREATED WITH PERMISSIONS SWITCHED OFF."
+            Write-Host " Make one more key, UNRESTRICTED this time - 60 seconds:"
+            Write-Host "  1. Browser: elevenlabs.io -> profile icon -> API Keys -> Create API Key"
+            Write-Host "  2. IMPORTANT: if the dialog shows a 'Restrict key' option or a list of"
+            Write-Host "     permission toggles, choose FULL ACCESS / leave EVERYTHING ON."
+            Write-Host "  3. Click COPY in the popup."
+            Write-Host "  4. Come back HERE, RIGHT-CLICK once, press Enter."
+            Write-Host "==========================================================="
+            $NewKey = Read-Host " Paste the unrestricted key now"
+            $NewKey = $NewKey.Trim().Trim('"').Trim("'")
+            if ($NewKey -match "^sk_") {
+                $Key = $NewKey
+                Set-Content -Path "$env:USERPROFILE\.elevenlabs.env" -Value ("ELEVENLABS_API_KEY=" + $Key)
+                Write-Host " Saved. Retrying agent creation..."
+            } else {
+                Write-Host " That text does not start with sk_ - copy the key VALUE from the popup and try again."
+            }
+            $CTries++
+        } else {
+            git -C $Repo add -A; git -C $Repo commit -m "voice agent deploy FAILED - verbatim ElevenLabs error in log"; git -C $Repo push
+            Write-Host "Failure pushed to the vault - cloud Claude sees the exact error and acts on it."
+            exit 1
+        }
+    }
 }
 
 # 5) Record + push
