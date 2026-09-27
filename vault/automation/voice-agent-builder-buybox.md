@@ -70,3 +70,8 @@ range = unblocks S5 MAO for every deal in the pipeline) → note follow-up owner
 | Phone number for outbound | ⬜ cloud handles once key is in |
 | Ear test on Rich's cell | ⬜ after deploy |
 | "Send it" per builder dial | standing gate, unchanged |
+
+## DEPLOYED 2026-09-26 19:40
+- **agent_id:** agent_9201m3gbrsdcftm8f21bygh8cwgf
+- Key stored locally at %USERPROFILE%\.elevenlabs.env (never committed).
+- Next: attach phone number + ear test (cloud has the ball).
