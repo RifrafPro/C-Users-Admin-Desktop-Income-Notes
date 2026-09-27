@@ -108,7 +108,7 @@ manual DEPLOY-CALLER run pulled). The task reports SUCCESS but its action isn't 
 3. Test-fire and verify a "Courier run" commit reaches origin.
 → Mark DONE with root cause + fix, push. (Same fix applies to the PM task.)
 
-## ⬜ OPEN — Job 011: Voice key + deploy the builder-call agent (Rich 09-25, PRIORITY 1)
+## ✅ DONE (2026-09-26) — Job 011: Voice caller DEPLOYED — agent_9201m3gbrsdcftm8f21bygh8cwgf on ElevenLabs (Creator tier). Key stored locally. Remaining: phone number + ear test (cloud has the ball).
 Rich is designing the AI to make the calls. Cloud built the deploy-ready agent config:
 `vault/automation/voice-agent-builder-buybox.md`. Your half (you're on his PC with him):
 1. Ask Rich to paste his ElevenLabs API key at the terminal when you prompt for it
