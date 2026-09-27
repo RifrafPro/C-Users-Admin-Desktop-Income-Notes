@@ -1,0 +1,10 @@
+[2026-09-25 12:06] Key REJECTED by ElevenLabs: The remote server returned an error: (401) Unauthorized.
+[2026-09-25 12:09] Key REJECTED by ElevenLabs: The remote server returned an error: (401) Unauthorized.
+[2026-09-25 12:15] Key REJECTED by ElevenLabs: The remote server returned an error: (401) Unauthorized.
+[2026-09-26 18:56] Key REJECTED (HTTP 401) - the key itself is wrong or revoked.
+[2026-09-26 19:27] Key being used: sk_7786...edf1  length=51
+[2026-09-26 19:27] Account-read check failed. ElevenLabs said EXACTLY: {"detail":{"type":"authentication_error","code":"unauthorized","message":"Invalid API key","status":"invalid_api_key","request_id":"1a630ac7433b2aa1d54b55dba1967d50"}}
+[2026-09-26 19:27] Continuing anyway - a permission-restricted key can still create agents.
+[2026-09-26 19:27] Agent creation FAILED. ElevenLabs said EXACTLY: {"detail":{"type":"authentication_error","code":"unauthorized","message":"Invalid API key","status":"invalid_api_key","request_id":"9b1833e0de52f1e2d54b55dba1967d45"}}
+[2026-09-26 19:27] Read the message above - invalid_api_key means the key text is wrong;
+[2026-09-26 19:27] missing_permissions means recreate the key with ALL permissions enabled.
