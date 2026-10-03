@@ -179,3 +179,137 @@ Three things worth taking, all free: **(1) the text-only selling playbook + offe
 (2) the 3-week dispo cadence, (3) the oil-tank screen for DMV teardowns.** Nothing here changes
 the "do not enroll" verdict — the paid tier's real value is Tooker's developer network, which
 we're building ourselves via the buy-box caller.
+
+---
+# 🆕 TOP-10 CHANNEL EXTRACTION (desktop, 2026-10-03)
+All 10 transcripts read in full (3 parallel readers; headline claims spot-checked against source
+text). Substance vs pitch ranged 15-70% — these are course-funnel videos. ⚠️ The LandAtlas video
+is a paid affiliate promo ("pretty sweet affiliate deal", code LUX).
+
+## 1. 🔁 CORRECTIONS to what we had
+| We had | New evidence | Use now |
+|---|---|---|
+| Land ≈ 25% of new-build value | Their quick math is **1/3** ("4.5M × 33% = 1.5M"); their own deals land **21-36%** | Treat as a **21-36% range**; 25% = conservative. Our land-residual model stays primary. |
+| Offer = Zestimate | Zestimate $956K → contracted **$1.8M**, assigned $1.95M (new build next door sold $9.3M) | Zestimate is a **floor for the pitch, not a ceiling**. |
+| Walk comps "net of commission" | Failed live: seller's comps were developer-direct sales, no agents ("I don't think realtors are involved") | **Check how each comp sold first.** Only use the argument on MLS comps. |
+| Text-only selling (Tooker) | Tyson: "the text message is just an invitation to a phone call" — call back immediately | Both valid; let the seller pick the channel (Tooker's switch rule still applies). |
+| 3-week dispo after contract | "50%+ of my deals I'm pre-selling before I even get them under contract" | Get the builder's number *first* (honestly framed — see §5), then contract. |
+| $100 EMD | They use **$50K non-refundable, developer-funded, released to seller** to close skeptical sellers | Keep $100 as default; big EMD is a *buyer-funded* closing tool on hard sellers. |
+
+## 2. Developer & lender math (the buyer side)
+- **🚨 Appraisal cap on your fee [Certain, lender quote]:** construction lenders size the loan on
+  **the LOWER of purchase price or as-is appraisal** ("buying a lot for 3 million, but it appraises
+  for 2.8, we're going to do the note based off of 2.8"). → If our assignment fee pushes the builder's
+  price above appraised land value, the builder brings the gap in cash. **Fee ceiling = appraisal
+  headroom.** Add to underwriter.
+- Lender terms (Kevin Lucas, Vault Leverage Capital, AZ): up to **85% LTC**, 100% of construction,
+  12-24 mo, ~$1M interest reserve, interest only on drawn funds. Lender weighs builder track record as
+  heavily as the property. "All the margins are made on the acquisition."
+- PV deal shape: $3M lot + $4-4.5M build (6,000 sf, ~$670-750/sf AZ finishes) = $7.5M all-in → exit
+  $10.5M+. Their own: $1.6M lot + $3.5M build (7,500 sf) → $5.5M all-in → $7.5M exit, ~$2M profit.
+- **Developer floor:** "If my part of the pie isn't worth a million bucks, it's not worth two years."
+- **Time = money to builders:** a developer paid **$3.1M vs $3.0M for a 6-month close** (saves ~$25K/mo
+  hard-money interest). Long escrow / seller rent-back is a *value-add* when pitching the builder.
+- **Plans + permits add ~$1M:** Tooker bought $3.5M, entitled it, sold $4.5M a year later.
+- **Builders overpay $50-75K** when short on deals (need to keep crews busy) or when they have a custom
+  end-client waiting. → Ask in every buy-box call: "How's your pipeline? Do you have clients waiting?"
+- **Hillside/wash lot:** +7-8 months AND **+$750K** site work vs flat (AZ numbers; the DMV equivalents are
+  steep slope, Chesapeake Bay RPA, stormwater, Fairfax infill grading).
+- **What kills a lot for builders:** road noise (#1, "at any level"), corner lot (shrinks building
+  envelope — sellers think it adds value), no privacy, apartments across the street, power lines, lot
+  size (6,100 vs 7,500 sf = "big difference"), bad orientation/view.
+- **Get the survey:** setbacks set the envelope; a 30-ft setback error ≈ 400 sf ≈ $600K of exit value.
+- **JV alternative when seller wants more than any cash buyer pays:** seller contributes lot, developer
+  builds at cost, 50/50 profit, land credited & repaid first (example: $2.85M cash offer vs $3.3M land
+  credit + half profit ≈ $4.7M to owner). Turns a dead deal into a deal.
+
+## 3. Sourcing — list building
+- **Market find:** Zillow, year built 2023+ → where $4-5M+ new builds sit beside 1950s-80s homes. Note
+  what developers paid for those lots.
+- **List filters (LandAtlas / Virtual Flip Leads / any parcel tool):** draw the corridor → built before
+  ~1965-1980 (set per market) → SFR only → lot size band (e.g., ≥¾ ac AZ; 5,000-15,000 sf FL) → owned 5+
+  years (or 20+) → **last purchase price below your intended offer** (seller surely profits) → exclude
+  MLS-listed → flag waterfront separately (higher offer, not comparable). ~1,000 parcels → ~287.
+- Reply rates: ~10% of texts reply, most "no." Their reason for texting: high-net-worth owners
+  "never answer a cold call… read every single text."
+- **"Sniper" fixed-offer mail:** learn the builder's price per lot size, mail a fixed offer at ~90% of it.
+  Neutral letter when lot values vary widely.
+
+## 4. Seller calls — lines worth stealing (for S6 + the voice caller)
+- Discovery: **"Has selling crossed your mind at all?"** · "What's your timeline… what's your whole
+  situation?" · "Do you currently live in the house?" · "What would you need to net — no realtor fees?"
+- Their first text (adapt, don't copy — see §6): "I work with developers in [area]… would you be
+  interested in selling [address]? I'm not here to waste your time. It would be somewhere around
+  $[X] cash, no realtor fees. Would it be worth a chat?" → **price range in the first message.**
+- Sell four things: **privacy, speed, convenience, certainty.**
+- **Anchor with the flawed neighbor:** name the closest stale listing and its flaws (road noise, no
+  view, 236 DOM) → pulled an FSBO from $15M to ~$3.5M/lot ("mid-3s per lot").
+- **Trade terms for price:** "Would you ever be open to a longer escrow period? I think we'd be able to
+  get to a higher number."
+- Deposit objection: "We'd put down non-refundable earnest money… the only way we cancel is if
+  [specific condition, e.g., the lot split is denied]."
+- "The locals have all seen it": "Out-of-state developers have an appetite to pay a little more."
+- Anti-pressure: "I don't like the back-and-forth game or bidding wars — I want to make something make sense."
+- **Competing offer:** ask its inspection period, EMD, and close date → email (not text) an offer
+  $20-30K above: "We don't want to go back and forth — giving you our highest and best right away."
+- Close: "Talk with your wife, I'll crunch numbers with my partners — where would we realistically need
+  to be?" + ask for photos and the survey.
+- Value-adds: free rent-back for N months; help sourcing their next home off-market.
+- Huge opening ask = "a gatekeeper to see who's serious." Interest signals: 15+ min call, shares details,
+  invites you to walk the lot.
+- With builder-sellers: ask "Are you a builder?" → answer honestly ("No, I'm a wholesaler"). One seller
+  vented about a wholesaler who claimed to be a builder; honesty kept the call alive.
+
+## 5. Buyer side — finding & working builders
+- **Builder's listing agent is a buyer channel:** the agent wants the resale listing (3% of $4.5M ≈
+  $135K) so they push the lot to their developer. If the builder isn't named: look up the new build's
+  owner → Google owner + state → call main line → ask for their agent → find the agent (Instagram) and
+  call; DM too.
+- Agent text: "I source off-market properties, teardowns and lots for developers… are you or any
+  developers you work with looking for deals? I have an off-market lot right around the corner from the
+  property you sold." ⚠️ Only say "I have" once it's under contract (see §6).
+- Builder cold pitch: "I specialize in finding off-market opportunities for high-end luxury developers…
+  do you have an acquisitions department?" Decision-maker lookup: paste the builder's site into Claude,
+  ask who decides.
+- **Builder's red line (Frank DiMaggio):** claiming you have a lot under contract when you don't =
+  instant blacklist. Asking "what would you pay for this lot?" *before* contract is fine **if you say so
+  up front** — he'll quote "within 100 grand."
+- **Follow-up that carries info:** "Just so you're aware, the lot down the street's coming on at ~5.5 —
+  that probably puts you around here." (One lot took 2+ years of follow-up.)
+- "When someone says yes, go to that first person. Don't keep shopping it for an extra $5-15K."
+
+## 6. ⚠️ Compliance flags (do NOT copy these parts)
+- **Mass cold texting** (Smarter Contact Elite $799/mo, skip-traced lists, "8 variations" so it doesn't
+  look automated) = TCPA + **Virginia Telephone Privacy Protection Act** ($500-1,500/violation) + A2P
+  10DLC suspension risk; message rotation to dodge filters reads as willful. Our gate stands: A2P
+  registration + DNC scrub + Rich's "send it."
+- **Recorded & published calls with no consent statement.** FL (a call in these videos) and MD are
+  all-party-consent states. Our voice caller must disclose recording.
+- **Misrepresentation:** "I'm a manager at [builder]", "we're buying", "I have a lot" before
+  contract. Use our honest framing: "I work with developers; I'd be assigning this contract."
+- **Unlicensed brokerage:** pre-selling property you don't control, "they pay my commission," the agent
+  "keeps anything above $960K" (net-listing style), and buyer-paid side fees where seller and buyer
+  contract directly → all edge toward brokering. VA/MD/DC are stricter than AZ. **Attorney/Eastern Title
+  question before using any of these.** Virginia's wholesaler-disclosure law — verify citation [Guessing].
+- Paying a builder's listing agent a buy-side fee (e.g., $27K): disclose to all parties in writing.
+- Business-purpose affidavits on construction loans: false ones = loan fraud (lender side, FYI).
+
+## 7. LandAtlas — verdict 🟡 (check DMV coverage before paying)
+What it does (from the demo): parcel lists by county/polygon/APN/owner with teardown filters (lot size,
+year built, years owned, purchase price, exclude MLS, wetlands/flood/slope, out-of-state owner),
+owner de-dup, built-in skip trace to CSV, mail-ready export with campaign IDs, parcel cards (est. max
+offer, comps, buildability), **builder database (8,859 builders with buy boxes; claims D.R. Horton,
+Lennar)**, ~600 assignment-friendly title cos, CRM + e-sign + due-diligence countdown.
+Price: **$297 first month w/ code LUX, then ~$497/mo** (their comps: LandPortal $497, DocuSign
+$400-600, Podio $300). Demo was FL/AZ only — **never claimed VA/MD/DC data.** Before any trial:
+confirm Fairfax/Arlington/Montgomery parcel coverage + how many DMV builders it lists. It overlaps what
+we already do with Land Insights + county GIS + the buy-box caller. Not a priority purchase.
+
+## 8. Income-notes side note
+A $14M construction loan was resold 3× in two weeks, ending at a Japanese bank; each seller kept ~1.5
+pts of spread (10.5% → 9% → ~8%). Same note-trading mechanic as our note-investing plan, at scale.
+
+## Bottom line (top-10)
+Highest-value adds: **(1) the appraisal cap on our fee, (2) the "what kills a lot" list + survey/
+setback check, (3) the seller-call lines for S6 and the voice caller, (4) the builder's-listing-agent
+buyer channel, (5) the corrections table in §1.** Everything else is their course funnel.
