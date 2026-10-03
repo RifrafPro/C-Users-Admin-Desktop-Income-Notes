@@ -182,7 +182,14 @@ Capture: who Olivia is (handle/name/what she sells), her exact strategy steps, w
 acknowledges the 2026 institutional pullback, any named funds/portals/tools.
 → Append findings to vault/research/hedge-fund-buyer-strategy.md, push.
 
-## ⬜ OPEN — Job 006: Tyson Smith free-content deep extraction (context: research/guides/luxury-wholesaling-tyson-smith-extracted.md)
+## ✅ DONE (2026-10-03) — Job 006: both videos fully transcribed + read via yt-dlp; findings appended to the guide (sections A-G)
+Top takeaways: (1) Tooker's text-only selling playbook + offer-text layout, (2) 3-week dispo cadence
+(developers devalue over-shopped lots), (3) 🚨 buried oil-tank screen for DMV teardowns → underwriter.
+Channel catalogued (10 luxury videos queued, LandAtlas first). Skool NOT extracted (login wall, no sign-ups).
+Correction: VzFzHIef1FQ is InvestorLift's podcast (sponsor-biased), not Tyson's own channel.
+
+### Original job text
+(context: research/guides/luxury-wholesaling-tyson-smith-extracted.md)
 In Rich's browser (logged into YouTube/Skool):
 1. youtube.com/watch?v=VzFzHIef1FQ (11/10 Podcast ep39) + youtube.com/watch?v=OEvNVYrn0lQ
    (free coaching call w/ Matthew Tooker) — watch/skim transcripts (YouTube "show transcript"),

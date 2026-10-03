@@ -58,3 +58,124 @@ Tuition ($3-50K), their "5,000 luxury leads" (our channels are fresher + free), 
 Their $50K course ≈ our vault + 2 tactics we just took for free (expired-luxury channel,
 EMD playbook awareness) + a JV network we don't need yet. FRESH GROUND is independently
 on the model that their own marketing proves pays $100K+/deal.
+
+---
+# 🆕 JOB 006 DEEP EXTRACTION — full transcripts read (desktop, 2026-10-03)
+Method: Agent Reach / yt-dlp captions → full read of both videos (no sign-ups, nothing bought).
+- **VzFzHIef1FQ** — "The Luxury Wholesale Blueprint" = **InvestorLift's "11 out of 10" podcast ep39**
+  (InvestorLift channel, 2026-04-01, 1h42m; hosts Robert of InvestorLift + Zach Keeps, a Phoenix
+  buyer). ⚠️ Host sells InvestorLift → every "you need InvestorLift" line is sponsor talk. Only
+  ~35 min is business; the rest is cars/Bitcoin/lifestyle.
+- **OEvNVYrn0lQ** — "Join My Luxury Wholesale Coaching Call For FREE" (Tyson's channel, 2026-05-19,
+  23 min) = a recorded slice of their paid "Boardroom" call. **Denser and more useful than the podcast.**
+
+## A. Seller side — NEW tactics
+1. **The offer = the Zestimate.** "I'd like to pay you market value, no realtor fees, no closing
+   costs, close on your timeline." Works because land value (what developers pay) > Zestimate
+   (which prices the old house as a house). PV example: Zestimate $1.1M, developers paying
+   $1.4-1.5M, new builds $5-7M. They target new-build ARVs **>$4-5M**. → Same as our
+   land-residual math; the new part is the **pitch framing: lead with "full Zestimate, net."**
+2. **⭐ Text-only selling (Matthew Tooker: ~30% of his deals closed entirely by text, seller
+   never on the phone).**
+   - **Switch rule:** if 1-2 calls go unanswered but texts come back fast → go text-only. Stop
+     calling. Repeated calls to a texter "hurts these deals big time."
+   - **One topic per text, with the reason why, and make it easy to answer:** "We need to know if the property is
+     on septic or sewer, and gas or electric — the reason is X." Reply can be two words. Never
+     send 4-5 questions at once, never make them write paragraphs.
+   - **The offer text layout (sections):** Purchase price **(= $X if you sold on market, after
+     fees)** · Close of escrow · Additional terms · Earnest money. Example: offer $3.4M shown as
+     equal to a $3.65M on-market sale. Close with: "If you want to jump on a call to go over
+     questions, send me a couple times that work." A clean written offer often *earns* the call.
+   - Proof story: text to "Don" → "Don was my late husband, not interested" → handled gently,
+     at her pace (replies took 1-2 days) → **$150K assignment fee 2 months later.**
+   - Tool they use: **Smarter Contact** (SMS platform). → For us this is gated on A2P
+     registration + Rich's "send it" (TCPA). Script-wise: **adopt into S6/seller-negotiator now.**
+3. **No contract-pressure.** Their reformed rule: after a verbal yes, *send the contract to
+   review* — do NOT push for signature on the call. (Matches our Control-Before-Disclosure posture.)
+4. **Seller wants to stay a few months?** Two tools: (a) paper it now, set the close date
+   later; (b) seller wants cash now but to stay → **seller-in-possession (post-possession)
+   agreement.** Developers see post-possession as a *bonus* — they need permit time anyway.
+5. **Pitch lines for affluent sellers:** privacy (no sign, no showings, neighbors don't know) ·
+   pick your close date · upfront honesty "I'm not your buyer, I work with a developer" · walk
+   comps *net of commission*. Robert's add: "no 30-day inspection, no retrade, no mold
+   inspectors, sleep at night." ⚠️ Do NOT promise "no disclosures / no future liability" —
+   that's a legal claim; VA seller-disclosure rules still apply. Use "as-is, no repair requests."
+6. Speed-to-lead: call web leads within 5 minutes (they cite "21x"; widely-quoted industry
+   stat, unverified).
+
+## B. Buyer/disposition side — NEW tactics
+1. **⭐ 3-week dispo cadence (protects the deal's value):** developers *devalue* a lot they
+   receive from 3-5 different senders ("too many hands on it") — even when your price is best.
+   - **Week 1:** ONLY developers with active listings/recent sales *in that area*.
+   - **Week 2:** those developers' *listing agents* (often faster than the busy developer).
+   - **Week 3** (last week of inspection): open it up — wholesalers/connectors, max eyeballs.
+   → **Adopt into disposition agent + Script 09 sequencing.**
+2. **Vet "builders":** many are wholesalers posing as builders (daisy-chaining). Look up the
+   company, ask for proof of funds; tell them directly "if you're not the end buyer, don't shop
+   our deal." (They paid one $10K to go away.)
+3. **Buyer discovery shortcut:** new-build listing descriptions often *name the builder* → call
+   them. Also: Zillow sold-history of a new build reveals what the developer paid for the teardown.
+4. **⭐ Developer-referral lead flow (Tooker's "acquisition manager" play):** once close with a
+   developer, ask: "Send me every deal you get and pass on." Pay them on closed deals (e.g.,
+   $25K, or 50/50); do all their paperwork. Some developers now route seller calls to him.
+   ⚠️ CAUTION: (a) part of this is re-contacting sellers *already under contract with someone
+   else* "in 2-3 weeks" → **tortious-interference risk — skip that variant**; (b) paying
+   referral fees to unlicensed parties can be a licensing issue in VA/MD/DC → title/attorney Q
+   before doing it. The clean version (developer sends a fresh owner lead they won't pursue) is fine.
+5. **Closing is the "third 33%":** seller + buyer + *getting it closed* (title, lenders). Their
+   JV pitch = "we're good at getting deals across the finish line." → Our Eastern Title
+   relationship is the equivalent; no need to JV for this.
+
+## C. Underwriting — deal-killers to screen (ADD TO UNDERWRITER CHECKLIST)
+1. **🚨 Buried heating-oil tanks — "DC all the way up to New York."** Leaking tank → soil
+   remediation with no depth cap (anecdote: ~$800K, 40-50 ft dig, EPA disposal). **First
+   question on every pre-1970 DMV teardown: "Is there or was there an oil tank?"** Tells: fill/vent
+   pipe sticking out of the yard; uneven/tall grass hiding the pipe; get a tank sweep (metal detector) during
+   inspection. *Directly relevant to McLean/Arlington/Vienna inventory.*
+2. **Septic/sewer:** a $400K assignment died because the lot couldn't fit a septic leach field
+   and couldn't connect to sewer. → ask septic vs sewer up front (also the #1 text question).
+3. **Hillside/steep-slope ordinance:** adds 8-12 months → lowers developer price.
+4. **Flood plain:** big-margin developers often absorb (a $150K fix, no retrade) — luxury
+   margins make small problems disappear; still disclose early.
+
+## D. Market intel for OUR territory
+- Tyson, unprompted: **Arlington VA** — 1930s houses, Zestimate ~$700K, developers buying lots
+  ~$1M, building $4M+. Validates our map.
+- **Falls Church "keep-the-foundation" play** (from Robert's ex-co-host Josh Cohen): scrape but
+  keep the foundation, expand ≤30% → permitted as a *remodel* in ~4 weeks vs ~1 year for new
+  build; 2,000 sf → 8,500 sf, exits $1.8-2.5M. [Unverified, years old — verify with Falls
+  Church/Arlington permitting before using as a pitch point to builders.]
+- Their active buyer markets: Raleigh, Charlotte, Atlanta, South Florida (WPB/Boca/FTL), Tampa,
+  Sarasota, **DC**, Phoenix/Paradise Valley.
+
+## E. EMD — confirms our 08-29 ruling
+On Tyson's PV lot: AZ state contract, $800K, **1% EMD ($8K), 45-day inspection, EMD not hard
+during inspection**. Tyson's honest aside: "I'm going to put $100 there. If they ask me to change
+it — it's a typo." Buyer-host Zach pushes $10-20K EMD *as a buyer* (it wins him deals). → No
+change: $100 off-market, negotiate on listed, refundable during inspection.
+
+## F. Tools named
+InvestorLift (dispo marketplace — host's own product) · Smarter Contact (SMS) · **LandAtlas** (lot
+research — see video below) · Zillow · DocuSign · Loom · Skool + Telegram (their community) · LeadZolo.
+
+## G. Their other free content worth extracting (Tyson's channel UCMHQUrlloSxEeb7nhdLncUg)
+Luxury-relevant, priority order (all extractable the same way, minutes each):
+1. `8AmTBFtc6gU` How To Use LandAtlas & Close $100K+ Deals (21m) — tool walkthrough
+2. `Yn5weeNDUR0` How To Find Luxury Buyers (13m)
+3. `wcLXKGEFDlI` How To Offer Sellers More Than The Zestimate (4m)
+4. `2kb9YjLcIHM` How to Find & Close Luxury Home Owners in 2026 (12m)
+5. `nERtd1RlZio` How To Find A+ DIRT w/ AZ Agent/Developer Frank Dimaggio (31m)
+6. `NI-ZfuFTHzI` The MONEY Behind Luxury Real Estate Development (41m)
+7. `fjxNg76-bUQ` Inside Look at $250M+ Arizona Luxury Developer (29m)
+8. `rjb31avgjvM` Making a $10M+ Offer From The Boat (50m) — likely a live offer call
+9. `Fek0f5nK6MA` Closed Door Dialing Session (48m) — live seller calls
+10. `3W61x_5ERjE` What Wholesaling Luxury Real Estate ACTUALLY Looks Like (39m)
+Skip: generic volume-wholesaling series, lifestyle vlogs, macro-hype videos.
+**Skool (skool.com/@tyson-smith-3229): NOT extracted** — posts are behind a login; job rule = no
+sign-ups.
+
+## Bottom line (Job 006)
+Three things worth taking, all free: **(1) the text-only selling playbook + offer-text layout,
+(2) the 3-week dispo cadence, (3) the oil-tank screen for DMV teardowns.** Nothing here changes
+the "do not enroll" verdict — the paid tier's real value is Tooker's developer network, which
+we're building ourselves via the buy-box caller.
