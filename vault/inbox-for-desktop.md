@@ -108,6 +108,23 @@ manual DEPLOY-CALLER run pulled). The task reports SUCCESS but its action isn't 
 3. Test-fire and verify a "Courier run" commit reaches origin.
 → Mark DONE with root cause + fix, push. (Same fix applies to the PM task.)
 
+## ⬜ OPEN — Job 013: Install Agent Reach (Rich 10-03; cloud ran install-safety 10-03 — 🟢 cleared)
+Cloud inspected the source (MIT, active, well-bounded installer: no sudo/admin, confined
+to ~/.agent-reach/, check-only by default). Install on THIS PC per the official doc:
+https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md
+Rules for this install:
+1. Follow the doc's own boundaries exactly (no admin elevation, nothing outside
+   ~/.agent-reach/, no packages beyond the doc's list, nothing in the repo workspace).
+2. Windows note from the doc: if python3 is the Microsoft Store alias, use `py -3`.
+   If Python isn't installed at all, STOP and tell Rich the one download needed
+   (python.org installer) before continuing.
+3. Run the check-only pass first (`agent-reach install --env=auto`), show Rich what it
+   wants to change, get his explicit OK before `--system`.
+4. Cookie-based optional channels (Twitter/Xiaohongshu/etc.): ASK Rich which he wants;
+   note cookies = credentials. YouTube/Web/RSS/GitHub/Exa need no cookies — enable those.
+5. Finish with `agent-reach doctor`, paste its summary into this job's DONE line, push.
+Payoff when done: Job 006 (Tyson YouTube extraction) becomes runnable locally.
+
 ## ✅ DONE (2026-09-26) — Job 011: Voice caller DEPLOYED — agent_9201m3gbrsdcftm8f21bygh8cwgf on ElevenLabs (Creator tier). Key stored locally. Remaining: phone number + ear test (cloud has the ball).
 Rich is designing the AI to make the calls. Cloud built the deploy-ready agent config:
 `vault/automation/voice-agent-builder-buybox.md`. Your half (you're on his PC with him):
