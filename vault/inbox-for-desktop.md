@@ -108,7 +108,18 @@ manual DEPLOY-CALLER run pulled). The task reports SUCCESS but its action isn't 
 3. Test-fire and verify a "Courier run" commit reaches origin.
 → Mark DONE with root cause + fix, push. (Same fix applies to the PM task.)
 
-## ⬜ OPEN — Job 013: Install Agent Reach (Rich 10-03; cloud ran install-safety 10-03 — 🟢 cleared)
+## ✅ DONE (2026-10-03, check-only) — Job 013: Agent Reach 1.5.0 installed in `%USERPROFILE%\.agent-reach-venv`
+Desktop re-verified provenance (Panniantong/Agent-Reach: fork=False, MIT, ~89.5k stars, pushed 09-15).
+Rich ran the pip install himself (auto-mode classifier blocks Claude from installing external code).
+Check-only result (`install --env=auto`, no changes): **5/16 channels** — ✅ YouTube, Web (Jina), RSS,
+V2EX, Bilibili | ⚠️ GitHub (`gh` not logged in; vault pushes unaffected) | ❌ Exa (needs mcporter).
+`--system` NOT run — Rich approved check-only ("go 1"); recommendation: skip it (Exa only; WebSearch +
+Firecrawl already cover search). Node on this PC lives in `AppData\Local\hermes\node` (non-standard).
+No cookie channels configured. Run with: `& "$env:USERPROFILE\.agent-reach-venv\Scripts\agent-reach.exe"`.
+**Job 006 (Tyson YouTube) is now runnable locally via yt-dlp.**
+
+### Original job text
+(Rich 10-03; cloud ran install-safety 10-03 — 🟢 cleared)
 Cloud inspected the source (MIT, active, well-bounded installer: no sudo/admin, confined
 to ~/.agent-reach/, check-only by default). Install on THIS PC per the official doc:
 https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md
