@@ -86,8 +86,8 @@ range = unblocks S5 MAO for every deal in the pipeline) → note follow-up owner
 - Key stored locally at %USERPROFILE%\.elevenlabs.env (never committed).
 - Next: attach phone number + ear test (cloud has the ball).
 
-## 📞 PHONE ATTACH — PLIVO runbook (CURRENT — Rich decision 2026-10-03, "until further notice")
-**Decision (Rich, 10-03): Plivo, not Twilio** — his reason: easier to get approved.
+## 📞 PHONE ATTACH — PLIVO runbook (FINAL — Rich 10-04: Twilio refuses his account creation, so Plivo is THE rail; decision closed, do not re-litigate)
+**Decision (Rich, 10-03, confirmed 10-04): Plivo.** Twilio will not let him open an account.
 Claude's note on file (stated once, not re-litigated): voice outbound needs no A2P on either
 carrier — A2P 10DLC gates SMS only; Plivo connects to ElevenLabs via SIP trunk (more steps than
 Twilio's SID+token import). Both documented: elevenlabs.io/docs/eleven-agents/phone-numbers/telephony/plivo
