@@ -14,3 +14,4 @@
 [2026-09-26 19:31] missing_permissions means recreate the key with ALL permissions enabled.
 [2026-09-26 19:40] Key VALID. Tier: creator
 [2026-09-26 19:40] AGENT CREATED. agent_id: agent_9201m3gbrsdcftm8f21bygh8cwgf
+[2026-09-26 19:40] Pushed. Test the agent by voice in the ElevenLabs dashboard: elevenlabs.io -> Agents.

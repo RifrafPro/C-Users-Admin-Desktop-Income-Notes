@@ -142,3 +142,13 @@ formed — flagged once, not re-litigated.
 ## Still to do / confirm
 - iSpeedToLead lead flow + Gmail-forward capture (in progress).
 - Current active deals / pipeline.
+- **(2026-10-03) Wire Tyson/Tooker extraction into the agents** — source:
+  `vault/research/guides/luxury-wholesaling-tyson-smith-extracted.md` (Job 006 + TOP-10 sections):
+  - underwriter: oil-tank / septic / survey-setback / lot-killer checks + **appraisal-cap fee ceiling**
+    (lenders lend on the lower of price or as-is appraisal → fee can't outrun appraisal headroom);
+    land share as a 21-36% range, not flat 25%.
+  - disposition: 3-week dispo cadence; builder's listing agent as buyer channel; ask builders
+    "pipeline / clients waiting?" (they overpay $50-75K when short).
+  - S6 + voice caller: call lines from TOP-10 §4 (honest framing only); seller rent-back/long escrow
+    as a value-add builders pay for.
+  - Attorney/Eastern Title Qs: agent buy-side fees, referral fees, pre-selling, VA wholesaler disclosure.
