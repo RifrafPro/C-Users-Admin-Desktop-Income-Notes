@@ -116,3 +116,24 @@ Install-safety protocol run per `policies-software-install-safety.md`:
 ### Standing rule
 **Do not route vault data through any third-party gateway.** If OmniRoute is ever adopted under
 trigger #1, scope it to the specific paid workload only and keep the vault out of it entirely.
+
+---
+## 🟢 Install log — 2026-10-03 (desktop)
+
+### Agent Reach 1.5.0 — INSTALLED (check-only)
+- **Source verified:** api.github.com/repos/Panniantong/agent-reach → `Panniantong/Agent-Reach`,
+  fork=false, MIT, ~89.5k★, pushed 2026-09-15, not archived. Cloud ran the source review 10-03 (Job 013).
+- **Installed:** pip package into its own venv `%USERPROFILE%\.agent-reach-venv` (Rich ran the pip step;
+  Claude's auto-mode blocked external-code install). Config dir `~/.agent-reach/` only.
+- **NOT installed:** `--system` step (mcporter/Exa) — skipped by recommendation; no cookie channels;
+  pipx not installed. Rich's downloaded python-3.14.8 installer verified genuine (PSF signature) but NOT run.
+- **Use:** `& "$env:USERPROFILE\.agent-reach-venv\Scripts\agent-reach.exe" doctor`; YouTube via yt-dlp.
+
+### public-apis — CLONED (reference list, nothing executed)
+- **Source verified:** api.github.com/repos/public-apis/public-apis → fork=false, MIT, ~486k★,
+  pushed 2026-10-03, not archived. No SECURITY.md at root.
+- **What it is:** a curated README of ~1,400 free public APIs, plus Python link/format validators in
+  `scripts/` (CI tooling for the list's maintainers).
+- **Installed:** shallow `git clone --depth 1` to `%USERPROFILE%\repos\public-apis` (outside the vault).
+- **NOT done:** no `pip install -r scripts/requirements.txt`, no scripts run — not needed to read the list.
+- **Use:** open `README.md` and search by category (Geocoding, Government, Open Data, Finance …).
