@@ -86,9 +86,42 @@ range = unblocks S5 MAO for every deal in the pipeline) → note follow-up owner
 - Key stored locally at %USERPROFILE%\.elevenlabs.env (never committed).
 - Next: attach phone number + ear test (cloud has the ball).
 
-## PHONE ATTACH — morning runbook (written 09-26 night, Rich has Twilio account ready)
-Decision: **Twilio (already owned), NOT Plivo** — ElevenLabs' phone integration is
-Twilio-native. Voice calls need NO A2P (that gates SMS only).
+## 📞 PHONE ATTACH — PLIVO runbook (CURRENT — Rich decision 2026-10-03, "until further notice")
+**Decision (Rich, 10-03): Plivo, not Twilio** — his reason: easier to get approved.
+Claude's note on file (stated once, not re-litigated): voice outbound needs no A2P on either
+carrier — A2P 10DLC gates SMS only; Plivo connects to ElevenLabs via SIP trunk (more steps than
+Twilio's SID+token import). Both documented: elevenlabs.io/docs/eleven-agents/phone-numbers/telephony/plivo
+**Waiting on Rich:** Plivo account approved + a voice-enabled number (VA area code).
+
+**A. Plivo console (Zentrunk = Plivo's SIP trunk product)**
+1. Buy a voice-enabled number: cx.plivo.com/phone-numbers. Note it in E.164 (+1703…).
+2. Zentrunk → **Create New Outbound Trunk** (ElevenLabs → Plivo, the one we need for dialing):
+   name it "FRESH GROUND outbound" → Trunk Authentication → **Add New Credentials List** →
+   make a username + strong password (store in `%USERPROFILE%\.elevenlabs.env` as
+   PLIVO_SIP_USER / PLIVO_SIP_PASS — NEVER in the repo or chat) → Create Trunk.
+   → Copy the **termination URI** (like `xxxx.zt.plivo.com`).
+3. (Optional, for callbacks) Zentrunk → **Create New Inbound Trunk** → Add New URI →
+   `sip.rtc.elevenlabs.io` → Create. Then Phone Numbers → your number → Trunk = that inbound trunk → Update.
+
+**B. ElevenLabs dashboard**
+4. Agents → Phone Numbers → **Import number → From SIP Trunk**.
+5. Label "FRESH GROUND Plivo" · Phone Number = the E.164 number (keep the leading +).
+6. Outbound: **Address** = Plivo termination URI · **Transport Type = TCP** (UDP is test-only) ·
+   Media Encryption = Allowed · Authentication = the Plivo credentials-list username/password.
+7. Import → assign agent **agent_9201m3gbrsdcftm8f21bygh8cwgf** to the number.
+8. Same session: paste the **v1.1 system prompt** (above) into the agent so it goes live.
+
+**C. Test + go**
+9. **EAR TEST** first — outbound call to Rich's cell only (pre-approved). Judge latency + voice.
+10. Fails to connect? Check, in order: number in E.164 both places · TCP selected · credentials
+    match · Plivo account has outbound calling enabled for US.
+11. Pass → Rich says "send it" per builder: Paramount 301-370-6463 → Botero 202-515-0020 →
+    Paradigm 703-476-5877. Transcripts → buyers.md same day.
+⚠️ Still open: rotate the ElevenLabs key exposed in chat 09-26.
+
+## ~~PHONE ATTACH — Twilio runbook~~ (SUPERSEDED 10-03 by Rich's Plivo decision — kept for fallback)
+(Written 09-26 night.) Decision then: **Twilio (already owned), NOT Plivo** — ElevenLabs' phone
+integration is Twilio-native. Voice calls need NO A2P (that gates SMS only).
 1. twilio.com console → confirm the number is active (or buy one, ~$1.15/mo, VA area code).
 2. Twilio console front page → copy **Account SID** and **Auth Token** (paste ONLY into
    the ElevenLabs form — never into chat).
