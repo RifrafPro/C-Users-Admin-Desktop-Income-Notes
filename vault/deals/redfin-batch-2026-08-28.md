@@ -150,3 +150,51 @@ the broker line **(703) 564-4000** — almost certainly one seller / one small s
 - $1,850,000 · 0.83 ac — .../home/195068795
 
 **To get the address:** call 703-564-4000 and ask, or match by acreage in Fairfax GIS within 22102.
+
+---
+
+# 🎯 DESKTOP RECON #2 — Old Chesterbrook PLAT DATE ANSWERED (2026-10-03, Chrome + county APIs)
+
+## 🚨 Price cut: $249,888 → **$99,000 (-60.4%) on 2026-09-28** — still ACTIVE, 38-39 DOM [Certain: Zillow + IDX]
+New motivation signal: seller cut 60% in 33 days. Listing agent Mark McConnell, eXp — Zillow shows
+**703-401-4127** (cell?) vs 703-425-3582 recorded 08-28 (office?). "Pipe stem" lot (flag lot).
+
+## County record (Fairfax iCARE, data as of 2026-10-02) [Certain]
+| Field | Value |
+|---|---|
+| **Map # / PIN** | **0304 44 A** (GIS PIN string `0304 44      A`, PARCEL_KEY 280875) |
+| **Legal** | **GALLEGOS SUBD, PCL A** |
+| **Owner** | **HATCH DOROTHY R TR** (trust) · mailing 5704 Heming Ave, Springfield VA 22151 — absentee |
+| Deed | Book 20721 / Page 1757 (09/30/2009, from HATCH DOUGLAS TR, no consideration) |
+| Transfer history | 03/22/1996 · 11/17/1997 · 09/30/2009 — all $0 (family/trust transfers) |
+| Area | 2.0375 ac (GIS polygon 89,240 sf) |
+| Zoning | R-4 |
+| **Utilities** | **Public WATER + SEWER available** (no septic problem); gas not available |
+| Road | Paved |
+| **County site code** | **"NON-BUILDABLE-OTHER"** → explains the $44,000 assessment ($518/yr tax) |
+
+## THE PLAT-DATE QUESTION → **PRE-2003 (before Nov 18, 2003)** [Likely — strong, not yet the plat itself]
+Three independent indicators:
+1. **Parcel A of Gallegos Subdivision exists as its own parcel in county transfer records from 03/22/1996.**
+2. **Neighbouring Gallegos Lot 1 (0304 44 0001, 6608 Old Chesterbrook Rd) house built 1989** → the
+   subdivision plat was recorded by ~1989 at the latest.
+3. Same parcel was **listed for sale Feb 1997** (Redfin history) — it was a marketable separate parcel then.
+→ The parcel predates the Nov 18, 2003 Chesapeake Bay ordinance date by 7-14+ years.
+
+## ⚠️ THE NEW deciding question (replaces the plat date)
+**Was Parcel A created on the plat as a buildable lot, or as a restricted outlot** (open space,
+storm-drainage/stormwater reserve, "not a building lot" note)? Evidence it may be restricted: it's a
+*lettered parcel* (not a numbered lot) among Lots 1-7 of ~10K sf, the listing stresses storm-drainage
+easements, and the county codes it NON-BUILDABLE. If the plat note restricts it, the pre-2003 "loss of
+buildable area" administrative waiver may not apply — the waiver protects lots that HAD buildable rights.
+**How to answer (cheapest first):**
+1. Ask the listing agent: "Do you have the recorded Gallegos subdivision plat and any plat notes on Parcel A?"
+2. Fairfax Land Development Services 703-222-0801 — ask whether Parcel A is a buildable lot of record and
+   whether the pre-11/18/2003 RPA loss-of-buildable-area waiver path applies.
+3. Recorded plat image: Fairfax land records (CPAN subscription) or a title company pull.
+
+## Deal read
+At $99K list (and an owner who just cut 60%), the entitlement-risk play from the 08-28 entry gets far
+cheaper: a **long option (90-180 days), small fee, contingent on the RPA/buildability path**, then sell
+"2 ac in 22101, sewer + water available, pre-2003 parcel" to a builder who runs the WQIA/waiver. Kill only
+if the plat shows a restriction that blocks any home. No offer drafted — awaiting Rich + the plat-note answer.
