@@ -142,7 +142,8 @@ formed — flagged once, not re-litigated.
 ## Still to do / confirm
 - iSpeedToLead lead flow + Gmail-forward capture (in progress).
 - Current active deals / pipeline.
-- **(2026-10-03) Wire Tyson/Tooker extraction into the agents** — source:
+- ✅ **(2026-10-03) DONE — wired into underwriter, buyer-matcher, disposition, seller-negotiator,
+  scripts 04+/06+/07+/09+, voice prompt v1.1 (deployed agent still on v1 until pushed).** Source:
   `vault/research/guides/luxury-wholesaling-tyson-smith-extracted.md` (Job 006 + TOP-10 sections):
   - underwriter: oil-tank / septic / survey-setback / lot-killer checks + **appraisal-cap fee ceiling**
     (lenders lend on the lower of price or as-is appraisal → fee can't outrun appraisal headroom);

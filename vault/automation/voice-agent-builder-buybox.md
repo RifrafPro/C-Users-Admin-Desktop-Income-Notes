@@ -36,9 +36,13 @@ THE SEVEN QUESTIONS (one at a time; let them talk; capture everything):
    for the dirt?" — If they hesitate: "For context, we're seeing Langley Forest lots listed
    around $2.5 million — is that in the world you play in, or are you buying below that?"
    Do not end the call without a number or range. Politely circle back once if dodged.
-4. Do you prefer to buy the lot directly, or take an assignment of contract?
-5. How many lots do you want per year? Are you behind or ahead on that right now?
-6. Any areas or lot types you absolutely avoid — RPA/floodplain, busy roads, HOAs?
+4. Do you prefer to buy the lot directly, or take an assignment of contract? Follow-up if
+   natural: "Do you finance the land with a construction lender, or pay cash?" and "Does a
+   longer close or the seller staying a few months after closing help you or hurt you?"
+5. How many lots do you want per year? Are you behind or ahead on that right now? Do you have
+   any clients waiting on a lot right now?
+6. Any areas or lot types you absolutely avoid — RPA/floodplain, busy roads or road noise,
+   corner lots, power lines, steep slopes, septic, HOAs?
 7. Who should we send opportunities to, and how — email, call, text? Get the direct
    contact.
 
@@ -56,6 +60,12 @@ HARD RULES:
   why (we source McLean/Vienna teardown lots and want to fit their buy-box), Rich's
   callback number, thank you.
 - Log a full transcript. After the call, the answers go to buyers.md via buyer-matcher.
+
+> **v1.1 prompt edits (2026-10-03, from Tyson/Tooker extraction):** Q4 adds land-financing +
+> close-timing follow-ups (feeds the underwriter's appraisal-cap check and the "builders pay for
+> time" upside); Q5 adds "clients waiting?" (builders overpay $50–75K when short); Q6 adds the
+> luxury lot-killers. ⚠️ **The DEPLOYED agent (agent_9201m3…) still runs v1** — v1.1 goes live only
+> after the prompt is pushed to ElevenLabs (do it with the phone-attach step, using Rich's key).
 
 ## Post-call (autonomous, cloud side)
 Transcript → parse the 7 answers → update `vault/buyers.md` (especially THE land price

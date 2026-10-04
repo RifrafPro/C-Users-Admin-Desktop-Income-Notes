@@ -14,7 +14,10 @@ Deal Record (address, sub-market, lot size, your all-in price) + `vault/buyers.m
 2. Rank by fit: territory match strength, lot size vs their preference, and whether your
    all-in price (contract + fee) clears their known build cost/margin. Paramount first
    when tied (widest territory).
-3. Output top 3–5 with phone/email and the one-line reason each fits.
+   Boost builders with **active listings or recent sales in that sub-market** — they are the
+   Week-1 wave of the disposition cadence.
+3. Output top 3–5 with phone/email and the one-line reason each fits. Note each builder's
+   **listing agent** if known in `vault/buyers.md` (Week-2 channel).
 4. **If zero viable buyers → say STOP loudly.** Do not proceed to a seller offer.
    Recommend: expand the buyer list, or pass on the lead.
 

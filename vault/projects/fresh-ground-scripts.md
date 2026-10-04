@@ -37,6 +37,12 @@ develop… ever thought about selling?" Cash, as-is, their schedule, no listing/
 privacy. Let them name the number, go quiet. Discovery: tenure, occupancy, title/
 decision-makers, liens/back taxes, timeline, price/best price. Never counter first call.
 
+**04+ (2026-10-03, Tyson/Tooker extraction):** opener "Has selling crossed your mind at all?" ·
+"What's your whole situation / timeline?" · ask early: oil tank? septic or sewer? survey on hand?
+Sell privacy · speed · convenience · certainty. Optional (test vs "let them name it"): give a
+range up front — "somewhere around $X, no agent fees — worth a chat?" Honest framing: "I source
+lots for builders and would be assigning the contract."
+
 ## 05 — Probate Call (Executor / Heir)
 Empathy first ("sorry for your loss"). Executors pick the EASIEST buyer. As-is cash,
 no cleanout/repairs/showings, close when estate ready. Differentiator: "take what's
@@ -49,11 +55,18 @@ put you on hold… [30–60s]… talked with my partner, here's what we can do" 
 to negotiate against). Restate benefits each time. **Close for commitment BEFORE giving
 the number:** "if we put something together at that price, can you move forward this
 week?" Never negotiate against yourself. At/under MAO → take it.
+**06+:** anchor with the closest stale/flawed listing · trade terms for price ("longer escrow → higher
+number") · rent-back as a sweetener · competing offer → get its inspection/EMD/close, email "highest
+and best" a bit above (≤ MAO) · "net of commission" only against MLS comps.
 
 ## 07 — Text Messages
 Missed-call text-back within 1 min. Seller sequence (stops when they reply): Day 0 intro
 · Day 2 no-pressure · Day 5 social proof (inherited/tired of upkeep) · Day 9 last note.
 **Compliance: A2P/10DLC registration required, honor STOP immediately, DNC caution.**
+**07+ text-only sellers:** if calls go unanswered but texts come back (1–2 tries) → stop calling.
+One topic per text + why ("septic or sewer? gas or electric? — we ask because…"). Offer text:
+Price (= $X if sold on market after fees) · Close of escrow · Terms · EMD · "happy to hop on a call."
+⚠️ Never rotate message variants to dodge carrier filters; VA VTPPA = $500–1,500/violation.
 
 ## 08 — Direct Mail
 A. Teardown/absentee (luxury, discreet): local building-lot buyer, as-is/all-cash/no
@@ -65,6 +78,9 @@ commissions/no showings/discretion; quality stock, hand-addressed. B. Probate/in
 **Always send to 3–5 buyers, never one** (leverage + backup). Lot email: address, lot
 sqft, existing structure, finished comps, all-in price, close/clear title — "first to
 confirm with POF locks it." SMS + Day-2 nudge ("want it, or should I pass it on?").
+**09+ 3-week cadence:** Wk1 area builders with listings/sales nearby · Wk2 their listing agents ·
+Wk3 wider net. Vet "builders" (POF, end buyer?). First vetted yes wins. Never "I have a lot"
+before contract.
 
 ## 10 — Quick Numbers Cheat Sheet  [captured in wholesaling.md]
 KPIs, teardown/flip math, ~5% assignment fee, distressed keywords, motivation signals.
