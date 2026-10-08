@@ -239,7 +239,10 @@ Connect the Claude Chrome extension, then: (a) Fairfax GIS for Job 002 — **the
 date is still the deal-decider**; (b) re-run the sweep in-browser for Land Insights $/acre + Zillow
 pages 2+; (c) open the two saved IG reels directly to confirm the iCash X read against the actual posts.
 
-## ⬜ OPEN — Job 014: Enable Claude in Chrome (Rich priority, 10-08 — extension installed TWICE, never enabled)
+## ✅ DONE (2026-10-08) — Job 014: Claude in Chrome is LIVE
+**Outcome (10-08 desktop):** Step 0 done (Desktop 'Claude Vault.cmd' re-copied, hash-verified = repo). CLI 2.1.295, auth=claude.ai (richfabiani@gmail.com), ~/.claude.json claudeInChromeDefaultEnabled=True (already set — not edited). Live test: tabs_context_mcp returned a real tab group (tab 1399218139) — browser hands WORK. Follow-ons: (b) Fairfax plat date was already answered 10-03 (pre-2003, Likely); what's left needs CPAN/title pull, not a browser. (a) Namecheap Google TXT NOT done — the TXT value is not in the vault, and a DNS edit is an account change that needs Rich logged in at Google Admin + Namecheap and his explicit OK. Still open as a separate task.
+### Original job text
+
 STEP 0 (do first): re-copy the updated launcher over the Desktop copy —
 `Copy-Item "tools\claude-vault.cmd" "$([Environment]::GetFolderPath('Desktop'))\Claude Vault.cmd" -Force`
 (the repo version now launches `claude --chrome`, so every icon-launched session has browser
@@ -250,7 +253,10 @@ Log the outcome in this job AND in the fix file — success or precise failure, 
 new LOG-FAILURES rule. ALSO: after the first-run Enter, set claudeInChromeDefaultEnabled true in ~/.claude.json (local edit only — that file holds credentials, never commit/copy it). When live: immediately use it to (a) finish the Google TXT
 verification clicks at Namecheap for freshgroundllc.com, (b) Fairfax GIS plat date.
 
-## ⬜ OPEN — Job 015: Install the EYES link (Rich 10-08: "use this computer as my eyes")
+## ⏳ ONE HUMAN KEYPRESS LEFT (2026-10-08) — Job 015: EYES link installed
+**Outcome:** 'Claude Eyes.cmd' on Desktop (hash-verified). Test run of `claude remote-control` STARTED fine but stops at a one-time first-run consent: `Enable Remote Control? (y/n)`. Claude deliberately did NOT answer it (it grants remote control of this PC — Rich's call). Test process stopped. **Rich: double-click Claude Eyes, press y + Enter, then confirm the session appears at claude.ai/code.** FIX made: `--help` says spawned RC sessions have Chrome OFF by default, so launcher now runs `claude remote-control --chrome --name "Claude Eyes"`.
+### Original job text
+
 1. Copy `tools\claude-eyes.cmd` to the Desktop as **"Claude Eyes.cmd"** (same Copy-Item
    pattern as Job 014 step 0).
 2. Double-click it once to test: a Remote Control session should start and appear in

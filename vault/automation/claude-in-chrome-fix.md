@@ -31,3 +31,5 @@ IG reels (Job 005), Namecheap/DNS click-work, any web setup done FOR Rich.
 - Launcher already passes --chrome per session; the key makes every interactive session
   (incl. VS Code ≥2.1.287) enabled without the flag. Undocumented for headless `claude -p`.
 Source: code.claude.com/docs/en/settings-reference.md
+
+## ✅ OUTCOME 2026-10-08: WORKING. Desktop session (CLI 2.1.295, claude.ai auth, claudeInChromeDefaultEnabled=true) loaded claude-in-chrome tools; tabs_context_mcp returned a live tab group. Remote Control (Claude Eyes) sessions need --chrome explicitly — their default is OFF.
