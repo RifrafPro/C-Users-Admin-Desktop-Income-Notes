@@ -265,3 +265,10 @@ verification clicks at Namecheap for freshgroundllc.com, (b) Fairfax GIS plat da
 Usage from then on: whenever Rich wants cloud Claude to drive this PC directly, he
 double-clicks Claude Eyes and leaves the window open. With Job 014's Chrome enable,
 that session has browser hands too.
+
+## ⬜ OPEN — Job 016: Verify the Google domain NOW (cloud, 10-08 — Eyes session, Chrome hands)
+Go to admin.google.com (Rich signed in). Click Verify for domain freshgroundllc.com —
+TXT google-site-verification=c2xbykn23K19iP4bA61o83zVQFqPaWEN + Gmail MX preset were
+saved at Namecheap ~1h ago. Passes → finish the wizard until Gmail is active, then have
+Rich send a test email from his gmail to rich@freshgroundllc.com and confirm it arrives.
+Fails → capture the exact error text. Either way: log here, commit, push. Narrate as you go.
