@@ -23,3 +23,10 @@
 ## To confirm with Rich (unknowns)
 - iSpeedToLead lead-delivery method (app-only vs email); current active deals.
 - Which entity/LLC FRESH GROUND runs under.
+
+## Business identity (2026-10-08)
+- **Domain: freshgroundllc.com** (Namecheap) · **Email: rich@freshgroundllc.com** (Google Workspace, $7/mo)
+- Purpose: carrier signups (Plivo), buyer/seller outreach, signatures. gmail stays personal + connector.
+- ⚠️ ENTITY FLAG: no LLC exists yet (entity ruling 08-27 = individual d/b/a FRESH GROUND). The "llc"
+  domain makes forming the VA LLC (~$100, SCC online) due BEFORE contracts go out under this email —
+  flagged to Rich 10-08, his call pending. Until formed: sign individual d/b/a, never "LLC".
