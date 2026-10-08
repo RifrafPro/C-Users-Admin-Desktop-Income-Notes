@@ -87,3 +87,8 @@ re-explain context: if you are missing it, you skipped reading this vault.
 The container is ephemeral and has rolled back mid-session before. Two durable
 stores: (1) **GitHub** — needs Contents:write (see `vault/TONIGHT-github-write-access.md`);
 (2) **Google Drive "Income Notes Vault"** — works now. Mirror to Drive every time.
+
+## 🔁 LOG FAILURES LIKE DECISIONS (standing rule, Rich 2026-10-08)
+Every failed attempt (installs, signups, connections) gets written to the vault with
+what was tried and why it failed — otherwise future sessions re-prescribe it. The
+Claude-in-Chrome double-install happened because only successes were being logged.

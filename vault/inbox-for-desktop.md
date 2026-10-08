@@ -238,3 +238,10 @@ verdict in research-email-findings.md next to the 08-06 "Wholesale software" row
 Connect the Claude Chrome extension, then: (a) Fairfax GIS for Job 002 — **the Old Chesterbrook plat
 date is still the deal-decider**; (b) re-run the sweep in-browser for Land Insights $/acre + Zillow
 pages 2+; (c) open the two saved IG reels directly to confirm the iCash X read against the actual posts.
+
+## ⬜ OPEN — Job 014: Enable Claude in Chrome (Rich priority, 10-08 — extension installed TWICE, never enabled)
+Follow vault/automation/claude-in-chrome-fix.md EXACTLY (it is doc-verified). The fix is
+enabling integration on the Claude side (/chrome → Enabled by default), NOT reinstalling.
+Log the outcome in this job AND in the fix file — success or precise failure, per the
+new LOG-FAILURES rule. When live: immediately use it to (a) finish the Google TXT
+verification clicks at Namecheap for freshgroundllc.com, (b) Fairfax GIS plat date.
