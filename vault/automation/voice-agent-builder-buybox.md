@@ -91,7 +91,7 @@ range = unblocks S5 MAO for every deal in the pipeline) → note follow-up owner
 Claude's note on file (stated once, not re-litigated): voice outbound needs no A2P on either
 carrier — A2P 10DLC gates SMS only; Plivo connects to ElevenLabs via SIP trunk (more steps than
 Twilio's SID+token import). Both documented: elevenlabs.io/docs/eleven-agents/phone-numbers/telephony/plivo
-**Waiting on Rich:** Plivo account approved + a voice-enabled number (VA area code).
+**Waiting on Rich:** Plivo signup with **rich@freshgroundllc.com** (work-email gate now passable, 10-08) + a voice-enabled number (VA area code).
 
 **A. Plivo console (Zentrunk = Plivo's SIP trunk product)**
 1. Buy a voice-enabled number: cx.plivo.com/phone-numbers. Note it in E.164 (+1703…).
