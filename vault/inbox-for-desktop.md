@@ -247,5 +247,5 @@ hands; the Desktop copy is static and must be refreshed once).
 Then follow vault/automation/claude-in-chrome-fix.md EXACTLY (it is doc-verified). The fix is
 enabling integration on the Claude side (/chrome → Enabled by default), NOT reinstalling.
 Log the outcome in this job AND in the fix file — success or precise failure, per the
-new LOG-FAILURES rule. When live: immediately use it to (a) finish the Google TXT
+new LOG-FAILURES rule. ALSO: after the first-run Enter, set claudeInChromeDefaultEnabled true in ~/.claude.json (local edit only — that file holds credentials, never commit/copy it). When live: immediately use it to (a) finish the Google TXT
 verification clicks at Namecheap for freshgroundllc.com, (b) Fairfax GIS plat date.

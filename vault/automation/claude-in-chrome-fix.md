@@ -21,3 +21,13 @@ exist" → Reconnect extension) · EADDRINUSE pipe (close other Claude sessions)
 Source: code.claude.com/docs/en/chrome.md
 ## What this unlocks when live: Fairfax GIS plat-date (Job 002 remainder),
 IG reels (Job 005), Namecheap/DNS click-work, any web setup done FOR Rich.
+
+## Persistent enable (doc-verified addendum, 10-08)
+- The "Enabled by default" switch is the global-config key **claudeInChromeDefaultEnabled: true**
+  in **~/.claude.json** (NOT settings.json — ignored there). `/chrome` → "Enabled by default"
+  writes it; or edit the JSON locally. ⚠️ ~/.claude.json holds credentials — edit in place on
+  Rich's PC only, never copy/commit/upload it.
+- The one-time first-run dialog has NO documented skip — one human Enter, once per machine.
+- Launcher already passes --chrome per session; the key makes every interactive session
+  (incl. VS Code ≥2.1.287) enabled without the flag. Undocumented for headless `claude -p`.
+Source: code.claude.com/docs/en/settings-reference.md
