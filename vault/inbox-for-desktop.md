@@ -249,3 +249,13 @@ enabling integration on the Claude side (/chrome → Enabled by default), NOT re
 Log the outcome in this job AND in the fix file — success or precise failure, per the
 new LOG-FAILURES rule. ALSO: after the first-run Enter, set claudeInChromeDefaultEnabled true in ~/.claude.json (local edit only — that file holds credentials, never commit/copy it). When live: immediately use it to (a) finish the Google TXT
 verification clicks at Namecheap for freshgroundllc.com, (b) Fairfax GIS plat date.
+
+## ⬜ OPEN — Job 015: Install the EYES link (Rich 10-08: "use this computer as my eyes")
+1. Copy `tools\claude-eyes.cmd` to the Desktop as **"Claude Eyes.cmd"** (same Copy-Item
+   pattern as Job 014 step 0).
+2. Double-click it once to test: a Remote Control session should start and appear in
+   Rich's claude.ai Code app (and to cloud Claude as a messageable peer).
+3. Log the outcome (works / exact error) per the LOG-FAILURES rule.
+Usage from then on: whenever Rich wants cloud Claude to drive this PC directly, he
+double-clicks Claude Eyes and leaves the window open. With Job 014's Chrome enable,
+that session has browser hands too.
