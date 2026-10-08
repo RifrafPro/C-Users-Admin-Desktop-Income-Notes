@@ -240,7 +240,11 @@ date is still the deal-decider**; (b) re-run the sweep in-browser for Land Insig
 pages 2+; (c) open the two saved IG reels directly to confirm the iCash X read against the actual posts.
 
 ## ⬜ OPEN — Job 014: Enable Claude in Chrome (Rich priority, 10-08 — extension installed TWICE, never enabled)
-Follow vault/automation/claude-in-chrome-fix.md EXACTLY (it is doc-verified). The fix is
+STEP 0 (do first): re-copy the updated launcher over the Desktop copy —
+`Copy-Item "tools\claude-vault.cmd" "$([Environment]::GetFolderPath('Desktop'))\Claude Vault.cmd" -Force`
+(the repo version now launches `claude --chrome`, so every icon-launched session has browser
+hands; the Desktop copy is static and must be refreshed once).
+Then follow vault/automation/claude-in-chrome-fix.md EXACTLY (it is doc-verified). The fix is
 enabling integration on the Claude side (/chrome → Enabled by default), NOT reinstalling.
 Log the outcome in this job AND in the fix file — success or precise failure, per the
 new LOG-FAILURES rule. When live: immediately use it to (a) finish the Google TXT
