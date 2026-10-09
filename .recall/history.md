@@ -336,3 +336,78 @@ google-site-verification=c2xbykn23K19iP4bA61o83zVQFqPaWENJ6sEEYHnWSM
 Then — still remaining, the one Google is actually waiting on — scroll down to **MAIL SETTINGS**: click "Gmail" → pick **Custom MX** → Host `@`, Value `smtp.google.com`, Priority `1` → **Save Changes**.
 
 Say "saved" and I'll verify all three records in one shot. After that, the Google tab's checkbox + Confirm is the finish line.
+
+**You:** can you do the changes on that page so I dont fuck it up again?
+
+**Claude:** I'll try — the permission layer blocked my DNS edits earlier, but you've now explicitly asked, so let's see if it allows it. If it blocks again, I'll walk you through with exact zoomed screenshots instead. Starting with the verification TXT:
+  - `mcp__claude-in-chrome__computer: left_click`
+  - `mcp__claude-in-chrome__computer: screenshot`
+
+**Claude:** Page had scrolled — the button is at a new spot. Clicking ADD NEW RECORD:
+  - `mcp__claude-in-chrome__computer: left_click`
+  - `mcp__claude-in-chrome__computer: screenshot`
+
+**Claude:** New blank row is open. Setting its type to TXT:
+  - `mcp__claude-in-chrome__computer: left_click`
+  - `mcp__claude-in-chrome__computer: screenshot`
+  - `mcp__claude-in-chrome__computer: scroll`
+
+**Claude:** The page scrolled instead of the dropdown list. Scrolling back up to the records table:
+  - `mcp__claude-in-chrome__computer: scroll`
+
+**Claude:** The row is ready as TXT with Host `@`. Filling in the verification value:
+  - `mcp__claude-in-chrome__computer: left_click`
+  - `mcp__claude-in-chrome__computer: type`
+  - `mcp__claude-in-chrome__computer: screenshot`
+
+**Claude:** Value is in. Saving:
+  - `mcp__claude-in-chrome__computer: left_click`
+  - `Bash: sleep 15; nslookup -type=TXT freshgroundllc.com dns1.registrar-servers.com 2>&1 | grep -i "spf\|google-site"`
+  - `mcp__claude-in-chrome__computer: screenshot`
+
+**Claude:** The record saved in Namecheap (it's now a normal row in the table). Now the Mail Settings swap — opening the dropdown:
+  - `mcp__claude-in-chrome__computer: left_click`
+  - `mcp__claude-in-chrome__computer: screenshot`
+
+**Claude:** Dropdown open — selecting Custom MX:
+  - `mcp__claude-in-chrome__computer: left_click`
+  - `mcp__claude-in-chrome__computer: screenshot`
+
+**Claude:** Custom MX is selected. Scrolling down to fill in the MX row:
+  - `mcp__claude-in-chrome__computer: scroll`
+  - `ToolSearch: select:mcp__claude-in-chrome__browser_batch`
+  - `mcp__claude-in-chrome__browser_batch`
+
+**Claude:** Row filled: `@ / smtp.google.com / 1`. Saving:
+  - `mcp__claude-in-chrome__computer: left_click`
+  - `Bash: sleep 20; echo ===MX===; nslookup -type=MX freshgroundllc.com dns1.registrar-servers.com 2>&1 | grep -i "mail exchanger"; echo ===TXT===; nslookup -type=TXT fre`
+
+**Claude:** Both TXT records are confirmed live again (verification record restored ✓, SPF ✓). The MX still shows the old set — checking whether the save actually took on the page:
+  - `mcp__claude-in-chrome__computer: screenshot`
+
+**Claude:** The save took — the page shows a committed row: `MX Record / @ / smtp.google.com. / 1`. Re-checking DNS (Namecheap's backend takes a few seconds to push to its nameservers):
+  - `Bash: sleep 25; nslookup -type=MX freshgroundllc.com dns1.registrar-servers.com 2>&1 | grep -i "mail exchanger"; echo ===8.8.8.8===; nslookup -type=MX freshgroundllc.`
+  - `Bash: nslookup -type=MX freshgroundllc.com dns1.registrar-servers.com 2>&1 | grep -i "mail exchanger"; echo ===8.8.8.8===; nslookup -type=MX freshgroundllc.com 8.8.8.`
+  - `mcp__claude-in-chrome__browser_batch`
+
+**Claude:** Checkbox ticked, Confirm is live. Clicking it:
+  - `mcp__claude-in-chrome__computer: left_click`
+
+**Claude:** The page advanced to the status check. Watching it:
+  - `mcp__claude-in-chrome__browser_batch`
+
+**Claude:** Different from last time — the URL moved to the confirmation stage (`/mx/confirmation`) instead of bouncing back. It's verifying DNS now. Giving it a minute, then checking:
+  - `mcp__claude-in-chrome__browser_batch`
+  - `mcp__claude-in-chrome__get_page_text`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-desktop.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git add -A && git commit -q -m "Job 016 DONE: Gmail activated for freshgroundllc.`
+
+**Claude:** Appreciated — but the last 1% is yours, and it's the proof that matters:
+
+1. **Send a test email** from richfabiani@gmail.com to **rich@freshgroundllc.com**, then sign into mail.google.com as rich@freshgroundllc.com and watch it land. (New mail can take up to 24h to fully cut over; anything older stays in PrivateEmail.)
+2. **Optional but smart:** on that green success page, hit **"Authenticate"** under "Authenticate outgoing emails" — that's DKIM, and with the SPF we added it's what keeps your deal emails out of builders' spam folders. Two clicks now saves headaches later.
+
+Everything is logged and pushed to the vault (commit `aa33081`), including the lesson that cost us an hour: Google's activation wizard only accepts `smtp.google.com` — Namecheap's own "Gmail" preset installs records Google no longer accepts. Future domains skip straight to Custom MX.
+
+One standing warning for the record: the `google-site-verification` TXT at Namecheap must never be deleted again — Google re-checks it periodically, and tonight's accidental delete would have eventually unverified the domain.
