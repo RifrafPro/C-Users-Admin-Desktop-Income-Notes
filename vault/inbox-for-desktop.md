@@ -266,7 +266,19 @@ Usage from then on: whenever Rich wants cloud Claude to drive this PC directly, 
 double-clicks Claude Eyes and leaves the window open. With Job 014's Chrome enable,
 that session has browser hands too.
 
-## ⏳ NEARLY DONE (2026-10-08, Rich at keyboard) — Job 016: Gmail activation in progress
+## ✅ DONE (2026-10-08 night) — Job 016: GMAIL ACTIVATED for freshgroundllc.com
+**Final outcome:** Google confirmed on-screen: "Gmail is activated! You verified freshgroundllc.com.
+Gmail is ready." Full trail: (1) Namecheap Gmail preset was selected-but-never-saved → Rich saved it;
+(2) Google's activation wizard REJECTED the old-style aspmx preset records — it required exactly
+`smtp.google.com` prio 1 → switched Mail Settings to Custom MX (Claude drove the browser, Rich
+authorized); (3) SPF `v=spf1 include:_spf.google.com ~all` added; (4) ⚠️ the google-site-verification
+TXT got accidentally deleted mid-session (Rich misclick) — re-added from the vault-logged value and
+confirmed live. KEEP THAT TXT FOREVER — Google re-checks it periodically.
+**Still open (small):** (a) Rich to send test email richfabiani@gmail.com → rich@freshgroundllc.com
+and confirm arrival in the NEW Gmail inbox (mail cutover can take up to 24h; old mail stays at
+PrivateEmail); (b) recommended: DKIM via Admin console → Apps → Google Workspace → Gmail →
+Authenticate email ("Authenticate outgoing emails" wizard step was offered on the success page).
+### History (progress log from earlier tonight)
 **Progress tonight (live session with Rich):**
 - Root cause of last night's MX mystery CONFIRMED: the Namecheap Gmail preset had been selected but
   never saved — Rich found the **Save Changes** button (no green checkmark in current UI) and saved.

@@ -13,7 +13,12 @@ line so the hook's OPEN-counter doesn't false-match it):
 
 ---
 
-## ⬜ OPEN — Msg 001 (2026-10-08): Job 016 UPDATE — unblocked live with Rich; Gmail activation spinner running
+## ✅ HANDLED — Msg 001 (2026-10-08): Job 016 COMPLETE — Gmail activated for freshgroundllc.com
+**RESOLVED same night:** Google confirmed "Gmail is activated! You verified freshgroundllc.com."
+MX = smtp.google.com prio 1 (Google's wizard rejected the old aspmx preset — only the new-style
+record passes activation; vault lesson for future domains). SPF Google + verification TXT both live.
+Left for Rich: inbound test email + DKIM (details in Job 016, inbox-for-desktop.md).
+### History
 **UPDATE (same night, Rich at keyboard):** MX save root-caused (preset selected but never saved —
 "Save Changes" button, no green checkmark in current Namecheap UI). MX now Google's, verified at
 authoritative NS + 8.8.8.8. Rich signed in, verified the domain, confirmed the Gmail activation
