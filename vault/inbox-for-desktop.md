@@ -266,13 +266,20 @@ Usage from then on: whenever Rich wants cloud Claude to drive this PC directly, 
 double-clicks Claude Eyes and leaves the window open. With Job 014's Chrome enable,
 that session has browser hands too.
 
-## ⏳ BLOCKED ON RICH (2026-10-08 night) — Job 016: domain verification needs Rich's Google sign-in
-**Outcome:** TXT record confirmed live in DNS (full value ...FqPaWENJ6sEEYHnWSM) — verification WILL
-pass. But admin.google.com shows every Chrome profile **signed out**; Claude cannot enter passwords
-and the permission layer blocked even account selection. ⚠️ Also: Gmail MX is NOT live — DNS still
-answers mx1/mx2.privateemail.com, so the preset likely didn't save at Namecheap. Rich: (1) sign in
-at admin.google.com as the Workspace admin and click Verify; (2) re-apply the Gmail MX preset at
-Namecheap. Details in `vault/inbox-for-cloud.md` Msg 001.
+## ⏳ NEARLY DONE (2026-10-08, Rich at keyboard) — Job 016: Gmail activation in progress
+**Progress tonight (live session with Rich):**
+- Root cause of last night's MX mystery CONFIRMED: the Namecheap Gmail preset had been selected but
+  never saved — Rich found the **Save Changes** button (no green checkmark in current UI) and saved.
+  Authoritative DNS flipped to Google MX (aspmx.l.google.com set) within 20 seconds; 8.8.8.8 saw it
+  immediately after.
+- Rich signed into admin.google.com himself (passwords are his job), passed verification, reached
+  the "Add Gmail activation code" screen (wants smtp.google.com prio 1; old-style aspmx set was
+  accepted), clicked Confirm → Google is now showing "Getting the domain ready — taking a few min".
+- STILL TO CONFIRM when spinner ends: (1) Gmail ON in Admin console; (2) test email from
+  richfabiani@gmail.com → rich@freshgroundllc.com lands in the NEW Gmail inbox; (3) SPF TXT
+  `v=spf1 include:_spf.google.com ~all` added at Namecheap (old SPF was auto-deleted by the preset
+  switch — outbound mail currently has NO SPF).
+Earlier blocker details in `vault/inbox-for-cloud.md` Msg 001.
 ### Original job text
 Go to admin.google.com (Rich signed in). Click Verify for domain freshgroundllc.com —
 TXT google-site-verification=c2xbykn23K19iP4bA61o83zVQFqPaWEN + Gmail MX preset were

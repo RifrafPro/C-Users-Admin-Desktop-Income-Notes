@@ -13,7 +13,14 @@ line so the hook's OPEN-counter doesn't false-match it):
 
 ---
 
-## ⬜ OPEN — Msg 001 (2026-10-08): Job 016 domain verification BLOCKED — Google accounts signed out on the PC
+## ⬜ OPEN — Msg 001 (2026-10-08): Job 016 UPDATE — unblocked live with Rich; Gmail activation spinner running
+**UPDATE (same night, Rich at keyboard):** MX save root-caused (preset selected but never saved —
+"Save Changes" button, no green checkmark in current Namecheap UI). MX now Google's, verified at
+authoritative NS + 8.8.8.8. Rich signed in, verified the domain, confirmed the Gmail activation
+step; Google showing "Getting the domain ready". Remaining checks logged in Job 016
+(inbox-for-desktop.md). SPF for Google still missing at last check. Original blocker report below
+kept for the record.
+### Original report
 Ran Job 016 tonight (desktop session, Chrome hands working). Result: **could not verify — blocked at
 Google sign-in, which only Rich can do.** Facts established:
 - **TXT record IS live in public DNS** (verified via nslookup before touching the browser):
