@@ -603,3 +603,40 @@ So tonight is a 20-minute straight line, all on this PC:
 4. While we're in there: rotate the API key that's been sitting exposed since 09-26.
 
 Log in and say "go."
+
+**You:** ok ill wait till the morning and see if the plivo BS is ironed out. If not we killit and get any refunds thsat may apply.
+
+**Claude:** Two corrections before you sleep on it, because the morning will disappoint you otherwise:
+
+1. **Nothing irons itself out overnight.** Plivo's gate is an automated check — it has no memory of you and nobody reviewing anything. If the support email doesn't go out, tomorrow's retry hits the identical wall. The 2-minute move tonight: send the draft (from your rich@ mailbox to support@plivo.com) — it starts the human-review clock AND doubles as your new mailbox's first outbound test. Waiting without sending is just waiting.
+
+2. **There's no refund to get — you never gave Plivo a dime.** The gate blocked you at signup; no account, no charges, nothing to claw back. "Killing it" costs zero and loses zero. The only Plivo-shaped thing you own is the decision in the vault, and that erases free.
+
+Logging tonight's state so tomorrow's session picks up clean:
+  - `Bash: cat >> "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes/vault/sessions/2026-10-08.md" << 'EOF' ## WHERE WE LEFT OFF (end of 10-08 desktop`
+
+**Claude:** Saved and pushed (`a348f45`). Tomorrow's session loads this picture automatically.
+
+The scoreboard tonight, for the record: domain verified, Gmail live for rich@freshgroundllc.com, SPF fixed, a deleted verification record rescued, Plivo's wall diagnosed with the exact error captured, ElevenLabs evaluated against live docs, and a new working rule that'll make the next night like this shorter. That's a real step.
+
+For the morning, in order: send the Plivo email (or don't, and we kill it clean — your call, zero dollars at stake either way), then the ElevenLabs in-browser ear test — it doesn't wait on Plivo, the website, or anyone's approval. Just your login and your ears.
+
+Good night, Rich.
+
+**You:** we will continue this in th morning
+
+**Claude:** Done — the vault's already saved and pushed, so tomorrow's session will open knowing exactly where we stand: Plivo decision first, then the ElevenLabs ear test.
+
+See you in the morning.
+
+**You:** not morning yet but so want to et up the plivo connection
+
+**Claude:** One honest warning first: nothing in Plivo's gate has changed since the rejection — no email was sent, no human has reviewed anything. BUT there's one cheap test worth running before we write the night off: since that rejection, your domain gained real Google MX records, SPF, and a working mailbox. If Plivo's filter checks "does this domain have a real mail setup" (some do), the gate may already read differently. [Guessing] on that — but the test costs 30 seconds.
+
+So, two steps, in this order:
+
+**1. Retry the signup once.** Same form, plivo.com — rich@freshgroundllc.com. I can't fill in a signup form for you (account creation is a hard line for me), so it's your typing. If it accepts: we're in, and tonight got better. If the same red banner appears: stop — no third tries, the gate is domain-age and only time/humans fix it.
+
+**2. If blocked, send the unblock email right now** — you're awake anyway and it's the only lever that works overnight. From rich@freshgroundllc.com (mail.google.com, sign in as that account) to **support@plivo.com**. The draft is three messages back — copy, paste, send. That email is simultaneously your mailbox's first outbound proof.
+
+If the retry works, tell me the moment you're past the signup screen — the next stop is SIP trunk credentials, and the vault runbook and I are ready for that part. Which way did it go?
