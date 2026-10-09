@@ -480,3 +480,126 @@ Three moves, in order of value:
 If Plivo still refuses after a real site + manual review, then I'll say what the vault currently won't: the "Plivo FINAL" decision needs a second look (Telnyx does human KYC review and is friendlier to new entities). Not yet — but that's the tripwire.
 
 Say "build it" and I'll start the site now. Logging this rejection to the vault either way, per the failures rule.
+
+**You:** [Image: source: C:\Users\Admin\AppData\Local\Temp\claude\C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes\e45c2b7d-87d1-5a23-929f-e57c0958ebec\images\6.png]
+
+**Claude:** That error text settles it: **"This email domain isn't allowed at this time"** is a pre-signup email-domain gate — it blocked you before any business review ever happened. "At this time" is the tell: [Likely] an automated domain-reputation check (age + web presence), not a human decision and not a permanent ban. Logging it to the vault now:
+  - `Bash: cat >> "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes/vault/sessions/2026-10-08.md" << 'EOF' ## FAILURE LOG (same night): Plivo signup`
+
+**Claude:** Logged and pushed (`4fc7893`). The good news buried in this: it's the *cheapest* kind of rejection — an automated gate, and both of its inputs are fixable. Age fixes itself; the parking page is the one we control tonight.
+
+Here's the support draft. Since you can't log a ticket without an account, send it through Plivo's "Contact Sales / Talk to an expert" form on plivo.com (I'm not certain they monitor a bare support@ address for non-customers — the form is the reliable path):
+
+> **Subject: Signup blocked — "This email domain isn't allowed at this time" — legitimate business domain**
+>
+> Hi — I'm trying to open a Plivo account for my real-estate business, FRESH GROUND (DC Metro area, land acquisition/wholesaling). Signup rejects my work email rich@freshgroundllc.com with "This email domain isn't allowed at this time."
+>
+> freshgroundllc.com is our company domain, registered this month at Namecheap, with email on Google Workspace. I suspect the block is because the domain is newly registered. Could you review and allowlist it, or tell me what's needed to pass? Happy to provide business documentation. Planned use: outbound/inbound voice for seller calls and SMS follow-up (we'll complete 10DLC registration).
+>
+> Rich Fabiani — rich@freshgroundllc.com
+
+And the website: still waiting on your one word. The contract from my last message stands — ~30-45 min, free hosting, replaces the parking page with a real FRESH GROUND one-pager, and it's a hard prerequisite for 10DLC no matter which provider wins. Say "build it" and I'll have something to show you before you're done sending that form.
+
+**You:** ok but why?
+
+**Claude:** Because phone networks are drowning in scammers, and you look exactly like one right now — through no fault of yours.
+
+Here's the mechanism, plain:
+
+1. **Plivo sells the thing scammers want most: cheap calls and texts at scale.** Robocallers and phishing crews sign up for trials every day, burn the account, and vanish. Plivo eats fines and carrier penalties when that traffic goes through them — so they filter hard at the front door.
+
+2. **The cheapest scammer trick is a fresh throwaway domain.** Register `qwk-biz-123.com` for $10, get an email address, open trial accounts. So the industry's first filter is automatic: *How old is this domain? Does a real business live at it?* Your domain is days old and its homepage is a Namecheap "this domain is parked" ad page. To the robot, that pattern is indistinguishable from a burner. "Isn't allowed **at this time**" is the robot saying "too new, nothing there yet" — not "banned."
+
+3. **The website is how a domain proves it's a business and not a burner.** A page saying who you are, what FRESH GROUND does, where you operate, how to contact you — that's the signal the filter (and later, a human reviewer) looks for. Scammers don't bother building real sites for throwaway domains; that's precisely why it works as a filter.
+
+4. **And it's not just Plivo's door.** Before *any* provider lets you text strangers in the US, you must register your business for 10DLC with the carriers — and that registration form literally has a required "business website" field. So the site isn't a trick to get past Plivo; it's a mandatory part of the phone system you're building. We're just doing it a step earlier than planned.
+
+One honest caveat [Likely, not certain]: I can't see inside Plivo's filter, so a site plus a few days of domain age *probably* clears it — that's why the support-form message is worth sending in parallel, so a human can just flip the switch.
+
+**You:** can you find a real customedr service number to call for plivo?
+
+**Claude:** Straight answer first: [Likely] Plivo doesn't operate a public customer-service phone line at all — they're a ticket/chat-support company. But let me verify instead of assuming:
+  - `mcp__firecrawl__firecrawl_search: Plivo customer service support phone number contact call`
+
+**Claude:** The search shows contact pages but no number — and the "phone numbers" page result is their product demo with fake 555 numbers. Checking their actual contact page to be sure:
+  - `mcp__firecrawl__firecrawl_scrape: https://www.plivo.com/contact/`
+
+**Claude:** Verified from Plivo's own contact page just now: **there is no phone number. None exists.** Their published channels are exactly three — `support@plivo.com`, a web form, and office addresses in Austin and Bengaluru. They're an online-support-only company, [Certain] as of tonight's check of their live site.
+
+One warning that matters: **do not Google "Plivo support number" and call whatever comes up.** Fake "customer support" numbers planted on third-party sites are a standard scam — same pattern as the wallet-stealing clone the vault already logged in September. If a number isn't on plivo.com, it isn't Plivo.
+
+The silver lining: the contact page confirms `support@plivo.com` is a real monitored inbox — which is *better* than the form for your case. So:
+
+1. Send the draft I wrote you (two messages back) **from rich@freshgroundllc.com to support@plivo.com**. That's your test email and your unblock request in one shot — and replying from the domain in question is itself evidence the domain is a real business.
+2. If no reply in 2 business days, post a short public nudge to **@plivo on X** — they answer signup complaints there, I saw one tonight.
+3. Meanwhile, the website is still the thing that actually changes your domain's score. The "build it" offer stands.
+
+**You:** ok then fuck Plivo
+
+**Claude:** Hold on — before you torch them: **switching providers doesn't dodge this wall, because every provider runs the same wall.** Twilio already banned you outright. Telnyx, SignalWire, Vonage — all of them run domain/KYC checks at signup, and your domain scores the same everywhere tonight: brand new, parked page. "Fuck Plivo" feels right but changes nothing on the to-do list; the bottleneck is the domain's reputation, not the vendor.
+
+Here's what frustration is actually buying you if we channel it:
+
+1. **The website gets built tonight.** It's required for 10DLC carrier registration no matter whose logo is on the account — Plivo, Telnyx, anyone. This work cannot be skipped or vendored away. Say "build it."
+2. **The support email still goes out** — two minutes, from rich@, costs nothing, and keeps Plivo alive as the front-runner while we do nothing extra. Don't let them off that easy.
+3. **Telnyx becomes the researched Plan B, not the rebound.** [Likely] their manual KYC review is friendlier to new entities, but I haven't verified their signup gates — I'll do that research properly and log it, so if Plivo hasn't moved in 2-3 days, we walk into Telnyx with the site live, the domain a week older, and their requirements already mapped. That's a switch from strength, not a 1 a.m. rage-quit.
+
+The vault still says "Plivo FINAL" — I'm not rewriting a considered decision over one automated rejection, and you shouldn't either. But the tripwire is now set and logged: real site + manual-review request + a few days of domain age, and if their gate still says no, we flip and don't look back.
+
+Your move is one word: **"build it"** and the parking page dies tonight.
+
+**You:** NEXT
+
+**Claude:** Building it. One honest content note first: your LLC isn't filed yet, so the site says "FRESH GROUND" (the brand) and never claims "LLC" as a legal entity — the domain name alone carries those letters. Checking what I have to work with for free hosting:
+  - `Bash: gh auth status 2>&1 | head -6`
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git config --get remote.origin.url && git config --get credential.helper; git cre`
+
+**Claude:** Good — your stored Git credential works for GitHub pushes, so GitHub Pages (free, reliable) is the host. Building the site now:
+  - `Bash: mkdir -p "/c/Users/Admin/Desktop/freshground-site"`
+  - `Bash: ls "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes/vault/automation/" && head -60 "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Des`
+  - `mcp__firecrawl__firecrawl_search: ElevenLabs Agents buy phone number natively dashboard outbound calls no Twilio account`
+  - `mcp__firecrawl__firecrawl_search: ElevenLabs conversational AI agents pricing per minute 2026 concurrency`
+  - `mcp__firecrawl__firecrawl_scrape: https://elevenlabs.io/docs/eleven-agents/phone-numbers/overview`
+  - `mcp__firecrawl__firecrawl_scrape: https://elevenlabs.io/docs/eleven-agents/phone-numbers/llms.txt`
+  - `mcp__firecrawl__firecrawl_search: "elevenlabs" buy purchase phone number directly dashboard without twilio account agents`
+
+**Claude:** Verdict first: **yes, ElevenLabs' voice tech is solid — it was the right pick and it still is. But I found the catch that matters: ElevenLabs deliberately doesn't do the phone-line part, so it can't rescue us from the Plivo problem.** Here's the full evaluation, sourced from their live docs tonight:
+
+**The good [Certain, from docs + pricing pages]:**
+- Voice quality is the industry benchmark — they just shipped Eleven v4 / v4 Turbo ("fastest, most emotive" models), which is exactly what your ear test cares about.
+- The Agents platform has everything the runbook needs: system prompts, call history dashboard, batch calling, transfer-to-human, voicemail handling.
+- Pricing fits your volume: **$0.08/minute** + ~$0.003/min LLM. Free tier includes 15 minutes — enough for the ear test at $0. Starter is $6/mo (75 min), Creator $22/mo (275 min). A 10-minute builder call costs under a dollar.
+
+**The catch [Certain — docs + community confirm]:** ElevenLabs supplies the brain and the voice, never the number. Their words, effectively: they don't handle the phone network. Numbers come from either (a) Twilio native integration — easiest, but Twilio banned you — or (b) a SIP trunk from any carrier: Plivo, Telnyx, Vonage. So the phone leg still runs through exactly the kind of company that just rejected your domain. The website/KYC work stays on the critical path no matter what. The vault's old note about "an EL-provisioned number" was wrong — I've been corrected by their current docs.
+
+**The move this unlocks tonight [Certain]:** the ear test doesn't need a phone number at all. Agents can be tested by talking to them **in the browser** — mic and speakers, full latency and naturalness judgment, free tier. That's the real "is it solid" test, and it's your own voice making the call.
+
+So: I can create the FRESH GROUND agent right now with the v1.1 builder-buybox prompt from the vault, and you talk to it in the browser tonight — you judge the ear test yourself instead of taking my word. One caveat from the vault: your ElevenLabs API key was exposed in chat on 09-26 and rotation is still pending — we should rotate it while we're in the dashboard anyway.
+
+Want me to drive? You log into elevenlabs.io, I build the agent, you have the conversation.
+
+**You:** OK do we bild this on the local PC and kill all the other bullshit?
+
+**Claude:** There's nothing to "build on the local PC" — and that instinct is exactly the rabbit hole the vault warns about. The agent *lives in ElevenLabs' cloud*; that's where the voice models run and why it sounds human. A self-hosted local voice stack would cost weeks and sound worse — it's the 08-28 terminal-fiasco pattern wearing a new hat. Your PC's job tonight is just: browser, mic, and me driving.
+
+But the second half of your instinct is right, and I'll say it plainly — some of the stack IS bullshit for where you are right now, so here's the honest kill list:
+
+**KILL (tonight):**
+- Plivo signup attempts — dead until the domain can pass KYC. No more retries, no more error screens.
+- Any more phone-provider shopping — pointless until the website exists. Same wall everywhere.
+
+**KEEP (it's load-bearing):**
+- ElevenLabs — the actual voice tech, already chosen, free to test tonight.
+- The vault/git memory — it's why tonight's TXT disaster was a 2-minute fix instead of a lost domain.
+- The website — not bullshit, it's the KYC key for ANY phone provider. Queued, 45 minutes, when you say so.
+
+**SIMPLIFY:** work happens here — local sessions, me driving your Chrome, you watching. The cloud-queue machinery stays as the message bus it was built to be, not a second pilot.
+
+So tonight is a 20-minute straight line, all on this PC:
+
+1. You log into **elevenlabs.io** in Chrome (your password, your typing).
+2. I drive: create the FRESH GROUND agent, paste the v1.1 builder-buybox prompt from the vault, pick a voice.
+3. **You talk to it** — in-browser, free tier, no phone number needed. Your ears decide if the tech is solid.
+4. While we're in there: rotate the API key that's been sitting exposed since 09-26.
+
+Log in and say "go."
