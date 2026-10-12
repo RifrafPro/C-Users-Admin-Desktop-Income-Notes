@@ -325,6 +325,20 @@ Fails → capture the exact error text. Either way: log here, commit, push. Narr
   Account Settings -> Security -> Main SIP/IAX Password (he types it; never logged).
 - ElevenLabs web UI is SIGNED OUT in Chrome -> step 2 needs Rich to sign in (or approve the API import).
 - Steps 2-4 NOT done.
+**Update 10-12 afternoon:**
+- Rich created VoIP.ms sub account **577131_fg** (CallerID 5718322832, SIP, user/pass). Main-account SIP
+  password unknown + support phone closed -> sub account was the workaround.
+- tools/connect-phone.ps1 (Desktop "CONNECT PHONE") imported the number: **phnum_4301m4s14cmae3xak2b9smzxchv8**,
+  sip_trunk, outbound sanjose2.voip.ms TCP, user 577131_fg, assigned to agent_9201m3... VERIFIED via API.
+- Voice: agent already on "Eric - Smooth, Trustworthy" (premade), TTS model eleven_flash_v2. Samples of 5
+  voices in Desktop\Voice Samples. Rich did not pick another -> Eric kept.
+- ❌ EAR TEST FAILED x2 (FAILURE LOG): API POST /v1/convai/sip-trunk/outbound-call to Rich's cell.
+  (1) to_number "+1916..." -> **SIP 404 Not Found** (VoIP.ms rejects the "+"; use 11 digits "1NXXNXXXXXX").
+  (2) to_number "1916..." -> **SIP 603 Declined**. Phone did NOT ring. VoIP.ms CDR (all filters incl.
+  failed) shows NOTHING -> rejected before routing. Checked + ruled out: balance $34.20 positive; sub-account
+  CallerID set; domestic call. Not yet ruled out: new-account outbound restriction / account verification,
+  Foreign IP Guard (checkbox state unreadable), sub-account Device type/Dialing Mode. NEXT: ask VoIP.ms Live
+  Chat (Mon-Fri 9-22 ET) why INVITEs from 577131_fg get 603. Don't retry blindly.
 For the bridge worker with Chrome hands, Rich present. No guessing: read each screen.
 1. VoIP.ms portal (Rich signed in): confirm the main SIP account 577131 has a SIP password
    set (Main Menu → Account Settings; if Rich must set one, he types it — never log it).

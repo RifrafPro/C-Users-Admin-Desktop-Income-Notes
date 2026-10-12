@@ -15,3 +15,4 @@
 [2026-09-26 19:40] Key VALID. Tier: creator
 [2026-09-26 19:40] AGENT CREATED. agent_id: agent_9201m3gbrsdcftm8f21bygh8cwgf
 [2026-09-26 19:40] Pushed. Test the agent by voice in the ElevenLabs dashboard: elevenlabs.io -> Agents.
+[2026-10-12 14:41] IMPORTED +15718322832 -> phone_number_id phnum_4301m4s14cmae3xak2b9smzxchv8, assigned to agent_9201m3gbrsdcftm8f21bygh8cwgf (outbound via sanjose2.voip.ms TCP)
