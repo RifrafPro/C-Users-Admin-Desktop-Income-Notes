@@ -339,6 +339,7 @@ Fails → capture the exact error text. Either way: log here, commit, push. Narr
   CallerID set; domestic call. Not yet ruled out: new-account outbound restriction / account verification,
   Foreign IP Guard (checkbox state unreadable), sub-account Device type/Dialing Mode. NEXT: ask VoIP.ms Live
   Chat (Mon-Fri 9-22 ET) why INVITEs from 577131_fg get 603. Don't retry blindly.
+- 10-12: Gmail DRAFT reply on VoIP.ms ticket #FMOEFC (thread 1a131b29a3d07379) asking why 603 - awaiting Rich's 'send it'. When VoIP.ms answers: fix, then re-run ear test (to_number 11 digits, no '+').
 For the bridge worker with Chrome hands, Rich present. No guessing: read each screen.
 1. VoIP.ms portal (Rich signed in): confirm the main SIP account 577131 has a SIP password
    set (Main Menu → Account Settings; if Rich must set one, he types it — never log it).
@@ -354,3 +355,4 @@ For the bridge worker with Chrome hands, Rich present. No guessing: read each sc
    at the keyboard). Rich judges voice + latency. Capture his verdict.
 5. Log outcome here + voice-agent file, commit, push. Real builder dials stay gated on
    per-call "send it".
+
