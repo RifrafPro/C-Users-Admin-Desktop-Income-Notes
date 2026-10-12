@@ -167,3 +167,4 @@ Note: the brief literally says "70% of **as-is**." Applying that to the $450K as
 - Why the price went up from $690K to $700K and then dropped to $600K; any failed contracts (ask the agent)
 - Whether the agent/listing accepts wholesale assignment
 - Buyer pool: zero S.FL cash investors captured
+- 2026-10-12 - ZILLOW re-check: FOR SALE $600K, 618 days on Zillow. History: $690K (2/26/25) -> tried to RENT at $3,500/mo (5/12/25, pulled 6/10/25) -> $700K (6/23/25) -> **relisted 10/6/2026 at $600K (-14.3%)**. Failed rental + fresh relist = an owner losing patience, but the ask is still about 2x our $303K max offer. Verdict unchanged: NO-GO.

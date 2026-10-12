@@ -212,3 +212,4 @@ Conditions (any one failing means NO-GO):
 4. Is it vacant? Are utilities on? Is it on city sewer, and has the sewer line been scoped?
 5. Will the seller allow an assignment, or require the named buyer to close?
 6. When did the earlier listing (MLS #6281669) run, and at what price?
+- 2026-10-12 - ZILLOW re-check: still FOR SALE $295K, 508 days on Zillow. Cuts: $319.9K (9/5/25) -> $309.9K -> $303.7K -> $297.5K -> **$295K (12/6/25) = last cut**. Small 2-3% monthly cuts stopped 10 months ago; the corporate seller has stalled at its floor. Our ~$190K needs a 35% drop. Verdict unchanged: GO-CONDITIONAL; expect a hard no unless the asset manager has a write-down target.
