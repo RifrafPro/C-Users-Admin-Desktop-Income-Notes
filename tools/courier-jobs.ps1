@@ -7,6 +7,10 @@ $Log = Join-Path $Repo "vault\courier-log.txt"
 $Stamp = Get-Date -Format "yyyy-MM-dd HH:mm"
 function Say($m) { Add-Content -Path $Log -Value "[$Stamp] $m" }
 
+# Task Scheduler's PATH lacks Git's bin dir, so claude's bash hooks failed ("Executable not found: bash").
+$GitBin = "C:\Program Files\Git\bin"
+if ((Test-Path $GitBin) -and ($env:PATH -notlike "*$GitBin*")) { $env:PATH = "$GitBin;$env:PATH" }
+
 Say "courier heartbeat - payload v2 running"
 & powershell -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot "install-advisor-rules.ps1") >> $Log 2>&1
 
