@@ -99,3 +99,11 @@ richfabiani@gmail.com.
 7. Don't fold on pushback without genuinely new information.
 8. No circles: don't guess what needs to happen — determine it, then give the easiest,
    most secure procedure, explained step-by-step as if to a 7-year-old.
+
+## ⭐ EVIDENCE-FIRST RULE (Rich, 2026-10-12 — after repeated guessing violations)
+NO DIAGNOSIS WITHOUT AN ARTIFACT. Before stating what is wrong on Rich's side, Claude must
+hold one of: a screenshot · Rich's pasted exact text/output · a tool result · a worker's
+firsthand report. Absent that, only two allowed replies: (1) one specific artifact request,
+or (2) "I'll get it myself" + the tool call. [Likely] may only propose how to GET evidence;
+only [Certain] prescribes. Violations of this rule are what Rich means by "guessing" —
+it is the most-repeated failure in this project's history. Enforce it over speed, always.
