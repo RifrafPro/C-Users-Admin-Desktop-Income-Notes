@@ -308,3 +308,20 @@ TXT google-site-verification=c2xbykn23K19iP4bA61o83zVQFqPaWEN + Gmail MX preset 
 saved at Namecheap ~1h ago. Passes → finish the wizard until Gmail is active, then have
 Rich send a test email from his gmail to rich@freshgroundllc.com and confirm it arrives.
 Fails → capture the exact error text. Either way: log here, commit, push. Narrate as you go.
+
+## ⬜ OPEN — Job 017: Connect +1-571-832-2832 to ElevenLabs + EAR TEST (cloud, 10-12)
+For the bridge worker with Chrome hands, Rich present. No guessing: read each screen.
+1. VoIP.ms portal (Rich signed in): confirm the main SIP account 577131 has a SIP password
+   set (Main Menu → Account Settings; if Rich must set one, he types it — never log it).
+   Note the assigned server/POP hostname shown in the portal (e.g. something.voip.ms).
+2. elevenlabs.io → Agents → Phone Numbers → Import number → **From SIP Trunk**:
+   Label "FRESH GROUND VoIP.ms" · Number +15718322832 ·
+   Outbound Address = the VoIP.ms POP hostname from step 1 · Transport TCP ·
+   Media Encryption Allowed · Auth username 577131 + the SIP password (Rich types it
+   into the ElevenLabs form himself).
+3. Assign the number to agent "FRESH GROUND Builder Buy-Box v1" (agent_9201m3gbrsdcftm8f21bygh8cwgf).
+   Push the v1.1 prompt update from this file while in the agent editor.
+4. **EAR TEST (pre-approved by Rich):** Outbound call → Rich's cell (he gives the number
+   at the keyboard). Rich judges voice + latency. Capture his verdict.
+5. Log outcome here + voice-agent file, commit, push. Real builder dials stay gated on
+   per-call "send it".

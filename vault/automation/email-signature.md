@@ -3,7 +3,7 @@ Plain text, no images (deliverability). For rich@freshgroundllc.com:
 
 Rich Fabiani
 FRESH GROUND — Teardown Lots & Land, DC Metro
-rich@freshgroundllc.com · [phone once Plivo number lives]
+rich@freshgroundllc.com · (571) 832-2832
 We bring builders ready-to-go lots — before they hit the market.
 
 AI-assistant variant (per call-agent KB identity rules):

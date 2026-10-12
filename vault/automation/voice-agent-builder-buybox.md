@@ -133,3 +133,9 @@ integration is Twilio-native. Voice calls need NO A2P (that gates SMS only).
    Botero 202-515-0020 → Paradigm 703-476-5877. Transcripts → buyers.md same day.
 ⚠️ Still open: rotate the LIVE key exposed in chat 09-26 (delete in dashboard →
 double-click DEPLOY-CALLER → paste replacement into the window).
+
+## 📞 NUMBER ACQUIRED (2026-10-12): +1-571-832-2832 (VoIP.ms DID, NoVA)
+- Provider: VoIP.ms · account richfabiani@gmail.com · main SIP account **577131**
+- Inbound routing: SIP/IAX main account (placeholder until AI inbound goes live via SIP URI)
+- Plivo: abandoned at signup (domain gate, failure log 10-08). Twilio: refused earlier. CLOSED.
+- NEXT (Job 017): ElevenLabs SIP-trunk import + ear test.
