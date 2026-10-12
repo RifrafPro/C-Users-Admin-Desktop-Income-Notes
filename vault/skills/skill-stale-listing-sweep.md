@@ -81,5 +81,11 @@ short sale). One date was wrong ("Oct '26" vs the real Jun 10 '26), so keep step
 6. **Spot-check 2+ rows yourself** against the live page before anyone calls.
 7. **Phones:** watch for Redfin call-routing numbers (the same number on many agents' listings,
    e.g. Phoenix 623-207-1769). Get direct lines from the brokerage site.
-8. **Still needs Rich:** sign in to Land Insights in Chrome once, so the $/acre overlay appears
-   (installed 0.0.11, but it injected nothing on 10-12).
+8. ~~Still needs Rich: sign in to Land Insights~~ DONE 10-12. **Verified 10-12 (ext v0.0.11):**
+   - It only touches SEARCH RESULT cards, never property detail pages (by design: scripts/redfin.js, zillow.js).
+   - **Zillow: WORKS.** $/acre badge on every card (e.g. Old Chesterbrook Rd = $48,529/ac) plus a
+     "Market Score" panel (free scoring at COUNTY level only). Use zillow.com/<city-zip>/land/ for the acreage screen.
+   - **Redfin: BROKEN.** Badge appears but says "no acreage" even on a 2.04-ac lot (its lotSize reader no longer
+     matches Redfin). It also rewrites Redfin URLs to property-type=land; turn off "Only Show Land Results" in the
+     extension popup before a house sweep.
+   - Owner data / skip trace not yet exercised; test on the next lead.
