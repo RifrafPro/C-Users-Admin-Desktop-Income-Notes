@@ -29,6 +29,12 @@
 
 ## Call first — top 3 overall
 
+> **UNDERWRITTEN 2026-10-12. None of the 3 works at ask:**
+> - 405 60th St NE DC: NO-GO at $349K; GO-CONDITIONAL at ≤$195K (MAO base $173K; RA-1; NOT a builder lot, since Ward 7 land residual ≈ $0) → deals/405-60th-st-ne-dc-20019.md
+> - 6730 NE Miami Pl: NO-GO (ask $600K vs MAO $263–338K; seller priced off the MiMo side) → deals/6730-ne-miami-pl-miami-33138.md
+> - 5902 W Orange Dr Glendale: GO-CONDITIONAL at ~$190K vs $295K ask (owner likely Amherst/ARVM 5 LLC; base MAO $183K) → deals/5902-w-orange-dr-glendale-az.md
+
+
 **The trap first:** the listings with the most visible "motivation" are often the worst for a wholesale offer. An underwater owner
 (14 Nicholson DC, 1820 SW 11th Ct FTL, 326 N 39th Dr PHX) or a short sale (1187 NW 29th Ter FTL) is desperate but **has no equity to give
 you a discount**. Only the lender can approve a lower price. The three below combine motivation with room to negotiate.
