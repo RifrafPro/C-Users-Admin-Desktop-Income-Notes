@@ -89,7 +89,8 @@ short sale). One date was wrong ("Oct '26" vs the real Jun 10 '26), so keep step
      matches Redfin). It also rewrites Redfin URLs to property-type=land; turn off "Only Show Land Results" in the
      extension popup before a house sweep.
    - Owner data / skip trace not yet exercised; test on the next lead.
-9. **Land Insights DATA PLATFORM (app.landinsights.co/data) - the real tool, found 10-12.** Parcel filter + export:
+9. **Land Insights DATA PLATFORM (app.landinsights.co/data) - the real tool, found 10-12.** FULL PLAYBOOK
+   (costs, every filter, seller + BUYER recipes): **`vault/skills/skill-land-insights.md`**. Summary: Parcel filter + export:
    ZIP/county, acres, Max Improvement %, owner (out-of-state/county/ZIP, exclude corporate, tax delinquent,
    ownership length), assessor land/improvement values, mortgage/lien, slope/flood/wetland/HOA AI scrubs,
    skip tracing (6-7 credits/hit), AI market value. Account: **5,000 credits**; export = **10 credits/record**
