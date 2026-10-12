@@ -89,3 +89,12 @@ short sale). One date was wrong ("Oct '26" vs the real Jun 10 '26), so keep step
      matches Redfin). It also rewrites Redfin URLs to property-type=land; turn off "Only Show Land Results" in the
      extension popup before a house sweep.
    - Owner data / skip trace not yet exercised; test on the next lead.
+9. **Land Insights DATA PLATFORM (app.landinsights.co/data) - the real tool, found 10-12.** Parcel filter + export:
+   ZIP/county, acres, Max Improvement %, owner (out-of-state/county/ZIP, exclude corporate, tax delinquent,
+   ownership length), assessor land/improvement values, mortgage/lien, slope/flood/wetland/HOA AI scrubs,
+   skip tracing (6-7 credits/hit), AI market value. Account: **5,000 credits**; export = **10 credits/record**
+   (~500 records). Searching/previewing is free; "Purchase Now" spends credits - ask Rich first.
+   - Test 10-12: ZIP 22101, 0.25-3 ac, improvement <=25%, owned >=180 mo -> 48 parcels, but the top results
+     were HOA common-area parcels (improvement $0). FIX: set Improvement Value MIN (e.g. $100K) so there's
+     a real house, + Remove HOA + Exclude Corporate Owners. Claude's clicks on the HOA/corporate toggles
+     didn't visibly change the count (panel scrolling unreliable) - verify toggles by eye.
