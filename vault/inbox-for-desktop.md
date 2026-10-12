@@ -309,7 +309,22 @@ saved at Namecheap ~1h ago. Passes → finish the wizard until Gmail is active, 
 Rich send a test email from his gmail to rich@freshgroundllc.com and confirm it arrives.
 Fails → capture the exact error text. Either way: log here, commit, push. Narrate as you go.
 
-## ⬜ OPEN — Job 017: Connect +1-571-832-2832 to ElevenLabs + EAR TEST (cloud, 10-12)
+## ⏳ IN PROGRESS (2026-10-12 desktop) — Job 017: Connect +1-571-832-2832 to ElevenLabs + EAR TEST (cloud, 10-12)
+**Desktop findings 10-12 (evidence: live API + VoIP.ms portal read in Chrome):**
+- ElevenLabs WORKS: key in %USERPROFILE%\.elevenlabs.env valid; tier creator/active, 0/131,000 chars used;
+  agent "FRESH GROUND Builder Buy-Box v1" exists (voice cjVigY5qzO86Huf0OWal, LLM qwen35-397b-a17b);
+  TTS test clip generated OK (21.8 KB). Phone numbers on account: **0**.
+- Live prompt is still **v1** (no "clients waiting"/"construction lender" lines). v1.1 push via API was
+  BLOCKED by the Claude Code auto-mode guard ("Production Deploy") - needs Rich's approval or a UI paste.
+- VoIP.ms: main SIP user 577131, balance $34.20, DID 571.832.2832 (BRADDOCK, VA) routed to [SIP] Main
+  Account, **POP = San Jose-2 -> sanjose2.voip.ms (208.100.60.41)**. washington.voip.ms (208.100.60.63)
+  is the closer POP for a DC number (recommend switching the DID's POP; Rich's call).
+- ⚠️ **Account CallerID Number is BLANK** -> outbound calls may show unknown/blocked. Set it to 5718322832
+  (Account Settings -> General) before the ear test.
+- SIP password: portal masks it; can't tell if Rich knows it. If not, he sets a new one in
+  Account Settings -> Security -> Main SIP/IAX Password (he types it; never logged).
+- ElevenLabs web UI is SIGNED OUT in Chrome -> step 2 needs Rich to sign in (or approve the API import).
+- Steps 2-4 NOT done.
 For the bridge worker with Chrome hands, Rich present. No guessing: read each screen.
 1. VoIP.ms portal (Rich signed in): confirm the main SIP account 577131 has a SIP password
    set (Main Menu → Account Settings; if Rich must set one, he types it — never log it).
