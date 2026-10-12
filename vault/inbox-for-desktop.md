@@ -356,3 +356,18 @@ For the bridge worker with Chrome hands, Rich present. No guessing: read each sc
 5. Log outcome here + voice-agent file, commit, push. Real builder dials stay gated on
    per-call "send it".
 
+
+## ⬜ OPEN — Job 018: Land Insights deep-dive with Chrome hands (Rich 10-12 — AFTER Job 017)
+Rich is logged into app.landinsights.co in Chrome (his map view:
+app.landinsights.co/data?onboarding=true). With browser hands, explore the ACTUAL app and
+report what it can do for us (cloud cannot see past the login wall):
+1. Inventory: what data layers/filters exist (owner names? $/acre comps? lot size? absentee/
+   out-of-state owner flags? equity? export formats?). What does the free Lite plan include
+   vs lock? Skip-trace credits remaining and cost per?
+2. Run ONE real test on our turf: McLean/Vienna (22101/22102/22180/22182) — pull 5-10
+   teardown-fit parcels (lot ≥0.4ac, old/small improvements) with owner info if the plan
+   allows. Save to vault/deals/landinsights-test-2026-10-12.md.
+3. Wire findings into the skills that reference Land Insights (S2 tax-list-mining, S5
+   desktop-valuation, S10 stale-sweep, S11 propwire) — replace assumptions with what the
+   tool actually does.
+4. No purchases/upgrades without Rich's OK; log costs seen. Push everything.
