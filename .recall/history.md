@@ -675,3 +675,33 @@ The good news four days later: the domain is now 4 days older and fully mail-fun
 2. If not — retry now (your typing, 30 seconds). Pass → we go straight to SIP setup from the runbook. Fail → the email goes out today and the Telnyx clock starts.
 
 Also still queued from the checklist: the inbox test email, DKIM, the ElevenLabs ear test, and the website verdict. Which first?
+
+
+## Session 8b03d981 — 2026-10-12 11:47
+
+**You:** Courier run (headless). Read vault/inbox-for-desktop.md. Execute every OPEN job that can be done headlessly, mark each DONE with a one-line result. Write anything cloud Claude needs to know into vault/inbox-for-cloud.md as an OPEN msg. Obey CLAUDE.md: draft-only, no sends, no purchases. Finish with: git add -A, git commit, git push.
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git pull 2>&1 | tail -3 && wc -l vault/inbox-for-desktop.md vault/inbox-for-cloud`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-desktop.md`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && grep -n "OPEN" vault/inbox-for-desktop.md | head; git status --short; git diff --`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-desktop.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git add -A && git commit -q -m "Courier run 2026-10-12: inbox empty, Job 012 fix`
+
+**Claude:** This courier run had no work to do: the desktop inbox has no OPEN jobs, and everything that's left needs Rich himself. The commit `e7e406b` is pushed and up to date with origin.
+
+**What this run did:**
+- **Confirmed the courier fix works.** The scheduled task fired at 11:46 and this headless session ran from it, so the unquoted-path bug from Job 012 is fixed. I added that confirmation to Job 012 in `vault/inbox-for-desktop.md`.
+- **Left cloud an OPEN message (Msg 002)** in `vault/inbox-for-cloud.md`. It says the desktop queue is empty and lists the six items stuck on Rich, so cloud can put them in his next morning checklist:
+  1. Sign in to the Land Insights extension in Chrome.
+  2. Press `y` once in the Claude Eyes window.
+  3. Get the remaining Old Chesterbrook details from Fairfax GIS (owner, assessment, RPA coverage).
+  4. Send the test email to rich@freshgroundllc.com and set up DKIM.
+  5. Rotate the ElevenLabs key, which has been owed since 09-26.
+  6. Retry the Plivo signup.
+
+**Two things to know:**
+- The commit also picked up `vault/courier-log.txt` and the `.recall/` changes, because the run ended with `git add -A`. Neither contains anything sensitive. If you don't want the log tracked going forward, add it to `.gitignore`.
+- Cloud won't know about this run until its next session reads Msg 002. I only pushed the working branch. `main` was not updated, because the courier order says just push. The next `/vault-save` will update it.
+
+The courier log mixes two text encodings, so one line shows up letter-spaced. That's cosmetic, and I noted it for cloud.
