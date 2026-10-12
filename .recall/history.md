@@ -640,3 +640,38 @@ So, two steps, in this order:
 **2. If blocked, send the unblock email right now** — you're awake anyway and it's the only lever that works overnight. From rich@freshgroundllc.com (mail.google.com, sign in as that account) to **support@plivo.com**. The draft is three messages back — copy, paste, send. That email is simultaneously your mailbox's first outbound proof.
 
 If the retry works, tell me the moment you're past the signup screen — the next stop is SIP trunk credentials, and the vault runbook and I are ready for that part. Which way did it go?
+
+**You:** ok baby. set me up for tomorow morning. we got a few little items to irom out
+
+**Claude:** Setting up tomorrow now — one gap in my notes: you didn't say how the retry went, so I'm logging it as unknown and the checklist covers both branches:
+  - `Bash: cat >> "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes/vault/sessions/2026-10-08.md" << 'EOF' ## ☀️ MORNING CHECKLIST (2026-10-09 — Rich`
+
+**Claude:** You're set (`7b160af` pushed). Tomorrow's session will boot with this checklist on screen:
+
+1. **Plivo fork** — first question will be "did the 1am retry pass or fail?" since you left me hanging on that one. Pass → SIP setup from the runbook. Fail → unblock email + 48-hour tripwire to Telnyx.
+2. **Email proof** — test message into the new inbox + DKIM (2 min).
+3. **ElevenLabs ear test** — in-browser, your ears, no phone number required. Plus the overdue API key rotation.
+4. **Website verdict** — one word decides the parking page's fate.
+
+All of it survives the night in the vault. Sleep — the checklist won't.
+
+**You:** https://github.com/public-apis/public-apis.git run this first and the remind me what the retry was
+
+**Claude:** Hold on — two things before anything executes: that repo isn't something you "run" (it's a famous *list* of free APIs — a README, not a program), and "run this first" with no stated purpose is exactly the pattern the vault's install-safety rule exists for. Whoever/whatever told you to "run" it was wrong about what it is. I'll verify provenance properly, pull the vault (4 days since last session), and then answer the retry question:
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git pull 2>&1 | tail -2`
+  - `Bash: curl -s https://api.github.com/repos/public-apis/public-apis | grep -E '"full_name"|"fork"|"stargazers_count"|"created_at"|"pushed_at"|"default_branch"' | head`
+  - `Bash: mkdir -p /c/Users/Admin/Downloads/_cloned-repos && cd /c/Users/Admin/Downloads/_cloned-repos && rm -rf public-apis && git clone --depth 1 https://github.com/pub`
+  - `Grep: Telnyx|SignalWire|Vonage|Twilio|Plivo|telephony|SMS`
+
+**Claude:** Done — and here's the honest result on both items:
+
+**The repo:** cloned safely to `Downloads\_cloned-repos\public-apis` (verified genuine, 487k stars, nothing executed — it's a 2,592-line README catalog of free public APIs). But heads-up: [Certain] **it contains nothing for our phone problem.** I searched it for telephony/SIP/CPaaS — the only "SMS" entries are marketing-email tools (OneSignal, Brevo). It may be handy someday for property-data or geocoding APIs, but it doesn't touch the Plivo/voice path. If something told you this repo was step one for voice setup, that source was wrong — worth telling me where "run this first" came from.
+
+**The retry, from the vault:** On the night of 10-08 (~1am), after Plivo rejected rich@freshgroundllc.com with *"This email domain isn't allowed at this time,"* the plan was to **retry the signup once** — the theory being that the domain had just gained real Google MX records, SPF, and a working mailbox, which might flip Plivo's automated domain check. The fallback if it failed: send the unblock email to support@plivo.com and start a 48-hour tripwire toward Telnyx. **You never told me how it went** — the vault has it logged as "outcome NOT recorded," and nothing's been touched since.
+
+The good news four days later: the domain is now 4 days older and fully mail-functional, which only improves the odds. So the same two questions reopen today:
+
+1. Did you ever retry the signup or send the support email?
+2. If not — retry now (your typing, 30 seconds). Pass → we go straight to SIP setup from the runbook. Fail → the email goes out today and the Telnyx clock starts.
+
+Also still queued from the checklist: the inbox test email, DKIM, the ElevenLabs ear test, and the website verdict. Which first?

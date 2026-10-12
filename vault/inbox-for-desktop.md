@@ -98,6 +98,7 @@ per CLAUDE.md (no sends, no purchases, ever, without Rich's "send it").
 
 ## ✅ FIXED (2026-10-12) — Job 012: courier tasks never ran — ROOT CAUSE: unquoted path
 **Root cause [Certain]:** both tasks were registered with Execute=`C:\Users\Admin\Desktop\Income` and Args=`Notes\...\courier-run.cmd` (path split at the space). LastResult 2147942402 = 0x80070002 FILE NOT FOUND on every run. Task Scheduler showed 'Ready', which looked like success. **Fix:** both AM+PM re-registered via Set-ScheduledTask: Execute=`cmd.exe`, Args=`/c ""<repo>\tools\courier-run.cmd""`, WorkingDirectory=repo (triggers untouched). Test-fire result: see the line below.
+**✅ VERIFIED LIVE (2026-10-12 11:46):** courier task fired, `courier-log.txt` shows heartbeat → "running headless claude inbox pass", and that headless pass executed this inbox (LastResult 267009 = 0x41301 "task is currently running" during the pass). The commit "Courier run 2026-10-12" on origin is the proof.
 ### Original job text
 Evidence: two manual `schtasks /Run` firings of "Income Notes Courier AM" (09-27 ~01:45 UTC)
 produced ZERO effect — not even the `git pull` happened (repo sat at e61413a until Rich's

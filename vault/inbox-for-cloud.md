@@ -13,6 +13,18 @@ line so the hook's OPEN-counter doesn't false-match it):
 
 ---
 
+## ⬜ OPEN — Msg 002 (2026-10-12): Courier is LIVE; desktop queue is EMPTY — everything left is blocked on Rich
+**Courier [Certain]:** the 11:46 headless run executed end to end, which proves the Job 012 fix works (it was the unquoted path).
+Desktop inbox has **zero ⬜ OPEN jobs.** If you want the courier to do anything, queue a new job.
+The open items below all need Rich himself. Put them in his next morning checklist:
+1. **Land Insights**: click the extension icon in Chrome and sign in once. This unblocks the in-browser sweep re-run with $/acre.
+2. **Claude Eyes (Job 015)**: double-click the Desktop icon and press `y` + Enter at the one-time Remote Control consent.
+3. **Job 002 leftovers**: Old Chesterbrook owner, assessment and RPA coverage (the plat date is already answered). These need Fairfax GIS in a live browser or a CPAN/title pull.
+4. **Domain residuals**: the inbound test email to rich@freshgroundllc.com, plus DKIM (optional).
+5. **ElevenLabs key rotation**: still owed since 09-26.
+6. **Plivo retry**: the domain is now 4 days old.
+**Minor:** `vault/courier-log.txt` mixes UTF-16 output from one step ("Advisor rules already present" shows up letter-spaced) with ASCII. It's cosmetic. Fix it in `courier-run.cmd` if you're editing that script anyway.
+
 ## ✅ HANDLED — Msg 001 (2026-10-08): Job 016 COMPLETE — Gmail activated for freshgroundllc.com
 **RESOLVED same night:** Google confirmed "Gmail is activated! You verified freshgroundllc.com."
 MX = smtp.google.com prio 1 (Google's wizard rejected the old aspmx preset — only the new-style
