@@ -59,3 +59,27 @@ dates and agent phones; Propwire supplies the keyword + off-market layer they ca
 - **The house side of this sweep is structurally weak.** On-market price cuts in these zips are
   overwhelmingly builders trimming spec pricing. Move the house screen to S11's off-market
   inherited/absentee stacks and S2 tax lists; keep S10 focused on **LAND**, where it actually works.
+
+---
+
+## 🔧 UPGRADE 2026-10-12 — the method that worked at scale (Job 004: DC + S.FL + Phoenix)
+Job 004 checked live data on ~3,300 listings across 3 markets in one run. Desktop Claude
+spot-checked 2 rows in Chrome and both matched the live Redfin page (price, DOM, agent, as-is,
+short sale). One date was wrong ("Oct '26" vs the real Jun 10 '26), so keep step 6.
+
+1. **List = Redfin's CSV export** ("Download" link on any search, max 350 rows per pull). Pull per
+   county/city. For a big market, sort by days on market and pull each sub-area separately.
+   Filter locally (DOM, property type, price cap). This beats paging through Zillow.
+2. **Run TWO sorts, not one:** (a) longest DOM, and (b) **biggest price cut**. Job 004 ran only (a)
+   and missed fresh listings with steep cuts (90–200 DOM). (b) is mandatory from now on.
+3. **Detail check = the listing page** (full price history, agent + phone, remarks for keywords).
+   **Do it in Rich's Chrome when it is free.** Redfin's anti-bot wall blocks scripted fetches after
+   ~4 pages, and Firecrawl rate-limits at about 15/min. Chrome has neither problem.
+4. **Cut % = first ask of the current campaign → today**, treating delist/relist as one campaign.
+5. **Equity screen before ranking.** Underwater owners and short sales look the most motivated
+   but can't discount (the lender decides). Rank motivation × equity, not motivation alone.
+6. **Spot-check 2+ rows yourself** against the live page before anyone calls.
+7. **Phones:** watch for Redfin call-routing numbers (the same number on many agents' listings,
+   e.g. Phoenix 623-207-1769). Get direct lines from the brokerage site.
+8. **Still needs Rich:** sign in to Land Insights in Chrome once, so the $/acre overlay appears
+   (installed 0.0.11, but it injected nothing on 10-12).

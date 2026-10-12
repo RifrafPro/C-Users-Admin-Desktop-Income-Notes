@@ -51,6 +51,7 @@ rules forbid.**
 **Filed under ⚠️ caution, alongside [courses-funnels.md](courses-funnels.md).** Nothing here changes
 the stack. Standing rule holds: **buy NOTHING new until the free channels saturate.**
 Source: https://whop.com/icashx/software-x/ · IG: instagram.com/p/DbuSeZhgSzU · instagram.com/p/DaLPxiyggbG
+**✅ CONFIRMED against the actual posts (desktop, 2026-10-12, yt-dlp + frame read):** DaLPxiyggbG (06-29, @cashflowkeyy, 40s: Lamborghini + cash props, "$90k in last 30 days") and DbuSeZhgSzU (08-07, 58s, "How to close your first wholesale deal in 2026"). On-screen steps verbatim: *AI Finds Motivated Sellers → AI Calls & Texts Sellers For You → AI Creates The Contract → Seller Signs Electronically → Now Find A Cash Buyer Using iCash X → Contract $40K / Buyer $60K / Keep $20K → "AI Handles Everything"*. No method, no compliance mention, no tool named beyond iCash X itself. **Verdict unchanged: ⚠️ DO NOT BUY.**
 
 ---
 

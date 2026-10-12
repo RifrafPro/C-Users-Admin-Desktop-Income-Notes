@@ -86,6 +86,7 @@ Legend: 🟢 = act on it · 🟡 = maybe/later · 🔴 = skip (with reason) · �
 | 08-01 | **Agents AI** (Google Doc) | docs.google.com/document/d/1sUdKMdatcbcvvgQsdAKr0IhPdil5-pT1jNB8o8ajZIo | 🟢 READABLE via Drive connector — open and extract next session |
 | 08-07 | Behind MLS: 21 off-market strategies | agentperformancecoaching.com opt-in | 🟡 Lead magnet; may have list ideas |
 | 08-06 | One call close script · (08-07) FreedomSoft "Pre negotiated deals" · (07-19) "Wholesale 74 word script" | FreedomSoft funnels + closing scripts | 🟡 Script ideas; FreedomSoft is a legit wholesaling CRM (REsimpli competitor) |
+| 08-06 | "Wholesale software" webinar (joinnow.live attend link) | = Flipping Mastery / Jerry Norton evergreen auto-webinar (redirect lands on flippingmastery.com) | 🟡 Link dead as of 10-12 ("Webinar is Over"); not re-registered. Substance already mined 09-03 → research/guides/flipping-mastery-jerry-norton-extraction.md (Job 007) |
 | 08-03 | wholetek.io "AI wholesaler" masterclass · (07-31) WholesalerPro · (07-19) wholesalerpro.ai | AI-wholesaling platforms/funnels | 🟡 Same promise as what we're building ourselves — watch one to compare |
 | 08-04 | Dirt Flipper AI Kit ($37, sent 2x) · High Ticket Land Flipping ($27, 3 sends) | Land-flipping courses | 🟡 Cheap; land angle parallels our lot focus |
 | 08-04 | propertychecker.com | Property data lookup | 🟡 Data source candidate |

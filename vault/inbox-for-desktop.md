@@ -96,7 +96,9 @@ Cost note: 2 short headless runs/day on Rich's plan — negligible; jobs remain 
 per CLAUDE.md (no sends, no purchases, ever, without Rich's "send it").
 → Mark DONE with the task names + test-run commit hash, push.
 
-## ⬜ OPEN — Job 012: Diagnose the broken courier scheduled tasks (cloud, 09-27)
+## ✅ FIXED (2026-10-12) — Job 012: courier tasks never ran — ROOT CAUSE: unquoted path
+**Root cause [Certain]:** both tasks were registered with Execute=`C:\Users\Admin\Desktop\Income` and Args=`Notes\...\courier-run.cmd` (path split at the space). LastResult 2147942402 = 0x80070002 FILE NOT FOUND on every run. Task Scheduler showed 'Ready', which looked like success. **Fix:** both AM+PM re-registered via Set-ScheduledTask: Execute=`cmd.exe`, Args=`/c ""<repo>\tools\courier-run.cmd""`, WorkingDirectory=repo (triggers untouched). Test-fire result: see the line below.
+### Original job text
 Evidence: two manual `schtasks /Run` firings of "Income Notes Courier AM" (09-27 ~01:45 UTC)
 produced ZERO effect — not even the `git pull` happened (repo sat at e61413a until Rich's
 manual DEPLOY-CALLER run pulled). The task reports SUCCESS but its action isn't executing.
@@ -157,7 +159,9 @@ Rich is designing the AI to make the calls. Cloud built the deploy-ready agent c
    Real builder dials remain gated on his per-call "send it."
 → Mark DONE with agent_id + ear-test verdict, push. Blockers → inbox-for-cloud.md.
 
-## ⬜ OPEN — Job 004: Multi-market motivated-seller sweep (PRIORITY — Rich 08-29)
+## ✅ DONE (2026-10-12, first pass) — Job 004: 40 hits (DC 13 · S.FL 15 · PHX 12) → vault/deals/multi-market-sweep-2026-10-12.md
+Live Redfin CSV (~3,300 listings) + 50 listing pages checked. 2 rows spot-checked in Chrome: match. Call-first: 405 60th St NE DC · 6730 NE Miami Pl · 5902 W Orange Dr Glendale. GAPS: sorted by DOM only (steep fresh cuts missed, especially S.FL) · no Land Insights · PHX phones mostly Redfin routing numbers. Method now in skill-stale-listing-sweep.md (10-12 upgrade).
+### Original job text
 Read vault/deals/multi-market-brief-2026-08-29.md first. Then in Rich's browser, sweep
 Redfin/Zillow for THREE markets. Filters per market:
 - **Washington DC (District proper):** houses/rowhouses 90+ DOM OR price-cut ≥5%; keywords
@@ -171,7 +175,8 @@ Per hit: address, ask, original price, DOM, cut history, beds/sqft/lot, agent+ph
 Land Insights data where it shows.
 → Write vault/deals/multi-market-sweep-2026-08-29.md, push.
 
-## ⬜ OPEN — Job 005: Olivia + hedge-fund reel cluster (context: vault/research/hedge-fund-buyer-strategy.md)
+## ✅ DONE (2026-10-12) — Job 005: Olivia = @olivia_schremmer, an affiliate for Wholesailors Academy (Skool, Maximilian Dier). 🔴 no actual hedge-fund strategy; 🟡 2 tactics worth stealing (Zillow site:-dork CSV, code-violation FOIA). Reel #5 REMOVED by IG. Top-10 city list never shown in the reel. Full write-up → hedge-fund-buyer-strategy.md
+### Original job text
 Watch/read these 5 saved items in Rich's browser (logged into IG):
 1. instagram.com/reel/DcXZEmcCLQ0 ("Olivia wholesaler")
 2. instagram.com/reel/DcfSDzIiWGs ("Olivia AI wholesaler")
@@ -200,7 +205,8 @@ In Rich's browser (logged into YouTube/Skool):
 3. Do NOT sign up for anything, no email opt-ins, no purchases.
 → Append findings to the guide file, push.
 
-## ⬜ OPEN — Job 007: Watch the "Wholesale software" webinar (Rich's attend link, already registered)
+## ✅ CLOSED (2026-10-12) — Job 007: link is DEAD ('The Webinar is Over', redirects to flippingmastery.com). It was a Jerry Norton / Flipping Mastery auto-webinar, already fully mined 09-03 (guides/flipping-mastery-jerry-norton-extraction.md). Not re-registered. Verdict rows added to courses-funnels.md + research-email-findings.md
+### Original job text
 Open in Rich's browser: https://joinnow.live/a/ZCGh8e?id=QGTMAM
 (Rich registered 08-06 — this is his personal attend link; do NOT re-register or opt into
 anything new, no purchases.)
@@ -234,7 +240,9 @@ verdict in research-email-findings.md next to the 08-06 "Wholesale software" row
   auto-sent contracts, both of which CLAUDE.md forbids.**
   → `vault/research/categories/deal-analysis-tools.md`.
 
-## ⏳ STILL OPEN (blocked on the Chrome extension)
+## ⏳ MOSTLY DONE (2026-10-12) — Chrome-blocked leftovers
+(a) ✅ plat date answered 10-03 (pre-2003, Likely). (c) ✅ iCash X confirmed against BOTH posts (frame-read): verdict unchanged, logged in deal-analysis-tools.md. (b) ⛔ BLOCKED ON RICH: 'Land Insights Toolkit' 0.0.11 IS installed (Default Chrome profile, runs on redfin/zillow), but it injected NOTHING on Redfin search or listing pages (tested 22101 land + Old Chesterbrook detail). Most likely not signed in [Likely]. **Rich: click the Land Insights icon in Chrome → sign in once.** Then re-run (b). A scrape-only re-run without it would just repeat Job 001.
+### Original text
 Connect the Claude Chrome extension, then: (a) Fairfax GIS for Job 002 — **the Old Chesterbrook plat
 date is still the deal-decider**; (b) re-run the sweep in-browser for Land Insights $/acre + Zillow
 pages 2+; (c) open the two saved IG reels directly to confirm the iCash X read against the actual posts.

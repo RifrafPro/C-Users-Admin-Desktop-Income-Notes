@@ -15,3 +15,5 @@ webinars cost time. Nothing here is required for FRESH GROUND to work.
 | RampREI cadence playbook (2 sends) | team-ops | 🟡 premature solo |
 | 8020CRM ($197+/mo) · Konshus · Polsia · Plumbstack · Morning Method · 7-figure AI · Kodree · heyhenry "Jarvis $31.99" · seltlox · Clarify Your Brain · The AI Report "75 prompts" | AI-biz funnels | 🟡 low priority |
 | The Unshakable Investor "$1.8B AI system" (2 sends) | webinar funnel | 🟡 |
+| Wholesailors Academy (Skool, Maximilian Dier; promoted by Olivia Schremmer) · MaxDispo · Lowball AI | <Netflix-price community + dispo/offer tools | 🔴 strategy (TCPA text-blasts, "we buy" framing); 🟡 steal the Zillow site:-dork CSV + code-violation FOIA lists (see hedge-fund-buyer-strategy.md, Job 005) |
+| "Wholesale software" webinar (joinnow.live, Rich reg. 08-06) = Flipping Mastery / Jerry Norton auto-webinar | evergreen funnel | 🟡 Link now dead ("The Webinar is Over", 10-12). Already fully mined 09-03 → guides/flipping-mastery-jerry-norton-extraction.md (Job 007) |
