@@ -24,7 +24,9 @@ $Existing = @(Invoke-RestMethod "https://api.elevenlabs.io/v1/convai/phone-numbe
 if ($Existing) { Say "Already imported: $Number (id $($Existing[0].phone_number_id)) - nothing to do"; Read-Host "Press Enter to close"; exit 0 }
 
 Write-Host ""
-Write-Host "Type your VoIP.ms SIP password (main account $SipUser). Nothing shows while you type - that is normal."
+$U = Read-Host "VoIP.ms SIP username (sub account like 577131_fg, or press Enter for main $SipUser)"
+if ($U.Trim()) { $SipUser = $U.Trim() }
+Write-Host "Type the SIP password for $SipUser. Nothing shows while you type - that is normal."
 $Sec = Read-Host "SIP password" -AsSecureString
 $Pw = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($Sec))
 if (-not $Pw) { Say "STOP: empty password"; Read-Host "Press Enter to close"; exit 1 }
