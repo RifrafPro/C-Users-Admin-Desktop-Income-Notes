@@ -178,5 +178,10 @@ an LLC exists):**
 - **Status 2026-08-26:** paused mid-registration while Rich decides how to proceed on the
   field above — Twilio number exists, neither path fully completed yet.
 
+## PARKED TOOLS — vetted, not installed, pull out when needed
+- **claude-x-jev** (lead/email triage via OpenRouter "Jev"; vetted clean 2026-10-12). **Trigger:** lead volume
+  outgrows hand-sorting -> use its `lead-qualify.json` preset. Skill only, `--project`, **NEVER the gate hook**.
+  Needs an OpenRouter key + credits. Re-vet before installing. Audit: `research/categories/claude-ai-tooling.md`.
+
 ## Sources
 - Bland.ai (real estate voice agents); Vapi (outbound); Retell AI; CloudTalk/Lindy 2026 reviews.
