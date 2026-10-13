@@ -151,3 +151,15 @@ trigger #1, scope it to the specific paid workload only and keep the vault out o
 - Decision: not installed — no explicit install ask, and nothing in road-to-deal-one is bottlenecked on cheap
   classification. Revisit only if lead volume makes triage the bottleneck (preset `lead-qualify.json`).
   If ever installed: skill only, no hook, `--project` scope.
+
+## Video: "How to Build Your Own Agent Operating System" (Julian Goldie SEO, 2026-05-25) — WATCHED 2026-10-12, NOT IMPLEMENTED
+- youtube.com/watch?v=bsYbA9ZyYtI (32 min). Link Rich sent was the description redirect to skool.com/ai-profit-lab-7462
+  = paid "AI Profit Blueprint" community. Video is a sales funnel for it (guru-funnel rule: take the method, skip the ladder).
+- Method: 7 layers (foundation, memory, brain, agents, command, production, loop); Obsidian as free markdown memory; Omi
+  device/app recording screen + mic all day -> Obsidian; Hermes (open-source agent); "free Claude Code" by plugging a free
+  third-party API into it; drop n8n/Zapier for agents; every output gets a typed home (dashboard of everything built).
+- Verdict: we already have the core (this git vault = memory, read every session; .claude/agents = agents; vault/deals +
+  sessions = typed homes for outputs). NOT doing: Omi (records passwords, seller PII, Rich's screen 24/7 to a 3rd party),
+  "free Claude Code via free API" (routes our work through unvetted models), Hermes/OpenClaw (more agents, no gap they fill),
+  the paid community. Optional later, low value now: open this vault folder in the free Obsidian app as a viewer
+  (install-safety protocol applies to the app). Nothing here moves deal one.
