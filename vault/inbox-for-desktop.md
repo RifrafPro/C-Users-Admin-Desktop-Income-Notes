@@ -418,3 +418,16 @@ report what it can do for us (cloud cannot see past the login wall):
    desktop-valuation, S10 stale-sweep, S11 propwire) — replace assumptions with what the
    tool actually does.
 4. No purchases/upgrades without Rich's OK; log costs seen. Push everything.
+
+## ⬜ OPEN — Job 019: Install claude-x-jev (Rich 10-13 — safety review PASSED, logged in policies-software-install-safety.md)
+Rich overrode the defer recommendation; install now. Conditions from the review are binding:
+1. `npx claude-x-jev install --with-commands` (user-global). Verify skill lands at
+   ~/.claude/skills/claude-x-jev and /jev-* commands appear after restart.
+2. **Do NOT install or enable the PreToolUse gate hook** (/jev-gate install is VETOED —
+   it sends tool-call content to a third party. Review condition, not optional).
+3. Setup needs an OpenRouter key: Rich creates it at openrouter.ai (Google login fine,
+   ~$5 credit). Use the window-prompt pattern: ask Rich to paste the key when needed,
+   store as OPENROUTER_API_KEY env var / local env file — NEVER in repo or chat.
+4. Run /jev-setup one live test call; then a real smoke test: /jev-classify on 5 lines
+   from vault/deals/stale-sweep-2026-08-28.md (label: teardown-fit / not / unsure).
+5. Log outcome here + where the key lives (name only), push.
