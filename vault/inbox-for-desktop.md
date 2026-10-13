@@ -349,6 +349,14 @@ Fails → capture the exact error text. Either way: log here, commit, push. Narr
   stays 603. Result: 401 -> auth OK -> 100 Trying -> 11.5 s -> **486 Busy Here, X-Asterisk-HangupCause "Call Rejected"
   (21)** = far end/cell carrier rejected; phone did not ring. NEXT: Rich checks Silence Unknown Callers / carrier spam
   filter, or test-dial a different phone to separate carrier block from number reputation.
+- **10-12 ~22:00 ET — END-TO-END WORKS.** Via phnum_7301 to Rich's Google Voice 1-916-629-4008: 401 -> 100 -> 183 ->
+  **200 OK**, call ran 238 s, landed as a Google Voice VOICEMAIL (Rich confirmed). To his cell 1-916-693-1900: always
+  486 "Call Rejected" (cause 21), no CDR, even after Rich turned off a phone auto-blocker -> cell-side block (GV likely
+  forwards to the same blocked cell, hence voicemail). NEXT: (1) Rich plays the voicemail = ear-test verdict on voice;
+  (2) number reputation before any builder call: register 571-832-2832 at freecallerregistry.com (AT&T/T-Mobile/Verizon
+  analytics), set CNAM "FRESH GROUND" in VoIP.ms DID settings; (3) agent has silence_end_call_timeout=-1 and 600 s max
+  -> voicemail/robot pickups run for minutes: set a silence timeout + voicemail detection before real dials (needs
+  Rich's OK, auto-mode treats agent edits as deploys).
 - Ruled out 10-12 (keep, so nobody re-tries): sub/main IP+POP Restriction (off); Foreign IP Guard (portal logins only);
   device type (changed ATA -> PBX, no effect; left on PBX); TLS: VoIP.ms port 5061 only offers RSA-key-exchange ciphers
   (no ECDHE, no TLS1.3) -> ElevenLabs handshake failure, dead end; sub-account Encrypted SIP Traffic set back to No.
