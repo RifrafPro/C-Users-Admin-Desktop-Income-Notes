@@ -864,3 +864,40 @@ Then I'll check the sub-account's security settings.
 - **B. Live chat tonight:** go to voip.ms, click the chat bubble in the bottom right, and paste this:
   > Account 577131, sub account 577131_fg. Outbound SIP calls from ElevenLabs (TCP to sanjose2.voip.ms, digest auth) to 19166931900 get "603 Declined" and never show in CDR. Is IP Restriction, POP Restriction, or Foreign IP Guard blocking them? Please check and lift it.
 - **C. Stop for tonight** and wait for the ticket reply. That means losing at least a day.
+
+
+## Session a45e3679 — 2026-10-12 18:01
+
+**You:** Courier run (headless). Read vault/inbox-for-desktop.md. Execute every OPEN job that can be done headlessly, mark each DONE with a one-line result. Write anything cloud Claude needs to know into vault/inbox-for-cloud.md as an OPEN msg. Obey CLAUDE.md: draft-only, no sends, no purchases. Finish with: git add -A, git commit, git push.
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git pull 2>&1 | tail -2 && grep -n "OPEN" vault/inbox-for-desktop.md | head -40`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-desktop.md`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && grep -n "^## " vault/inbox-for-desktop.md | tail -6; ls vault/skills/; grep -iln`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && cat vault/skills/skill-land-insights.md; echo ======; for f in desktop-valuation`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\skills\skill-tax-list-mining.md`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\skills\skill-desktop-valuation.md`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\skills\skill-propwire-mining.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\skills\skill-tax-list-mining.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\skills\skill-desktop-valuation.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\skills\skill-propwire-mining.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-desktop.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git add -A && git commit -q -m "docs: courier — Job 018 skill wiring done, parcel`
+
+**Claude:** Job 018 is only partly done: a headless run can't do the parcel test pull. It needs Rich's logged-in Chrome and his OK to spend credits. [Certain]
+
+**Inbox status:** Job 018 was the only OPEN job. Job 017 is still waiting on the VoIP.ms support ticket, so I left it alone.
+
+**Job 018, now marked ⏳ HEADLESS PART DONE:**
+- **Step 1 (inventory)** was already captured in `vault/skills/skill-land-insights.md`.
+- **Step 3 (skill wiring) is done.** I fixed three skill files that still had old guesses about Land Insights:
+  - **S2 tax-list-mining:** it called the Chrome extension the skip-trace tool and quoted skip trace at $0.02. It now points to the data platform and the real Lite costs: $0.06–0.07 per skip-trace hit and $0.10 per export. It also notes that the platform has a tax-delinquent filter.
+  - **S5 desktop-valuation:** it said the extension overlays data on Redfin. It actually works on Zillow cards only, and the Lite plan has no MLS comps (those need the $47/mo Starter plan).
+  - **S11 propwire:** I changed the "$/acre" cross-check to data Lite actually provides: last sale price and assessed land value.
+  - **S10 stale-sweep** was already correct.
+- **Step 2 (test pull of 5–10 McLean/Vienna parcels) is still owed.** Ten exported records cost about 100 credits, roughly $1.
+
+**inbox-for-cloud.md, new Msg 003:** It asks cloud Claude to put "OK ~100 credits for a Land Insights test export?" on Rich's morning checklist. It also corrects Msg 002: the Land Insights sign-in is already done, so that item comes off the list.
+
+**Git:** committed and pushed (`7139d06`), and the branch matches origin. `git add -A` also swept in `.recall/` files and `courier-log.txt`, which were already modified before this run.
+
+Nothing was sent, bought or dialed.
