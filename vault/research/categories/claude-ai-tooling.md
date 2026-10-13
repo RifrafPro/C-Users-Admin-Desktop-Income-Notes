@@ -163,3 +163,10 @@ trigger #1, scope it to the specific paid workload only and keep the vault out o
   "free Claude Code via free API" (routes our work through unvetted models), Hermes/OpenClaw (more agents, no gap they fill),
   the paid community. Optional later, low value now: open this vault folder in the free Obsidian app as a viewer
   (install-safety protocol applies to the app). Nothing here moves deal one.
+- **Re-watched WITH frames 2026-10-12** (yt-dlp upgraded via winget 2026.07.04 -> 2026.08.19, official GitHub release,
+  hash verified; old version got YouTube 403). On screen: a localhost web app "Agentic OS" (Mission Control home, one tab
+  per agent with a Workspace of outputs, plus Goals/SEO/Studio/Notebook/Kanban/Journal). Skool "AI Profit Boardroom" =
+  **$95/month**, 3.1k members. His written blueprint page is public ("Free forever... read-along"); the $95 is the
+  prebuilt zip + coaching. Worth copying later, free: a **FRESH GROUND Mission Control** page (deals by stage, opt-in
+  consent log, call/email results, items waiting on Rich's "send it") built from the vault, not his software. Parked
+  behind: Rich's scripts -> opt-in email -> agent fixes.
