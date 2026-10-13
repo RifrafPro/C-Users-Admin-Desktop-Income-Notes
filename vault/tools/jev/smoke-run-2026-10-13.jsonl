@@ -1,0 +1,5 @@
+{"_id": "chain-bridge", "_rules": [], "action": "pursue", "action_conf": 1, "action_probs": {"pursue": 1, "watch": 0, "skip": 0}, "motivated_seller": 0.88, "_sure": true, "_cost": 2.4612e-05, "_latency_s": 0.639}
+{"_id": "campbell", "_rules": [], "action": "pursue", "action_conf": 1, "action_probs": {"pursue": 1, "watch": 0, "skip": 0}, "motivated_seller": 0.79, "_sure": true, "_cost": 2.4612e-05, "_latency_s": 0.545}
+{"_id": "linway", "_rules": [], "action": "watch", "action_conf": 0.97, "action_probs": {"pursue": 0.02, "watch": 0.98, "skip": 0}, "motivated_seller": 0.68, "_sure": false, "_cost": 2.4486e-05, "_latency_s": 0.549}
+{"_id": "springvale", "_rules": [], "action": "skip", "action_conf": 0.55, "action_probs": {"pursue": 0.01, "watch": 0.29, "skip": 0.7}, "motivated_seller": 0.08, "_sure": false, "_cost": 2.4822e-05, "_latency_s": 0.52}
+{"_id": "bobbyber", "_rules": [], "action": "skip", "action_conf": 1, "action_probs": {"pursue": 0, "watch": 0, "skip": 1}, "motivated_seller": 0.06, "_sure": true, "_cost": 2.4948e-05, "_latency_s": 0.506}
