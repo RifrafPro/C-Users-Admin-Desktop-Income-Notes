@@ -50,8 +50,9 @@ they're between agents and not fielding 40 investor calls.
 
 ## 3. COMPS + SKIP TRACE (feeds S5 and S4)
 - **Comps:** filter by **lot size** and year built, not just beds/baths — for a teardown play we want
-  what *dirt* trades for, not what finished houses trade for. Cross-check against Land Insights
-  $/acre. Two independent sources = the confidence upgrade S5 has been asking for.
+  what *dirt* trades for, not what finished houses trade for. Cross-check against Land Insights:
+  the Zillow-card $/acre badge, or **last sale price + assessor land value** from the data platform
+  (Lite has no MLS comps layer, verified 10-12). Two independent sources = the confidence upgrade S5 has been asking for.
 - **Skip trace: 10 free/month.** Spend them only on **A-rank** leads after S4 title recon.
   ⚠️ **Deep Trace flags mobile vs landline — obey it.** Never SMS a landline, and every text still
   runs through the A2P/TCPA gate in `automation-stack.md`. Free data does not relax the send rule.

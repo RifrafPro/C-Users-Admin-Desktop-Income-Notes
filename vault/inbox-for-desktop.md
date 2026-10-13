@@ -357,7 +357,8 @@ For the bridge worker with Chrome hands, Rich present. No guessing: read each sc
    per-call "send it".
 
 
-## ⬜ OPEN — Job 018: Land Insights deep-dive with Chrome hands (Rich 10-12 — AFTER Job 017)
+## ⏳ HEADLESS PART DONE (2026-10-12 courier) — Job 018: Land Insights deep-dive with Chrome hands (Rich 10-12 — AFTER Job 017)
+**Courier result:** Steps 1 + 3 are DONE. The inventory is in `vault/skills/skill-land-insights.md`. I rewired the stale Land Insights claims in S2 tax-list-mining, S5 desktop-valuation and S11 propwire to match it; S10 was already current. **Step 2 is still owed.** The 5-10 parcel test pull needs Rich's logged-in Chrome session plus his OK to spend credits on the export, so the headless courier can't do it. The next interactive desktop session should run Recipe A on 22101/22102/22180/22182, with Improvement Value MIN $100K so it stops returning HOA common land.
 Rich is logged into app.landinsights.co in Chrome (his map view:
 app.landinsights.co/data?onboarding=true). With browser hands, explore the ACTUAL app and
 report what it can do for us (cloud cannot see past the login wall):

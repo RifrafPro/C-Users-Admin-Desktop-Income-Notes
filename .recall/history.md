@@ -705,3 +705,162 @@ Also still queued from the checklist: the inbox test email, DKIM, the ElevenLabs
 - Cloud won't know about this run until its next session reads Msg 002. I only pushed the working branch. `main` was not updated, because the courier order says just push. The next `/vault-save` will update it.
 
 The courier log mixes two text encodings, so one line shows up letter-spaced. That's cosmetic, and I noted it for cloud.
+
+
+## Session e642ea1e — 2026-10-12 17:22
+
+**You:** https://github.com/charlesdove977/claude-x-jev.git
+
+**Claude:** Install-safety protocol first: checking where this repo actually comes from before anything touches your machine.
+  - `Bash: curl -s https://api.github.com/repos/charlesdove977/claude-x-jev | head -c 3000; echo; echo ---; curl -s https://api.github.com/repos/charlesdove977/claude-x-je`
+  - `Bash: cd "$TEMP" ; curl -s https://api.github.com/repos/charlesdove977/claude-x-jev | grep -E '"(created_at|pushed_at|stargazers_count|forks_count|open_issues_count)"`
+
+**Claude:** Original repo (not a fork), but 17 days old with one push day. Reading the three executable files before any verdict.
+  - `Bash: D="/c/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/e642ea1e-65d2-48b1-b0df-e01c285fa32f/scratchp`
+
+**Claude:** Network calls go only to openrouter.ai. Now the installer and the hook — those are what run on your machine.
+  - `Bash: D="/c/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/e642ea1e-65d2-48b1-b0df-e01c285fa32f/scratchp`
+  - `Bash: curl -s https://openrouter.ai/api/v1/models/typesafe/jev-1.13/endpoints | head -c 800; echo; grep -rn "OPENROUTER\|openrouter" "/c/Users/Admin/Desktop/Income No`
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes"; grep -n -i "log" vault/policies-software-install-safety.md | head -15; ls vault | g`
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes"; sed -n 50,75p vault/policies-software-install-safety.md`
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes"; F=vault/research/categories/claude-ai-tooling.md; tail -5 "$F"; cat >> "$F" <<'EOF'`
+
+**Claude:** **The code is safe, but you don't need it right now. Your deal-one blockers are the VoIP.ms 603 Declined error and the ElevenLabs login, not cheap AI sorting.** I didn't install it, because you sent a link without asking me to install anything.
+
+**Safety check** [Certain: I read the code]
+- It's an original repo, not a copy of someone else's. It's only 17 days old, all pushed in one day, with 56 stars.
+- I read all three files that would run on your PC. Their only internet traffic goes to openrouter.ai. They only read your OpenRouter key. Nothing is hidden or scrambled, and nothing looks like it steals data. The "Jev" AI model it uses really exists on OpenRouter.
+- The installer copies files into `~/.claude/skills` and saves a backup of your settings before it changes them.
+
+**The part I'd never install: its "gate hook"** [Certain]
+The hook is optional. If you turn it on, every command I run gets sent to an outside service that's still in early testing, and that service can approve the command without asking you. Those commands can include API keys and file paths. Your current rule is that nothing goes out without your OK, and this hook would quietly get around it.
+
+**What installing it would cost you** [Likely]
+- A new OpenRouter account, an API key and prepaid credit. Your vault has none of these yet.
+- One more outside company to keep track of, for a job (sorting leads) that only matters once you have lots of leads. You don't yet.
+
+**When to come back to it:** when iSpeedToLead brings in more leads than I can sort by hand. It already comes with a lead-scoring setup (`lead-qualify.json`). Even then, install only the skill, only for this project (`--project`), and never the hook.
+
+I logged the safety check and this decision in `vault/research/categories/claude-ai-tooling.md` and pushed it (commit `7d706cd`). If you still want it installed now, say "install it" and I'll install the skill only, without the hook.
+
+**You:** Well keep it in the vault for now and remember that it there for when we acctually need it.
+
+**Claude:** The vault already has it, but only in a research file that future sessions won't open unless they're looking for it. I'm adding a memory note too, so it comes up whenever lead triage does.
+  - `Write: C:\Users\Admin\.claude\projects\C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes\memory\parked-claude-x-jev.md`
+  - `Edit: C:\Users\Admin\.claude\projects\C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes\memory\MEMORY.md`
+
+**Claude:** That memory note only exists on this PC, and cloud sessions read the vault instead. So I'm also adding it to the tools list in the vault.
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes"; grep -n -i "^#\|parked\|later" vault/automation-stack.md | head -30`
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes"; F=vault/automation-stack.md; python - "$F" <<'EOF' import sys p=sys.argv[1]; s=open`
+
+**Claude:** claude-x-jev is now saved in three places, so any future session will find it whether it runs on your PC or in the cloud:
+
+1. **Vault, `automation-stack.md`:** a new "Parked tools" section. It says when to use the tool, to never install the hook, and that you'll need an OpenRouter key. Pushed as commit `1240c4b`.
+2. **Vault, `claude-ai-tooling.md`:** the full safety check from earlier.
+3. **Memory on this PC:** a note telling me to suggest it once you have more leads than we can sort by hand.
+
+Nothing is installed. When it's time to use it, I'll run the safety check again first, because the code may have changed since today.
+
+**You:** let's work on the Voip.ms 603 issue
+
+**Claude:** Before I can diagnose anything I need VoIP.ms support's reply to ticket #FMOEFC (your rules say no diagnosis without evidence). I'm pulling the vault notes and checking Gmail for it.
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes"; git pull -q; grep -rln "603\|FMOEFC" vault tools 2>/dev/null; echo ---; grep -n -A6`
+  - `ToolSearch: select:mcp__claude_ai_Gmail__search_threads,mcp__claude_ai_Gmail__get_thread`
+  - `mcp__claude_ai_Gmail__get_thread: 1a131b29a3d07379`
+  - `mcp__claude_ai_Gmail__search_threads: from:voip.ms newer_than:3d`
+
+**Claude:** No reply from VoIP.ms support yet, about 22 hours after the question went out. There's a VoIP.ms email in your inbox you haven't opened, with setup rules for your new number. Reading it now:
+  - `mcp__claude_ai_Gmail__get_thread: 1a131d93731ce471`
+
+**Claude:** That email covers incoming calls, so it doesn't explain the failed outgoing calls. Next I'm checking whether other ElevenLabs + VoIP.ms users have hit the same 603 error.
+  - `mcp__firecrawl__firecrawl_search: voip.ms "603 Declined" outbound SIP trunk ElevenLabs OR "new account" OR "IP" cause`
+  - `mcp__firecrawl__firecrawl_search: ElevenLabs SIP trunk voip.ms outbound call setup`
+
+**Claude:** Forum posts don't give a definite cause. Checking VoIP.ms's own documentation instead:
+  - `mcp__firecrawl__firecrawl_search: site:wiki.voip.ms OR site:voip.ms 603 declined outbound sub account restriction`
+  - `mcp__firecrawl__firecrawl_search: voip.ms 603 declined new account outbound calls reddit`
+  - `mcp__firecrawl__firecrawl_scrape: https://wiki.voip.ms/article/Outgoing_Calls_not_Working`
+  - `mcp__firecrawl__firecrawl_scrape: https://www.reddit.com/r/VOIP/comments/1k6e6bm/outbound_calling_issue/`
+
+**Claude:** VoIP.ms's wiki has an "AI agents" page. That's the one most likely to match this setup:
+  - `mcp__firecrawl__firecrawl_scrape: https://wiki.voip.ms/article/AI_agents`
+  - `Bash: nslookup sip.rtc.elevenlabs.io 2>&1 | tail -6; for ip in $(nslookup sip.rtc.elevenlabs.io 2>/dev/null | awk '/^Address/ && !/#/ {print $2}' | grep -v : | head -`
+  - `mcp__firecrawl__firecrawl_scrape: https://elevenlabs.io/docs/eleven-agents/phone-numbers/sip-trunking`
+  - `ToolSearch: select:mcp__claude-in-chrome__tabs_context_mcp,mcp__claude-in-chrome__navigate,mcp__claude-in-chrome__computer,mcp__claude-in-chrome__read_page,mcp__claude-in-c`
+  - `mcp__claude-in-chrome__tabs_context_mcp`
+  - `mcp__claude-in-chrome__navigate: https://voip.ms/m/subaccount.php`
+  - `mcp__claude-in-chrome__get_page_text`
+
+**Claude:** Loading the VoIP.ms sub-account page in Chrome.
+  - `mcp__claude-in-chrome__computer: screenshot`
+
+**Claude:** I can't go further until you sign in. **The VoIP.ms portal is signed out, and I'm not allowed to type your password**, so you have to log in yourself.
+
+**What I've ruled out:**
+- **VoIP.ms support hasn't answered yet** [Certain]. Ticket #FMOEFC has only their automatic reply. Your question went out 10-12 at 6:16 PM ET.
+- **Calling credit, caller ID, and an international number are not the cause** [Certain]. All three were checked yesterday.
+
+**What's left, most likely first:**
+1. **A security block on the sub-account** [Likely]. VoIP.ms's own checklist for broken outgoing calls names two settings, **IP Restriction** and **POP Restriction** (POP = the VoIP.ms server you're assigned to), and says a sub-account has its own copies of both. A call blocked there is refused before it starts, which matches what we saw: 603 error and nothing in the call records. Someone on Reddit fixed this exact 603 by pointing their calls at the POP their account was set to.
+2. **Foreign IP Guard** [Guessing]. ElevenLabs' docs suggest its default setup can send calls from servers in any country, and VoIP.ms blocks foreign IPs by default.
+3. **Number format** [Guessing]. ElevenLabs says the imported number and the dialed number must use the same format. We imported `+15718322832` but dialed `1916…` without the "+".
+
+**What you do now (about 1 minute):**
+1. Go to the Chrome window I opened. It's already on the VoIP.ms sign-in page.
+2. Type your email and password. Enter the security code if one is emailed to you.
+3. Reply here with "in".
+
+After that I'll read the sub-account's security settings, the server it's assigned to, and the Foreign IP Guard setting myself. I won't change anything without showing you the fix first.
+
+**You:** no I have a virginia number. its 5718322832
+
+**Claude:** Yes, 571-832-2832 is your Virginia number, and nothing I said changes that. The 916 number is something else:
+
+- **571-832-2832** is the FRESH GROUND number. The AI calls go out *from* it.
+- **916-693-1900** is the cell you gave for the test call yesterday. That's the number the AI dialed *to*, and it's where the 603 error came back.
+
+[Likely] 916-693-1900 is your own cell, since you gave it at the keyboard for the test and the VoIP.ms login came from Elk Grove, CA. If that number is wrong, tell me the right one.
+
+Suspect #3 isn't about the area code. It's whether the number is written with a "+" in front (`+15718322832`) or without it (`15718322832`). ElevenLabs wants both numbers written the same way, and right now they aren't.
+
+Next step is still the same: **sign in to VoIP.ms in the Chrome window I opened, then reply "in"**, and I'll read the settings.
+
+**You:** No... 916-693-1900 is my cell phone
+
+**Claude:** Then that's settled: **916-693-1900 is your cell, and it's the right number to test-call.** The AI dialed the correct number, and VoIP.ms refused the call before it ever reached your phone. The number isn't the problem.
+
+The cause is a setting inside VoIP.ms. To read it, I need you to:
+
+1. Go to the Chrome window showing the **VoIP.ms sign-in page**.
+2. Enter your email and password, and the security code if one is emailed to you.
+3. Reply here with **"in"**.
+
+Then I'll check the sub-account's security settings.
+
+**You:** in
+  - `mcp__claude-in-chrome__navigate: https://voip.ms/m/subaccount.php`
+  - `mcp__claude-in-chrome__get_page_text`
+
+**Claude:** My Chrome tab still shows the VoIP.ms **sign-in page**, so the login hasn't reached the window I'm working in. Most likely one of these happened [Likely]:
+
+- **You signed in to a different window or browser** (Edge, or another Chrome profile). My window can only see a login made in the same Chrome profile.
+- **The login isn't finished.** VoIP.ms emails a 6-digit security code after the password, and the login doesn't count until that code is entered.
+
+**Fix:**
+1. Find the Chrome tab titled **"Sign In | Access Your VoIP.ms Account"**. It's the one I opened, in a tab group.
+2. Sign in **in that tab**: email, password, **LOG IN**.
+3. If it asks for a security code, check Gmail for "VoIP.ms - Login Security Code" and type the code in.
+4. Wait until you see the VoIP.ms dashboard, then reply **"in"**.
+
+**You:** thought we were waiting for tech support that isnt in till tomorrow?
+  - `Bash: TZ=America/New_York date '+%a %Y-%m-%d %H:%M %Z'`
+
+**Claude:** We don't have to wait for them. The things support would check, IP Restriction, POP Restriction and Foreign IP Guard, are settings you can see in your own account. Reading them takes about 5 minutes, while waiting for a ticket reply could cost a day. If one of them is the problem, we fix it tonight. If all three look fine, we've ruled them out, and support gets a much more specific question.
+
+**Support may also still be open right now** [Likely]. It's about **9:00 PM Eastern on Monday**, and the vault says VoIP.ms Live Chat runs **Mon–Fri 9 AM–10 PM ET**. I haven't checked those hours myself; they're from our notes.
+
+**Pick one:**
+- **A. Check it ourselves now** (my recommendation): sign in to VoIP.ms in the Chrome tab I opened, then say "in".
+- **B. Live chat tonight:** go to voip.ms, click the chat bubble in the bottom right, and paste this:
+  > Account 577131, sub account 577131_fg. Outbound SIP calls from ElevenLabs (TCP to sanjose2.voip.ms, digest auth) to 19166931900 get "603 Declined" and never show in CDR. Is IP Restriction, POP Restriction, or Foreign IP Guard blocking them? Please check and lift it.
+- **C. Stop for tonight** and wait for the ticket reply. That means losing at least a day.

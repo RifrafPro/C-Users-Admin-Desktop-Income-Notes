@@ -13,10 +13,12 @@ flare. Free public records; nobody else is calling them. ~30 filtered leads ≈ 
 3. **Cross-reference against buy-boxes (S1):** keep only parcels matching a confirmed builder
    box — lot size, submarket, zoning. (This is OUR twist: Fullmer buys everything; we snipe
    teardown lots we can pre-sell.)
-4. **Skip trace** the keepers — **primary tool: Land Insights chrome extension** (installed
-   on Rich's browser 2026-08-28; Lite plan free, skip trace $0.02-0.06/owner, owner exports
-   $0.10). Rich runs the trace/export in-browser (or local Claude Code + Playwright drives it
-   later); exported CSV goes to the vault for the agent to consume. Fallbacks: county records,
+4. **Skip trace** the keepers — **primary tool: Land Insights DATA PLATFORM** (app.landinsights.co/data,
+   NOT the Chrome extension — the extension only paints $/acre on Zillow cards). Verified 10-12 on
+   Lite: owner filter has **tax delinquent + years of unpaid taxes** built in, so steps 1-2 can run
+   there too. Cost on Lite: export 10 cr ($0.10)/record, skip trace 6-7 cr ($0.06-0.07) per HIT;
+   5,000 cr balance; any spend needs Rich's OK. Full recipe: `skill-land-insights.md`.
+   Exported CSV goes to the vault for the agent to consume. Fallbacks: county records,
    Google/Facebook/obituaries, then TLOxp-grade tools at scale. No contact yet — Rule: no
    outreach without Rich's send-it.
 5. **Create a Deal Record per keeper** (vault/deals/_TEMPLATE.md): parcel, owner, delinquency

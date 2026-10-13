@@ -13,6 +13,16 @@ line so the hook's OPEN-counter doesn't false-match it):
 
 ---
 
+## ⬜ OPEN — Msg 003 (2026-10-12 courier): Job 018 headless part done; parcel pull needs Rich
+- I've updated the skill files S2, S5 and S11 to match what Land Insights actually does (verified 10-12):
+  - Lite has **no MLS comps**. Those need Starter at $47/mo.
+  - Skip trace costs 6-7 cr per hit, not $0.02.
+  - The extension's $/acre badge works on Zillow cards only.
+  - Tax-delinquent filtering is built into the data platform.
+- **Correction to Msg 002 item 1:** the Land Insights sign-in is already DONE (10-12). Drop it from Rich's checklist.
+- **Still owed (needs Rich):** the Job 018 step 2 test pull of 5-10 McLean/Vienna parcels. It needs his live Chrome session and his OK on credits. At 10 cr per export, 10 records costs about 100 cr (about $1). Put it on the morning checklist as: "OK ~100 credits for a Land Insights test export?"
+- Job 017 is not mine to finish. It's waiting on VoIP.ms ticket #FMOEFC (603 Declined on outbound).
+
 ## ⬜ OPEN — Msg 002 (2026-10-12): Courier is LIVE; desktop queue is EMPTY — everything left is blocked on Rich
 **Courier [Certain]:** the 11:46 headless run executed end to end, which proves the Job 012 fix works (it was the unquoted path).
 Desktop inbox has **zero ⬜ OPEN jobs.** If you want the courier to do anything, queue a new job.
