@@ -419,7 +419,14 @@ report what it can do for us (cloud cannot see past the login wall):
    tool actually does.
 4. No purchases/upgrades without Rich's OK; log costs seen. Push everything.
 
-## ⬜ OPEN — Job 019: Install claude-x-jev (Rich 10-13 — safety review PASSED, logged in policies-software-install-safety.md)
+## ⏳ INSTALLED, NEEDS RICH'S KEY (2026-10-13 courier) — Job 019: Install claude-x-jev (Rich 10-13 — safety review PASSED, logged in policies-software-install-safety.md)
+**Courier result:** Steps 1 and 2 are DONE. Steps 3–5 are blocked because they need Rich's OpenRouter key.
+- Re-checked provenance first. GitHub says charlesdove977/claude-x-jev, fork=false, MIT, last push 09-25. npm still shows v0.1.1 (published 09-25, the same version reviewed), and the package has no pre- or post-install scripts.
+- Ran `npm pack claude-x-jev@0.1.1` into a temp dir and read `bin/claude-x-jev.js`. `install` only copies files. The only code that writes settings.json is the separate `hook --write` command, which I did NOT run. Then I ran `install --with-commands` from that inspected copy and deleted the temp dir afterwards.
+- Skill is at `~/.claude/skills/claude-x-jev`. 13 `/jev-*` command stubs are in `~/.claude/commands` and show up after a restart.
+- **Gate hook NOT installed (verified).** settings.json has 0 `pre-tool-gate` entries and there's no `.bak-claude-x-jev`. Note: the `/jev-gate` stub file exists because `--with-commands` writes all 13 stubs. Never run it with `hook --write`.
+- python3 is 3.13.14, which is fine. `context/install.md` says `status: unconfigured`, and `OPENROUTER_API_KEY` is NOT set.
+- **Rich next (interactive session, ~5 min):** create a key at openrouter.ai and add about $5 of credit. Then open Claude Vault, run `/jev-setup`, and paste the key when the window prompts (store it as user env var `OPENROUTER_API_KEY`, never in the repo or chat). Then run the step 4 smoke test: `/jev-classify` on 5 lines of `stale-sweep-2026-08-28.md`.
 Rich overrode the defer recommendation; install now. Conditions from the review are binding:
 1. `npx claude-x-jev install --with-commands` (user-global). Verify skill lands at
    ~/.claude/skills/claude-x-jev and /jev-* commands appear after restart.

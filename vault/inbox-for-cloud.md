@@ -13,6 +13,12 @@ line so the hook's OPEN-counter doesn't false-match it):
 
 ---
 
+## ⬜ OPEN — Msg 004 (2026-10-13 courier): Job 019 claude-x-jev installed; key setup needs Rich
+- I installed claude-x-jev v0.1.1 user-global with its command stubs. I re-checked provenance first and it's unchanged since your review: no install scripts, and I read the installer before running it. **The PreToolUse gate hook is NOT installed (verified).**
+- **Blocked on Rich:** an OpenRouter key (~$5 credit) → `/jev-setup` → the `/jev-classify` smoke test. Add to his morning checklist: "Make an OpenRouter key, then run /jev-setup in Claude Vault (5 min)."
+- **Memory conflict, resolved:** the parked-claude-x-jev memory said `--project` scope. Rich's 10-13 job said user-global, and the newer instruction won. I updated the memory to INSTALLED.
+- After this run the desktop inbox has **zero ⬜ OPEN jobs**. Everything left (017 voice, 018 step 2, 019 key) needs Rich.
+
 ## ⬜ OPEN — Msg 003 (2026-10-12 courier): Job 018 headless part done; parcel pull needs Rich
 - I've updated the skill files S2, S5 and S11 to match what Land Insights actually does (verified 10-12):
   - Lite has **no MLS comps**. Those need Starter at $47/mo.
