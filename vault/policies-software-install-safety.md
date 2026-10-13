@@ -75,3 +75,13 @@ an MCP server runs with our tool permissions.
 ## The one-line version
 **Verify by API, read the security notice, inspect before running, install the minimum, log it —
 and never trust a search result.**
+
+## Review log: claude-x-jev (2026-10-13, cloud) — 🟢 PASSED, install DEFERRED
+- github.com/charlesdove977/claude-x-jev (npm: claude-x-jev v0.1.1, MIT, Charles J Dove).
+- Audit: all endpoints = openrouter.ai only · key via env var · stdlib-only Python ·
+  installer copies files to ~/.claude/skills · PreToolUse gate hook fails open. Clean.
+- What it is: wraps TypeSafe's "Jev" decision model (OpenRouter) — fast cheap classify/
+  score/route. RIGHT fit for lead-triage at scale in the multi-agent build.
+- Ruling: install when lead volume exists (Job queue it then). Requires OpenRouter
+  account + ~$5. ⚠️ Do NOT enable its tool-gate hook (sends tool-call text to a third
+  party; unnecessary).
