@@ -23,3 +23,6 @@ and Jev only judges. The script or Claude computes the numbers, and Jev picks th
 **Caveat:** v2's criteria were adjusted using these same 5 listings, so the 5/5 result is not proof yet.
 Next, run a held-out test on the ~20 B-rank rows in the sweep before trusting any automatic routing.
 Jev also can't catch facts the listing hides. The county record later downgraded Chain Bridge, and only title/GIS checks catch that.
+
+**Reality check (10-13 underwriting):** Jev said pursue at 1.00 on Campbell, but the county codes it non-buildable, and the listing text never said so.
+Jev agreed with Claude's ranks; Claude's ranks were wrong too. Treat a Jev triage as "worth researching", never "worth offering".

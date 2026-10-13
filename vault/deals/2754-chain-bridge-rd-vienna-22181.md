@@ -177,3 +177,4 @@ precise question for the agent, not "is it two lots."*
 **Answer determines everything:** approved-and-recorded = live deal · approved-not-recorded =
 priceable with a discount and a longer close · nothing filed = we're funding an entitlement
 project on someone else's dirt at retail. **That last case is a walk.**
+- 2026-10-13 — **Listing REMOVED 2026-09-14 (Redfin). Off market.** Redfin estimate $1,086,986. Parked. Possible direct-to-owner letter. See `recheck-2026-10-13-sweep-top5.md`.
