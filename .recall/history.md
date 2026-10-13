@@ -2193,3 +2193,51 @@ Answer the three, for example "Anthropic $50, Telegram, sandbox yes", and I'll s
 - ✅ Two tools checked, and the video reviewed.
 
 **Tomorrow, one thing to start with:** open Mission Control and do the Hermes setup with me: its AI key and Telegram, about 5 minutes. After that you can text your front desk from your phone.
+
+
+## Session 66f68ccb — 2026-10-13 08:02
+
+**You:** Courier run (headless). Read vault/inbox-for-desktop.md. Execute every OPEN job that can be done headlessly, mark each DONE with a one-line result. Write anything cloud Claude needs to know into vault/inbox-for-cloud.md as an OPEN msg. Obey CLAUDE.md: draft-only, no sends, no purchases. Finish with: git add -A, git commit, git push.
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git pull 2>&1 | tail -3 && git status --short`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-desktop.md`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git show --stat d814793 | head -30; echo ---; ls ~/.claude/skills/ 2>/dev/null |`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+  - `Grep: jev`
+  - `Read: C:\Users\Admin\.claude\projects\C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes\memory\parked-claude-x-jev.md`
+  - `Bash: curl -s https://api.github.com/repos/charlesdove977/claude-x-jev | grep -E '"(full_name|fork|pushed_at|license|spdx_id|stargazers_count|archived)"' ; echo ---;`
+
+**Claude:** Provenance hasn't changed since the 10-13 review: still v0.1.1, last published 09-25, and it has no install-time scripts. Before running it, I'm checking whether `--with-commands` touches any hooks.
+  - `Bash: D=$(mktemp -d) && cd "$D" && npm pack claude-x-jev@0.1.1 --silent 2>/dev/null && tar xzf claude-x-jev-0.1.1.tgz && echo "DIR=$D" && ls package package/bin && gr`
+
+**Claude:** `install` never writes settings.json. Only the separate `hook --write` command does, and that one stays vetoed. I'm installing from the copy I just inspected.
+  - `Bash: cd ~ && node /tmp/tmp.DNae5XWZvy/package/bin/claude-x-jev.js install --with-commands 2>&1 | tail -15; echo ---; ls ~/.claude/skills/claude-x-jev; ls ~/.claude/c`
+
+**Claude:** Step 1 is done and step 2 is confirmed (no hook entry, no settings backup). Next I'm checking whether steps 3–4 have what they need.
+  - `Bash: python3 --version 2>&1; py -3 --version 2>&1; [ -n "$OPENROUTER_API_KEY" ] && echo "OPENROUTER key: SET" || echo "OPENROUTER key: NOT SET"; ls ~/.openrouter.env`
+
+**Claude:** Steps 3–5 are blocked on Rich's OpenRouter key. Now I'm logging the result.
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-desktop.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+  - `Write: C:\Users\Admin\.claude\projects\C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes\memory\parked-claude-x-jev.md`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && sed -i 's/^- \[Parked: claude-x-jev\](parked-claude-x-jev.md) — .*/- [claude-x-je`
+
+**Claude:** claude-x-jev is installed, but it can't do anything yet: it needs an OpenRouter key that only you can create. The desktop queue now has no OPEN jobs, and everything still waiting needs you in person.
+
+**Job 019 (claude-x-jev) — installed, waiting on your key**
+- **Checked before installing:** it's still the same version (v0.1.1) that passed the 10-13 safety review, it runs no scripts during install, and I read the installer code before running it.
+- **What's on the PC:** the skill plus 13 `/jev-*` commands, installed for all your projects. They show up after a restart.
+- **Gate hook:** not installed, and I confirmed it. Your settings file has no hook entry and no backup was created. A `/jev-gate` command file does exist, because the installer adds all 13 commands. Never run its hook-install step.
+- **Your part (about 5 minutes):**
+  1. Go to openrouter.ai and create an API key, with about $5 of credit.
+  2. Open Claude Vault and type `/jev-setup`.
+  3. Paste the key when it asks. It gets saved on the PC as `OPENROUTER_API_KEY`, never in the repo or in chat.
+  4. Run the smoke test: `/jev-classify` on 5 lines from the stale-listing sweep (`vault/deals/stale-sweep-2026-08-28.md`).
+
+**Other changes**
+- I left cloud Claude a message (Msg 004 in `vault/inbox-for-cloud.md`) to put the key step on your morning checklist.
+- My saved note on claude-x-jev said "parked, install per-project only". I changed it to "installed", because your 10-13 instruction is newer.
+- Everything is committed and pushed (`1ede8ae`), and the PC copy matches GitHub. That commit also picked up three log files that already had changes before this run.
+
+**Still waiting on you:** Job 017 (the voice caller), Job 018 step 2 (a Land Insights test pull of 5–10 McLean/Vienna lots, about 100 credits, roughly $1), and the Job 019 key above.
+
+Nothing was sent or dialed. The only money involved is the ~$5 OpenRouter credit, which you'd add yourself.
