@@ -340,6 +340,21 @@ Fails → capture the exact error text. Either way: log here, commit, push. Narr
   Foreign IP Guard (checkbox state unreadable), sub-account Device type/Dialing Mode. NEXT: ask VoIP.ms Live
   Chat (Mon-Fri 9-22 ET) why INVITEs from 577131_fg get 603. Don't retry blindly.
 - 10-12: Gmail DRAFT reply on VoIP.ms ticket #FMOEFC (thread 1a131b29a3d07379) asking why 603 - SENT 10-12 on Rich's 'send it' (msg 1a13230b5c47852d). Next session: search Gmail from:voip.ms for the answer. When VoIP.ms answers: fix, then re-run ear test (to_number 11 digits, no '+').
+- **10-12 NIGHT — 603 SOLVED (evidence: ElevenLabs stored SIP traces, `store_sip_messages`=true; read via
+  GET /v1/convai/conversations/{conv}/sip-messages).** Root cause: INVITE `From: +15718322832` -> VoIP.ms (Asterisk)
+  can't map it to an account, never sends 401, answers 603 in ~50 ms (so nothing in CDR). Fix = SIP From user must be
+  the sub-account name (VoIP.ms staff, voip-info.org thread 28148). ElevenLabs uses the imported "phone number" as From
+  user -> NEW entry **phnum_7301m4setya4ecqae6krgy0m0de7** (identifier `577131_fg`, TCP, media encryption DISABLED,
+  creds set by Rich via Desktop FIX CALLER / tools/fix-caller.ps1). USE THIS ID for outbound; old phnum_4301 (+1571)
+  stays 603. Result: 401 -> auth OK -> 100 Trying -> 11.5 s -> **486 Busy Here, X-Asterisk-HangupCause "Call Rejected"
+  (21)** = far end/cell carrier rejected; phone did not ring. NEXT: Rich checks Silence Unknown Callers / carrier spam
+  filter, or test-dial a different phone to separate carrier block from number reputation.
+- Ruled out 10-12 (keep, so nobody re-tries): sub/main IP+POP Restriction (off); Foreign IP Guard (portal logins only);
+  device type (changed ATA -> PBX, no effect; left on PBX); TLS: VoIP.ms port 5061 only offers RSA-key-exchange ciphers
+  (no ECDHE, no TLS1.3) -> ElevenLabs handshake failure, dead end; sub-account Encrypted SIP Traffic set back to No.
+  Over TCP, media_encryption "allowed" makes ElevenLabs offer SRTP-only SDP -> must be "disabled" (Rich approved; the
+  Claude auto-mode guard blocks Claude from doing it, so it runs from Rich's window). GOTCHA: PATCHing
+  outbound_trunk_config WIPES stored credentials; VoIP.ms edit-sub page forces a new SIP password on every save.
 For the bridge worker with Chrome hands, Rich present. No guessing: read each screen.
 1. VoIP.ms portal (Rich signed in): confirm the main SIP account 577131 has a SIP password
    set (Main Menu → Account Settings; if Rich must set one, he types it — never log it).

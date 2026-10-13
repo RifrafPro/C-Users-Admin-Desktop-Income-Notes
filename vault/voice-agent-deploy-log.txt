@@ -16,3 +16,8 @@
 [2026-09-26 19:40] AGENT CREATED. agent_id: agent_9201m3gbrsdcftm8f21bygh8cwgf
 [2026-09-26 19:40] Pushed. Test the agent by voice in the ElevenLabs dashboard: elevenlabs.io -> Agents.
 [2026-10-12 14:41] IMPORTED +15718322832 -> phone_number_id phnum_4301m4s14cmae3xak2b9smzxchv8, assigned to agent_9201m3gbrsdcftm8f21bygh8cwgf (outbound via sanjose2.voip.ms TCP)
+[2026-10-12 18:37] fix-trunk: trunk now transport=tcp encryption=disabled user=577131_fg has_auth=True
+[2026-10-12 18:37] fix-trunk: test call success=False msg=unexpected status from INVITE response: sip status: 603: Declined (SIP 603) conv=conv_3801m4sek27zfwpr0e9k6qhjdsem
+[2026-10-12 18:42] fix-caller: created entry phnum_7301m4setya4ecqae6krgy0m0de7 (From user 577131_fg)
+[2026-10-12 18:42] fix-caller: test call success=False msg=INVITE failed: sip status: 486: Busy Here (SIP 486) conv=conv_8901m4setz1weh9vnr4hr9sftb8t
+[2026-10-12 18:42] fix-caller: VoIP.ms replies: SIP/2.0 401 Unauthorized / SIP/2.0 100 Trying
