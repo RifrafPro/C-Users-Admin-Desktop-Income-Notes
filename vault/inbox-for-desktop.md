@@ -357,6 +357,9 @@ Fails → capture the exact error text. Either way: log here, commit, push. Narr
   analytics), set CNAM "FRESH GROUND" in VoIP.ms DID settings; (3) agent has silence_end_call_timeout=-1 and 600 s max
   -> voicemail/robot pickups run for minutes: set a silence timeout + voicemail detection before real dials (needs
   Rich's OK, auto-mode treats agent edits as deploys).
+- **Test-call target (Rich, 10-12):** use Rich's Google Voice **1-916-629-4008** for ear tests until his Samsung cell
+  (1-916-693-1900) stops rejecting; Rich is checking Samsung block/caller-ID settings + GV forwarding. GV is a test line
+  only, not part of the calling setup. Future live-transfer target = whichever of Rich's phones actually rings.
 - Ruled out 10-12 (keep, so nobody re-tries): sub/main IP+POP Restriction (off); Foreign IP Guard (portal logins only);
   device type (changed ATA -> PBX, no effect; left on PBX); TLS: VoIP.ms port 5061 only offers RSA-key-exchange ciphers
   (no ECDHE, no TLS1.3) -> ElevenLabs handshake failure, dead end; sub-account Encrypted SIP Traffic set back to No.
