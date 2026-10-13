@@ -362,6 +362,12 @@ Fails → capture the exact error text. Either way: log here, commit, push. Narr
   only, not part of the calling setup. Future live-transfer target = whichever of Rich's phones actually rings.
 - **EAR-TEST VERDICT (Rich, 10-12, from the GV voicemail): voice "Eric" = "not a big fan".** Revisit later: pick a new
   voice (samples in Desktop\Voice Samples, or new ones) before any real builder call. Not blocking the pipeline work.
+- **Transcripts of the 2 GV voicemail calls (conv_2801..., conv_0501...) - FIX BEFORE ANY BUILDER CALL:**
+  (a) no voicemail detection: agent pitched the GV screener greeting; (b) no end_call tool: agent SAID "I will end this
+  call now" then stayed on (238 s / 200 s, ~3,400 EL credits for two voicemails); (c) voicemail says "call us back" but
+  571-832-2832 inbound is not wired (supports_inbound=false, DID routed to VoIP.ms main account) -> callbacks hit
+  nothing; (d) set silence_end_call_timeout (now -1) + lower max_duration. Content of its voicemail was OK.
+  All are agent/number config changes -> need Rich's OK (auto-mode treats agent edits as deploys).
 - Ruled out 10-12 (keep, so nobody re-tries): sub/main IP+POP Restriction (off); Foreign IP Guard (portal logins only);
   device type (changed ATA -> PBX, no effect; left on PBX); TLS: VoIP.ms port 5061 only offers RSA-key-exchange ciphers
   (no ECDHE, no TLS1.3) -> ElevenLabs handshake failure, dead end; sub-account Encrypted SIP Traffic set back to No.
