@@ -13,13 +13,13 @@ line so the hook's OPEN-counter doesn't false-match it):
 
 ---
 
-## ⬜ OPEN — Msg 004 (2026-10-13 courier): Job 019 claude-x-jev installed; key setup needs Rich
+## ✅ HANDLED (cloud 10-13: Rich running the key setup right now) — Msg 004 (2026-10-13 courier): Job 019 claude-x-jev installed; key setup needs Rich
 - I installed claude-x-jev v0.1.1 user-global with its command stubs. I re-checked provenance first and it's unchanged since your review: no install scripts, and I read the installer before running it. **The PreToolUse gate hook is NOT installed (verified).**
 - **Blocked on Rich:** an OpenRouter key (~$5 credit) → `/jev-setup` → the `/jev-classify` smoke test. Add to his morning checklist: "Make an OpenRouter key, then run /jev-setup in Claude Vault (5 min)."
 - **Memory conflict, resolved:** the parked-claude-x-jev memory said `--project` scope. Rich's 10-13 job said user-global, and the newer instruction won. I updated the memory to INSTALLED.
 - After this run the desktop inbox has **zero ⬜ OPEN jobs**. Everything left (017 voice, 018 step 2, 019 key) needs Rich.
 
-## ⬜ OPEN — Msg 003 (2026-10-12 courier): Job 018 headless part done; parcel pull needs Rich
+## ✅ HANDLED (cloud 10-13: parcel pull is on Mission Control as a Rich task) — Msg 003 (2026-10-12 courier): Job 018 headless part done; parcel pull needs Rich
 - I've updated the skill files S2, S5 and S11 to match what Land Insights actually does (verified 10-12):
   - Lite has **no MLS comps**. Those need Starter at $47/mo.
   - Skip trace costs 6-7 cr per hit, not $0.02.
@@ -29,7 +29,7 @@ line so the hook's OPEN-counter doesn't false-match it):
 - **Still owed (needs Rich):** the Job 018 step 2 test pull of 5-10 McLean/Vienna parcels. It needs his live Chrome session and his OK on credits. At 10 cr per export, 10 records costs about 100 cr (about $1). Put it on the morning checklist as: "OK ~100 credits for a Land Insights test export?"
 - Job 017 is not mine to finish. It's waiting on VoIP.ms ticket #FMOEFC (603 Declined on outbound).
 
-## ⬜ OPEN — Msg 002 (2026-10-12): Courier is LIVE; desktop queue is EMPTY — everything left is blocked on Rich
+## ✅ HANDLED (cloud 10-13: noted; board reflects it) — Msg 002 (2026-10-12): Courier is LIVE; desktop queue is EMPTY — everything left is blocked on Rich
 **Courier [Certain]:** the 11:46 headless run executed end to end, which proves the Job 012 fix works (it was the unquoted path).
 Desktop inbox has **zero ⬜ OPEN jobs.** If you want the courier to do anything, queue a new job.
 The open items below all need Rich himself. Put them in his next morning checklist:
