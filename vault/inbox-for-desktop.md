@@ -368,6 +368,12 @@ Fails → capture the exact error text. Either way: log here, commit, push. Narr
   571-832-2832 inbound is not wired (supports_inbound=false, DID routed to VoIP.ms main account) -> callbacks hit
   nothing; (d) set silence_end_call_timeout (now -1) + lower max_duration. Content of its voicemail was OK.
   All are agent/number config changes -> need Rich's OK (auto-mode treats agent edits as deploys).
+- **AGENT BEHAVIOR SPEC (Rich, 10-12 night - standing requirement for every FRESH GROUND voice agent):**
+  1. NO ANSWER / VOICEMAIL: leave ONE short, human-sounding hook whose only job is to get a callback, then HANG UP.
+     No follow-up talk after the message ("are you still there?" etc. makes it sound like a bot).
+  2. LIVE ANSWER: must sound like a human, and open a LOW-KEY NEGOTIATION, not a survey.
+  3. Rich has "very smooth scripts" to train the agent on - get them from him (paste or file) and build the prompt from
+     them; the vault playbook (projects/fresh-ground-scripts.md, 10 scripts) has NO voicemail script yet.
 - Ruled out 10-12 (keep, so nobody re-tries): sub/main IP+POP Restriction (off); Foreign IP Guard (portal logins only);
   device type (changed ATA -> PBX, no effect; left on PBX); TLS: VoIP.ms port 5061 only offers RSA-key-exchange ciphers
   (no ECDHE, no TLS1.3) -> ElevenLabs handshake failure, dead end; sub-account Encrypted SIP Traffic set back to No.
