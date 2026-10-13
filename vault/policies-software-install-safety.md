@@ -85,3 +85,10 @@ and never trust a search result.**
 - Ruling: install when lead volume exists (Job queue it then). Requires OpenRouter
   account + ~$5. ⚠️ Do NOT enable its tool-gate hook (sends tool-call text to a third
   party; unnecessary).
+
+## Hardening log 2026-10-13: blanket shell allows REMOVED
+Rich removed user-level permissions.allow entries "PowerShell" and "Bash" (blanket,
+every command auto-approved) during auto-mode setup. Project-level narrow allowlist
+(git ops, backup/deploy scripts) remains and carries the daily workflows. If a specific
+command nags repeatedly, add THAT command by name — never the blanket back.
+Auto mode calibrated: Work / no shell-history scan / no other-repo scan.
