@@ -374,6 +374,12 @@ Fails → capture the exact error text. Either way: log here, commit, push. Narr
   2. LIVE ANSWER: must sound like a human, and open a LOW-KEY NEGOTIATION, not a survey.
   3. Rich has "very smooth scripts" to train the agent on - get them from him (paste or file) and build the prompt from
      them; the vault playbook (projects/fresh-ground-scripts.md, 10 scripts) has NO voicemail script yet.
+- **CONSENT-FIRST RULE (Rich, 10-12 night - standing):** no AI call or marketing text to anyone who hasn't opted in.
+  Order: (1) EMAIL first touch (CAN-SPAM: unsubscribe + physical address) with a "reply YES and my assistant will call"
+  ask; (2) the YES reply = consent, logged with date in the deal record; (3) only then AI call / text. Cold opt-in TEXTS
+  are not OK yet: 571-832-2832 has no A2P 10DLC registration, and the FCC's 2024 ruling treats AI voices as "artificial
+  voice" under TCPA (prior consent; written for telemarketing). policies-ai-autonomy.md + automation/seller-sms-opt-in.md
+  still assume text-first -> rewrite to email-first. Rich is finding his scripts (voicemail hook, live negotiation).
 - Ruled out 10-12 (keep, so nobody re-tries): sub/main IP+POP Restriction (off); Foreign IP Guard (portal logins only);
   device type (changed ATA -> PBX, no effect; left on PBX); TLS: VoIP.ms port 5061 only offers RSA-key-exchange ciphers
   (no ECDHE, no TLS1.3) -> ElevenLabs handshake failure, dead end; sub-account Encrypted SIP Traffic set back to No.
