@@ -31,6 +31,10 @@ So keep it current.
   mortgage-note investing ("Income Notes"). Lead-gen via **iSpeedToLead**.
 
 ## Where to look
+- **MISSION CONTROL (live page, 2026-10-12): https://claude.ai/artifact/4axqgbzcnFUauf7Rr2PyQc** — tasks (owner
+  rich|claude, priority, done), deals (stage/verdict/price/maxOffer/next), systems (ok|warn|todo|bad), consents (opt-in
+  log). Read/write with the ArtifactData tool (collections `tasks`, `deals`, `systems`, `consents`) and keep it in sync
+  whenever a deal, task or system changes. Page source: `mission-control/mission-control.html`.
 - **`vault/road-to-deal-one.md` — THE PLAN. Read first, every session.**
 - `vault/profile.md` — background, businesses, goals
 - `vault/preferences.md` — how Rich likes Claude to work
