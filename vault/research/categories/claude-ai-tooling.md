@@ -170,3 +170,17 @@ trigger #1, scope it to the specific paid workload only and keep the vault out o
   prebuilt zip + coaching. Worth copying later, free: a **FRESH GROUND Mission Control** page (deals by stage, opt-in
   consent log, call/email results, items waiting on Rich's "send it") built from the vault, not his software. Parked
   behind: Rich's scripts -> opt-in email -> agent fixes.
+
+## Hermes Agent (NousResearch/hermes-agent) — FOUND INSTALLED 2026-10-12 (install was never logged)
+- Local: `%LOCALAPPDATA%\hermes` (venv `hermes-agent\venv\Scripts\hermes`), git origin NousResearch/hermes-agent (official,
+  not a fork, ~253k stars), checkout 291eae63b from **2026-07-10** (3 months stale). Installed ~2026-07-10 via hermes-setup.exe.
+- State: NEVER USED — memories/ + sessions/ empty, cron last ticked 2026-07-12, SOUL.md = stock default, config default
+  model anthropic/claude-opus-4.6 via OpenRouter base_url, but **no model API key in .env** (only tool settings).
+- SECURITY.md: "The only security boundary against an adversarial LLM is OS-level isolation"; default terminal backend runs
+  commands directly on the host with Rich's full account access -> sandbox (Docker terminal backend) before giving it
+  email/messaging input.
+- Plan proposed to Rich: Hermes = always-on front desk (phone messaging + scheduled jobs); Claude Code = builder; vault =
+  the one memory (Hermes reads CLAUDE.md, writes results to the vault, not its private memory); Mission Control = the one
+  board (Hermes queues into vault/inbox-for-desktop.md, Claude syncs). Inherits send-gate, consent-first, install-safety,
+  no access to key files. Update target: v2026.9.24 (v0.21.6/.7 are <2 weeks old). WAITING ON RICH: model provider +
+  monthly cap, phone channel (Telegram/WhatsApp/none), sandbox yes/no.
