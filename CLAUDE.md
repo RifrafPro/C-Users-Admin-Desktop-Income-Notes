@@ -74,6 +74,12 @@ git push` when work finishes — an unpushed result does not exist. Cloud Claude
 the jobs; the vault carries everything between sessions. Rich should never have to
 re-explain context: if you are missing it, you skipped reading this vault.
 
+## 📨 HERMES FRONT DESK (added 2026-10-12)
+Hermes Agent (%LOCALAPPDATA%\hermes, v0.21.5 / 2026.9.24) is the always-on front desk; its rules live in its SOUL.md.
+It reads this vault and appends ONLY to `vault/inbox-from-hermes.md`. **At session start, after `git pull`: process
+every `Status: OPEN` entry there** (file it, add tasks/deals to Mission Control, mark `FILED <date>`, commit, push).
+Hermes never sends anything; on Telegram its terminal/code/computer-use/browser/delegation tools are disabled.
+
 ## The memory system
 - **Resume protocol (2026-09-16): `vault/resume-protocol.md` — the anti-progress-loss law.**
   Pull first, push last, backup layers 1-5. A session that didn't pull is reading the past.
