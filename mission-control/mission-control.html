@@ -1,0 +1,254 @@
+<title>FRESH GROUND Mission Control</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a survey plat — summary strip on top, then two columns: what needs Rich (left), the lots and systems (right); stacks to one column on phones */
+:root {
+  --bg: #f2f3ef; --panel: #ffffff; --fg: #1b2320; --muted: #5d6862; --line: #d9ddd6;
+  --accent: #2f6b4f; --accent-ink: #ffffff; --clay: #a95a22;
+  --ok: #2f7d4f; --warn: #b07a12; --bad: #b3372b; --todo: #6b7570;
+  --ok-bg: #e3f1e8; --warn-bg: #f7eccf; --bad-bg: #f6dfdb; --todo-bg: #e8ebe7;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121614; --panel: #1a201d; --fg: #e5eae6; --muted: #9aa59f; --line: #2c3530;
+  --accent: #6fbf94; --accent-ink: #0e1512; --clay: #d98a54;
+  --ok: #6fcf94; --warn: #e2b04a; --bad: #ec7a6c; --todo: #9aa59f;
+  --ok-bg: #1d3327; --warn-bg: #3a2f14; --bad-bg: #3d1f1b; --todo-bg: #242b27; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121614; --panel: #1a201d; --fg: #e5eae6; --muted: #9aa59f; --line: #2c3530;
+  --accent: #6fbf94; --accent-ink: #0e1512; --clay: #d98a54;
+  --ok: #6fcf94; --warn: #e2b04a; --bad: #ec7a6c; --todo: #9aa59f;
+  --ok-bg: #1d3327; --warn-bg: #3a2f14; --bad-bg: #3d1f1b; --todo-bg: #242b27; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 40px; display: grid; gap: 20px; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; border-bottom: 2px solid var(--fg); padding-bottom: 10px; }
+h1 { font: 700 2.1rem/1 var(--display); letter-spacing: .02em; text-transform: uppercase; margin: 0; text-wrap: balance; }
+h1 span { color: var(--accent); }
+.sub { color: var(--muted); font-size: .9rem; }
+h2 { font: 600 1.15rem/1.2 var(--display); letter-spacing: .08em; text-transform: uppercase; margin: 0; }
+.strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.stat { background: var(--panel); border: 1px solid var(--line); padding: 12px 14px; }
+.stat b { display: block; font: 600 2rem/1 var(--display); font-variant-numeric: tabular-nums; }
+.stat small { color: var(--muted); text-transform: uppercase; letter-spacing: .06em; font-size: .72rem; }
+.stat.hot b { color: var(--clay); }
+.cols { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+@media (max-width: 820px) { .cols { grid-template-columns: minmax(0, 1fr); } }
+section { display: grid; gap: 10px; min-width: 0; }
+.sechead { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.count { font: 500 .8rem var(--mono); color: var(--muted); }
+.list { display: grid; gap: 6px; }
+.task { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px; align-items: start; background: var(--panel); border: 1px solid var(--line); padding: 10px 12px; }
+.task.done { opacity: .55; }
+.task.done .ttl { text-decoration: line-through; }
+.task input[type=checkbox] { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--accent); }
+.ttl { font-weight: 600; }
+.note { color: var(--muted); font-size: .88rem; overflow-wrap: anywhere; }
+.chip { font: 500 .7rem/1 var(--mono); text-transform: uppercase; letter-spacing: .04em; padding: 4px 7px; border-radius: 3px; white-space: nowrap; background: var(--todo-bg); color: var(--todo); }
+.chip.high { background: var(--bad-bg); color: var(--bad); }
+.chip.med { background: var(--warn-bg); color: var(--warn); }
+.chip.ok { background: var(--ok-bg); color: var(--ok); }
+.chip.warn { background: var(--warn-bg); color: var(--warn); }
+.chip.bad { background: var(--bad-bg); color: var(--bad); }
+.deal { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--todo); padding: 10px 12px; display: grid; gap: 4px; }
+.deal.go { border-left-color: var(--ok); } .deal.cond { border-left-color: var(--warn); } .deal.nogo { border-left-color: var(--bad); }
+.dealtop { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; align-items: baseline; }
+.addr { font: 600 1.05rem/1.2 var(--display); letter-spacing: .02em; }
+.mkt { font: 500 .75rem var(--mono); color: var(--muted); }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+select, input[type=text], input[type=date] { font: inherit; color: var(--fg); background: var(--bg); border: 1px solid var(--line); padding: 5px 8px; border-radius: 3px; min-width: 0; }
+.sys { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; background: var(--panel); border: 1px solid var(--line); padding: 9px 12px; align-items: center; }
+form.add { display: flex; flex-wrap: wrap; gap: 8px; }
+form.add input[type=text] { flex: 1 1 200px; }
+button { font: 600 .85rem var(--body); background: var(--accent); color: var(--accent-ink); border: 0; padding: 7px 14px; border-radius: 3px; cursor: pointer; }
+button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid var(--clay); outline-offset: 2px; }
+.empty { color: var(--muted); font-size: .9rem; border: 1px dashed var(--line); padding: 12px; }
+.rule { font-size: .85rem; color: var(--muted); border-left: 3px solid var(--clay); padding-left: 10px; }
+.status { font: 500 .78rem var(--mono); color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+th { font: 600 .72rem var(--mono); text-transform: uppercase; color: var(--muted); }
+.tablebox { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); }
+@media (prefers-reduced-motion: no-preference) { .task, .deal { transition: opacity .2s; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Fresh Ground <span>Mission Control</span></h1>
+    <div class="sub">Teardown lots, DC Metro · <span id="sync" class="status">Connecting…</span></div>
+  </header>
+
+  <div class="strip">
+    <div class="stat hot"><b id="s-rich">—</b><small>Waiting on Rich</small></div>
+    <div class="stat"><b id="s-deals">—</b><small>Active deals</small></div>
+    <div class="stat"><b id="s-go">—</b><small>GO or conditional</small></div>
+    <div class="stat"><b id="s-sys">—</b><small>Systems ready</small></div>
+    <div class="stat"><b id="s-consent">—</b><small>Opt-ins logged</small></div>
+  </div>
+
+  <div class="cols">
+    <section aria-labelledby="h-tasks">
+      <div class="sechead"><h2 id="h-tasks">Waiting on you</h2><span class="count" id="c-rich"></span></div>
+      <div class="list" id="tasks-rich"><div class="empty">Your open tasks appear here. Add one below.</div></div>
+      <div class="sechead"><h2>Claude is on it</h2><span class="count" id="c-claude"></span></div>
+      <div class="list" id="tasks-claude"><div class="empty">Claude's queued work appears here.</div></div>
+      <form class="add" id="add-task">
+        <input type="text" id="new-task" placeholder="New task, e.g. Call title company about Arnold Ln" aria-label="New task">
+        <select id="new-owner" aria-label="Who does it"><option value="rich">Rich</option><option value="claude">Claude</option></select>
+        <select id="new-pri" aria-label="Priority"><option value="high">High</option><option value="med" selected>Medium</option><option value="low">Low</option></select>
+        <button type="submit">Add task</button>
+      </form>
+      <details>
+        <summary class="note">Done (<span id="c-done">0</span>)</summary>
+        <div class="list" id="tasks-done" style="margin-top:8px"></div>
+      </details>
+    </section>
+
+    <section aria-labelledby="h-deals">
+      <div class="sechead"><h2 id="h-deals">Lots in the pipeline</h2><span class="count" id="c-deals"></span></div>
+      <div class="list" id="deals"><div class="empty">Deal records appear here once loaded.</div></div>
+
+      <div class="sechead"><h2>Calling &amp; outreach systems</h2><span class="count" id="c-sys"></span></div>
+      <div class="list" id="systems"><div class="empty">System status appears here once loaded.</div></div>
+    </section>
+  </div>
+
+  <section aria-labelledby="h-consent">
+    <div class="sechead"><h2 id="h-consent">Opt-in log</h2><span class="count" id="c-consent"></span></div>
+    <p class="rule">Consent-first rule: no AI call or marketing text to anyone who hasn't opted in. Email is the first touch; a "YES" reply gets logged here with the date before any call.</p>
+    <div class="tablebox"><table aria-label="Opt-in log">
+      <thead><tr><th>Date</th><th>Who</th><th>Role</th><th>Channel</th><th>Allows</th><th>Lot</th></tr></thead>
+      <tbody id="consents"><tr><td colspan="6" class="note">No opt-ins yet. When someone replies YES, log them here.</td></tr></tbody>
+    </table></div>
+    <form class="add" id="add-consent">
+      <input type="date" id="c-date" aria-label="Date of opt-in">
+      <input type="text" id="c-who" placeholder="Name or company" aria-label="Who opted in">
+      <select id="c-role" aria-label="Role"><option>Builder</option><option>Seller</option><option>Agent</option></select>
+      <select id="c-chan" aria-label="Opted in by"><option>Email reply</option><option>Text reply</option><option>Verbal on call</option></select>
+      <select id="c-allows" aria-label="What they allowed"><option>AI call</option><option>Call + text</option><option>Email only</option></select>
+      <input type="text" id="c-lot" placeholder="Lot (optional)" aria-label="Lot">
+      <button type="submit">Log opt-in</button>
+    </form>
+  </section>
+</div>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var STAGES = ["intake", "underwriting", "buyers-matched", "offer-drafted", "under-contract", "assigned", "parked", "dead"];
+  var state = { tasks: [], deals: [], systems: [], consents: [] };
+  var db = null, canWrite = true;
+
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function setSync(t) { $("sync").textContent = t; }
+
+  function renderTasks() {
+    var rich = $("tasks-rich"), cl = $("tasks-claude"), done = $("tasks-done");
+    rich.textContent = ""; cl.textContent = ""; done.textContent = "";
+    var order = { high: 0, med: 1, low: 2 };
+    var sorted = state.tasks.slice().sort(function (a, b) { return (order[a.d.priority] ?? 3) - (order[b.d.priority] ?? 3) || String(a.d.title).localeCompare(String(b.d.title)); });
+    var nR = 0, nC = 0, nD = 0;
+    sorted.forEach(function (t) {
+      var d = t.d, row = el("div", "task" + (d.done ? " done" : ""));
+      var cb = el("input"); cb.type = "checkbox"; cb.checked = !!d.done; cb.disabled = !canWrite; cb.id = "t-" + t.id;
+      cb.setAttribute("aria-label", "Mark done: " + (d.title || ""));
+      cb.addEventListener("change", function () { db.doc("tasks/" + t.id).update({ done: cb.checked, doneAt: cb.checked ? new Date().toISOString().slice(0, 10) : null }).catch(failed); });
+      var mid = el("div"); mid.appendChild(el("div", "ttl", d.title || "(untitled)")); if (d.note) mid.appendChild(el("div", "note", d.note));
+      var chip = el("span", "chip " + (d.priority || ""), d.area || d.priority || "");
+      row.append(cb, mid, chip);
+      if (d.done) { done.appendChild(row); nD++; } else if (d.owner === "claude") { cl.appendChild(row); nC++; } else { rich.appendChild(row); nR++; }
+    });
+    if (!nR) rich.appendChild(el("div", "empty", "Nothing waiting on you."));
+    if (!nC) cl.appendChild(el("div", "empty", "No queued work for Claude."));
+    $("c-rich").textContent = nR + " open"; $("c-claude").textContent = nC + " open"; $("c-done").textContent = nD;
+    $("s-rich").textContent = nR;
+  }
+
+  function verdictClass(v) { v = String(v || "").toLowerCase(); if (v.indexOf("no-go") > -1 || v.indexOf("no go") > -1) return v.indexOf("conditional") > -1 ? "cond" : "nogo"; if (v.indexOf("conditional") > -1) return "cond"; if (v.indexOf("go") === 0) return "go"; return ""; }
+
+  function renderDeals() {
+    var box = $("deals"); box.textContent = "";
+    var active = 0, go = 0;
+    var sorted = state.deals.slice().sort(function (a, b) { return STAGES.indexOf(a.d.stage) - STAGES.indexOf(b.d.stage); });
+    sorted.forEach(function (x) {
+      var d = x.d, vc = verdictClass(d.verdict);
+      if (d.stage !== "dead" && d.stage !== "parked") active++;
+      if (vc === "go" || vc === "cond") go++;
+      var card = el("div", "deal " + vc);
+      var top = el("div", "dealtop"); top.appendChild(el("span", "addr", d.address || x.id)); top.appendChild(el("span", "mkt", d.market || ""));
+      var line = el("div", "note");
+      line.appendChild(el("span", "", (d.verdict || "No verdict yet")));
+      if (d.price) { line.appendChild(document.createTextNode(" · list ")); line.appendChild(el("span", "num", d.price)); }
+      if (d.maxOffer) { line.appendChild(document.createTextNode(" · max offer ")); line.appendChild(el("span", "num", d.maxOffer)); }
+      var foot = el("div", "dealtop");
+      var sel = el("select"); sel.id = "stage-" + x.id; sel.disabled = !canWrite; sel.setAttribute("aria-label", "Stage for " + (d.address || x.id));
+      STAGES.forEach(function (s) { var o = el("option", null, s); o.value = s; if (s === d.stage) o.selected = true; sel.appendChild(o); });
+      sel.addEventListener("change", function () { db.doc("deals/" + x.id).update({ stage: sel.value, updated: new Date().toISOString().slice(0, 10) }).catch(failed); });
+      foot.appendChild(el("span", "note", d.next ? "Next: " + d.next : ""));
+      foot.appendChild(sel);
+      card.append(top, line, foot);
+      box.appendChild(card);
+    });
+    if (!state.deals.length) box.appendChild(el("div", "empty", "No deals yet. Claude adds them as leads come in."));
+    $("c-deals").textContent = state.deals.length + " lots"; $("s-deals").textContent = active; $("s-go").textContent = go;
+  }
+
+  function renderSystems() {
+    var box = $("systems"); box.textContent = "";
+    var order = { bad: 0, warn: 1, todo: 2, ok: 3 }, ready = 0;
+    state.systems.slice().sort(function (a, b) { return (order[a.d.status] ?? 4) - (order[b.d.status] ?? 4); }).forEach(function (x) {
+      var d = x.d; if (d.status === "ok") ready++;
+      var row = el("div", "sys");
+      var left = el("div"); left.appendChild(el("div", "ttl", d.name || x.id)); if (d.note) left.appendChild(el("div", "note", d.note));
+      var label = { ok: "ready", warn: "needs work", bad: "blocked", todo: "not started" }[d.status] || d.status;
+      row.append(left, el("span", "chip " + (d.status === "todo" ? "" : d.status), label));
+      box.appendChild(row);
+    });
+    if (!state.systems.length) box.appendChild(el("div", "empty", "No systems tracked yet."));
+    $("c-sys").textContent = ready + " of " + state.systems.length + " ready"; $("s-sys").textContent = state.systems.length ? ready + "/" + state.systems.length : "—";
+  }
+
+  function renderConsents() {
+    var tb = $("consents"); tb.textContent = "";
+    state.consents.slice().sort(function (a, b) { return String(b.d.date).localeCompare(String(a.d.date)); }).forEach(function (x) {
+      var d = x.d, tr = el("tr");
+      [d.date, d.who, d.role, d.channel, d.allows, d.lot].forEach(function (v, i) { tr.appendChild(el("td", i === 0 ? "num" : "", v || "")); });
+      tb.appendChild(tr);
+    });
+    if (!state.consents.length) { var tr = el("tr"), td = el("td", "note", "No opt-ins yet. When someone replies YES, log them here."); td.colSpan = 6; tr.appendChild(td); tb.appendChild(tr); }
+    $("c-consent").textContent = state.consents.length + " logged"; $("s-consent").textContent = state.consents.length;
+  }
+
+  function failed(e) { setSync(e && e.code === "invalid_argument" ? "Read-only for you" : "Couldn't save: " + ((e && e.message) || "try again")); }
+
+  function watch(name, render) {
+    db.collection(name).onSnapshot(function (snap) {
+      state[name] = snap.docs.map(function (s) { return { id: s.id, d: s.data() || {} }; });
+      render(); setSync("Live · updated " + new Date().toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }));
+    }, function (e) { failed(e); });
+  }
+
+  $("add-task").addEventListener("submit", function (ev) {
+    ev.preventDefault(); var t = $("new-task").value.trim(); if (!t || !db) return;
+    db.collection("tasks").add({ title: t, owner: $("new-owner").value, priority: $("new-pri").value, done: false, added: new Date().toISOString().slice(0, 10) })
+      .then(function () { $("new-task").value = ""; }).catch(failed);
+  });
+  $("add-consent").addEventListener("submit", function (ev) {
+    ev.preventDefault(); var who = $("c-who").value.trim(); if (!who || !db) return;
+    db.collection("consents").add({ date: $("c-date").value || new Date().toISOString().slice(0, 10), who: who, role: $("c-role").value, channel: $("c-chan").value, allows: $("c-allows").value, lot: $("c-lot").value.trim() })
+      .then(function () { $("c-who").value = ""; $("c-lot").value = ""; }).catch(failed);
+  });
+  try { $("c-date").value = new Date().toISOString().slice(0, 10); } catch (e) {}
+
+  (async function start() {
+    if (!window.claude || !window.claude.use) { setSync("Open in Claude to see live data"); return; }
+    db = await window.claude.use("db");
+    if (!db) { setSync("Sign in to see live data"); return; }
+    var user = await window.claude.use("user");
+    if (user) { var w = await user.can("data.write"); if (w === false) { canWrite = false; $("add-task").hidden = true; $("add-consent").hidden = true; } }
+    watch("tasks", renderTasks); watch("deals", renderDeals); watch("systems", renderSystems); watch("consents", renderConsents);
+  })();
+})();
+</script>
