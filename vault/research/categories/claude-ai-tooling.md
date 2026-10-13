@@ -137,3 +137,17 @@ trigger #1, scope it to the specific paid workload only and keep the vault out o
 - **Installed:** shallow `git clone --depth 1` to `%USERPROFILE%\repos\public-apis` (outside the vault).
 - **NOT done:** no `pip install -r scripts/requirements.txt`, no scripts run — not needed to read the list.
 - **Use:** open `README.md` and search by category (Geocoding, Government, Open Data, Finance …).
+## claude-x-jev (charlesdove977) — VETTED 2026-10-12, NOT INSTALLED
+- Source: github.com/charlesdove977/claude-x-jev · API: `fork:false`, created 2026-09-25 (single push day),
+  56★/8 forks, owner acct created 2025-07. npm pkg `claude-x-jev` v0.1.1, MIT.
+- What it is: Claude Code skill + Python script that sends classify/score/gate questions to
+  TypeSafe "Jev 1.13" via OpenRouter (`/api/alpha/decisions`). Model confirmed real on OpenRouter.
+- Code read (jev.py 689 ln, installer JS 225 ln, hook 33 ln): network ONLY to openrouter.ai; reads only
+  `OPENROUTER_API_KEY`; installer copies to ~/.claude/skills, backs up settings.json before writing hook.
+  No exfil, no obfuscation, no eval. **Clean.**
+- Risks: (1) optional PreToolUse gate hook ships every Bash command (may contain keys/paths) to a third-party
+  alpha API and can AUTO-ALLOW it — never install the hook. (2) Needs a new OpenRouter account + key + credits
+  (none exist in vault). (3) Alpha endpoint, 17-day-old repo.
+- Decision: not installed — no explicit install ask, and nothing in road-to-deal-one is bottlenecked on cheap
+  classification. Revisit only if lead volume makes triage the bottleneck (preset `lead-qualify.json`).
+  If ever installed: skill only, no hook, `--project` scope.
