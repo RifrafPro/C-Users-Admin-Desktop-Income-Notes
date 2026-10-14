@@ -1,6 +1,6 @@
 {
   "name": "fg-listing-triage",
-  "version": 2,
+  "version": 3,
   "description": "Triage an on-market DC-metro listing for FRESH GROUND teardown-lot wholesaling: pursue, watch, or skip.",
   "model": "typesafe/jev-1.13",
   "state_fields": [
@@ -21,14 +21,14 @@
       "instructions": "Count the motivation signals in `pct_below_original_ask`, `dead_contracts`, `seller_financing` and `dom_days`, then pick the label whose rule matches.",
       "criteria": {
         "pursue": "Land or teardown lot AND at least two of these: `pct_below_original_ask` 20 or more, `dead_contracts` 1 or more, `seller_financing` yes, `dom_days` over 200.",
-        "watch": "Land or teardown lot with exactly one of those four signals.",
+        "watch": "Land or teardown lot with at most one of those four signals (zero or one).",
         "skip": "A finished house sold as a normal resale; `days_since_first_listed` under 30; a lot described as a remnant or unbuildable; or anything that is not a land or teardown opportunity."
       },
       "exhaustive": true
     },
     "motivated_seller": {
       "type": "noul",
-      "instructions": "Does `price_history` or `listing_notes` show the seller is under pressure to sell: repeated cuts, a dead contract, financing offered, or a very long time on market?"
+      "instructions": "Is the seller under pressure to sell? Count the signals: `pct_below_original_ask` 20 or more, `dead_contracts` 1 or more, `seller_financing` yes, `dom_days` over 200. Two or more signals = yes. Zero signals = no. Exactly one signal = lean yes only if `listing_notes` also shows pressure (price cuts, 'motivated', 'bring all offers', estate sale)."
     }
   },
   "thresholds": {

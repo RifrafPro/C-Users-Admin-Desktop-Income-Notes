@@ -45,3 +45,14 @@ Output: `heldout-run-2026-10-13.jsonl`.
   was `motivated_seller`, which landed in the 0.25-0.75 dead zone on almost every row. That question tells Jev to read
   `price_history`, a field the input doesn't send. As-is, the router would send 18/19 items to Claude, so it saves nothing.
 - **v3 fixes (next):** (1) watch = "at most one signal"; (2) motivated_seller reads the precomputed fields, not `price_history`.
+
+## v3 re-run, 2026-10-14: 19 items, $0.0005
+v3 changes: watch = "at most one signal"; `motivated_seller` counts the 4 precomputed signals, not `price_history`.
+The v2 copy is saved as `~/.claude/jev-presets/fg-listing-triage.v2.bak.json`. Output: `heldout-run-v3-2026-10-14.jsonl`.
+- **Action labels: 19/19 match expected.** The 8 gap rows → watch at 0.98-1.00. Blake Ln flipped to skip ✅.
+- **Confidence dropped on both skips:** anchorage 0.85 → 0.41, blake-ln 0.35. Both are still correct and still route to Claude.
+- **sure: 7/19 (v2 had 1/19).** All 7 are zero-signal lots, where motivated_seller is now about 0.08.
+- **Still unsure:** the 10 one-signal rows. motivated_seller sits at about 0.5 there by design, since one signal is ambiguous.
+  This question duplicates what `action` already encodes. Proposed v4: route on `action` confidence alone.
+- **Caveat [Certain]:** v3 was written after seeing these 19 rows, so they are no longer a held-out test.
+  Real proof needs a fresh set: the next sweep's listings, with labels written before running Jev.
