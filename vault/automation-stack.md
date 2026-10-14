@@ -185,3 +185,20 @@ an LLC exists):**
 
 ## Sources
 - Bland.ai (real estate voice agents); Vapi (outbound); Retell AI; CloudTalk/Lindy 2026 reviews.
+
+## ✅ INBOUND VOICE AGENT LIVE: 2026-10-14 (571-832-2832)
+- **Path:** caller → VoIP.ms DID 5718322832 → SIP URI `+15718322832@sip.rtc.elevenlabs.io:5060` → ElevenLabs phone
+  `phnum_4301…` (inbound ON, media encryption "allowed") → agent **FRESH GROUND Inbound v0** (`agent_8401m4y043cqed3s3ygyxd7kb5y3`).
+  The builder outbound agent and the outbound path (`phnum_7301…`, identifier 577131_fg) are untouched.
+- **Agent:** AI disclosure + "recorded line" greeting; FreedomSoft webinar opener (up-front contract, attribution, price
+  questions); land questions; no-offer hard stops (call-agent-knowledge-base.md); end_call tool; 20 s silence hang-up; 10-min cap.
+  LLM **gemini-2.5-flash**, temp 0.3. Prompt source: session scratch → re-export to `vault/automation/` before editing.
+- **FAILURE LOG:** (1) The API PATCH to assign the agent and enable inbound was blocked by the Claude Code auto-mode classifier
+  ("Real-World Transactions"). Rich did it in the UI: Phone Numbers → number → **Edit** → Inbound Configuration → Update, then
+  the Agent dropdown. (2) VoIP.ms "SIP URI" routing is greyed out until you create one under DID Numbers → **SIP URIs**.
+  (3) Test call 1: on qwen35 at temp 0 the agent called "I got your letter about my lot" a **wrong number** and hung up.
+  Fixed by an explicit "callers who mention a letter/lot ARE our callers" rule + switching to gemini-2.5-flash.
+- **Test call 2 (Rich playing seller, 5 min, ~2,345 credits): "pretty damn good."** It ran the full flow, got motivation,
+  price ($275K value / $220-225K walk-away), and read back the callback number. Gaps for v1: it stacked 3 questions in one
+  turn (road/sewer/septic), skipped the timeline question, said "that's really helpful" twice, the offer-refusal was not
+  yet tested, and there is no automatic Deal Brief yet (configure ElevenLabs data-collection fields).
