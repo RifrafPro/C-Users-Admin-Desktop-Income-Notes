@@ -3441,3 +3441,50 @@ Paste those notes here and I'll run the GO/NO-GO.
 Or tell me to retry, and approve the prompt when it appears.
 
 **One thing I'm unsure of [Guessing]:** Virginia may require wholesalers to tell the seller in writing that the contract can be assigned. That's why the script says "assignable" openly. Check with your closing attorney before you sign any contract.
+
+
+## Session 510f97ed — 2026-10-13 18:03
+
+**You:** Courier run (headless). Read vault/inbox-for-desktop.md. Execute every OPEN job that can be done headlessly, mark each DONE with a one-line result. Write anything cloud Claude needs to know into vault/inbox-for-cloud.md as an OPEN msg. Obey CLAUDE.md: draft-only, no sends, no purchases. Finish with: git add -A, git commit, git push.
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git pull 2>&1 | tail -3; grep -n "OPEN" vault/inbox-for-desktop.md | head -50; wc`
+  - `Bash: git pull 2>&1 | tail -3; grep -n "OPEN" vault/inbox-for-desktop.md | head -50; wc -l vault/inbox-for-desktop.md`
+  - `Grep: ⬜|🟨|IN PROGRESS|^## |^###`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-desktop.md`
+  - `Bash: ls vault/tools/jev/; sed -n 1,200p vault/tools/jev/README.md; tail -40 vault/inbox-for-cloud.md; git status --short`
+
+**Claude:** No jobs are marked ⬜ OPEN. Job 019 has one headless step left (a held-out Jev test on the B-rank rows), so I'm running that now.
+  - `Bash: head -c 1500 vault/tools/jev/smoke-items-2026-10-13.json; echo; head -c 800 vault/tools/jev/smoke-run-2026-10-13.jsonl; echo; ls ~/.claude/skills/claude-x-jev/`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\tools\jev\smoke-items-2026-10-13.json`
+  - `Grep: \bB\b`
+  - `Glob: **/*`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\deals\stale-sweep-2026-08-28.md`
+  - `Read: C:\Users\Admin\.claude\skills\claude-x-jev\tasks\classify.md`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\tools\jev\fg-listing-triage.json`
+  - `Write: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\tools\jev\heldout-items-2026-10-13.json`
+  - `Bash: python3 ~/.claude/skills/claude-x-jev/scripts/jev.py lint --preset fg-listing-triage 2>&1 | tail -15; python3 ~/.claude/skills/claude-x-jev/scripts/jev.py ask -`
+
+**Claude:** Jev script calls need approval. Trying them one at a time.
+  - `PowerShell: python3 "$env:USERPROFILE\.claude\skills\claude-x-jev\scripts\jev.py" lint --preset fg-listing-triage`
+  - `Bash: python3 /c/Users/Admin/.claude/skills/claude-x-jev/scripts/jev.py lint --preset fg-listing-triage`
+
+**Claude:** Running jev.py needs approval, and nobody can approve it in a headless run. I'll prepare the held-out test so a desktop session can run it with one command, then log what blocked it.
+  - `Grep: ^##`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+
+**Claude:** Now updating Job 019 and the cloud inbox.
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-desktop.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\tools\jev\README.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+  - `Bash: git add -A && git commit -q -m "docs: courier run 10-13 — no OPEN jobs; Jev held-out test prepared (blocked headless), v2 preset gap logged Co-Authored-By: Clau`
+
+**Claude:** The courier had nothing to execute: `inbox-for-desktop.md` had **zero jobs marked ⬜ OPEN**. The one leftover I could try headless also failed. Results are committed and pushed (`7ea269c`), and the branch matches origin.
+
+**What I did**
+- **Jev test on the B-rank listings: prepared, but it never ran.** Job 019's last step was to test Jev on the 19 B-rank listings it hasn't seen yet. I built the input file (`vault/tools/jev/heldout-items-2026-10-13.json`) and the expected answers (in `vault/tools/jev/README.md`). Every call to the Jev script got "This command requires approval", and a headless run has nobody to approve it. Nothing was spent. Job 019 has the exact command for the next interactive session, which should cost about $0.0004.
+- **Found a bug in the Jev listing rules (`fg-listing-triage` v2).** A land lot with no signs of a motivated seller has no rule that fits it: "pursue" needs 2+ signs, "watch" needs exactly 1, and "skip" doesn't cover it. Jev is still forced to pick a label, so 8 of the 19 test listings would just get guesses. I left the rules unchanged so the test shows how v2 actually behaves. The suggested fix is to make "watch" mean "at most one sign", and to make it before running the test.
+- **Saved a stray file.** `vault/deals/linway-ter-call-script-2026-10-13.md` was left uncommitted by an earlier session, so it's now committed.
+- **Left Msg 005 (⬜ OPEN) in `inbox-for-cloud.md`** with all of the above.
+
+**Decision for Rich:** do you want future courier runs to be able to run the Jev script without approval? That would let unattended runs make small paid OpenRouter calls. I recommend no until the B-rank test passes.
+
+Everything else still open (voice agent fixes, the Land Insights parcel pull, Rich's scripts) needs Rich at the keyboard. Nothing was sent or bought.
