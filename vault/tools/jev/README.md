@@ -24,5 +24,12 @@ and Jev only judges. The script or Claude computes the numbers, and Jev picks th
 Next, run a held-out test on the ~20 B-rank rows in the sweep before trusting any automatic routing.
 Jev also can't catch facts the listing hides. The county record later downgraded Chain Bridge, and only title/GIS checks catch that.
 
+## Held-out test, prepared 10-13 but not run yet
+Input: `heldout-items-2026-10-13.json` (19 B-rank rows, Linway excluded). Fields where the sweep has no data are set to `"unknown"`.
+Expected labels come from the v2 rules applied by hand:
+- **watch (9):** 9th-st-s, 5th-st-s, 28th-st-s, madrillon, knolewood-2, knolewood-5, 83rd-pl, finley, pine-ln. Each has DOM over 200 as its only signal.
+- **skip (2):** anchorage (likely unbuildable) and blake-ln (remnant outlot), per the skip rule.
+- **NO RULE MATCHES (8):** oakton-dr, w-ox, leesburg-pike, idylwood, patowmack, jeffery, golden-woods, old-reston. These are land with 0 signals, a gap in v2. Watch where Jev puts them: if it says pursue, that's a false positive. Fix the criteria (watch = "at most one signal") **before** running, or the gap rows only measure noise.
+
 **Reality check (10-13 underwriting):** Jev said pursue at 1.00 on Campbell, but the county codes it non-buildable, and the listing text never said so.
 Jev agreed with Claude's ranks; Claude's ranks were wrong too. Treat a Jev triage as "worth researching", never "worth offering".
