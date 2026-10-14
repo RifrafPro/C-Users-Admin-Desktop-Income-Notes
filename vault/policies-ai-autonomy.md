@@ -32,6 +32,26 @@ today. Nothing changes about what any agent can currently do — there is no voi
 connected, no phone number, no A2P registration, no opt-in text flow. Until all of that
 exists (see `automation-stack.md`), this carve-out has nothing to attach to.
 
+## Carve-out #1 — RE-AFFIRMED 2026-10-14 (Rich: "approve both carve out 1 and 2")
+Infrastructure update: the voice pipeline now exists (inbound agent live on 571-832-2832; outbound SIP path works).
+Opt-in mechanism is now **email-first** (seller replies YES) or **the seller calling us** (inbound). SMS stays off (no A2P).
+Still bound by everything above: verbal agreement only at/below that deal's MAO; PSA needs "send it".
+⚠️ Claude's flag (once): MAOs are still [Guessing]-grade until a builder confirms a land price. Recommended safeguard,
+**not yet adopted, Rich's call:** autonomous verbal agreement only on deals whose MAO is builder-calibrated.
+No agent currently implements negotiation; the inbound agent is qualify-only until a negotiation agent is built and tested.
+
+## Carve-out #2 — Listing-agent information calls (decided 2026-10-14, Rich)
+The AI call agent may **call listing agents to gather information** about a listed property:
+why it hasn't sold, why a contract died, title/zoning/survey/permits, seller flexibility and priorities,
+assignment/option acceptability, probate/signing authority.
+- **Which numbers:** brokerage office / toll-free lines → allowed. Numbers that may be the agent's **cell** → only after the
+  agent replies YES to our email (consent logged in Mission Control `consents`), checked by a line-type lookup first.
+- **Disclosure:** says it is an AI in the first sentence; "recorded line" in the greeting.
+- **Never:** states a price, makes or hints at an offer, agrees to anything, or discusses terms beyond asking.
+- **Trigger:** only on a **batch Rich approved** ("send it" on a named list of lots). Never self-initiated.
+- **Output:** a Deal Brief to Rich after every call. **Offers stay with Rich**: written (NVAR + POF), Rich-approved.
+- **Email:** agent outreach goes from **rich@freshgroundllc.com** (primary, Rich 2026-10-14), each batch send-gated.
+
 ## Decided (2026-08-26, Rich)
 - **Voice/SMS platform: ElevenLabs Agents + Twilio.** ElevenLabs Agents already enabled as a
   skill on this account (no new signup); Twilio number + A2P 10DLC registration still needed
@@ -93,3 +113,4 @@ That is a structural mitigation, not a workaround, and it required no change to 
 Rich will pair the Claude Chrome extension so I can read the Titanium Vault in his already
 authenticated browser. **Unblocks three things at once:** the King Closer scripts, Fairfax PLUS
 plat work (Old Chesterbrook plat date, Chain Bridge subdivision), and Land Insights overlays.
+- 2026-10-14 — Carve-out #1 re-affirmed (email-first opt-in); Carve-out #2 (listing-agent info calls) decided. FG email = primary for agent outreach.
