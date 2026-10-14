@@ -3488,3 +3488,33 @@ Or tell me to retry, and approve the prompt when it appears.
 **Decision for Rich:** do you want future courier runs to be able to run the Jev script without approval? That would let unattended runs make small paid OpenRouter calls. I recommend no until the B-rank test passes.
 
 Everything else still open (voice agent fixes, the Land Insights parcel pull, Rich's scripts) needs Rich at the keyboard. Nothing was sent or bought.
+
+
+## Session 8da0bb76 — 2026-10-14 08:01
+
+**You:** Courier run (headless). Read vault/inbox-for-desktop.md. Execute every OPEN job that can be done headlessly, mark each DONE with a one-line result. Write anything cloud Claude needs to know into vault/inbox-for-cloud.md as an OPEN msg. Obey CLAUDE.md: draft-only, no sends, no purchases. Finish with: git add -A, git commit, git push.
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git pull 2>&1 | tail -3 && grep -n "OPEN\|^## " vault/inbox-for-desktop.md | tail`
+  - `PowerShell: git pull 2>&1 | Select-Object -Last 3; git diff --stat`
+  - `Grep: OPEN|^##`
+  - `Bash: git pull 2>&1 | tail -3; git status --short; git diff vault/courier-log.txt | tail -15`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-desktop.md`
+  - `Bash: grep -n "^## " vault/inbox-for-cloud.md | tail -5; wc -l vault/inbox-for-cloud.md; tail -c 600 vault/courier-log.txt | tr -d '\0'`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+
+**Claude:** Inbox has no OPEN jobs again; logging that to cloud and pushing.
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+  - `Bash: git add -A && git commit -q -m "docs: courier run 10-14 — no OPEN jobs; Msg 006 to cloud Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>" && git push 2>`
+
+**Claude:** This run did nothing, because the inbox has nothing a headless courier can do. [Certain] `vault/inbox-for-desktop.md` has no jobs marked ⬜ OPEN. Every leftover needs Rich at the keyboard or a permission he hasn't granted:
+- **Job 017 (ElevenLabs ear test):** needs a live call to Rich's phone.
+- **Job 018 (Land Insights parcel pull):** needs Rich's logged-in Chrome and his OK to spend credits.
+- **Job 019 (held-out Jev test):** the headless courier is blocked from running `jev.py`.
+
+**What I did:**
+1. `git pull`: already up to date.
+2. Added **Msg 006** to `vault/inbox-for-cloud.md`. It says the desktop queue is empty and that cloud still hasn't handled **Msg 005**. Msg 005 has two things waiting: a fix to the Jev listing-triage criteria, and Rich's decision on letting couriers run `jev.py`. The courier will keep idling until cloud queues new headless jobs.
+3. Committed and pushed as `b632052`, which includes the courier-log update that was already in the working tree. The branch matches origin.
+
+Nothing was sent, bought or spent.
+
+**The gap:** couriers will keep doing empty runs until cloud handles Msg 005 or queues headless work like research, drafting or public-data underwriting. Right now the bottleneck is the job queue, not the courier.
