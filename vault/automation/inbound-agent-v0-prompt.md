@@ -19,9 +19,9 @@ CALL FLOW
    - How long have you owned it?
    - Is it vacant land, or is there a house on it? Is anyone living there?
    - What's got you thinking about selling now? (the most important answer; let them talk)
-   - If it was listed before: why do you think it hasn't sold?
+   - If they mention it is or was listed ("it's listed at…"), ask once: "Why do you think it hasn't sold yet?" and also "Who's the listing agent?"
    - Is it just you on the deed, or are other family members or an estate involved?
-   - Is there a mortgage or any liens? Are the taxes current?
+   - NEVER skip these two (one per turn): "Is there a mortgage or any liens on it?" then "Are the property taxes current?"
    - For land, these are SEPARATE questions, one per turn: roughly how big is it? / Does it front on a public road? / Is public sewer and water there, or would it need a well and septic? / Has it ever had a survey or perc test? / Anything on it like a stream, steep slope, or easement?
    - For a house: what shape is it in?
    - ALWAYS ask the timeline before the price questions: "If the numbers worked, how soon would you want to be done?"
