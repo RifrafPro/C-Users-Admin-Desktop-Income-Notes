@@ -1,0 +1,122 @@
+{
+ "f01": {
+  "address": "Old Chesterbrook Rd, McLean, VA 22101",
+  "expected": "skip",
+  "signals": 1
+ },
+ "f02": {
+  "address": "1313 Ingleside Ave, McLean, VA 22101",
+  "expected": "watch",
+  "signals": 0
+ },
+ "f03": {
+  "address": "9185 Old Dominion Dr, McLean, VA 22102",
+  "expected": "skip",
+  "signals": 1
+ },
+ "f04": {
+  "address": "LOT #1 (Lot B) Brook Rd, McLean, VA 22102",
+  "expected": "watch",
+  "signals": 0
+ },
+ "f05": {
+  "address": "1026 Towlston Rd, McLean, VA 22102",
+  "expected": "watch",
+  "signals": 1
+ },
+ "f06": {
+  "address": "9203 Potomac Ridge Rd, Great Falls, VA 22066",
+  "expected": "pursue",
+  "signals": 2
+ },
+ "f07": {
+  "address": "Sterling Montague Dr (3 parcels), Great Falls, VA 22066",
+  "expected": "watch",
+  "signals": 0
+ },
+ "f08": {
+  "address": "528 Parcel E River Bend Rd, Great Falls, VA 22066",
+  "expected": "watch",
+  "signals": 0
+ },
+ "f09": {
+  "address": "9112 Potomac Ridge Rd, Great Falls, VA 22066",
+  "expected": "watch",
+  "signals": 1
+ },
+ "f10": {
+  "address": "258 Jeffery Ln, Great Falls, VA 22066",
+  "expected": "watch",
+  "signals": 1
+ },
+ "f11": {
+  "address": "748 Kentland Dr, Great Falls, VA 22066",
+  "expected": "pursue",
+  "signals": 2
+ },
+ "f12": {
+  "address": "650 Walker Rd, Great Falls, VA 22066",
+  "expected": "pursue",
+  "signals": 2
+ },
+ "f13": {
+  "address": "24th St S, Arlington, VA 22206",
+  "expected": "skip",
+  "signals": 0
+ },
+ "f14": {
+  "address": "1311 N Utah St, Arlington, VA 22201",
+  "expected": "watch",
+  "signals": 1
+ },
+ "f15": {
+  "address": "2148 S Monroe St (with 2150), Arlington, VA 22204",
+  "expected": "pursue",
+  "signals": 3
+ },
+ "f16": {
+  "address": "0 Pollard St S, Arlington, VA 22204",
+  "expected": "watch",
+  "signals": 0
+ },
+ "f17": {
+  "address": "919 S Monroe St, Arlington, VA 22204",
+  "expected": "watch",
+  "signals": 1
+ },
+ "f18": {
+  "address": "1114 N Stuart St, Arlington, VA 22201",
+  "expected": "watch",
+  "signals": 1
+ },
+ "f19": {
+  "address": "3970 26th St N, Arlington, VA 22207",
+  "expected": "watch",
+  "signals": 0
+ },
+ "f20": {
+  "address": "12205 Waples Mill Rd, Oakton, VA 22124",
+  "expected": "pursue",
+  "signals": 2
+ },
+ "f21": {
+  "address": "3013 Graham Rd, Falls Church, VA 22042",
+  "expected": "skip",
+  "signals": 0
+ },
+ "f22": {
+  "address": "1295 Colvin Forest Dr, Vienna, VA 22182",
+  "expected": "skip",
+  "signals": 0
+ },
+ "f23": {
+  "address": "8801 Jarrett Valley Dr, Vienna, VA 22182",
+  "expected": "skip",
+  "signals": 0
+ },
+ "f24": {
+  "address": "8606 Jefferson St, Bethesda, MD 20817",
+  "expected": "skip",
+  "signals": 0
+ }
+}
