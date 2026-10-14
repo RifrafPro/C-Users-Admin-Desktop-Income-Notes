@@ -66,3 +66,15 @@ blocks `_sure`. v3 is backed up at `~/.claude/jev-presets/fg-listing-triage.v3.b
   2. Skip confidence is weak. The skip rule depends on `listing_notes` wording ("remnant", "unbuildable").
   3. These rows are not held-out any more: v3 and v4 were written after seeing them.
 - **Gate before courier auto-runs:** a fresh sweep with labels written BEFORE running Jev, including some A-rank (pursue) rows.
+
+## FRESH blind test, 2026-10-14: 24 new listings, v4, $0.0007
+Expected labels were committed (`955a128`) before the run. Rule fixed in advance: DOM = days across relists, and dead contracts include earlier runs.
+- **pursue: 5/5 correct, no false pursue.** 4 of the 5 were sure (0.85-1.00). 9203 Potomac Ridge was 0.69, so it went to Claude.
+- **watch: 12/12.**
+- **skip: 1/7 ❌.** All 6 misses are the rule "listed under 30 days = skip". Jev called them watch, at 0.88-0.97, *sure*.
+  Jev ignores that rule confidently, so a confidence threshold can't catch it.
+- Overall 18/24. When Jev was sure: 17/23 right, and all 6 wrong ones were the under-30-day rows.
+- **Fix (the same lesson as v1):** move "<30 days = skip" into the prep script as a deterministic pre-filter, so Jev never judges it.
+  The miss is low-harm: watch vs skip are both "don't act".
+- **Verdict on courier auto-runs:** pursue precision held on unseen data (5/5), so Jev is safe as a *sorter* once the pre-filter is in place.
+  A "pursue" still only means: research the feasibility. All 5 pursue lots had a buildability or price problem behind the signals.
