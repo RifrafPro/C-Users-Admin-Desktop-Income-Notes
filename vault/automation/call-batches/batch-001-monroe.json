@@ -1,0 +1,19 @@
+{
+  "batch": "001",
+  "status": "AWAITING RICH 'send it'",
+  "carve_out": "#2 listing-agent information calls",
+  "agent_id": "agent_9001m4y56ddnepes6kqrkbmt4r0v",
+  "from_phone_number_id": "phnum_7301m4setya4ecqae6krgy0m0de7",
+  "calls": [
+    {
+      "to_number": "18884556040",
+      "line_type": "toll-free brokerage line (Fathom Realty), not a cell",
+      "dynamic_variables": {
+        "agent_name": "Boris Miric",
+        "property_address": "2148 and 2150 South Monroe Street in Arlington",
+        "known_facts": "Two adjoining vacant parcels, 2,500 sq ft each, zoned R2-7, corner of South Monroe and 22nd Street South. Listed at 274 thousand after several price cuts. Went under contract in late August and came back on market. Estate sale.",
+        "priority_questions": "1) Why did the August contract fall through? 2) Is there a title commitment, and has anyone confirmed the title is insurable (the state owned it in the late 1980s)? 3) Has anyone gotten an Arlington zoning determination that the two lots combined are buildable, or a survey or consolidation plat? 4) Has the estate been through probate, and who signs?"
+      }
+    }
+  ]
+}
