@@ -1,6 +1,6 @@
 {
   "name": "fg-listing-triage",
-  "version": 3,
+  "version": 4,
   "description": "Triage an on-market DC-metro listing for FRESH GROUND teardown-lot wholesaling: pursue, watch, or skip.",
   "model": "typesafe/jev-1.13",
   "state_fields": [
@@ -34,8 +34,8 @@
   "thresholds": {
     "action": 0.7,
     "motivated_seller": {
-      "low": 0.25,
-      "high": 0.75
+      "low": 0.5,
+      "high": 0.5
     }
   },
   "rules": []

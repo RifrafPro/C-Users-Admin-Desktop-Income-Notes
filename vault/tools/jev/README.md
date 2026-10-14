@@ -56,3 +56,13 @@ The v2 copy is saved as `~/.claude/jev-presets/fg-listing-triage.v2.bak.json`. O
   This question duplicates what `action` already encodes. Proposed v4: route on `action` confidence alone.
 - **Caveat [Certain]:** v3 was written after seeing these 19 rows, so they are no longer a held-out test.
   Real proof needs a fresh set: the next sweep's listings, with labels written before running Jev.
+
+## v4, 2026-10-14: route on `action` alone. 19 items, $0.0005, sure 17 / unsure 2
+Change: `motivated_seller` threshold = empty band `{"low":0.5,"high":0.5}`. It still reports a score, but it never
+blocks `_sure`. v3 is backed up at `~/.claude/jev-presets/fg-listing-triage.v3.bak.json`. Output: `heldout-run-v4-2026-10-14.jsonl`.
+- 19/19 labels correct. All 17 watch rows are sure (0.86-1.00). The 2 skips (anchorage, blake-ln) are unsure at 0.34, so they go to Claude.
+- **Gaps still open [Certain]:**
+  1. This set has **zero pursue rows**. Pursue precision, the label that matters most, is untested on unseen data.
+  2. Skip confidence is weak. The skip rule depends on `listing_notes` wording ("remnant", "unbuildable").
+  3. These rows are not held-out any more: v3 and v4 were written after seeing them.
+- **Gate before courier auto-runs:** a fresh sweep with labels written BEFORE running Jev, including some A-rank (pursue) rows.
