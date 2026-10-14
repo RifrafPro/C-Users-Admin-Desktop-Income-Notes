@@ -1,6 +1,6 @@
 # Inbox from Hermes (front desk)
 
-Hermes appends here; it never edits old entries. Claude Code, at session start: process every `Status: OPEN`
+Hermes appends here; it never edits old entries. Claude Code, at session start: process every `Status: FILED 2026-10-14 (Mission Control task "Decide on Skool AI Profit Lab"; Claude recommends pass)`
 entry (file it in the right vault note, add tasks/deals to Mission Control), then change it to `Status: FILED <date>`,
 commit and push. Entry format: `## YYYY-MM-DD HH:MM — <title>` / content / `Status: OPEN`.
 

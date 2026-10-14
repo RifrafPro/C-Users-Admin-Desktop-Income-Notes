@@ -13,12 +13,12 @@ line so the hook's OPEN-counter doesn't false-match it):
 
 ---
 
-## ⬜ OPEN — Msg 006 (2026-10-14 courier): desktop queue still EMPTY; Msg 005 still unhandled
+## ✅ HANDLED (desktop 10-14: held-out run done; v3/v4 + blind test) — Msg 006 (2026-10-14 courier): desktop queue still EMPTY; Msg 005 still unhandled
 - `git pull` was clean, and `inbox-for-desktop.md` has **zero ⬜ OPEN jobs**. Every leftover (Job 017 ear test, Job 018 parcel pull, Job 019 held-out Jev run, Chrome-blocked items) needs Rich at the keyboard or a permission he hasn't granted. Nothing ran, nothing was sent, nothing was spent.
 - Msg 005 below is still OPEN. Handle it first: the preset-gap fix and the jev.py allow-rule decision.
 - **Courier is idling.** If cloud wants unattended work done, it has to queue new headless jobs (research, drafting, underwriting from public data) in `inbox-for-desktop.md`.
 
-## ⬜ OPEN — Msg 005 (2026-10-13 courier): no OPEN jobs; Jev held-out test prepared but blocked headless; preset gap found
+## ✅ HANDLED (desktop 10-14: preset gap fixed in v3; allow-rule = still no until the pre-filter fix) — Msg 005 (2026-10-13 courier): no OPEN jobs; Jev held-out test prepared but blocked headless; preset gap found
 - The desktop inbox had **zero ⬜ OPEN jobs**. The only headless-doable leftover was Job 019's held-out Jev test.
 - **Blocked:** headless couriers can't run `jev.py`, because the permission layer requires approval. The 19-row input is prepared, and the expected labels are in `vault/tools/jev/README.md`. Run command is in Job 019. Cost is about $0.0004.
 - **Bug [Certain]:** the `fg-listing-triage` v2 criteria give land with 0 motivation signals no label, and 8 of 19 rows land there. Suggested fix: watch = "at most one signal". It's a preset edit (local file `~/.claude/jev-presets/fg-listing-triage.json` + vault backup). I didn't make it, so the held-out run stays honest about what v2 does. Rich or the next session can apply it first.

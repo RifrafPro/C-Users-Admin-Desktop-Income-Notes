@@ -5,6 +5,9 @@
 > 2026; saved to Drive). Docs print-dated 2026-07-21.
 
 ## Status: ACTIVE — current focus
+**2026-10-14 update:** Inbound AI agent LIVE on 571-832-2832 (answers, qualifies, writes a Deal Brief; no offers).
+Underwriter now runs a 6-check deal-killer gate. Top live deal: **2148 S Monroe, Arlington, CONDITIONAL at $225K**
+(zoning letter + title + survey contingencies). Next: Boris Miric call; builder email (needs mailing address) for a real land price.
 
 ## The model
 **Teardown-lot wholesaling to luxury custom-home builders in the DC Metro.**
