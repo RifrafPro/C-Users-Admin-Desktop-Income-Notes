@@ -18,6 +18,23 @@ each offer is conditioned on a feasibility contingency.
 | **748 Kentland Dr, Great Falls** (5 ac, R-E) | $2.0M | $1.5-1.6M (comps 5 ac: $1.51M, $2.2M) | ~$1.32-1.41M | **$1.3M** | Long shot | They asked $890-990K from 2017-22, and the 2022 contract at $980K died. Then the ask doubled. Is the 1985/1992 perc still valid? |
 | **650 Walker Rd, Great Falls** (0.5 ac, R-1, 1950 Cape Cod) | $749.9K | $550-650K as a teardown lot | ~$485-570K | ~$550K (likely rejected) | **NO-GO as a teardown** | The house is updated and priced for someone who'll live in it. Two dead contracts: was it the appraisal or the inspection? |
 
+## 🚦 6-check gate results (2026-10-14 PM, these SUPERSEDE the offers above)
+Public records only: Fairfax open GIS (iCARE was down), Arlington datahub API, FEMA NFHL, Va. Code, ACZO. Owner names not pulled.
+**Every pursue lot had a hidden killer that explains its dead contracts. A "pursue" from Jev means "cheap for a reason".**
+
+| Lot | Zoning | Access | Utilities | Flood/RPA | Title | Perc | Gate verdict | Revised offer |
+|---|---|---|---|---|---|---|---|---|
+| **2148+2150 S Monroe, Arlington** | ⚠️ 2,500 sf each; **only buildable consolidated** (R2-7 = 5,000 sf / 50 ft; ACZO §16.1 relief excludes R2-7). Corner setbacks 25 ft → by-right strip ~17 ft wide (≈27 ft w/ Zoning Admin reduction). Precedent: 2146 next door (5,000 sf) has a house | ✅ corner, 2 public streets | ⚠️ likely public (MLS says "Water: Other") | ✅ Zone X, no RPA | ⚠️ **1987 escheat to VA** in chain; estate sale; assessed $452K total | ✅ N/A | **CONDITIONAL** | **$225K**, ceiling ~$260K. Contingent on Zoning Admin buildability letter + consolidation, survey, clean title commitment. Skinny-house lot value [Guessing] $350-450K, so this is still the best spread |
+| **9203 Potomac Ridge, Great Falls** | ✅ R-E, 2.11 ac, "BUILDABLE-AVERAGE" | ⚠️ **UNPAVED** road + recorded ingress easement (likely private drive) | 🚨 **outside sewer area; septic "Applied For Permit" (not approved)**; well | ✅ no flood/RPA/wetlands nearby | ❓ assessed $720K; owner unknown | 🚨 unproven | **CONDITIONAL, renegotiate** | **$700K** contingent on septic permit approval + recorded easement/road agreement; up to ~$850K only if a permit is in hand |
+| **12205 Waples Mill, Oakton** | ⚠️ 17,947 sf vs R-1 36,000 min (platted Penderwood Lot 1; lot-of-record unconfirmed). Assessed **$9K 2018-25** (unbuildable era), now "BUILDABLE-FAIR" $254K | ✅ VDOT road (driveway permit) | 🚨→⚠️ no sewer; septic needed | ✅ Zone X, no RPA | ⚠️ "duress"/"partial interest"/"no consideration" transfers → heirs/estate | ⚠️ no perc record; soils mixed | **CONDITIONAL, long shot** | **$240K** contingent on Health Dept septic permit + lot-of-record letter. The $400K ask will likely reject |
+| 748 Kentland, Great Falls | ✅ R-E 5 ac | ✅ VDOT roads | ⚠️ well + septic | 🚨 **~63% in Chesapeake Bay RPA** (mapped 2003, after the percs) | ⚠️ held since 1985 | 🚨 1985/1992 percs ≠ permit (18-mo validity) | **WALK at $2.0M** | none. Revisit only if a soil evaluation + RPA delineation exist |
+| 650 Walker, Great Falls | ⚠️ 21,780 sf vs R-1 36,000 | ⚠️ driveway on a purchased 2,000 sf easement | ⚠️ septic sized for 3 BR | ✅ | ⚠️ 2008 "duress" sale | ⚠️ no repair area for a 4-5 BR rebuild | **NO-GO (confirmed)** | none |
+
+**Agent questions, in priority order (for the call sheets):**
+- **Monroe:** Why did the August contract die? Has the escheat been cleared and is there a title commitment? Any Zoning Admin determination or consolidation plat? Who has signing authority for the estate?
+- **Potomac Ridge:** What is the septic permit status (permit #, soil report, drainfield design)? Is the road public or private (easement book/page + maintenance agreement)? Why did the Jan 2026 contract die? Is the 2022 house permit transferable?
+- **Waples Mill:** Who did the engineering study, is there a Health Dept permit, why the $9K assessment until 2025, and can all owners sign?
+
 ## All 24 listings: ask, labels, contacts
 | Address | Ask | Expected | Jev v4 | Listing agent | Phone | Email shown | URL |
 |---|---|---|---|---|---|---|---|

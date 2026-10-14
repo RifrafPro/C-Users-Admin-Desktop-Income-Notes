@@ -24,12 +24,12 @@ Source: `vault/research/land-closers-blueprint/` (DD PDF). Every check gets ✅ 
 with the source URL + date. Public records only — no paid pulls without Rich's OK.
 | # | Check | How (NoVA/MD sources) | STOP rule |
 |---|---|---|---|
-| 1 | **Zoning + lot-of-record** | Fairfax: iCARE `icare.fairfaxcounty.gov` (zoning, land-use code, "buildable" flags) + Zoning Ord. min lot (R-E 75,000 sf · R-1 36,000 sf · R-2 18,000 sf · R-3 10,500 sf · R-4 8,400 sf). Arlington: real-estate assessment search (zoning, lot sf) — R-20 20,000 · R-10 10,000 · R-8 8,000 · R-6 6,000 · R2-7 6,000 (2-family 7,000). MD: SDAT + Montgomery zoning. | County codes it non-buildable, or lot is **below min size with no lot-of-record/variance evidence** → 🚨 until a zoning letter says buildable |
+| 1 | **Zoning + lot-of-record** | Fairfax: iCARE `icare.fairfaxcounty.gov` (zoning, land-use code, "buildable" flags) + Zoning Ord. min lot (R-E 75,000 sf · R-1 36,000 sf · R-2 18,000 sf · R-3 10,500 sf · R-4 8,400 sf). Arlington: real-estate assessment search (zoning, lot sf) — R-20 20,000 · R-10 10,000 · R-8 8,000 · R-6 6,000 · **R2-7 5,000 sf + 50 ft avg width** (one-family; ACZO §16.1 substandard-lot relief does NOT cover R2-7); corner lots = 25-ft setback on both streets. MD: SDAT + Montgomery zoning. | County codes it non-buildable, or lot is **below min size with no lot-of-record/variance evidence** → 🚨 until a zoning letter says buildable |
 | 2 | **Legal road access** | iCARE/GIS parcel map + satellite: frontage on a public street, or recorded access easement | No frontage AND no recorded easement → 🚨 (landlocked = 30-60% discount at best) |
 | 3 | **Utilities** | Public sewer vs septic: Fairfax sewer service area / Arlington (all public) / WSSC (MD). Water: Fairfax Water / well. | Not a killer — price it. Septic-only → triggers check 6 |
 | 4 | **Flood / wetlands / RPA** | FEMA `msc.fema.gov` (X ok; AE/AH/V risk) · `wetlands.fws.gov` · **Chesapeake Bay RPA** (Fairfax GIS layer) · EPA EJScreen for prior industrial use | Wetlands >50% of lot → 🚨 walk. RPA/floodplain eating the envelope → ⚠️ priced |
 | 5 | **Title / taxes / owner** | County tax site (delinquency), deed/owner of record vs who we talk to, estate/LLC/heirs flags; prelim title from Eastern Title once under contract | IRS lien, lien > price, heir dispute w/o probate → ⏸ PAUSE (attorney) |
-| 6 | **Perc** (only if no sewer) | Fairfax Health Dept onsite-sewage records for the parcel; listing remarks ("perc approved"/dates) | Recorded perc FAIL → 🚨 walk or soil engineer first; untested → ⚠️ disclose + price |
+| 6 | **Perc** (only if no sewer) | Fairfax Health Dept onsite-sewage records; listing remarks. A septic permit lasts only 18 months (Va. Code §32.1-164.1:1), so old perc results ≠ a permit; MLS "Applied For Permit" ≠ approved. Lots created after 8/2003 need a 100% reserve drainfield (Fairfax Ch. 68.1) | Recorded perc FAIL → 🚨 walk or soil engineer first; untested → ⚠️ disclose + price |
 
 **Go/No-Go from the gate:** all pass → GO to math · 1-2 minor → RENEGOTIATE (price the risk) · access only → GO at
 discount · partial flood → GO w/ disclosure · majority wetlands / recorded perc fail → WALK · title dispute → PAUSE.
@@ -81,3 +81,12 @@ value, each cost line, developer max lot price, land-share %, appraisal-cap fee 
 offer, target fee, and **GO / NO-GO** (NO-GO if the spread can't clear a real fee or a 🚨 is unresolved
 without a price hit). List unknown site-screen items as questions for the seller call.
 Show the arithmetic so Rich can sanity-check. Return a 4-line summary.
+
+## Data access notes (learned 2026-10-14)
+- When iCARE is down, use Fairfax open GIS REST: `services1.arcgis.com/ioennV6PpG5Xodq0` (Tax_Administration_Real_Estate
+  Parcels/Land/Legal/Sales/Assessed_Values, Resource_Protection_Areas, Zoning, Roadways, Sewer_Service_Areas,
+  Potential_Wetlands, Perennial_Streams, Easements). Tax-map IDs need the double space: `0461 03  0001`.
+- Arlington: `datahub-v2.arlingtonva.us/api/RealEstate/Property` (zoning, lot sf, `resourceProtectionAreaInd`, sales).
+- FEMA NFHL: `hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28`.
+- Red flags seen in practice: land assessed near $0 for years ("unbuildable" era), sales coded "duress"/"no consideration"/
+  "partial interest" (heirs/estate), escheat in chain (title insurance), "UNPAVED" road + recorded ingress easement.
