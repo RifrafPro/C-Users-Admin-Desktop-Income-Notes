@@ -5279,3 +5279,405 @@ It also filled the other 18 fields: name, number, address, lead source, timeline
 2. **"Send it" on the builder email.** First I need a mailing address for the footer, and one test email to your Fresh Ground inbox.
 
 Should I save today's session log to the vault now?
+
+**You:** yes, log to the vault
+  - `Skill: vault-save`
+
+**You:** Run the end-of-session save. Do every step; report a ✅/⛔ line for each.
+
+## 1. Write the session log
+Append/create `vault/sessions/<today>.md` (today's date from session start) using
+this template. Reconstruct, don't fabricate — if you don't know something, say so.
+
+```
+# Session — <YYYY-MM-DD>
+
+## Context
+<what the user came in for>
+
+## What we did
+<bullet list of concrete actions/decisions>
+
+## Open threads / blockers
+<anything unfinished, incl. external actions the user must take>
+
+## Where we left off / next steps
+<the exact next action for the following session — keep this section header
+literally "Where we left off" so the vault-load hook can surface it>
+```
+
+## 2. Update project files
+Update the relevant `vault/projects/*.md` (status + next steps). Create a new
+project file if this session started a new workstream.
+
+## 3. Commit
+```
+git add -A
+git commit -m "<concise summary of the session's changes>"
+```
+
+## 4. Push — and VERIFY it actually landed
+```
+git push -u origin <current-branch>   # retry 4x w/ backoff on network errors
+```
+- If push returns **403 / permission denied**: the GitHub integration is
+  read-only. Do NOT claim it saved. Report the block and continue to step 5.
+- Confirm success by checking the push output / remote ref — never assume.
+
+## 4b. Mirror the save to `main` (Rich, 2026-10-12 — option A)
+The working branch stays `claude/income-notes-project-p3l7gm` (hooks, courier, cloud use it).
+`main` is kept as an up-to-date copy:
+```
+git push origin HEAD:main            # fast-forward only — NEVER --force
+git ls-remote --heads origin main    # verify it equals local HEAD
+```
+- If rejected as non-fast-forward, `main` got a commit of its own: do NOT force. Report
+  ⛔ and tell Rich which commits are on `main` only (`git log HEAD..origin/main --oneline`).
+
+## 5. Mirror to Google Drive (idempotent — no duplicates)
+Back up the vault to the Drive folder **"Income Notes Vault"**.
+- FIRST search Drive for an existing folder named exactly "Income Notes Vault".
+  Reuse it. Only create it if zero matches (never create a second one).
+- For each vault file, search for an existing file of the same name in that folder.
+  If it exists, update it in place; if not, create it. Never create duplicates.
+
+## 6. Report
+Print the final status block:
+- ✅/⛔ Session log written
+- ✅/⛔ Project files updated
+- ✅/⛔ Commit
+- ✅/⛔ Push landed (or ⛔ 403 read-only — needs write access)
+- ✅/⛔ `main` mirrored (fast-forward)
+- ✅/⛔ Drive mirror (idempotent)
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git status --short | head; grep -n "^## " vault/projects/wholesaling.md | head -2`
+  - `Write: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\sessions\2026-10-14.md`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && python -I - <<'EOF' p='vault/projects/wholesaling.md' s=open(p,encoding='utf-8').`
+  - `ArtifactData: set`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git add -A && git commit -qm "docs: session 2026-10-14 log (Jev validated, 6-chec`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && grep -n -i "drive" vault/sessions/2026-10-12.md vault/sessions/2026-10-08.md | he`
+
+**Claude:** Git is saved and verified on both branches. Now checking the Google Drive mirror.
+  - `ToolSearch: select:mcp__plugin_small-business_google-drive__search_files,mcp__plugin_small-business_google-drive__create_file`
+  - `mcp__plugin_small-business_google-drive__search_files: title = 'Income Notes Vault' and mimeType = 'application/vnd.google-apps.folder'`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && cat >> vault/sessions/2026-10-14.md <<'EOF' ## Save status - Git: pushed and veri`
+
+**Claude:** Today's session is saved to GitHub, but **the Google Drive backup failed**, so GitHub is the only off-PC copy for today.
+
+- ✅ **Session log written:** `vault/sessions/2026-10-14.md`, with a "Where we left off" section for next time.
+- ✅ **Project files updated:**
+  - `wholesaling.md` status now covers the live inbound agent, the 6-check gate, and Monroe as the top deal.
+  - Desktop messages 005 and 006 are marked handled.
+  - The Skool request from Hermes is filed as a decision task for you on Mission Control.
+- ✅ **Committed:** `5c43bcc`, plus `6258c39` for the save-status note.
+- ✅ **Pushed and confirmed:** GitHub's working branch matches this PC (`6258c39`).
+- ✅ **`main` copy updated** to the same commit, with nothing overwritten.
+- ⛔ **Drive backup failed.** The Google Drive connection errored on its first search ("Incompatible auth server: does not support dynamic client registration"). Nothing was created or duplicated, and the failure is recorded in the session log. To fix it, reconnect Google Drive at claude.ai, or let a cloud session do the backup.
+
+**Next time:**
+1. You call Boris Miric about 2148 S Monroe and paste your notes.
+2. You give me a mailing address and send one test email to your Fresh Ground inbox, then say "send it" on the builder email.
+3. Optional: one test call to check the v1.1 fixes.
+
+**You:** We need to set up the outbound emails and calls to agents
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && grep -n -i "listing agent\|realtor\|agent email\|carve-out\|batch" vault/policies`
+  - `AskUserQuestion`
+
+**You:** [Request interrupted by user for tool use]
+
+**You:** calls cant go out even if they are the listing agent?
+
+**Claude:** Yes, they can go out. I said it too broadly. The restriction depends on **whether it's an AI voice and whether the number is a cell phone**, not on who you're calling.
+
+| Who calls | Number type | OK? | Why |
+|---|---|---|---|
+| **You (a human)** | Any agent, cell or office | ✅ **Yes, anytime** | The TCPA doesn't restrict a person dialing a person. Calling a listing agent about their own listing is ordinary business. |
+| **AI** | **Brokerage office line** (a landline) | ✅ **Yes** [Likely] | The federal artificial-voice rule covers cell phones and *residential* lines. An office landline is neither, and we're asking about a listing, not selling them anything. The AI still says it's an AI up front. |
+| **AI** | **Agent's cell** | ⚠️ **Gray zone** | Artificial-voice calls to a cell need "prior express consent". Some courts treat a number an agent advertises for listing inquiries as consent, others don't. Damages are **$500–1,500 per call**. |
+
+[Likely, not legal advice; a real-estate or telecom attorney could firm this up in one short consult.]
+
+**How that plays out:**
+- **About half of the 24 sweep contacts are already office or broker lines**, for example Long & Foster 703-790-1990, Keller Williams 703-636-7300 and Fathom 888-455-6040. The AI can call those.
+- **For agent numbers that might be cells**, we look up the line type first. A carrier lookup costs about $0.01 per number:
+  - landline → the AI calls
+  - mobile → you call, or the email-first "reply YES" route
+- **Your own consent-first rule from 10-12** is stricter than the law here: "no AI call to anyone who hasn't opted in." It's your rule, so you can loosen it for **office lines of listing agents**. That's the one change I'd make, and I'd keep cells consent-first.
+
+**So the question is:** do you want to allow AI calls to **brokerage office lines** without a prior opt-in? I'd say yes. If so:
+1. I'll write the listing-agent call script (land × agent: why it hasn't sold, why the contract died, the seller's real bottom line, whether assignment or an option is OK).
+2. I'll build an outbound agent with that script.
+3. I'll run the line-type check on the 24 contacts.
+
+The first live calls still wait for your "send it" per batch, plus the caller-ID registration, so we don't show up as "Spam Likely".
+
+**You:** the fresh ground llc email should be the primary for this task. and to clarify If we find a listing like the monroe property, we or more accuratly, you cant call the agent to get info or make offers?
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && sed -n 1,47p vault/policies-ai-autonomy.md`
+
+**Claude:** For Monroe, **the law allows it. Our own rulebook is what stops me today.**
+
+**The law:** Boris's listed number, 888-455-6040, is a toll-free brokerage line, not a cell. An AI that says up front that it's an AI can call it to ask about the listing [Likely].
+
+**Our rulebook** (`vault/policies-ai-autonomy.md`, which you set):
+- **The default:** no call or text to a real person without your "send it".
+- **The only exception is Carve-out #1, which covers *sellers*.** It lets the AI call a seller who opted in and verbally agree at or below the MAO. It says nothing about **listing agents**, and the file's own rule is that nothing is "assumed broader than what was actually agreed".
+
+So right now I can draft the Monroe call sheet, but I can't place the call, even to a broker line.
+
+**Making offers is a separate thing, and I'd keep that with you:**
+- Offers on listed properties go to the agent **in writing**: an NVAR contract plus proof of funds. A verbal number on a call doesn't lock anything up. It just tells the seller our ceiling.
+- Your sheets already say "no offer on the first call". Price talk is where an AI does the most damage if it slips.
+
+**My proposal: add Carve-out #2, "Listing-agent information calls".** The AI may:
+1. **Call listing agents to gather information** (why it hasn't sold, why the contract died, title, zoning, flexibility, whether assignment is OK).
+   - Brokerage office or toll-free lines: always.
+   - Agent cells: only after the agent says YES to our email.
+2. Disclose that it's an AI in the first sentence. Never state a price, never make an offer, never agree to anything.
+3. Run only on a **batch you approved** ("send it" on a list of lots), not on its own.
+4. End every call with a Deal Brief to you. **Offers stay with you**: you approve a written offer, and I prepare the NVAR forms.
+
+**Also noted:** freshgroundllc.com is the primary email for agent outreach. To send from it I need that Gmail connected. Right now I'm only connected to richfabiani@gmail.com.
+
+**Two answers I need from you:**
+1. **"Approve carve-out 2"** as written above, or tell me what to change. I'll log it in the policy file. Then I'll build the listing-agent call script and outbound agent, and the first batch can be Monroe → Boris.
+2. **Connect the Fresh Ground Gmail.** Do you want to add rich@freshgroundllc.com as a second Gmail connection at claude.ai (Settings → Connectors)? Or would you rather I write the emails and you send them yourself from that account?
+
+**You:** approve both carve out 1 and 2
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && python -I - <<'EOF' p='vault/policies-ai-autonomy.md' s=open(p,encoding='utf-8').`
+
+**Claude:** Both carve-outs are logged in the policy file. Now building the listing-agent call script and the outbound agent.
+  - `Bash: cd "C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratch`
+  - `Bash: K=$(grep -o 'ELEVENLABS_API_KEY=.*' ~/.elevenlabs.env | cut -d= -f2 | tr -d '\r"'); curl -s -H "xi-api-key: $K" https://api.elevenlabs.io/v1/convai/agents/agent`
+
+**Claude:** Now writing the Monroe batch file and saving everything to the vault.
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+
+**Claude:** Both carve-outs are approved and logged (commit `0cfd24a`), and the agent-calling system is built. **Nothing has called anyone yet.** Each batch waits for your "send it".
+
+**Policy as logged** (`vault/policies-ai-autonomy.md`):
+- **Carve-out #1 (sellers):** re-confirmed. A seller opts in by replying YES to an email or by calling us; texting stays off. The AI may verbally agree only at or below that deal's MAO, and the contract still needs your "send it".
+  - ⚠️ I added one flag, which you haven't adopted: our MAOs are still estimates until a builder gives us a real land price. I'd only let the AI agree to prices on deals with a builder-confirmed number. Your call.
+  - **No AI negotiates yet.** The inbound agent only qualifies.
+- **Carve-out #2 (listing agents):**
+  - It gathers information only: never a price, never an offer, never agrees to anything.
+  - Office and toll-free numbers are always OK. Cells only after a YES to our email.
+  - Calls run only from batches you approve, and each call produces a Deal Brief.
+  - Fresh Ground email is the primary channel for agent outreach.
+
+**What's built:**
+
+| Piece | Status |
+|---|---|
+| **"Listing-Agent Calls v0"** agent | ✅ Created. Opens with: "Hi, is this Boris? This is the AI assistant for Rich Fabiani at Fresh Ground, on a recorded line. I'm calling about your listing at…" It asks the lot-specific questions first, then why the contract died, documents, the seller's priority and deadline, who signs, assignment and a 60-day close, and competing offers. It refuses price questions, leaves **one** voicemail and hangs up, and fills a **13-field Deal Brief**. |
+| Inbound agent | ✅ Now recognizes when an **agent calls back** and switches to the agent questions |
+| **Batch 001: Monroe → Boris Miric** | ✅ Ready: `vault/automation/call-batches/batch-001-monroe.json`. Toll-free Fathom line 888-455-6040, with our 4 priority questions (why the August deal died, title, zoning letter, probate). |
+
+**Before the real call to Boris, in this order:**
+1. **A practice run on you (2 minutes).** Say "test it" and the agent calls your **Google Voice** line. You play Boris: be a bit pushy, ask "what's your buyer's number?", and try to send it to voicemail once.
+   - Heads-up: Claude Code's safety check blocked one ElevenLabs action earlier, so it may block me from placing calls too. If it does, I'll give you a one-click way to start the call yourself.
+2. **Register the caller ID (you, 5 minutes):** go to **freecallerregistry.com** and register 571-832-2832 as "FRESH GROUND". That lowers the chance of showing up as "Spam Likely".
+3. **"Send it" on batch 001.** Then the AI calls Boris and you get the Deal Brief.
+
+**Fresh Ground email** still needs to be connected before agent emails can go out from it. At claude.ai, go to Settings → Connectors → Gmail and sign in as rich@freshgroundllc.com.
+
+Want to start with the practice call?
+
+**You:** yes lets test it
+  - `Bash: cd "C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratch`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && mkdir -p tools && cat > tools/place-call.sh <<'EOF' #!/bin/sh # Place ONE ElevenL`
+  - `Write: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\automation\call-batches\test-gv-boris-roleplay.json`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git add tools/place-call.sh vault/automation/call-batches/test-gv-boris-roleplay.`
+
+**Claude:** I couldn't place the call myself. Claude Code's safety check blocked it as a "real-world transaction", the same block as earlier. So I've made it a one-line action for you to start.
+
+**Step 1.** Have your **Google Voice** line ready to answer (916-629-4008).
+
+**Step 2.** In the **same box where you type messages to me**, paste this exactly. It starts with `!`, which means it runs on your PC as you:
+
+```
+! bash tools/place-call.sh vault/automation/call-batches/test-gv-boris-roleplay.json
+```
+
+**Step 3.** Press **Enter**. Within a few seconds your Google Voice phone rings from 571-832-2832.
+
+**Step 4.** Answer as **Boris**. It should open: *"Hi, is this Boris Miric? This is the AI assistant for Rich Fabiani at Fresh Ground, on a recorded line. I'm calling about your listing at 2148 and 2150 South Monroe…"*
+- Answer a couple of its questions. Make something up about why the August contract died.
+- Push it: **"So what's your buyer willing to pay?"** It should refuse.
+- Hang up whenever you like.
+
+**Step 5.** Type **"done"**. I'll pull the transcript and the 13-field Deal Brief and score it.
+
+**Later, optional:** if you want me to place approved batches myself instead of you running this line each time, you can add a permission rule for `bash tools/place-call.sh` in your Claude Code settings. Your "send it" on each batch still applies either way.
+
+**You:** <bash-input> bash tools/place-call.sh vault/automation/call-batches/test-gv-boris-roleplay.json</bash-input>
+
+**You:** <bash-stdout>{"success":true,"message":"Outbound call initiated","conversation_id":"conv_9701m4y5myafe9evn78zn8wwdp74","sip_call_id":"SCL_VAEpygxwrh4J"}</bash-stdout><bash-stderr></bash-stderr>
+  - `Bash: K=$(grep -o 'ELEVENLABS_API_KEY=.*' ~/.elevenlabs.env | cut -d= -f2 | tr -d '\r"'); for i in $(seq 1 40); do S=$(curl -s -H "xi-api-key: $K" https://api.elevenl`
+
+**Claude:** The call started successfully. Your Google Voice phone should be ringing now. Answer as Boris, and I'll pull the transcript the moment the call ends.
+
+**You:** <task-notification>
+<task-id>b1g4j48j0</task-id>
+<tool-use-id>toolu_01XiPZg75ntirEkpwGvBiTGY</tool-use-id>
+<output-file>C:\Users\Admin\AppData\Local\Temp\claude\C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes\762d1091-f9fd-465a-81ec-324c4c7bee05\tasks\b1g4j48j0.output</output-file>
+<status>completed</status>
+<summary>Background command "Wait for the practice call to finish" completed (exit code 0)</summary>
+</task-notification>
+  - `Bash: cat "C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/tasks/`
+
+**Claude:** **The voicemail test passed.** The call went to your Google Voice voicemail, so we got that test first:
+
+> 🤖 "Hi, is this Boris Miric? This is the AI assistant for Rich Fabiani at Fresh Ground, on a recorded…"
+> 📼 *(your voicemail greeting)*
+> 🤖 "Hi Boris Miric, this is the AI assistant for Rich Fabiani at Fresh Ground, calling about your listing at 2148 and 2150 South Monroe Street in Arlington. Rich is interested. Please call back at 571-832-2832. Thanks." *(hangs up)*
+
+- ✅ **One short message, then it hung up**: 30 seconds and 229 credits. Your 10-12 test call's voicemail ran 238 seconds and kept talking.
+- ✅ It detected the voicemail and left the right callback number.
+- ✅ The Deal Brief correctly says it went to voicemail.
+- ⚠️ Two small things for v0.1:
+  - It said **"Hi Boris Miric"**. "Hi Boris" sounds more human.
+  - It wrongly flagged "AI objection" on a voicemail.
+
+**Now the live test.** Run the same line again, and this time **pick up quickly** and play Boris:
+
+```
+! bash tools/place-call.sh vault/automation/call-batches/test-gv-boris-roleplay.json
+```
+
+Answer it, give it a story about the August contract, then ask: **"What's your buyer willing to pay?"** Hang up whenever, and type **"done"**.
+
+The "AgentKeeper warning" is the same expected one as before: it's my command sending your ElevenLabs key to ElevenLabs itself to read the call log.
+
+**You:** It again went straight to voicemail
+
+**Claude:** That's the problem we found on 10-12, not the agent. Your **Google Voice forwards to your Samsung, and the Samsung rejects the 571 number**, so Google Voice sends the call straight to voicemail. The AI did its part correctly again.
+
+**Fix for this test (2 minutes): answer the call in your browser instead of on the phone.**
+
+1. In Chrome, open **voice.google.com** (your Google Voice account).
+2. Click the **⚙ gear** (Settings) at top right, then **Calls** (sometimes "Devices and numbers").
+3. Make sure **"Web"** is turned on for incoming calls. If your browser asks to use the microphone, click **Allow**.
+4. **Leave that tab open** with your headset on.
+5. Run the same line again:
+```
+! bash tools/place-call.sh vault/automation/call-batches/test-gv-boris-roleplay.json
+```
+6. The call rings **in the Google Voice tab**. Click **Answer** and play Boris.
+
+**The permanent fix, still on your list:** stop the Samsung blocking 571-832-2832. In the Samsung Phone app, go to Settings → Block numbers, and also Caller ID & spam protection. Registering the number at freecallerregistry.com helps too. It matters for real agents as well: if *their* phones treat the number like yours does, our calls go to voicemail. That's why the caller-ID registration should happen **before** the real call to Boris.
+
+**You:** but the Agent left a message
+  - `Bash: K=$(grep -o 'ELEVENLABS_API_KEY=.*' ~/.elevenlabs.env | cut -d= -f2 | tr -d '\r"'); ID=$(curl -s -H "xi-api-key: $K" "https://api.elevenlabs.io/v1/convai/conver`
+
+**Claude:** Yes, and that's the system working. The voicemail half is now **tested and passing**: one short message with the callback number, then it hangs up. With busy agents, voicemail is probably the most common real outcome, so this part matters.
+
+What we **haven't tested is a live conversation**: the questions, how it handles pushback, and refusing "what's your buyer's number?". That only happens if someone picks up, and your phone can't ring for this number yet. You have two choices:
+
+1. **Test the live conversation first** (my recommendation, about 5 minutes): answer in the Google Voice browser tab (steps in my last message), and play Boris.
+2. **Skip it and go live:** call Boris for real. If he picks up, the conversation part is untested on a real agent. The agent follows the same rules as the inbound agent, which passed your tests, so the risk is moderate. But a rough first call to a real agent can't be redone.
+
+Whichever you pick, register the caller ID at freecallerregistry.com first. Boris's phone may flag the number just like yours does.
+
+**You:** the setting seem correct
+  - `Bash: cd "C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratch`
+  - `Read: C:\Users\Admin\AppData\Local\Temp\claude\C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes\762d1091-f9fd-465a-81ec-324c4c7bee05\scratchpad\`
+
+**You:** [Image: original 2400x1157, displayed at 2000x964. Multiply coordinates by 1.20 to map to original image.]
+
+**Claude:** I can see your screen, and **there's no Google Voice tab open**. The top window is on google.com/chrome and the bottom one is Gmail. Google Voice only rings in the browser while its own tab is open, so the call had nowhere to ring except your phone, which sends it to voicemail.
+
+**Do exactly this:**
+
+1. In the **top** Chrome window, click the address bar, type **voice.google.com**, and press **Enter**. Your Google Voice inbox opens. **Leave this tab open.**
+2. Click the **⚙ gear** at top right. Scroll to **Security** and turn **"Filter spam" OFF**. Google Voice may otherwise treat the 571 number as spam and send it straight to voicemail, without ringing.
+3. Click back to the Google Voice inbox tab. If a bar asks for **microphone** access, click **Allow**.
+4. In the box where you type to me, run:
+```
+! bash tools/place-call.sh vault/automation/call-batches/test-gv-boris-roleplay.json
+```
+5. Within about 10 seconds, the **Google Voice tab** should show an incoming call. Click **Answer** and play Boris.
+
+If it still goes to voicemail with the tab open and spam filtering off, tell me. Then I'll turn it around: I give you a phone number to dial, so you can test the conversation by calling in instead of waiting for it to reach you.
+
+**You:** look again
+  - `Bash: cd "C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratch`
+  - `Read: C:\Users\Admin\AppData\Local\Temp\claude\C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes\762d1091-f9fd-465a-81ec-324c4c7bee05\scratchpad\`
+
+**Claude:** **Google Voice is open now, and it's almost ready.** It shows **"Receiving calls"** and the **Web** device, which is good. There's one problem, the red banner: *"Your browser might prevent calls from ringing."*
+
+**Fix the banner:**
+1. Click the **little icon at the left end of the address bar**, just left of `voice.google.com`. It looks like two sliders.
+2. Click **Site settings**.
+3. Find **Sound** and set it to **Allow**. If **Microphone** is there, set it to **Allow** too.
+4. Close that settings tab and go back to the **Voice** tab. Press **F5** to refresh it.
+
+**Turn off spam filtering:**
+5. In the Voice settings, click **Security** in the left menu and turn **"Filter spam" OFF**.
+
+**Then test:**
+6. **Stay on the Voice tab.** In the box where you type to me, run:
+```
+! bash tools/place-call.sh vault/automation/call-batches/test-gv-boris-roleplay.json
+```
+7. When the **Voice tab** rings, click **Answer** and play Boris.
+
+**You:** I dont see voice setting
+
+**Claude:** You're already on the Google Voice settings page. It's the one in your top window with **"Settings"** at the top left. Do just this:
+
+1. On that page, look at the **left menu**: Account, Messages, Calls, Voicemail, Web notifications, Payments, **Security**.
+2. Click **Security**.
+3. Find **"Filter spam"** and switch it **OFF**.
+4. Click the **X** next to "Settings" at the top left to go back to the Voice inbox. **Leave that tab open.**
+
+Skip the browser sound setting for now. Even if it doesn't ring out loud, an **incoming call box should still pop up** in that tab.
+
+5. Run the test call again:
+```
+! bash tools/place-call.sh vault/automation/call-batches/test-gv-boris-roleplay.json
+```
+6. Watch the Voice tab for the call, click **Answer**, and play Boris.
+
+**You:** Dont see any of that
+
+**Claude:** Let's stop fighting Google Voice. There's a simpler way to test the conversation: **talk to the agent directly in your browser, with no phone involved.** First I'll load the Monroe details into the agent so the browser test sounds exactly like the real call.
+  - `Bash: cd "C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratch`
+
+**Claude:** The Monroe details are loaded. Now test it in the browser, no phone needed:
+
+1. In the **top** Chrome window, click the address bar, paste this, and press **Enter**:
+   **`elevenlabs.io/app/agents/agents/agent_9001m4y56ddnepes6kqrkbmt4r0v`**
+   You'll see **"FRESH GROUND Listing-Agent Calls v0"** at the top.
+2. At the top right, click **Preview**. It's the white button next to "Architect".
+3. Click **Call** or **Start** (or the microphone button). If Chrome asks to use your microphone, click **Allow**.
+4. The AI speaks first: *"Hi, is this Boris Miric?…"* Talk back through your headset as Boris:
+   - Answer a couple of questions and make up why the August contract died.
+   - Ask: **"What's your buyer willing to pay?"**
+5. Click **End** when you're done, then type **"done"**. I'll pull the transcript and the Deal Brief and score it.
+
+**You:** that was weak. maybe my fault
+  - `Bash: K=$(grep -o 'ELEVENLABS_API_KEY=.*' ~/.elevenlabs.env | cut -d= -f2 | tr -d '\r"'); ID=$(curl -s -H "xi-api-key: $K" "https://api.elevenlabs.io/v1/convai/conver`
+  - `Bash: cd "C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratch`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && python -I - <<'EOF' import json for p,path in [('test','vault/automation/call-bat`
+
+**Claude:** Mostly not your fault. The transcript shows the agent was **stiff, not wrong**:
+
+| What was weak | Example from the call |
+|---|---|
+| **Read the questions word for word, like a form** | "Has there been a title commitment, and has anyone confirmed that the title is insurable, especially since the state owned it in the late nineteen eighties?" No real person talks like that. |
+| **Gave away our research** | Mentioning the state's 1980s ownership tells the agent we've dug deep. That's leverage we should keep. |
+| **Didn't dig** | You: "They just backed out." It just moved on, when the useful follow-up was "Any idea why: financing, inspection, something about the lot?" |
+| **Repeated itself** | It asked the zoning question twice, word for word, when your answer was garbled. |
+| **Missed an odd answer** | You said "I'm the sole owner" while playing the *agent*. A person would have asked "Oh, you own it too?" |
+| **Never reached the most important question** | Whether the seller would accept an assignable contract. |
+
+**Your part:** you answered as the owner partway through, which mixed up the roles. That's useful, though, because a real agent can say surprising things too.
+
+**v0.1 is already live** (commit `1b9a221`):
+- **Short, natural opener:** "Hi, is this Boris? This is the AI assistant for Rich Fabiani at Fresh Ground, on a recorded line. Got a quick minute about your listing on Monroe Street?"
+- **Questions in its own words, 15 words max:** "Any title issues come up with the last buyer?"
+- **Never reveals our research.** It asks open questions and lets the agent fill in the details.
+- **Digs once on vague answers**, rephrases instead of repeating, and asks about odd answers.
+- **Always gets to the assignment question.**
+- Short human reactions: "Ah, okay, that happens." / "Makes sense."
+
+**Try it again in the Preview** (same page; refresh first with **F5**, then click **Preview**). Play a *real* agent this time: a little busy, a little guarded. Ask "what's your buyer's number?" at some point. Then type "done".

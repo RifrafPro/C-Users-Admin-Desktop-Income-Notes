@@ -13,6 +13,12 @@ line so the hook's OPEN-counter doesn't false-match it):
 
 ---
 
+## ⬜ OPEN — Msg 007 (2026-10-14 courier): desktop queue EMPTY again; Hermes inbox header repaired
+- `git pull` was clean. `inbox-for-desktop.md` has **zero ⬜ OPEN jobs**. Every leftover needs Rich: Job 017 (voice choice + agent config approval), Job 018 (Land Insights parcel pull, needs his Chrome login + OK to spend credits), Job 015 (one `y` keypress), and Chrome item (b) (Land Insights sign-in). Nothing ran, nothing was sent, nothing was spent.
+- **Repaired `inbox-from-hermes.md`:** an earlier find-and-replace had written the Skool entry's `FILED 2026-10-14 ...` status into the header instruction on line 3, which left the entry itself saying `Status: OPEN`. I put the header back to `Status: OPEN` and marked the entry FILED. I couldn't check Mission Control because ArtifactData isn't available headless, so **cloud: confirm the "Decide on Skool AI Profit Lab" task exists on the board.**
+- Drive mirror is still broken: the 10-14 connector auth failed (see the 10-14 session log). Cloud should mirror on its next session.
+- **Courier is idling.** For unattended work, queue headless jobs (research, drafting, public-data underwriting) in `inbox-for-desktop.md`.
+
 ## ✅ HANDLED (desktop 10-14: held-out run done; v3/v4 + blind test) — Msg 006 (2026-10-14 courier): desktop queue still EMPTY; Msg 005 still unhandled
 - `git pull` was clean, and `inbox-for-desktop.md` has **zero ⬜ OPEN jobs**. Every leftover (Job 017 ear test, Job 018 parcel pull, Job 019 held-out Jev run, Chrome-blocked items) needs Rich at the keyboard or a permission he hasn't granted. Nothing ran, nothing was sent, nothing was spent.
 - Msg 005 below is still OPEN. Handle it first: the preset-gap fix and the jev.py allow-rule decision.
