@@ -5681,3 +5681,44 @@ Skip the browser sound setting for now. Even if it doesn't ring out loud, an **i
 - Short human reactions: "Ah, okay, that happens." / "Makes sense."
 
 **Try it again in the Preview** (same page; refresh first with **F5**, then click **Preview**). Play a *real* agent this time: a little busy, a little guarded. Ask "what's your buyer's number?" at some point. Then type "done".
+
+
+## Session eb12e194 — 2026-10-14 18:01
+
+**You:** Courier run (headless). Read vault/inbox-for-desktop.md. Execute every OPEN job that can be done headlessly, mark each DONE with a one-line result. Write anything cloud Claude needs to know into vault/inbox-for-cloud.md as an OPEN msg. Obey CLAUDE.md: draft-only, no sends, no purchases. Finish with: git add -A, git commit, git push.
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git pull 2>&1 | tail -3 && grep -n "OPEN" vault/inbox-for-desktop.md | head -50`
+
+**Claude:** The working directory is already the repo; run without cd.
+  - `Bash: git pull 2>&1 | tail -3; grep -n "OPEN" vault/inbox-for-desktop.md | head -50`
+  - `Grep: ⬜|^## |^###`
+
+**Claude:** No job carries the ⬜ OPEN marker. Checking the in-progress ones for leftover headless steps.
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-desktop.md`
+
+**Claude:** No job is marked ⬜ OPEN. Every partial job is waiting on Rich (sign-in, keypress, credits, or voice config approval). I'll check the Hermes inbox, which the standing order also covers.
+  - `Bash: grep -n "Status: OPEN" vault/inbox-from-hermes.md; echo ---; grep -nE "^## " vault/inbox-for-cloud.md | tail -5; echo ---; git status --short; git log -1 --form`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-from-hermes.md`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-from-hermes.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-from-hermes.md`
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+  - `Bash: git add -A && git commit -q -m "chore: courier 10-14 — no OPEN jobs; repair Hermes inbox header; Msg 007 to cloud Co-Authored-By: Claude Opus 5.5 <noreply@anthr`
+
+**Claude:** This run did no new work, because `vault/inbox-for-desktop.md` has no jobs marked ⬜ OPEN. Every leftover job needs Rich at the keyboard, so nothing was marked DONE, and nothing was run, sent or spent.
+
+**What's waiting on Rich:**
+- **Job 017:** pick a new voice, and approve the agent setting changes (voicemail detection, hang-up, silence timeout).
+- **Job 018:** the Land Insights parcel pull. It needs his Chrome login and his OK to spend credits.
+- **Job 015:** one `y` + Enter in Claude Eyes.
+- **Chrome item (b):** sign in to the Land Insights extension.
+
+**One fix I made:** `vault/inbox-from-hermes.md` had been damaged by an earlier find-and-replace. The Skool entry's "FILED 2026-10-14" status had landed in the instructions at the top of the file, and the entry itself still said `Status: OPEN`. I put both lines back where they belong. I couldn't confirm the matching Mission Control task, because the board isn't reachable from a headless run.
+
+**Message for cloud:** I added Msg 007 to `vault/inbox-for-cloud.md` as OPEN. It asks cloud to:
+- confirm that Skool task is on the board;
+- mirror the vault to Drive, since the 10-14 mirror failed;
+- queue headless jobs if it wants the courier to do anything unattended.
+
+**Pushed:** commit 5ad328c is on the working branch and the push succeeded. I did not fast-forward `main` this time; earlier saves did.
+
+The courier keeps waking up with nothing to do. Until cloud queues headless work (research, drafting, underwriting from public data), each run only re-checks the inboxes.
