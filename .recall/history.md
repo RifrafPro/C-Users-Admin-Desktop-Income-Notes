@@ -6129,3 +6129,65 @@ The offer will make it a 45-day feasibility deal you can assign to a builder. If
 3. Before you leave: PC on, sleep set to "Never", this window open. The watcher alerts you through your phone's calendar.
 
 Get some sleep.
+
+**You:** ok send the offer email. so I have something to tak to him about. show me the overview email so I know what I'm taling about in the morning.
+  - `ToolSearch: select:mcp__claude_ai_Gmail__send_message`
+  - `mcp__claude_ai_Gmail__send_message: Offer: 2148 & 2150 S Monroe St (both lots) - attn Boris Miric`
+  - `ToolSearch: select:mcp__claude_ai_Gmail__create_draft`
+  - `mcp__claude_ai_Gmail__create_draft: Offer: 2148 & 2150 S Monroe St (both lots) - attn Boris Miric`
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && cat >> vault/sessions/2026-10-15.md <<'EOF' ## Night 10-15: Monroe offer - Rich`
+
+**Claude:** **The email has NOT gone out.** Claude Code's safety check blocked me from sending it ("Real-World Transactions"), the same block that stops me placing calls. I didn't work around it.
+
+It's waiting as a **draft in your Gmail**, so sending it takes one tap:
+1. Open Gmail on your phone (richfabiani@gmail.com).
+2. Tap **Menu (☰) → Drafts**.
+3. Open **"Offer: 2148 & 2150 S Monroe St (both lots)"**, read it, and tap **Send**.
+
+I used the numbers I recommended, since you didn't give others: **$255K, $2,500 deposit.** Change them in the draft before sending if you want.
+
+It goes to **admin@badaliangroup.com**, the team inbox, because we don't have Boris's direct email. The subject line says "attn Boris Miric".
+
+**The email, as written:**
+
+> **Subject:** Offer: 2148 & 2150 S Monroe St (both lots) - attn Boris Miric
+>
+> Hi Boris,
+>
+> I'm Rich Fabiani with Fresh Ground. I buy infill lots in Arlington and I'd like to make an offer on both parcels at 2148 and 2150 S Monroe St.
+>
+> Proposed terms:
+> - Price: $255,000 for both lots, cash, as-is
+> - Buyer: Rich Fabiani and/or assigns
+> - Deposit: $2,500, held by Eastern Title & Settlement (Arlington)
+> - Feasibility: 45 days (zoning confirmation that the combined lots are buildable, survey, and title), deposit refundable within that period
+> - Settlement: within 30 days after feasibility, at Eastern Title
+>
+> A few questions so I can move quickly:
+> 1. What happened with the August contract?
+> 2. Is there a title commitment yet, and is the estate through probate? Who signs for the estate?
+> 3. Has anyone obtained a zoning determination or a survey for the two lots combined? Would the estate share anything the last buyer left behind?
+>
+> I'm not represented by an agent. If the estate is open to these terms, could you prepare the Virginia land contract for my signature? Happy to talk by phone as well.
+>
+> Thanks,
+> Rich Fabiani · Fresh Ground · (571) 832-2832
+
+**If Boris calls you, what to know:**
+
+- **The property:** two side-by-side empty lots of 2,500 sq ft each (5,000 total), on the corner of S Monroe and 22nd St S. Asking is $274K, cut 9 times from $699K. A buyer went under contract in August and backed out. It's an estate sale.
+- **The question everything hangs on:** neither lot is buildable alone. The zoning there requires 5,000 sq ft, so the lots only work combined. Your 45-day feasibility period is there to get the county to confirm that.
+- **Why we can pay this** (keep it to yourself): builders paid $567–730K for buildable lots nearby this past year.
+- **Never say these to Boris:**
+  - The builder prices above.
+  - Verity's name. They're building across the street at 2145 S Monroe.
+  - That the state owned the land in 1987.
+  - That we plan to assign the contract to a builder. "And/or assigns" is in the offer; if he asks, say it's standard.
+- **If he pushes on price:** "If title and zoning check out, I can move fast." You may go up to **$274K** (full asking). Never above that without talking to me first.
+- **If he asks who you are:** "I'm newer to lots. I do my homework on zoning and title before I commit, so the estate won't lose another buyer at the last minute."
+- **What to get from him:** why the August deal died, whether probate is done, who signs, and his direct email.
+- **If he says yes:** ask him to send the contract for your e-signature. The watcher puts a reminder on your phone's calendar when it arrives (keep this window open).
+
+If you want me to send emails myself in the future, you'd need to add a permission rule in Claude Code's settings for the Gmail send action. I can walk you through it. That's your call, not urgent. The block is logged in the vault.
+
+Get some sleep. Send the draft in the morning.
