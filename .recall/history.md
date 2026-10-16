@@ -5770,3 +5770,140 @@ These runs will stay empty until someone adds work the PC can do on its own. Eit
 - Nothing was sent or bought.
 
 **Recommendation:** pause the courier or give it real work. The work it can do alone is research, drafting, and underwriting from public data. Until one of those is queued, every run will be empty. The deals are waiting on you: the Boris Miric call about 2148 S Monroe, and a mailing address so the builder email can go out.
+
+**You:** This session is being continued from a previous conversation that ran out of context. The summary below covers the earlier portion of the conversation.
+
+Summary:
+## Who / rules in force
+Rich Fabiani (richfabiani@gmail.com), FRESH GROUND teardown-lot wholesaling in the DC metro. The vault repo is at `C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes`, branch `claude/income-notes-project-p3l7gm`, mirrored fast-forward to `main`. Commit footer: `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
+
+**Standing rules:**
+- Advisor rules from ~/.claude/CLAUDE.md:
+  - no opening agreement
+  - mark confidence as [Certain] / [Likely] / [Guessing]
+  - put the uncomfortable answer first
+  - give baby-step procedures
+- Send-gate: nothing goes to a real person without Rich's "send it".
+- Consent-first, email-first outreach. No cold SMS.
+- Log failures in the vault.
+- Commit and push after work, and verify it landed.
+- Rich struggles with terminal and UI instructions. Use baby steps, take screenshots (PIL ImageGrab of the screen) to see what he sees, and verify results via the API.
+
+## What got done today (2026-10-14)
+All of this is logged in `vault/sessions/2026-10-14.md`.
+
+**Jev listing triage**
+- Validated, and preset v4 is live.
+- Blind test: pursue 5/5, watch 12/12. The "<30 days = skip" rule fails and needs a script pre-filter.
+
+**Deals**
+- Fresh 24-listing sweep: `vault/deals/fresh-sweep-2026-10-14.md`.
+- The underwriter (`.claude/agents/underwriter.md`) now runs a 6-check deal-killer gate.
+- Gate results:
+  - **2148 S Monroe:** CONDITIONAL. Offer $225K, ceiling ~$260K. Contingent on a zoning letter, survey and title.
+  - **9203 Potomac Ridge:** CONDITIONAL, $700K. Septic only "applied for".
+  - **Waples Mill:** long shot, $240K.
+  - **Kentland:** WALK (63% RPA).
+  - **Walker:** NO-GO.
+
+**Research**
+- FreedomSoft webinar notes: `vault/research/freedomsoft-ai-agent-webinar-2026-10-14.md`.
+- Land Closers Blueprint: `vault/research/land-closers-blueprint/`.
+
+**Call sheet and email draft**
+- `vault/call-sheets/2148-s-monroe-agent-call-2026-10-14.md`
+- `vault/call-sheets/builder-intro-email-2026-10-14.md`: 5 builders, send-gated. Needs a mailing address for the CAN-SPAM footer and an inbound test of rich@freshgroundllc.com.
+
+**Inbound voice agent: live on 571-832-2832**
+- Route: VoIP.ms SIP URI → ElevenLabs `phnum_4301m4s14cmae3xak2b9smzxchv8` (inbound ON) → agent `agent_8401m4y043cqed3s3ygyxd7kb5y3` ("FRESH GROUND Inbound v0", gemini-2.5-flash).
+- Has 19 data-collection fields for an auto Deal Brief.
+- Test calls passed. v1.1 adds: never skip mortgage/taxes; ask why-not-sold when listed.
+- Also has an agent-caller mode.
+- Prompt: `vault/automation/inbound-agent-v0-prompt.md`.
+
+**Policy**
+- `vault/policies-ai-autonomy.md`.
+- Rich said **"approve both carve out 1 and 2"**:
+  - #1 re-affirmed (seller verbal agreement ≤ MAO; email-YES opt-in).
+  - #2 is listing-agent INFO calls only: no price or offers; office/toll-free lines allowed; cells only after an email YES; only on batches Rich approved; Deal Brief afterwards.
+- Rich: **"the fresh ground llc email should be the primary for this task"** (agent outreach from rich@freshgroundllc.com). It is not connected yet; only richfabiani@gmail is.
+
+**Listing-agent outbound agent**
+- `agent_9001m4y56ddnepes6kqrkbmt4r0v` ("FRESH GROUND Listing-Agent Calls v0").
+- Tools: end_call and voicemail_detection. 13 data fields.
+- Placeholders are set to the Monroe values (agent_name "Boris", property_short "Monroe Street").
+- Prompt: `vault/automation/listing-agent-calls-v0-prompt.md`.
+
+**Calling files**
+- Batch file: `vault/automation/call-batches/batch-001-monroe.json` (to 18884556040, Boris Miric at Fathom, toll-free broker line). Status "AWAITING RICH 'send it'".
+- Test file: `vault/automation/call-batches/test-gv-boris-roleplay.json` (to Rich's Google Voice, 19166294008).
+- Outbound uses `phnum_7301m4setya4ecqae6krgy0m0de7`.
+- Rich places calls himself with `! bash tools/place-call.sh <json>`.
+
+**Blocks**
+- The Claude Code auto-mode classifier blocks Claude's ElevenLabs phone-number PATCH and outbound-call API calls ("Real-World Transactions"). Do not work around it. Rich runs the `!` command or uses the UI.
+- The AgentKeeper "credential_exfil" warning fires when the ElevenLabs key is sent to api.elevenlabs.io. That is expected.
+
+**Mission Control** (https://claude.ai/artifact/4axqgbzcnFUauf7Rr2PyQc, ArtifactData) is updated: deals, tasks (Monroe call, builder email, Skool decision), and the inbound task marked done.
+
+**Drive mirror** failed: connector auth error "does not support dynamic client registration". This is logged in the vault.
+
+## Testing of the listing-agent agent
+- Two GV test calls went to voicemail. Rich's Samsung rejects the 571 number, and GV forwards to it.
+- The voicemail behavior passed: one short message, hangs up after 30 s.
+- The GV web-ringing setup confused Rich and was abandoned.
+- He then tested in the ElevenLabs browser Preview (`elevenlabs.io/app/agents/agents/agent_9001m4y56ddnepes6kqrkbmt4r0v` → Preview).
+- Rich: **"that was weak. maybe my fault"**.
+- Conversation `conv_8001m4y7kggafqgs91f7zzsb60jy`:
+  - It was robotic and read the long priority questions verbatim, including revealing "the state owned it in the late 1980s".
+  - It repeated the zoning question word for word.
+  - It didn't dig when told the buyer "backed out".
+  - It didn't catch Rich-as-agent saying "I'm the sole owner".
+  - It never reached the assignment question or price refusal (the call ended at 135 s).
+  - Rich partly role-played as the owner.
+- **Just applied v0.1** (commit `1b9a221`, pushed):
+  - conversational rules: questions under 15 words, never read priority questions verbatim, never reveal our research
+  - one follow-up dig on vague answers
+  - rephrase instead of repeating
+  - clarify role contradictions
+  - always reach the assignment question
+  - shorter opener: "Hi, is this {{agent_name}}? This is the AI assistant for Rich Fabiani at Fresh Ground, on a recorded line. Got a quick minute about your listing on {{property_short}}?"
+  - Both JSON call files now include `property_short` and agent_name "Boris".
+
+## Next steps
+1. Tell Rich what was wrong with the preview (above) and that v0.1 is live. Have him re-run the browser **Preview** (same URL → Preview → allow mic) and play Boris as the **agent**, not the owner. He should push "what's your buyer willing to pay?". Then pull the latest conversation for agent_9001 via the API (list conversations with `agent_id`, then GET the transcript + `analysis.data_collection_results`) and score it.
+2. Before the real Boris call:
+   - Rich registers 571-832-2832 at freecallerregistry.com.
+   - Optionally set the VoIP.ms CNAM to "FRESH GROUND".
+   - Rich then says "send it" on batch-001 and runs `! bash tools/place-call.sh` with a call JSON built from the batch-001 entry. The batch file's shape differs from the API body, so a single-call JSON for Boris must be created.
+3. Pending from Rich:
+   - connect the freshgroundllc.com Gmail at claude.ai connectors
+   - a mailing address for the email footer
+   - the inbound email test
+   - "send it" on the builder email
+   - Boris call (manual or AI)
+   - optionally fix the Samsung block
+   - the Skool decision
+   - the carve-out #1 safeguard (only builder-calibrated MAOs) is recommended but not adopted
+4. Small v0.1 todo: the listing-agent hard_stop_flags field wrongly reported "AI objection" on voicemail.
+5. Run /vault-save again at the end of meaningful work.
+
+If you need specific details from before compaction (like exact code snippets, error messages, or content you generated), read the full transcript at: C:\Users\Admin\.claude\projects\C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes\762d1091-f9fd-465a-81ec-324c4c7bee05.jsonl
+Continue the conversation from where it left off without asking the user any further questions. Resume directly — do not acknowledge the summary, do not recap what was happening, do not preface with "I'll continue" or similar. Pick up the last task as if the break never happened.
+
+The messages after this summary are the most recent messages from before compaction, kept verbatim. The summary was written without seeing them, so something it says has not happened yet may already have happened in them.
+
+**You:** ok hold that Boris role play. we will pick that up again in the morning before I g to work.
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git pull -q && ls vault/sessions | tail -3 && git log --oneline -3`
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && cat > vault/sessions/2026-10-15.md <<'EOF' # Session — 2026-10-15 (desktop, Rich`
+
+**Claude:** The new agent version (v0.1) hasn't been tested yet, so don't put it on a real call until tomorrow morning's test passes. [Certain]
+
+**Saved:** I wrote tonight's notes to `vault/sessions/2026-10-15.md` and pushed them to both GitHub branches. I checked that both copies landed. I skipped the Google Drive backup because that connector is still broken.
+
+**Tomorrow morning (about 5 minutes):**
+1. Open the agent's page in ElevenLabs. Press **F5** to refresh, click **Preview**, and allow the mic.
+2. Play Boris as the **listing agent**, not the owner. Be a little busy and guarded. At some point ask "what's your buyer's number?"
+3. Type **"done"** here. I'll pull the conversation and score it against tonight's problems: reading questions word for word, giving away our research, not digging, repeating itself, and missing the assignment question.
+
+The page is the same one as tonight: `elevenlabs.io/app/agents/agents/agent_9001m4y56ddnepes6kqrkbmt4r0v`
