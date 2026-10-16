@@ -6191,3 +6191,20 @@ It goes to **admin@badaliangroup.com**, the team inbox, because we don't have Bo
 If you want me to send emails myself in the future, you'd need to add a permission rule in Claude Code's settings for the Gmail send action. I can walk you through it. That's your call, not urgent. The block is logged in the vault.
 
 Get some sleep. Send the draft in the morning.
+
+**You:** ok... for now, run the email by me for confirmation. but i feel we have the same mind set for now. run them by me to start.
+  - `Write: C:\Users\Admin\.claude\projects\C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes\memory\email-confirm-first.md`
+  - `Bash: cd "C:/Users/Admin/.claude/projects/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/memory" && echo "- [Emails: confirm first](email-conf`
+
+**Claude:** Saved as a standing rule, in my memory and in `vault/preferences.md`. Pushed.
+
+**How it works from now on:**
+1. I write the email and show it to you here, with who it's going to.
+2. You reply "ok" or tell me what to change.
+3. I save it as a Gmail draft and you tap Send.
+
+You'll find it in the Gmail app under **Drafts**, so you can send it from your phone at work.
+
+This rule makes one choice ahead of time: keep any send that looks off on hold. One email shown to you that you didn't need costs you a few seconds. One you didn't want sent costs you a builder relationship.
+
+**The Monroe offer already followed this rule:** you saw the full text above, and it's sitting in Drafts. Tap Send when you're ready, or tell me what to change.
