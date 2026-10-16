@@ -57,8 +57,9 @@ Source: `vault/research/guides/luxury-wholesaling-tyson-smith-extracted.md` (Job
 - **Developer max lot price = finished − build cost − soft costs − developer profit.**
 - **Your MAX OFFER to seller = developer max lot price − your assignment fee.**
 - Assignment fee: start ~5% of lot price (floor ~$37–80k; chase bigger lots).
-- **Sanity check — land share:** developer max lot price should land at **~21–36% of finished
-  value** (luxury builders' quick math is 1/3). Outside that band → re-check build cost (the $300
+- **Sanity check — land share:** developer max lot price should land at **~35–40% of finished
+  value** (MEASURED 2026-10-15 from county records: Vienna 38%, McLean 37%, Falls Church 37%, Great Falls 35%, South Arlington
+  R2-7 ~48-57%; see `vault/research/buybox-real-2026-10-15.md`; the old 21-36% band was too low). Outside that band → re-check build cost (the $300
   default is likely low for $4M+ homes; observed luxury builds ran $467–750/sf) and flag it.
 - **🚨 Appraisal cap on the fee:** construction lenders lend on the LOWER of purchase price or
   as-is appraisal. If (contract price + fee) exceeds the lot's likely appraised value (from lot/

@@ -6,6 +6,12 @@ add builders, log which ones bought, track their box.
 > Expanded 2026-08-08 from 4 → 14 builders (web research). Legend:
 > ✅ = direct email confirmed · 📞 = phone/contact-form only (email to confirm on first call).
 
+## ⭐ PROVEN BUYERS FROM COUNTY RECORDS (2026-10-15) — USE THESE FIRST
+Arlington permits + deeds show who actually builds: **MR Project Management (85 new houses)**, BeaconCrest (71), Classic Cottages (59),
+Enhanced Homes/Prime Custom Homes (42), Wormald/ASP (31), BCN (24), **Verity Builders (20; South Arlington R2-7, #1 for Monroe)**, Sunnyside,
+Old Creek, Bode. Paramount built only 5. Full table, prices paid, contacts: `research/buybox-real-2026-10-15.md`.
+Call script: `call-sheets/builder-buybox-calls-2026-10-15.md`.
+
 ## TIER 1 — core-market teardown buyers (McLean · Arlington · Falls Church)
 > ✔️ = re-verified live via Firecrawl 2026-08-26 (actual page content, not a search snippet)
 | Builder | Phone | Email / Contact | Territory | Fit notes |
