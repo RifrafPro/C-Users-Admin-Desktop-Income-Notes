@@ -5972,3 +5972,148 @@ That's different from buying teardown lots from estates, so I'm raising two thin
 Meanwhile I'll pull the lot sales and fix the SignNow templates.
 
 I can turn the assessment into an easy-to-read web page for your phone if you want it before work.
+
+**You:** how are are the builder calls? lets set up a script for them all in the DC area for anything we have deamed as ligit and call worthy. however we need to find the buyer /builder Buybox for that area that is REAL.
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && ls vault/call-sheets/ && grep -rl "builder" vault/automation/*.md | head; curl -s`
+  - `Bash: cd /tmp; B="https://datahub-v2.arlingtonva.us/api/RealEstate/SalesHistory"; curl -s -G "$B" --data-urlencode "\$filter=saleDate ge 2024-10-01 and saleAmt gt 500`
+  - `Bash: mkdir -p "$TEMP/claude/bb" 2>/dev/null; S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+  - `Bash: curl -s -G "https://datahub-v2.arlingtonva.us/api/RealEstate/Property" --data-urlencode "\$filter=propertyKey eq 24" | python -c "import json,sys;d=json.load(sy`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+  - `Bash: curl -s "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services?f=json" | python -c "import json,sys;[print(s['name'],s['type']) for s in json.load(`
+
+**Claude:** Arlington is done, with real numbers (including buyers on Monroe's own street). Now pulling Fairfax sales for the Great Falls and Oakton deals.
+  - `Bash: U="https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/Tax_Administration_Real_Estate_Sales_Data/FeatureServer/0"; curl -s "$U?f=json" | python -`
+  - `Bash: for s in Parcels_Data Dwelling_Data Legal_Data Land_Data; do U="https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/Tax_Administration_Real_Estat`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+
+**Claude:** Fairfax's prices are in. Its owner-lookup site is down for maintenance, so I'm trying building-permit data to get the builder names.
+  - `Bash: curl -s "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services?f=json" | python -c "import json,sys;[print(s['name']) for s in json.load(sys.stdin)`
+  - `Bash: U="https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/Building_Records_PLUS/FeatureServer/0"; curl -s "$U?f=json" | python -c "import json,sys;d`
+  - `Bash: U="https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/Building_Records_PLUS/FeatureServer/0/query"; curl -s -G "$U" --data-urlencode "where=ISSU`
+  - `Bash: B="https://datahub-v2.arlingtonva.us/api/Permit/Permit"; curl -s -G "$B" --data-urlencode "\$filter=permitIssueDate ge 2025-01-01" --data-urlencode "\$top=1" |`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+
+**Claude:** Got 80K Arlington permits. Now matching each builder's LLC to the real contractor who pulled the new-house permit.
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+  - `Bash: S="C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Desktop-Income-Notes-C-Users-Admin-Desktop-Income-Notes/762d1091-f9fd-465a-81ec-324c4c7bee05/scratchp`
+
+**Claude:** Found it: **Verity Builders** is building at **2145 S Monroe**, directly across from our lot, plus 3 more houses within a few blocks. Looking up contact info for the top new builders.
+  - `mcp__firecrawl__firecrawl_search: "Verity Builders" Arlington VA custom homes contact phone`
+  - `mcp__firecrawl__firecrawl_search: "MR Project Management" Arlington VA builder new homes contact`
+  - `mcp__firecrawl__firecrawl_search: "Enhanced Homes" Arlington Shirlington builder contact phone`
+  - `mcp__firecrawl__firecrawl_search: "BCN Design Build" Arlington VA contact`
+  - `mcp__firecrawl__firecrawl_search: "Old Creek Homes" Alexandria VA builder contact`
+  - `mcp__firecrawl__firecrawl_search: "Bode" Arlington homebuilder "we buy" lots contact Wilson Blvd`
+  - `mcp__firecrawl__firecrawl_scrape: https://verity-builders.com/`
+  - `mcp__firecrawl__firecrawl_scrape: https://www.oldcreekhomes.com/`
+  - `Write: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\research\buybox-real-2026-10-15.md`
+  - `Write: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\call-sheets\builder-buybox-calls-2026-10-15.md`
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && python - <<'EOF' p=".claude/agents/underwriter.md"; s=open(p,encoding="utf-8").re`
+  - `ToolSearch: select:ArtifactData`
+
+**Claude:** Adding the builder calls to Mission Control as your task.
+  - `ArtifactData: set`
+
+**Claude:** **The builder calls have never been made.** That task has been open since 8/29. I'm also correcting my own earlier advice: the builder list I built from websites missed **6 of the 10 builders actually building in Arlington.** [Certain]
+
+I pulled the real buy-box from free county records tonight: Arlington sales and building permits (which name the builder), and Fairfax sales.
+
+**What builders actually pay:**
+- Builders pay **35–40% of the finished home price for the lot.**
+  - Vienna: lot about $900K, new house about $2.4M.
+  - McLean: lot about $1.25M, new house about $3.2M.
+  - Falls Church: lot about $850K, new house about $2.3M.
+- Our underwriter assumed 21–36%, so our offers have been too low. I've corrected it.
+- The builders who actually build the most in Arlington (new houses since mid-2023):
+
+  | Builder | New houses |
+  |---|---|
+  | MR Project Management | 85 |
+  | BeaconCrest | 71 |
+  | Classic Cottages | 59 |
+  | Enhanced Homes / Prime Custom Homes | 42 |
+  | Paramount (our old "start here" pick) | 5 |
+
+**Monroe:**
+- **Verity Builders is building at 2145 S Monroe, right across the street,** plus three more houses within a few blocks.
+- Comparable South Arlington lots in Monroe's zoning sold to builders for **$567K–730K** in 2025–26.
+- If the two lots are buildable once combined, Monroe could be worth roughly $450–550K to a builder, against a $274K asking price. [Likely] The zoning letter decides everything.
+- **Trap:** Monroe is publicly listed, so any builder can buy it directly. Say nothing about it on builder calls until it's under contract with us and they've signed the NCND.
+
+**Call script ready:** `vault/call-sheets/builder-buybox-calls-2026-10-15.md`
+- 8 builders in order, each with a "we did our homework" opening line.
+- 4 questions: where they buy, what lot, what price, how they buy.
+- A pipeline question, answers for awkward questions, a form to fill in after each call, and the follow-up schedule.
+- You make these calls yourself. The AI isn't approved for builder calls.
+
+**Start with:**
+1. **Verity:** no phone number found. Use the form on verity-builders.com or Instagram @veritybuilders and ask for a call.
+2. **MR Project Management:** (703) 314-4250, Tammy Moore.
+3. **Enhanced Homes / Prime Custom Homes:** (571) 573-9000.
+
+**Not done yet:**
+- Fairfax builder *names*. Fairfax's open data has prices but no owners, and its lookup site was down for maintenance tonight.
+- Maryland and DC haven't been pulled.
+- Phone numbers are still missing for Verity, Wormald, Sunnyside and Bode.
+
+The prices, builder list and contacts are in `vault/research/buybox-real-2026-10-15.md`. The calls are on Mission Control as your task, and everything is committed and pushed to both GitHub branches.
+
+**You:** what do we need to do to lock up the monroe lots for profit? are you able to make the calls and be the go to guy to amke the deal for this? i am literaly going badk to work tomorrow and it seams that you are the best way to lock in at least one or wo of these opportunities.
+
+**Claude:** **I can't be the person who signs or makes the deal, but I can do almost everything else while you're at work.**
+
+- **What I can't do:** sign the contract, wire the deposit, or place phone calls myself. Claude Code blocks me from dialing out, and I won't work around that.
+- **What I can do:** handle all the back-and-forth with Boris **by email** within limits you set tonight. Email is a better channel for this deal than calls anyway, because everything ends up in writing. [Likely]
+
+Your only jobs would be signing on your phone and approving anything outside the limits.
+
+**How we lock up Monroe:**
+1. **Send a written offer with a long feasibility period** (the window to check zoning, title and survey before committing). Contract to buy as "Rich Fabiani and/or assigns," with **45 days of feasibility**. If the zoning or title check fails, we walk away and get the deposit back. That's how we lock it up without the risk. Because it's listed, the offer goes through Boris on standard Virginia forms. He can prepare those for you as an unrepresented buyer.
+2. **Price.** The new data says buildable lots there sold for $567–730K. The estate's buyer already backed out once and the price has been cut 9 times, so they want certainty more than top dollar.
+   - My recommendation: **offer $255K**, with a ceiling of **$274K** (full asking price). [Likely]
+   - Even at full price, the profit is large *if* the zoning letter comes back buildable. If it doesn't, we walk.
+3. **Make the offer attractive in other ways:** quick close after feasibility (30 days), deposit held by Eastern Title, cash, as-is.
+4. **During feasibility (I draft all of it):**
+   - an Arlington zoning determination request
+   - a title commitment from Eastern Title (to clear the 1987 state ownership)
+   - a survey
+   - the NCND to Verity and Classic Cottages, then the assignment to whichever builder pays most
+5. **Skip the AI call to Boris.** I'll put the questions in the offer email instead: why the last contract died, title, zoning, probate, who signs.
+
+**What only you can give me, ideally tonight:**
+- The limits I can work within by email, as a new written exception to your send rule. Your rule today keeps all offers with you, so this has to be your call.
+- The deposit amount (I suggest $2,500–5,000), plus whether your proof-of-funds letter exists, since a cash offer may need one.
+- Which email I send from. Only richfabiani@gmail is connected; the freshgroundllc.com account isn't.
+
+I'll draft the offer email to Boris now while you answer.
+  - `AskUserQuestion`
+
+**You:** [Request interrupted by user for tool use]
+
+**You:** are you able to get a contract to the signing point? If so and I'm at work tomorrow can you send me a notice that alertes me to a contact sighning?
+  - `ToolSearch: select:PushNotification,CronCreate`
+  - `CronCreate: 7,27,47 7-20 * * *`
+
+**Claude:** **The watcher is on.** It runs every 20 minutes, 7am–8pm, starting tomorrow at 7:10am. It stops after 7 days, or as soon as this window closes. It only reads your email: it never replies, signs, or opens a signing link.
+
+**Before work tomorrow:**
+1. Leave the PC on with this Claude window open. Turn off sleep: Windows **Settings → System → Power → Screen and sleep → "Never"** for "When plugged in, put my device to sleep".
+2. Make sure Google Calendar notifications are on, on your phone.
+
+**There's nothing to sign until the offer goes to Boris.** You can approve it in one line, for example:
+
+> **send it: open $255K, cap $274K, $2,500 deposit, from my gmail**
+
+Change any number you want. With that, I'll send Boris the offer and the questions about the dead contract, title, zoning and probate. I'll ask him to prepare the contract for your signature, and the watcher will alert you when it arrives.
+
+The offer will make it a 45-day feasibility deal you can assign to a builder. If the zoning or title check fails, we walk away and get the deposit back.
