@@ -35,7 +35,8 @@ So keep it current.
   rich|claude, priority, done), deals (stage/verdict/price/maxOffer/next), systems (ok|warn|todo|bad), consents (opt-in
   log). Read/write with the ArtifactData tool (collections `tasks`, `deals`, `systems`, `consents`) and keep it in sync
   whenever a deal, task or system changes. Page source: `mission-control/mission-control.html`.
-- **`vault/road-to-deal-one.md` — THE PLAN. Read first, every session.**
+- **`vault/road-to-deal-one.md` — THE PLAN. Read first, every session.** The horizon it serves:
+  **`vault/north-star-national-engine.md`** (Rich 10-16: national find->evaluate->create-lead engine; buyer-first expansion; quick-win filter).
 - `vault/profile.md` — background, businesses, goals
 - `vault/preferences.md` — how Rich likes Claude to work
 - `vault/projects/wholesaling.md` — FRESH GROUND (CURRENT FOCUS)
