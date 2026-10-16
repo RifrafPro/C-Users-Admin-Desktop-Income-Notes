@@ -6117,3 +6117,15 @@ I'll draft the offer email to Boris now while you answer.
 Change any number you want. With that, I'll send Boris the offer and the questions about the dead contract, title, zoning and probate. I'll ask him to prepare the contract for your signature, and the watcher will alert you when it arrives.
 
 The offer will make it a 45-day feasibility deal you can assign to a builder. If the zoning or title check fails, we walk away and get the deposit back.
+
+**You:** ok... ill be upm
+  - `Bash: cd "/c/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && cat > vault/call-sheets/monroe-offer-email-DRAFT-2026-10-16.md <<'EOF' # 2148/215`
+
+**Claude:** The offer email to Boris is drafted with the price left blank: `vault/call-sheets/monroe-offer-email-DRAFT-2026-10-16.md`. It's committed and pushed.
+
+**Morning (about 10 minutes):**
+1. Read the draft, then send me your line, for example "send it: open $255K, cap $274K, $2,500 deposit, from my gmail". I'll send the email and confirm it went out.
+2. Boris roleplay retest (5 minutes, optional now that the offer goes by email).
+3. Before you leave: PC on, sleep set to "Never", this window open. The watcher alerts you through your phone's calendar.
+
+Get some sleep.
