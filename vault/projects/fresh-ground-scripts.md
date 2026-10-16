@@ -1,5 +1,8 @@
 # FRESH GROUND — Full Call/Script Playbook (all 10)
 
+> **Scripts 11-25 + buyer scripts B1-B9 (every distress situation + every buyer motive):**
+> see **fresh-ground-scripts-situational.md** — includes the routing table and the ⚠️ PHIFA/bankruptcy legal gates.
+
 > "Any property. Fresh start." Recovered 2026-08-06 from the 10 PDFs (print-dated
 > 2026-07-21) in Drive. Faithful condensed capture; source PDFs live in Drive.
 
