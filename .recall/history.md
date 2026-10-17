@@ -6574,3 +6574,32 @@ Msg 007 has been open since 10-14. Cloud Claude still needs to confirm the "Deci
   - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
 
 **Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+
+## Session 20017448 — 2026-10-16 18:01
+
+**You:** Courier run (headless). Read vault/inbox-for-desktop.md. Execute every OPEN job that can be done headlessly, mark each DONE with a one-line result. Write anything cloud Claude needs to know into vault/inbox-for-cloud.md as an OPEN msg. Obey CLAUDE.md: draft-only, no sends, no purchases. Finish with: git add -A, git commit, git push.
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git pull 2>&1 | tail -3 && grep -n "OPEN\|DONE" vault/inbox-for-desktop.md | tail`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && grep -n "^## \|^#" vault/inbox-for-desktop.md | head -60; echo ---; grep -n "⬜\|B`
+  - `Read: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && grep -c "Status: OPEN" vault/inbox-from-hermes.md; grep -n "Status: OPEN" vault/i`
+
+**Claude:** Both matches are header text, so there are no real OPEN Hermes entries. Appending today's status line to Msg 007.
+  - `Edit: C:\Users\Admin\Desktop\Income Notes\C-Users-Admin-Desktop-Income-Notes\vault\inbox-for-cloud.md`
+  - `Bash: cd "C:/Users/Admin/Desktop/Income Notes/C-Users-Admin-Desktop-Income-Notes" && git add -A && git commit -q -m "chore: courier 10-16 (2nd run) — desktop queue em`
+
+**Claude:** This run did nothing useful: the courier has now come up empty 6 runs in a row, because no headless jobs are queued for it.
+
+- **Desktop jobs:** `git pull` was clean and `vault/inbox-for-desktop.md` has no ⬜ OPEN jobs. The four unfinished ones are all waiting on Rich:
+  - Job 015 needs one `y` keypress.
+  - Job 017 needs a voice choice and approval of the agent setup.
+  - Job 018 needs his Chrome login and OK to spend credits.
+  - Chrome item (b) needs him to sign in to Land Insights.
+- **Hermes inbox:** no OPEN entries. The two `Status: OPEN` matches in the file are in the header instructions, not real entries.
+- **Message to cloud:** I added today's status line to the existing Msg 007 in `vault/inbox-for-cloud.md` rather than opening a new message. It repeats three asks for cloud:
+  - Queue headless work, such as comps and an offer draft for Boris/Monroe, or pause the courier.
+  - Confirm the Skool task is on Mission Control.
+  - Fix the Drive mirror.
+- **Git:** pushed as `1f32cce`, and the branch matches origin. The commit also picked up the automatic log files (`.recall/`, `vault/courier-log.txt`) that had already changed before this run started.
+
+Nothing was sent or bought.
