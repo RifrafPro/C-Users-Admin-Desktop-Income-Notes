@@ -6423,3 +6423,154 @@ The messages after this summary are the most recent messages from before compact
 - **Git:** the commit (`de1bf6f`) is pushed and the branch matches the remote.
 
 Msg 007 has been open since 10-14. Cloud Claude still needs to confirm the "Decide on Skool AI Profit Lab" task is on Mission Control and fix the Drive mirror. Either queue headless work for the courier or pause its schedule. Running it with nothing to do costs you runs and gets nothing done.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
+
+**You:** DEAL WATCH (read-only). Search richfabiani@gmail.com (Gmail connector) for messages from the last 25 minutes that are e-signature requests (DocuSign, dotloop, Authentisign, SignNow, Adobe Sign, "please sign", "signature requested", "review and sign") OR from Boris Miric / Fathom / badaliangroup.com / anything mentioning "Monroe". If none: do nothing, say nothing. If found: (1) create a Google Calendar event on Rich's primary calendar starting 5 minutes from now, 15 minutes long, title "SIGN/READ: <short what> - check email", with a popup reminder at 0 minutes; (2) PushNotification with a one-line summary; (3) log it in vault/sessions/<today>.md. Never reply, sign, or send anything; never open signing links.
+  - `mcp__claude_ai_Gmail__search_threads: newer_than:1h (docusign OR dotloop OR authentisign OR signnow OR "adobe sign" OR "please sign" OR "signature requested" OR "review and sign" OR from:badaliangro`
+
+**Claude:** No deal mail in the last 25 minutes, so nothing to flag.
